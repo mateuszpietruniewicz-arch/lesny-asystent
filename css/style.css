@@ -465,6 +465,36 @@ body.high-contrast .jrn-photo-btn {
   color: rgba(255, 255, 255, .6);
 }
 
+/* Loading state banera Lens */
+.qs-banner--loading {
+  pointer-events: none;
+  cursor: default;
+}
+
+.qs-banner--loading .qs-icon-cam {
+  display: inline-block;
+  animation: lens-cam-spin 0.85s linear infinite;
+}
+
+.qs-banner--loading .qs-arrow { opacity: 0; }
+
+.qs-banner--loading .qs-title {
+  opacity: .92;
+}
+
+.qs-banner--loading .qs-sub {
+  opacity: .65;
+}
+
+@keyframes lens-cam-spin {
+  to { transform: rotate(360deg); }
+}
+
+.jrn-lens-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /* ── SEZONOWY PASEK SKRÓTÓW ──────────────────────── */
 
 .ssb-wrap {

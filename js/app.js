@@ -1582,7 +1582,24 @@ function openModal(s) {
     if (wrap)  wrap.hidden = true;
   });
 
-  $('jrn-lens-btn')?.addEventListener('click', openGoogleLens);
+  $('jrn-lens-btn')?.addEventListener('click', async () => {
+    if (!jrnPhoto) return;
+    const btn      = $('jrn-lens-btn');
+    const origText = btn?.textContent ?? '';
+    if (btn) { btn.textContent = '⏳ Przesyłanie…'; btn.disabled = true; }
+    try {
+      await openGoogleLens(jrnPhoto);
+    } catch {
+      const msg = $('journal-save-msg');
+      if (msg) {
+        msg.textContent = '⚠ Nie udało się przesłać zdjęcia do Google Lens. Sprawdź połączenie.';
+        msg.className   = 'journal-save-msg journal-save-err';
+        setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4500);
+      }
+    } finally {
+      if (btn) { btn.textContent = origText; btn.disabled = false; }
+    }
+  });
 
   const onBackdropClick = e => { if (e.target === modal) modal.close(); };
   modal.addEventListener('click', onBackdropClick);
@@ -1592,7 +1609,7 @@ function openModal(s) {
   }, { once: true });
 }
 
-// ── GOOGLE LENS ──────────────────────────────────────────────────────────────
+// ── GOOGLE LENS — upload przez publiczny serwer → GET URL ────────────────────
 
 function base64ToBlob(dataUrl) {
   const [header, data] = dataUrl.split(',');
@@ -1603,52 +1620,31 @@ function base64ToBlob(dataUrl) {
   return new Blob([arr], { type: mime });
 }
 
-function openGoogleLens(photoData) {
-  const photo = photoData ?? jrnPhoto;
-  if (!photo) return;
-
-  const blob = base64ToBlob(photo);
+async function uploadToPublicHost(base64DataUrl) {
+  const blob = base64ToBlob(base64DataUrl);
   const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
+  const fd   = new FormData();
+  fd.append('file', file);
+  const res = await fetch('https://tmpfiles.org/api/v1/upload', {
+    method: 'POST',
+    body: fd,
+  });
+  if (!res.ok) throw new Error(`Upload ${res.status}`);
+  const json = await res.json();
+  const rawUrl = json?.data?.url;
+  if (!rawUrl) throw new Error('Brak URL w odpowiedzi serwera');
+  // tmpfiles.org zwraca /XXXXX/plik.jpg — dodaj /dl/ by uzyskać bezpośredni link
+  return rawUrl.replace('https://tmpfiles.org/', 'https://tmpfiles.org/dl/');
+}
 
-  const imgInput = document.createElement('input');
-  imgInput.type  = 'file';
-  imgInput.name  = 'encoded_image';
-
-  try {
-    const dt = new DataTransfer();
-    dt.items.add(file);
-    imgInput.files = dt.files;
-  } catch {
-    const msg = $('journal-save-msg');
-    if (msg) {
-      msg.textContent = '⚠ Ta przeglądarka nie obsługuje wysyłania zdjęć do Google.';
-      msg.className   = 'journal-save-msg journal-save-err';
-      setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4000);
-    }
-    return;
-  }
-
-  // image_url jest wymaganym polem kompanionem formularza Google —
-  // bez niego serwer odrzuca żądanie; wartość pusta = wyślij plik z inputa
-  const imageUrlInput   = document.createElement('input');
-  imageUrlInput.type    = 'hidden';
-  imageUrlInput.name    = 'image_url';
-  imageUrlInput.value   = '';
-
-  const form      = document.createElement('form');
-  form.method     = 'POST';
-  // google.com/searchbyimage/upload: publiczny endpoint bez auth (nie lens.google.com,
-  // który wymaga OAuth i na Androidzie triggeruje intent aplikacji Google Lens)
-  form.action     = 'https://www.google.com/searchbyimage/upload';
-  form.enctype    = 'multipart/form-data';
-  form.target     = '_blank';
-  form.style.cssText = 'display:none;position:fixed';
-
-  form.appendChild(imageUrlInput);
-  form.appendChild(imgInput);
-  document.body.appendChild(form);
-  form.submit();
-  setTimeout(() => form.parentNode?.removeChild(form), 500);
+async function openGoogleLens(photo) {
+  if (!photo) return;
+  const imageUrl = await uploadToPublicHost(photo);
+  window.open(
+    `https://lens.google.com/search?p=canvas&url=${encodeURIComponent(imageUrl)}`,
+    '_blank',
+    'noopener,noreferrer'
+  );
 }
 
 // ── KOPIA ZAPASOWA ────────────────────────────────────────────────────────────
@@ -1860,9 +1856,35 @@ function bindMainLens() {
   $('main-lens-input')?.addEventListener('change', async e => {
     const file = e.target.files[0];
     if (!file) return;
-    const compressed = await compressPhoto(file);
-    openGoogleLens(compressed);
     e.target.value = '';
+
+    const banner    = document.querySelector('.qs-banner');
+    const titleEl   = banner?.querySelector('.qs-title');
+    const subEl     = banner?.querySelector('.qs-sub');
+    const origTitle = titleEl?.textContent ?? '';
+    const origSub   = subEl?.textContent   ?? '';
+
+    const setLoading = on => banner?.classList.toggle('qs-banner--loading', on);
+    const resetBanner = () => {
+      if (titleEl) titleEl.textContent = origTitle;
+      if (subEl)   subEl.textContent   = origSub;
+      setLoading(false);
+    };
+
+    if (titleEl) titleEl.textContent = 'Analizowanie obrazu…';
+    if (subEl)   subEl.textContent   = 'Przesyłanie do Google Lens…';
+    setLoading(true);
+
+    try {
+      const compressed = await compressPhoto(file);
+      await openGoogleLens(compressed);
+      resetBanner();
+    } catch {
+      if (titleEl) titleEl.textContent = '⚠ Błąd przesyłania — sprawdź połączenie';
+      if (subEl)   subEl.textContent   = 'Spróbuj ponownie za chwilę';
+      setLoading(false);
+      setTimeout(resetBanner, 3500);
+    }
   });
 }
 
