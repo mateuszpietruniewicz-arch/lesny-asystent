@@ -1466,7 +1466,7 @@ function openModal(s) {
             <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
               <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
               <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
-              <button type="button" class="jrn-lens-btn" id="jrn-lens-btn">🔍 Zweryfikuj z Google Lens</button>
+              <button type="button" class="jrn-lens-btn" id="jrn-lens-btn">🔍 Skaner Botaniczny</button>
             </div>
           </div>
         </div>
@@ -1582,22 +1582,21 @@ function openModal(s) {
     if (wrap)  wrap.hidden = true;
   });
 
-  $('jrn-lens-btn')?.addEventListener('click', async () => {
+  $('jrn-lens-btn')?.addEventListener('click', () => {
     if (!jrnPhoto) return;
-    const btn      = $('jrn-lens-btn');
-    const origText = btn?.textContent ?? '';
-    if (btn) { btn.textContent = '⏳ Przesyłanie…'; btn.disabled = true; }
+    const btn = $('jrn-lens-btn');
+    if (btn) btn.disabled = true;
     try {
-      await openGoogleLens(jrnPhoto);
+      openVisualSearch(jrnPhoto);
     } catch {
       const msg = $('journal-save-msg');
       if (msg) {
-        msg.textContent = '⚠ Nie udało się przesłać zdjęcia do Google Lens. Sprawdź połączenie.';
+        msg.textContent = '⚠ Skaner Botaniczny niedostępny w tej przeglądarce.';
         msg.className   = 'journal-save-msg journal-save-err';
-        setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4500);
+        setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4000);
       }
     } finally {
-      if (btn) { btn.textContent = origText; btn.disabled = false; }
+      setTimeout(() => { if (btn) btn.disabled = false; }, 800);
     }
   });
 
@@ -1609,7 +1608,7 @@ function openModal(s) {
   }, { once: true });
 }
 
-// ── GOOGLE LENS — upload przez publiczny serwer → GET URL ────────────────────
+// ── SKANER BOTANICZNY — wyszukiwanie obrazem przez Yandex Images ─────────────
 
 function base64ToBlob(dataUrl) {
   const [header, data] = dataUrl.split(',');
@@ -1620,31 +1619,37 @@ function base64ToBlob(dataUrl) {
   return new Blob([arr], { type: mime });
 }
 
-async function uploadToPublicHost(base64DataUrl) {
-  const blob = base64ToBlob(base64DataUrl);
-  const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
-  const fd   = new FormData();
-  fd.append('file', file);
-  const res = await fetch('https://tmpfiles.org/api/v1/upload', {
-    method: 'POST',
-    body: fd,
-  });
-  if (!res.ok) throw new Error(`Upload ${res.status}`);
-  const json = await res.json();
-  const rawUrl = json?.data?.url;
-  if (!rawUrl) throw new Error('Brak URL w odpowiedzi serwera');
-  // tmpfiles.org zwraca /XXXXX/plik.jpg — dodaj /dl/ by uzyskać bezpośredni link
-  return rawUrl.replace('https://tmpfiles.org/', 'https://tmpfiles.org/dl/');
-}
+function openVisualSearch(photo) {
+  const img = photo ?? jrnPhoto;
+  if (!img) return;
 
-async function openGoogleLens(photo) {
-  if (!photo) return;
-  const imageUrl = await uploadToPublicHost(photo);
-  window.open(
-    `https://lens.google.com/search?p=canvas&url=${encodeURIComponent(imageUrl)}`,
-    '_blank',
-    'noopener,noreferrer'
-  );
+  const blob = base64ToBlob(img);
+  const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
+
+  // DataTransfer przypisuje binarny plik do inputa bez interakcji użytkownika
+  const fileInput  = document.createElement('input');
+  fileInput.type   = 'file';
+  fileInput.name   = 'upfile'; // pole wymagane przez Yandex Images POST
+
+  try {
+    const dt = new DataTransfer();
+    dt.items.add(file);
+    fileInput.files = dt.files;
+  } catch {
+    throw new Error('DataTransfer niedostępny');
+  }
+
+  const form      = document.createElement('form');
+  form.method     = 'POST';
+  form.action     = 'https://yandex.com/images/search?rpt=imageview';
+  form.enctype    = 'multipart/form-data';
+  form.target     = '_blank';
+  form.style.cssText = 'display:none;position:fixed;inset:0';
+
+  form.appendChild(fileInput);
+  document.body.appendChild(form);
+  form.submit();
+  setTimeout(() => form.parentNode?.removeChild(form), 500);
 }
 
 // ── KOPIA ZAPASOWA ────────────────────────────────────────────────────────────
@@ -1864,25 +1869,24 @@ function bindMainLens() {
     const origTitle = titleEl?.textContent ?? '';
     const origSub   = subEl?.textContent   ?? '';
 
-    const setLoading = on => banner?.classList.toggle('qs-banner--loading', on);
     const resetBanner = () => {
       if (titleEl) titleEl.textContent = origTitle;
       if (subEl)   subEl.textContent   = origSub;
-      setLoading(false);
+      banner?.classList.remove('qs-banner--loading');
     };
 
     if (titleEl) titleEl.textContent = 'Analizowanie obrazu…';
-    if (subEl)   subEl.textContent   = 'Przesyłanie do Google Lens…';
-    setLoading(true);
+    if (subEl)   subEl.textContent   = 'Kompresowanie zdjęcia…';
+    banner?.classList.add('qs-banner--loading');
 
     try {
       const compressed = await compressPhoto(file);
-      await openGoogleLens(compressed);
+      openVisualSearch(compressed);
       resetBanner();
     } catch {
-      if (titleEl) titleEl.textContent = '⚠ Błąd przesyłania — sprawdź połączenie';
-      if (subEl)   subEl.textContent   = 'Spróbuj ponownie za chwilę';
-      setLoading(false);
+      if (titleEl) titleEl.textContent = '⚠ Skaner niedostępny w tej przeglądarce';
+      if (subEl)   subEl.textContent   = 'Spróbuj ponownie lub użyj innej przeglądarki';
+      banner?.classList.remove('qs-banner--loading');
       setTimeout(resetBanner, 3500);
     }
   });

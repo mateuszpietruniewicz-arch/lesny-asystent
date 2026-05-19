@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v21-lens-get-api';
+const CACHE_NAME = 'forest-assistant-v22-visual-search';
 
 const APP_SHELL = [
   './index.html',
