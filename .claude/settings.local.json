@@ -3,7 +3,9 @@
     "allow": [
       "Bash(python3 *)",
       "Bash(curl -s http://localhost:8000/data/species.json)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/index.html)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/index.html)",
+      "Bash(git *)",
+      "Bash(security add-internet-password *)"
     ]
   }
 }
