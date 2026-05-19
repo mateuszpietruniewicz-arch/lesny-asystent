@@ -280,6 +280,7 @@ body.high-contrast .jrn-photo-btn {
 
 .hero-search-wrap {
   position: relative;
+  z-index: 10000;
   width: 100%;
 }
 
@@ -301,9 +302,9 @@ body.high-contrast .jrn-photo-btn {
   top: calc(100% + 6px);
   left: 0;
   right: 0;
-  /* backdrop-filter na baner tworzy nowy stacking context — potrzebujemy
-     z-index wyraźnie wyższy niż jakikolwiek element z blur/transform */
-  z-index: 9999;
+  /* stacking context jest na .hero-search-wrap (z-index: 10000) — ten
+     z-index działa lokalnie wewnątrz tego kontekstu */
+  z-index: 1;
   background: var(--surface); /* solidny kolor #f8faf8 — bez prześwitu */
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-l);
@@ -1110,7 +1111,7 @@ body.high-contrast .jrn-photo-btn {
 #tab-nav {
   position: sticky;
   top: 57px;
-  z-index: 90;
+  z-index: 100;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   display: flex;

@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v30-voice-notes';
+const CACHE_NAME = 'forest-assistant-v31-zindex-tabs';
 
 const APP_SHELL = [
   './index.html',
