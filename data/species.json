@@ -1,0 +1,4562 @@
+[
+  {
+    "id": 1,
+    "nazwa_polska": "Pokrzywa zwyczajna",
+    "nazwa_lacinska": "Urtica dioica",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 3,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode liście i pędy do 20 cm",
+    "zastosowanie_kulinarne": "Zupy, herbaty, szpinak, pesto, smoothie, naleśniki, risotto",
+    "zastosowanie_lecznicze": "Anemia, reumatyzm, nerki, żelazo, wit. C, wspomaganie laktacji",
+    "przepis_sugestia": "Zupa pokrzywowa: liście + ziemniaki + śmietana + czosnek",
+    "wystepowanie_ogolne": "Cała Polska – lasy, łąki, parki, przydroża, ruiny, żyzne gleby",
+    "regiony_polski": "Wszędzie – od Bałtyku po Tatry, absolutnie pospolita",
+    "sugestie_lokalizacji": "Blisko Poznania: Park Sołacki, brzegi Warty, Puszcza Zielonka, Mosina | Mazowsze: Park Łazienkowski, dolina Wisły | Śląsk: skraje lasów | Bieszczady, Tatry, Mazury: łąki nadrzeczne | Sugestia: każdy las i łąka w Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Parz lub gotuj – surowa parzy skórę, traci to po obróbce cieplnej",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Urtica dioica pokrzywa zwyczajna liście",
+    "ciekawostka": "Więcej żelaza niż szpinak, więcej wit. C niż cytryna. Wikingowie robili z niej tkaniny!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4246,
+        "lng": 16.9099,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – skraj lasu"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nazwa_polska": "Szczaw zwyczajny",
+    "nazwa_lacinska": "Rumex acetosa",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "kwiecień–czerwiec",
+    "min_temp_C": 8,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Liście (najlepiej młode, przed kwitnieniem)",
+    "zastosowanie_kulinarne": "Zupa szczawiowa, sałatki, sosy do ryb i mięs",
+    "zastosowanie_lecznicze": "Witamina C, działanie moczopędne, wspomaganie trawienia",
+    "przepis_sugestia": "Klasyczna zupa szczawiowa: liście + jajko na twardo + śmietana",
+    "wystepowanie_ogolne": "Cała Polska – łąki, pastwiska, pobocza dróg",
+    "regiony_polski": "Wszędzie pospolity na łąkach i polanach",
+    "sugestie_lokalizacji": "Blisko Poznania: łąki nadwarciańskie, Dolina Baryczy | Mazury: podmokłe łąki | Podlasie: nadnarwiańskie łąki | Bieszczady: górskie polany | Roztocze: doliny rzek",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawiera szczawiany – umiarkowane spożycie przy kamicy nerkowej",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Rumex acetosa szczaw zwyczajny",
+    "ciekawostka": "W średniowieczu był pierwszym wiosennym warzywem po zimie. Kwaśny smak = kwas szczawiowy.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrzański PN – wilgotne łąki"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – łąki nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nazwa_polska": "Podagrycznik pospolity",
+    "nazwa_lacinska": "Aegopodium podagraria",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode liście i łodygi przed kwitnieniem",
+    "zastosowanie_kulinarne": "Zupy, warzywo gotowane, farsz do pierogów, zamiennik pietruszki",
+    "zastosowanie_lecznicze": "Leczenie podagry (dny moczanowej), działanie przeciwzapalne",
+    "przepis_sugestia": "Farsz do pierogów: liście + twaróg + cebula + sól",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, wilgotne zarośla, cieniste miejsca",
+    "regiony_polski": "Pospolity w całej Polsce z wyjątkiem wysokich gór",
+    "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie, Park Cytadela, Puszcza Zielonka | Mazowsze: Kampinos | Białowieża: grądy | Bieszczady: buczyny | Wszędzie cieniste leśne ścieżki",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie mylić z bluszczem – podagrycznik nie pnie się, ma trójkowy układ liści",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Aegopodium podagraria podagrycznik",
+    "ciekawostka": "Przez wieki uprawiany jako warzywo. Dziś chwast ogrodowy – a smakuje jak pietruszka!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – grądy"
+      },
+      {
+        "lat": 52.324,
+        "lng": 20.413,
+        "opis": "Kampinos – lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nazwa_polska": "Mniszek lekarski",
+    "nazwa_lacinska": "Taraxacum officinale",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 3,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 6,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty, liście, korzeń, pąki kwiatowe – wszystkie jadalne",
+    "zastosowanie_kulinarne": "Syrop z kwiatów, sałatki z liści, kawa z korzenia, kaparki z pąków",
+    "zastosowanie_lecznicze": "Wątroba, nerki, działanie moczopędne, detoks, prebiotyk (inulina)",
+    "przepis_sugestia": "Syrop z mniszka: 200 kwiatów + 1 kg cukru + cytryna, gotuj 30 min",
+    "wystepowanie_ogolne": "Cała Polska – łąki, trawniki, pastwiska, pobocza – dosłownie wszędzie",
+    "regiony_polski": "Absolutnie wszędzie w Polsce – od morza po Tatry",
+    "sugestie_lokalizacji": "Dosłownie każda łąka, trawnik i pobocze w Polsce – rośnie wszędzie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – jedna z najbezpieczniejszych dzikich roślin",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Taraxacum officinale mniszek lekarski kwiaty",
+    "ciekawostka": "Francuzi jedzą liście surowe jako sałatkę 'pissenlit'. Korzeń prażony zastępuje kawę bez kofeiny!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4012,
+        "lng": 16.9314,
+        "opis": "Dolina Warty, Poznań"
+      },
+      {
+        "lat": 52.2454,
+        "lng": 16.8542,
+        "opis": "Łąki koło Mosiny"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nazwa_polska": "Gwiazdnica pospolita",
+    "nazwa_lacinska": "Stellaria media",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 2,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "marzec–kwiecień",
+    "min_temp_C": 2,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Cała roślina nadziemna",
+    "zastosowanie_kulinarne": "Sałatki, kanapki, smoothie, gotowane jak szpinak",
+    "zastosowanie_lecznicze": "Łagodzenie świądu skóry, wykrztuśne, witamina C",
+    "przepis_sugestia": "Sałatka wiosenna: gwiazdnica + rzodkiewka + oliwa + sól",
+    "wystepowanie_ogolne": "Cała Polska – ogrody, pola, przydroża, żyzne miejsca",
+    "regiony_polski": "Wszędzie pospolita – rośnie nawet pod śniegiem",
+    "sugestie_lokalizacji": "Ogrody działkowe, pola uprawne i skraje ścieżek w całej Polsce – zbieraj już w lutym!",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Stellaria media gwiazdnica pospolita",
+    "ciekawostka": "Jedna z pierwszych roślin jadalnych w roku – zbierasz ją w lutym spod śniegu!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela, Poznań"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nazwa_polska": "Komosa biała",
+    "nazwa_lacinska": "Chenopodium album",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–lipiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Młode liście i wierzchołki, nasiona",
+    "zastosowanie_kulinarne": "Gotowane jak szpinak, nasiona jak komosa ryżowa quinoa",
+    "zastosowanie_lecznicze": "Bogata w białko, żelazo, wapń, witaminę K",
+    "przepis_sugestia": "Gotowane liście z masłem i czosnkiem – zamiennik szpinaku",
+    "wystepowanie_ogolne": "Cała Polska – pola uprawne, ogrody, przydroża, ruderale",
+    "regiony_polski": "Wszędzie pospolita na terenach uprawnych",
+    "sugestie_lokalizacji": "Pola uprawne i ogródki w każdym regionie Polski – klasyczny chwast polny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawiera szczawiany – umiarkowane spożycie",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Chenopodium album komosa biała",
+    "ciekawostka": "Krewna quinoa – nasiona zawierają kompletne białko. W Europie jedzona od 9000 lat p.n.e.!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – pola uprawne"
+      },
+      {
+        "lat": 50.567,
+        "lng": 23.22,
+        "opis": "Roztocze – nieużytki polne"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nazwa_polska": "Babka lancetowata",
+    "nazwa_lacinska": "Plantago lanceolata",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "kwiecień–czerwiec",
+    "min_temp_C": 8,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Młode liście, nasiona",
+    "zastosowanie_kulinarne": "Liście do sałatek i zup, nasiona jako zagęstnik",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, rany, ukąszenia owadów",
+    "przepis_sugestia": "Herbatka: 2 łyżki suszu + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Cała Polska – łąki, drogi, trawniki – wszędzie",
+    "regiony_polski": "Absolutnie wszędzie w Polsce",
+    "sugestie_lokalizacji": "Każde pobocze drogi i łąka w Polsce – brak specjalnych miejsc",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Plantago lanceolata babka lancetowata",
+    "ciekawostka": "Zwana 'plastrem natury' – przyłożona do ukąszenia pszczoły natychmiast łagodzi ból.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty, Poznań"
+      },
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – łąki przy drodze"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nazwa_polska": "Marchew dzika",
+    "nazwa_lacinska": "Daucus carota",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Korzeń (1. rok), nasiona, liście",
+    "zastosowanie_kulinarne": "Korzeń jak marchew uprawna, nasiona jako przyprawa do chleba i mięs",
+    "zastosowanie_lecznicze": "Beta-karoten, działanie moczopędne, wspomaganie trawienia",
+    "przepis_sugestia": "Korzeń pieczony z ziołami, nasiona do chleba i mięs",
+    "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, suche zbocza, skraje pól",
+    "regiony_polski": "Pospolita na suchych łąkach i skrajach pól całej Polski",
+    "sugestie_lokalizacji": "Blisko Poznania: suche skarpy nad Wartą, Dolina Baryczy | Małopolska: murawy kserotermiczne Wyżyny Krakowskiej | Śląsk: ciepłe zbocza dolin | Roztocze: suche łąki",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Łatwo pomylić z TRUJĄCYM szczwołem plamistym! Marchew PACHNIE marchewką po rozgnieceniu liścia!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Daucus carota marchew dzika kwiat parasol",
+    "ciekawostka": "Centralny czerwony kwiatek w baldachu to 'mucha' – wabi owady drapieżne. Przodek marchewki uprawnej.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.224,
+        "lng": 19.834,
+        "opis": "Wyżyna Krakowska (Ojców) – murawy kserotermiczne"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – suche skarpy"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nazwa_polska": "Cykoria podróżnik",
+    "nazwa_lacinska": "Cichorium intybus",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 5,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "czerwiec–sierpień",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Liście gorzkie, korzeń prażony, kwiaty",
+    "zastosowanie_kulinarne": "Kawa cykoryjka z korzenia, liście do sałatek, kwiaty jadalne",
+    "zastosowanie_lecznicze": "Wspomaganie wątroby, działanie żółciopędne, prebiotyk (inulina)",
+    "przepis_sugestia": "Kawa cykoryjka: korzeń prażony i zmielony + mleko",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, łąki, nieużytki, skraje pól",
+    "regiony_polski": "Pospolita na suchych poboczach i nieużytkach całej Polski",
+    "sugestie_lokalizacji": "Pobocza dróg krajowych i wojewódzkich w całej Polsce – niebieskie kwiaty otwierają się o 5:00 rano",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Cichorium intybus cykoria podróżnik niebieski kwiat",
+    "ciekawostka": "Niebieskie kwiaty otwierają się dokładnie o 5:00 i zamykają po południu – naturalne horologium!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – suche pobocza"
+      },
+      {
+        "lat": 50.567,
+        "lng": 23.22,
+        "opis": "Roztocze – przydroża"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nazwa_polska": "Łopian większy",
+    "nazwa_lacinska": "Arctium lappa",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "kwiecień–maj liście; wrzesień korzeń",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Korzeń 1. rok, ogonki liściowe, młode pędy kwiatostanowe",
+    "zastosowanie_kulinarne": "Korzeń gotowany jak pietruszka – w Japonii gobo, podstawa diety",
+    "zastosowanie_lecznicze": "Oczyszczanie krwi, wspomaganie wątroby, działanie antybiotyczne",
+    "przepis_sugestia": "Gobo kinpira: korzeń w paski + sos sojowy + sezam + chili",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, zarośla przy zabudowaniach",
+    "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+    "sugestie_lokalizacji": "Zarośla przy zabudowaniach i rowy melioracyjne w każdym regionie Polski",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Arctium lappa łopian większy korzeń",
+    "ciekawostka": "Rzepy łopianu zainspirowały wynalezienie rzepów velcro w 1948 roku!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – zarośla"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – zarośla przy zabudowaniach"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nazwa_polska": "Szczawik zajęczy",
+    "nazwa_lacinska": "Oxalis acetosella",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 7,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście i kwiaty",
+    "zastosowanie_kulinarne": "Sałatki, dekoracja, lemoniadka z liści + woda + miód",
+    "zastosowanie_lecznicze": "Witamina C, działanie orzeźwiające i chłodzące",
+    "przepis_sugestia": "Lemoniadka: liście rozgnieć + zimna woda + miód + lód",
+    "wystepowanie_ogolne": "Cała Polska – cieniste lasy liściaste i mieszane",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Cieniste buczyny i grądy całej Polski: Białowieża, Bieszczady | Blisko Poznania: Puszcza Zielonka, lasy Rogalińskie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawiera szczawiany – nie jedz w nadmiarze",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Oxalis acetosella szczawik zajęczy biały kwiat las",
+    "ciekawostka": "To prawdziwa koniczyna szczęścia! Liście zwijają się nocą i rozwijają z pierwszym światłem.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – cieniste grądy"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – buczyny"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nazwa_polska": "Tasznik pospolity",
+    "nazwa_lacinska": "Capsella bursa-pastoris",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 3,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 3,
+    "dni_min_temp": 5,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Młode liście, nasiona",
+    "zastosowanie_kulinarne": "Sałatki, zupy, nasiona jako substytut pieprzu",
+    "zastosowanie_lecznicze": "Tamowanie krwawień wewnętrznych, regulacja ciśnienia",
+    "przepis_sugestia": "Dodaj liście do sałatki jarzynowej – pikantny akcent",
+    "wystepowanie_ogolne": "Cała Polska – pola, ogrody, przydroża, chodniki",
+    "regiony_polski": "Jeden z najpospolitszych chwastów polnych – wszędzie",
+    "sugestie_lokalizacji": "Pola uprawne i ogródki w każdej części Polski",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie stosować w ciąży – może pobudzać macicę",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Capsella bursa-pastoris tasznik pospolity",
+    "ciekawostka": "Torebki nasienne wyglądają jak serduszka – stąd łacińska nazwa 'sakiewka pasterza'.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki – obrzeża ogrodów"
+      },
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – pola uprawne"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nazwa_polska": "Rdestowiec ostrokończysty",
+    "nazwa_lacinska": "Reynoutria japonica",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 4,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode pędy do 30 cm przed kwitnieniem",
+    "zastosowanie_kulinarne": "Gotowane jak szparag, do kompotów i przetworów – kwaśny smak",
+    "zastosowanie_lecznicze": "Resweratrol (antynowotworowy!), działanie przeciwzapalne, detoks",
+    "przepis_sugestia": "Kompot rdestowcowy: pędy + jabłka + cukier – kwaśny i orzeźwiający",
+    "wystepowanie_ogolne": "Cała Polska – brzegi rzek, przydroża, nieużytki (gatunek inwazyjny!)",
+    "regiony_polski": "Masowy w całej Polsce wzdłuż rzek i autostrad",
+    "sugestie_lokalizacji": "Dosłownie wszędzie w Polsce – wzdłuż każdej rzeki, drogi i torów kolejowych",
+    "trujace_surowe": false,
+    "ostrzezenie": "Gatunek inwazyjny – zbierając, pomagasz przyrodzie!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Reynoutria japonica rdestowiec ostrokończysty pędy",
+    "ciekawostka": "Zawiera RESWERATROL – substancję z czerwonego wina słynną z działania antynowotworowego!",
+    "ochrona": "brak (inwazyjny)",
+    "koordinaty": [
+      {
+        "lat": 52.679,
+        "lng": 17.035,
+        "opis": "Dolina Noteci – brzegi rzeki"
+      },
+      {
+        "lat": 53.067,
+        "lng": 22.123,
+        "opis": "Narew – brzegi rzeki"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nazwa_polska": "Rzeżucha łąkowa",
+    "nazwa_lacinska": "Cardamine pratensis",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 3,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście, łodygi, kwiaty",
+    "zastosowanie_kulinarne": "Sałatki, kanapki, twarożek – lekko pikantna",
+    "zastosowanie_lecznicze": "Witamina C, działanie moczopędne, wspomaganie tarczycy (jod)",
+    "przepis_sugestia": "Twarożek ziołowy: ser + rzeżucha + czosnek + sól + pieprz",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rowów, podmokłe miejsca",
+    "regiony_polski": "Pospolita na podmokłych łąkach całej Polski",
+    "sugestie_lokalizacji": "Podmokłe łąki nad rzekami w całej Polsce | Blisko Poznania: łąki nad Wartą, doliną Baryczy | Mazury: wilgotne polany",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Cardamine pratensis rzeżucha łąkowa różowy kwiat",
+    "ciekawostka": "Kwitnie różowo jak dywan – jedna z piękniejszych wiosennych łąk!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrzański PN – podmokłe łąki"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – wilgotne łąki"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nazwa_polska": "Podbiał pospolity",
+    "nazwa_lacinska": "Tussilago farfara",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie warzywa",
+    "sezon_start": 2,
+    "sezon_koniec": 5,
+    "szczyt_zbioru": "marzec–kwiecień",
+    "min_temp_C": 3,
+    "dni_min_temp": 5,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty przed liśćmi, młode liście",
+    "zastosowanie_kulinarne": "Kwiaty do sałatek, liście smażone, herbata",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie wykrztuśne – klasyk",
+    "przepis_sugestia": "Herbata z kwiatów: 1 łyżka kwiatów + szklanka wrzątku – na kaszel",
+    "wystepowanie_ogolne": "Cała Polska – gliniaste skarpy, przydroża, rowy",
+    "regiony_polski": "Wszędzie pospolity – jeden z pierwszych wiosennych kwiatów",
+    "sugestie_lokalizacji": "Gliniaste skarpy i przydroża w całej Polsce – kwitnie już w lutym!",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawiera alkaloidy pirolizydynowe – nie stosować długotrwale wewnętrznie",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tussilago farfara podbiał pospolity żółty kwiat wiosna",
+    "ciekawostka": "Kwitnie PRZED liśćmi – po angielsku 'son before father'. Jeden z pierwszych kwiatów, już w lutym!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4715,
+        "lng": 16.9836,
+        "opis": "Góra Moraska – podmokłe polany"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nazwa_polska": "Krwawnik pospolity",
+    "nazwa_lacinska": "Achillea millefolium",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–sierpień",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Młode liście, kwiaty",
+    "zastosowanie_kulinarne": "Herbaty, przyprawa do mięs i serów, do piwa kraftowego (historycznie)",
+    "zastosowanie_lecznicze": "Tamowanie krwawień, działanie przeciwzapalne, wspomaganie trawienia",
+    "przepis_sugestia": "Herbatka: 1 łyżka kwiatów + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, skraje lasów, suche miejsca",
+    "regiony_polski": "Absolutnie wszędzie w Polsce",
+    "sugestie_lokalizacji": "Każda łąka i pobocze drogi w Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Może uczulać alergicznych na astrowate (słonecznik, rumianek)",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Achillea millefolium krwawnik biały kwiat łąka",
+    "ciekawostka": "Nazwa od Achillesa leczącego nim rany żołnierzy pod Troją. Używany w medycynie od 60 000 lat!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.607,
+        "lng": 16.576,
+        "opis": "Szamotuły – łąki kośne"
+      },
+      {
+        "lat": 50.567,
+        "lng": 23.22,
+        "opis": "Roztocze – suche łąki"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nazwa_polska": "Bluszczyk kurdybanek",
+    "nazwa_lacinska": "Glechoma hederacea",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 3,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście, kwiatki",
+    "zastosowanie_kulinarne": "Herbata, przyprawa do serów, sałatki, twarożek, omlety",
+    "zastosowanie_lecznicze": "Przeziębienie, kaszel, wykrztuśne, wspomaganie nerek",
+    "przepis_sugestia": "Twarożek ziołowy: ser + bluszczyk + sól + pieprz + czosnek",
+    "wystepowanie_ogolne": "Cała Polska – lasy, łąki, ogrody, trawniki – cieniste miejsca",
+    "regiony_polski": "Wszędzie pospolity",
+    "sugestie_lokalizacji": "Każdy park, ogród i las liściasty w Polsce – rośnie w cieniu",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Glechoma hederacea bluszczyk fioletowy kwiat",
+    "ciekawostka": "Historycznie używany do klarowania piwa przed chmielem. Intensywny aromat ziołowy!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – cieniste ścieżki"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nazwa_polska": "Czosnek niedźwiedzi",
+    "nazwa_lacinska": "Allium ursinum",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 3,
+    "sezon_koniec": 5,
+    "szczyt_zbioru": "kwiecień",
+    "min_temp_C": 7,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście, kwiaty (cebulki chronione!)",
+    "zastosowanie_kulinarne": "Pesto, masło czosnkowe, zupy, sałatki, twarożek",
+    "zastosowanie_lecznicze": "Obniżanie ciśnienia, działanie antybakteryjne, detoks, miażdżyca",
+    "przepis_sugestia": "Pesto: liście + parmezan + orzechy włoskie + oliwa + sól – 5 min roboty",
+    "wystepowanie_ogolne": "Lasy liściaste, wilgotne doliny rzeczne, buczyny",
+    "regiony_polski": "Podkarpacie i Bieszczady: masowe stanowiska | Małopolska: Ojców, Gorce | Śląsk: Beskidy | Wielkopolska: nad Wartą",
+    "sugestie_lokalizacji": "Najlepiej: Bieszczady (Wetlina, Cisna) | Beskid Śląski (dolina Olzy) | Tatry (Dolina Kościeliska) | Blisko Poznania: Las Pniewiański, Dolina Noteci k. Czarnkowa ~100 km | Mazowsze: nielicznie nad Bugiem",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Łatwo pomylić z TRUJĄCĄ konwalią majową! ZAWSZE sprawdź czosnkowy zapach po rozgnieceniu liścia!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Allium ursinum czosnek niedźwiedzi las biały",
+    "ciekawostka": "Niedźwiedzie jedzą go jako pierwszy posiłek po hibernacji. Sezon trwa tylko 3–4 tygodnie!",
+    "ochrona": "cebulki chronione – zbieraj tylko liście",
+    "koordinaty": [
+      {
+        "lat": 52.5186,
+        "lng": 17.1234,
+        "opis": "Puszcza Zielonka – buczyny"
+      },
+      {
+        "lat": 52.2318,
+        "lng": 17.0126,
+        "opis": "Lasy Rogalińskie"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "nazwa_polska": "Czosnaczek pospolity",
+    "nazwa_lacinska": "Alliaria petiolata",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 3,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście, kwiaty, nasiona, korzeń",
+    "zastosowanie_kulinarne": "Pesto, sałatki, kanapki, sos do makaronu, twarożek",
+    "zastosowanie_lecznicze": "Działanie antybakteryjne, wspomaganie trawienia, witamina C",
+    "przepis_sugestia": "Pesto czosnaczkowe: liście + nasiona słonecznika + oliwa + parmezan",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, zarośla, cieniste miejsca",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce – skraje leśne, cieniste ścieżki | Blisko Poznania: Puszcza Zielonka, lasy wokół Mosiny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Alliaria petiolata czosnaczek białe kwiaty",
+    "ciekawostka": "Jedna z nielicznych roślin łącząca smak czosnku i chrzanu przez cały sezon.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – skraje lasu"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – cieniste lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "nazwa_polska": "Kminek zwyczajny",
+    "nazwa_lacinska": "Carum carvi",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 5,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Nasiona, liście, korzeń 1. rok",
+    "zastosowanie_kulinarne": "Przyprawa do chleba, kapusty, mięs, serów, nalewek",
+    "zastosowanie_lecznicze": "Wzdęcia, kolki jelitowe, wspomaganie laktacji, trawienie",
+    "przepis_sugestia": "Chleb z kminkiem: 1 łyżka nasion do każdego bochenka",
+    "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, pastwiska",
+    "regiony_polski": "Pospolity na łąkach kośnych całej Polski",
+    "sugestie_lokalizacji": "Łąki kośne w całej Polsce | Blisko Poznania: Dolina Baryczy, okolice Ostrzeszowa | Mazowsze: łąki nadwiślańskie | Podkarpacie: łąki górskie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga na podobne baldaszkowate – sprawdź kminkowy zapach po rozgnieceniu",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Carum carvi kminek zwyczajny nasiona baldach",
+    "ciekawostka": "Najstarszy znaleziony kminek liczy 8000 lat – znaleziony w neolitycznym stanowisku w Szwajcarii.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.579,
+        "lng": 18.234,
+        "opis": "Gopło – łąki kośne"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – łąki"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "nazwa_polska": "Czosnek skalny",
+    "nazwa_lacinska": "Allium scorodoprasum",
+    "kategoria": "Rośliny zielne",
+    "podkategoria": "Dzikie przyprawy",
+    "sezon_start": 4,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Liście, cebulki, kwiaty",
+    "zastosowanie_kulinarne": "Zamiennik czosnku i pora, zupy, sałatki, masło ziołowe",
+    "zastosowanie_lecznicze": "Działanie antybakteryjne, obniżanie ciśnienia",
+    "przepis_sugestia": "Masło ziołowe: masło + posiekane liście + sól + pieprz",
+    "wystepowanie_ogolne": "Skraje lasów, zarośla, suche zbocza – środkowa i zachodnia Polska",
+    "regiony_polski": "Niezbyt pospolity – zachodnia Polska, suche zbocza",
+    "sugestie_lokalizacji": "Suche zbocza nad rzekami | Blisko Poznania: okolice Wolsztyna, skarpy nad Wartą | Śląsk: suche zbocza dolin",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawsze sprawdź czosnkowy zapach po rozgnieceniu!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Allium scorodoprasum czosnek skalny fioletowy",
+    "ciekawostka": "Rzadszy brat czosnku niedźwiedziego – smak między czosnkiem a porem. W Polsce mało znany.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – suche zbocza"
+      },
+      {
+        "lat": 49.82,
+        "lng": 18.75,
+        "opis": "Śląsk (Cieszyn) – ciepłe zbocza"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "nazwa_polska": "Dziurawiec zwyczajny",
+    "nazwa_lacinska": "Hypericum perforatum",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Kwiaty i ziele (nie korzeń)",
+    "zastosowanie_kulinarne": "Herbata, nalewka, olej dziurawcowy",
+    "zastosowanie_lecznicze": "Depresja łagodna, nerwica, gojenie ran i oparzeń, wspomaganie wątroby",
+    "przepis_sugestia": "Olej dziurawcowy: kwiaty + oliwa, maceruj 6 tygodni w słońcu – pięknie czerwony",
+    "wystepowanie_ogolne": "Cała Polska – łąki, skraje lasów, suche przydroża, zbocza",
+    "regiony_polski": "Pospolity na suchych łąkach i skrajach lasów całej Polski",
+    "sugestie_lokalizacji": "Suche łąki i skarpy w całej Polsce | Blisko Poznania: skraje Puszczy Zielonki, łąki koło Szamotuł | Mazury: suche polany | Bieszczady: górskie polany",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Wchodzi w interakcje z lekami (antykoncepcja, antydepresanty). Po spożyciu unikaj słońca – fotouczulenie!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Hypericum perforatum dziurawiec zwyczajny żółty kwiat",
+    "ciekawostka": "Naukowcy potwierdzili skuteczność w depresji łagodnej. Kwiaty po rozgnieceniu dają czerwony ślad – hipercyna!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – skraje lasu"
+      },
+      {
+        "lat": 50.567,
+        "lng": 23.22,
+        "opis": "Roztocze – suche łąki"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "nazwa_polska": "Żywokost lekarski",
+    "nazwa_lacinska": "Symphytum officinale",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–czerwiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Korzeń (zewnętrznie), młode liście (ograniczone)",
+    "zastosowanie_kulinarne": "Liście smażone w cieście tempura (okazjonalnie)",
+    "zastosowanie_lecznicze": "Gojenie złamań i skręceń (alantoina!), maść na stawy, okłady na rany",
+    "przepis_sugestia": "Maść żywokostowa: korzeń + smalec, gotuj 30 min, przecedź",
+    "wystepowanie_ogolne": "Cała Polska – brzegi rzek, rowy, wilgotne łąki",
+    "regiony_polski": "Pospolity nad rzekami i w rowach całej Polski",
+    "sugestie_lokalizacji": "Brzegi Warty, Wisły, Odry, Noteci | Blisko Poznania: brzegi Warty od Poznania do Śremu, dolina Noteci | Mazury: brzegi jezior",
+    "trujace_surowe": true,
+    "ostrzezenie": "OGRANICZONE spożycie wewnętrzne – alkaloidy pirolizydynowe szkodliwe dla wątroby. Stosuj GŁÓWNIE zewnętrznie!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Symphytum officinale żywokost fioletowy kwiat rzeka",
+    "ciekawostka": "Zwany 'kość-zrost' – alantoina przyspiesza regenerację tkanek. Grecy zawijali nim złamane kości!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty, Poznań – brzegi"
+      },
+      {
+        "lat": 52.679,
+        "lng": 17.035,
+        "opis": "Noteć – brzegi rzeki"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "nazwa_polska": "Dziewanna wielkokwiatowa",
+    "nazwa_lacinska": "Verbascum thapsus",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Kwiaty bez pręcików",
+    "zastosowanie_kulinarne": "Herbata kwiatowa, syrop",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie gardła i oskrzeli, chrypka",
+    "przepis_sugestia": "Syrop: kwiaty + miód + woda, gotuj do zgęstnienia",
+    "wystepowanie_ogolne": "Cała Polska – suche zbocza, ruderale, nasypy kolejowe",
+    "regiony_polski": "Pospolita na suchych skarpach i nasypach całej Polski",
+    "sugestie_lokalizacji": "Nasypy kolejowe i suche skarpy w całej Polsce | Blisko Poznania: nasypy kolejowe wokół Poznania | Mazowsze: nasypy i pobocza dróg",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Verbascum thapsus dziewanna żółta wysoka nasyp",
+    "ciekawostka": "Wysoka na 2 m, z kolumną żółtych kwiatów. Rzymianie maczali ją w łoju i używali jako pochodnie!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.472,
+        "lng": 16.984,
+        "opis": "Góra Moraska – suche nasypy"
+      },
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – suche skarpy"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "nazwa_polska": "Koniczyna czerwona",
+    "nazwa_lacinska": "Trifolium pratense",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty, liście, kiełki",
+    "zastosowanie_kulinarne": "Herbata z kwiatów, kiełki do sałatek, kwiaty do pieczywa i deserów",
+    "zastosowanie_lecznicze": "Menopauza (izoflawony!), kaszel, obniżanie cholesterolu",
+    "przepis_sugestia": "Herbata: kwiaty koniczyny + rumianek + miód – kojąca i smaczna",
+    "wystepowanie_ogolne": "Cała Polska – łąki, pastwiska, pobocza dróg",
+    "regiony_polski": "Wszędzie pospolita w Polsce",
+    "sugestie_lokalizacji": "Każda łąka w Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Trifolium pratense koniczyna czerwona różowy kwiat łąka",
+    "ciekawostka": "Miód koniczynowy to jeden z najsmaczniejszych. Izoflawony naukowo potwierdzone w leczeniu menopauzy.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki kośne"
+      },
+      {
+        "lat": 52.579,
+        "lng": 18.234,
+        "opis": "Gopło – łąki pastwiskowe"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "nazwa_polska": "Bylica pospolita",
+    "nazwa_lacinska": "Artemisia vulgaris",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Liście i pędy kwiatostanowe",
+    "zastosowanie_kulinarne": "Przyprawa do mięs tłustych (gęś, kaczka), tynktury, nalewki",
+    "zastosowanie_lecznicze": "Brak apetytu, problemy trawienne, pomocna przy menstruacji, robaki jelitowe",
+    "przepis_sugestia": "Przyprawa do gęsi: suszone liście do nadzienia i sosu",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, ruderale, zarośla, brzegi rzek",
+    "regiony_polski": "Wszędzie pospolita",
+    "sugestie_lokalizacji": "Pobocza dróg i nieurządzone tereny w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie stosować w ciąży – pobudza skurcze macicy!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Artemisia vulgaris bylica pospolita",
+    "ciekawostka": "Artemizja – bogini łowów. Przez wieki używana do odstraszania owadów i złych duchów.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – przydroża"
+      },
+      {
+        "lat": 52.652,
+        "lng": 16.819,
+        "opis": "Oborniki – przydroża"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "nazwa_polska": "Bylica piołun",
+    "nazwa_lacinska": "Artemisia absinthium",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Ziele – TYLKO małe ilości!",
+    "zastosowanie_kulinarne": "Wermut, absynt, nalewki gorzkie – digestif",
+    "zastosowanie_lecznicze": "Robaki jelitowe, brak apetytu, żółciopędne, trawienie",
+    "przepis_sugestia": "Nalewka gorzka: 3-4 gałązki + wódka + miód – digestif po tłustym posiłku",
+    "wystepowanie_ogolne": "Cała Polska – suche przydroża, ruderale, zbocza, nieużytki",
+    "regiony_polski": "Pospolity na suchych nieużytkach całej Polski",
+    "sugestie_lokalizacji": "Suche nieużytki, stare mury i ruiny w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "TOKSYCZNY w dużych ilościach! Thujon szkodliwy dla układu nerwowego. Bezwzględnie NIE w ciąży!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Artemisia absinthium bylica piołun srebrna szara",
+    "ciekawostka": "Składnik absyntu i wermutu. Thujon w dużych dawkach powoduje halucynacje – stąd legendy o absyncie!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – stare mury"
+      },
+      {
+        "lat": 50.483,
+        "lng": 16.352,
+        "opis": "Sudety (Góry Stołowe) – suche zbocza"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "nazwa_polska": "Skrzyp polny",
+    "nazwa_lacinska": "Equisetum arvense",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–sierpień",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Zielone gałązki letnie (NIE wiosenne kłosy)",
+    "zastosowanie_kulinarne": "Herbata, odwar",
+    "zastosowanie_lecznicze": "Wzmocnienie paznokci i włosów (krzem!), moczopędne, zapalenie pęcherza",
+    "przepis_sugestia": "Herbata: 2 łyżki suszu + szklanka wrzątku, gotuj 3 min (mocniejszy odwar)",
+    "wystepowanie_ogolne": "Cała Polska – pola, łąki, przydroża, rowy, wilgotne miejsca",
+    "regiony_polski": "Wszędzie pospolity",
+    "sugestie_lokalizacji": "Wilgotne pola i rowy w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "Surowy może być szkodliwy. Nie stosować długotrwale bez przerw. Nie mylić z innymi skrzypami!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Equisetum arvense skrzyp polny zielony",
+    "ciekawostka": "Żywa skamielina – ten sam gatunek rósł obok dinozaurów 300 milionów lat temu!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.379,
+        "lng": 16.235,
+        "opis": "Łąki torfowe k. Pniew – rowy"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – wilgotne łąki"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "nazwa_polska": "Rumianek pospolity",
+    "nazwa_lacinska": "Matricaria chamomilla",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Kwiaty",
+    "zastosowanie_kulinarne": "Herbata, syrop, do piwa kraftowego",
+    "zastosowanie_lecznicze": "Stres, bezsenność, kolki, stany zapalne, skóra (zewnętrznie)",
+    "przepis_sugestia": "Herbata: 2 łyżki kwiatów + szklanka wrzątku, parzyć 10 min + miód",
+    "wystepowanie_ogolne": "Cała Polska – pola, ogrody, przydroża, ugory",
+    "regiony_polski": "Wszędzie pospolity",
+    "sugestie_lokalizacji": "Pola i ugory w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uczulenie u alergicznych na astrowate",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Matricaria chamomilla rumianek pospolity biały kwiat",
+    "ciekawostka": "Apigenina w rumianku działa jak naturalna benzodiazepina – łagodny spokój bez uzależnienia!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.607,
+        "lng": 16.576,
+        "opis": "Szamotuły – pola uprawne"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – ugory polne"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "nazwa_polska": "Mięta polna",
+    "nazwa_lacinska": "Mentha arvensis",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście i łodygi",
+    "zastosowanie_kulinarne": "Herbata, sałatki, desery, sosy, napoje (mojito!)",
+    "zastosowanie_lecznicze": "Trawienie, wzdęcia, bóle głowy, przeziębienie, nausea",
+    "przepis_sugestia": "Herbata miętowa: liście + wrzątek, parzyć 5 min – orzeźwiająca",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rzek, rowy",
+    "regiony_polski": "Pospolita nad rzekami i na podmokłych łąkach całej Polski",
+    "sugestie_lokalizacji": "Brzegi rzek w całej Polsce – Warta, Wisła, Odra, Bug, Narew | Blisko Poznania: brzegi Warty i Obry",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Mentha arvensis mięta polna fioletowe kwiaty łąka",
+    "ciekawostka": "Dzika mięta pachnie intensywniej niż uprawna. Znajdź jeden kęp – znajdziesz całą kolonię!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty, Poznań – brzegi"
+      },
+      {
+        "lat": 53.067,
+        "lng": 22.123,
+        "opis": "Narew – wilgotne łąki nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "nazwa_polska": "Melisa lekarska",
+    "nazwa_lacinska": "Melissa officinalis",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Liście",
+    "zastosowanie_kulinarne": "Herbata, sałatki, desery, lody, napoje",
+    "zastosowanie_lecznicze": "Stres, bezsenność, trawienie, wirusostatyczna (przeziębienie, opryszczka)",
+    "przepis_sugestia": "Herbata: liście + rumianek + miód – idealna na wieczór i na sen",
+    "wystepowanie_ogolne": "Ogrody, przydroża, zarośla – dziczeje z uprawy",
+    "regiony_polski": "Dziczeje z uprawy w ogrodach całej Polski",
+    "sugestie_lokalizacji": "Ogrody wiejskie i skraje ogrodów poleśnych w całej Polsce | Blisko Poznania: ogrody koło Mosiny i Śremu",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Melissa officinalis melisa lekarska liście cytrynowa",
+    "ciekawostka": "Nawet Awicenna polecał melisę w XI wieku! Kwas rozmarynowy wspomaga pamięć.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki – ogrody przyległe"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – ogrody wiejskie"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "nazwa_polska": "Macierzanka piaskowa",
+    "nazwa_lacinska": "Thymus serpyllum",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Ziele kwiatowe i liście",
+    "zastosowanie_kulinarne": "Przyprawa do mięs, ryb, zup, herbata ziołowa, do grilla",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie antyseptyczne, trawienie",
+    "przepis_sugestia": "Mieszanka do grilla: suszona macierzanka + czosnek + sól + pieprz",
+    "wystepowanie_ogolne": "Suche piaski, murawy, wrzosowiska – cała Polska",
+    "regiony_polski": "Pospolita na suchych piaszczystych glebach całej Polski",
+    "sugestie_lokalizacji": "Suche piaski w całej Polsce | Blisko Poznania: Puszcza Notecka, wrzosowiska koło Wolsztyna | Góry: murawy ciepłolubne",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Thymus serpyllum macierzanka piaskowa różowy kwiat",
+    "ciekawostka": "Dziki tymianek – pachnie intensywniej niż ogrodowy. Chodzenie po nim w upalne południe = aromaterapia!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – suche piaski"
+      },
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – wrzosowiska"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "nazwa_polska": "Lebiodka pospolita (oregano dzikie)",
+    "nazwa_lacinska": "Origanum vulgare",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Liście i kwiaty",
+    "zastosowanie_kulinarne": "Przyprawa do mięs, pizzy, sosu pomidorowego, herbata",
+    "zastosowanie_lecznicze": "Działanie antybakteryjne, wspomaganie trawienia, kaszel",
+    "przepis_sugestia": "Suszone liście do pizzy i sosów – intensywniejsze niż sklepowe oregano!",
+    "wystepowanie_ogolne": "Ciepłe zbocza, skraje lasów, suche łąki – środkowa i południowa Polska",
+    "regiony_polski": "Pospolita w środkowej i południowej Polsce",
+    "sugestie_lokalizacji": "Blisko Poznania: suche skarpy nad Wartą, okolice Ostrzeszowa | Małopolska: murawy kserotermiczne | Śląsk: doliny Odry | Roztocze",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Origanum vulgare lebiodka pospolita różowy kwiat oregano",
+    "ciekawostka": "To jest PRAWDZIWE dzikie oregano – 3× intensywniejsze w smaku niż ze sklepu!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – murawy ciepłolubne"
+      },
+      {
+        "lat": 49.82,
+        "lng": 18.75,
+        "opis": "Śląsk (Cieszyn) – suche zbocza"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "nazwa_polska": "Chmiel zwyczajny",
+    "nazwa_lacinska": "Humulus lupulus",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 8,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 15,
+    "dni_min_temp": 20,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Szyszki (kwiaty żeńskie), młode pędy jak szparagi",
+    "zastosowanie_kulinarne": "Do warzenia piwa, herbata uspokajająca, młode pędy jak szparagi",
+    "zastosowanie_lecznicze": "Bezsenność, stres, działanie uspokajające, apetyt",
+    "przepis_sugestia": "Poduszeczka z szyszek chmielowych pod poduszkę – naturalny środek na bezsenność",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, płoty, brzegi rzek",
+    "regiony_polski": "Pospolity w zaroślach i żywopłotach całej Polski",
+    "sugestie_lokalizacji": "Zarośla i płoty wzdłuż rzek w całej Polsce | Blisko Poznania: zarośla nadwarciańskie, żywopłoty śródpolne",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Humulus lupulus chmiel zwyczajny szyszki zielone",
+    "ciekawostka": "Chmiel to ta sama rodzina co marihuana (Cannabaceae) – stąd jego uspokajające właściwości!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – zarośla nadrzeczne"
+      },
+      {
+        "lat": 52.55,
+        "lng": 21.9,
+        "opis": "Bug – zarośla nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "nazwa_polska": "Waleriana lekarska (kozłek)",
+    "nazwa_lacinska": "Valeriana officinalis",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Korzeń (zbiór wiosną lub jesienią), kwiaty",
+    "zastosowanie_kulinarne": "Herbata, nalewka uspokajająca",
+    "zastosowanie_lecznicze": "Bezsenność, stres, nerwica, nadciśnienie, działanie uspokajające",
+    "przepis_sugestia": "Herbata: 1 łyżka suszonego korzenia + szklanka wrzątku (brzydko pachnie – ale działa!)",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rzek, zarośla, skraje lasów",
+    "regiony_polski": "Pospolita nad rzekami i na wilgotnych łąkach całej Polski",
+    "sugestie_lokalizacji": "Wilgotne łąki i brzegi rzek w całej Polsce | Blisko Poznania: brzegi Warty, łąki w Dolinie Baryczy | Mazury: wilgotne łąki",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie prowadzić pojazdów po zażyciu dużych dawek – działanie uspokajające!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Valeriana officinalis kozłek lekarski biały kwiat",
+    "ciekawostka": "Korzenie silnie przyciągają koty jak kocimiętka! Zapach nieprzyjemny, ale skuteczność potwierdzona klinicznie.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – wilgotne łąki"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – wilgotne łąki nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "nazwa_polska": "Kocimiętka właściwa",
+    "nazwa_lacinska": "Nepeta cataria",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Liście i kwiaty",
+    "zastosowanie_kulinarne": "Herbata, przyprawa (miętowy smak)",
+    "zastosowanie_lecznicze": "Bezsenność u dzieci, kolki, działanie uspokajające, poty przy przeziębieniu",
+    "przepis_sugestia": "Herbata dla dzieci: kocimiętka + rumianek + melisa + miód",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, nieużytki, stare mury, ruiny",
+    "regiony_polski": "Niepospolita – szczególnie przy starych zabudowaniach",
+    "sugestie_lokalizacji": "Stare mury, ruiny i przydroża przy osadach | Blisko Poznania: stare mury Szamotuł, Kościana | Śląsk: zamki i stare miasteczka",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Nepeta cataria kocimiętka właściwa biała",
+    "ciekawostka": "Koty szaleją na jej punkcie – nepetalakton działa jak feromony. Używana jako herbata przez wieki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.607,
+        "lng": 16.576,
+        "opis": "Szamotuły – stare mury miejskie"
+      },
+      {
+        "lat": 50.867,
+        "lng": 20.923,
+        "opis": "Świętokrzyskie – ruiny przy drogach"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "nazwa_polska": "Oman wielki",
+    "nazwa_lacinska": "Inula helenium",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Korzeń (lecznicze), liście",
+    "zastosowanie_kulinarne": "Korzeń jako przyprawa, dawniej jako warzywo",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, wykrztuśne, wspomaganie odporności (inulina!)",
+    "przepis_sugestia": "Nalewka omanu: korzeń + miód + wódka – tradycyjny środek na kaszel",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, brzegi rzek, wilgotne łąki, skraje lasów",
+    "regiony_polski": "Pospolity w wilgotnych miejscach całej Polski",
+    "sugestie_lokalizacji": "Wilgotne zarośla i brzegi rzek w całej Polsce | Blisko Poznania: zarośla nadwarciańskie | Mazury: doliny rzek",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Inula helenium oman wielki żółty kwiat duży",
+    "ciekawostka": "Jedna z największych roślin zielarskich – może mieć 2 m wysokości! Korzenie = inulina (prebiotyk).",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – wilgotne zarośla"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – zarośla nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "nazwa_polska": "Wiązówka błotna (tawułka)",
+    "nazwa_lacinska": "Filipendula ulmaria",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kwiaty i liście",
+    "zastosowanie_kulinarne": "Herbata, syrop o smaku migdałowo-waniliowym, do piw i nalewek",
+    "zastosowanie_lecznicze": "Ból głowy, gorączka, reumatyzm, działanie przeciwzapalne – zawiera salicylany!",
+    "przepis_sugestia": "Syrop wiązówkowy: kwiaty + cukier + woda – naturalna aspiryna!",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rzek, szuwary",
+    "regiony_polski": "Pospolita na wilgotnych łąkach i brzegach rzek całej Polski",
+    "sugestie_lokalizacji": "Wilgotne łąki i brzegi rzek w całej Polsce | Blisko Poznania: brzegi Warty i Obry, łąki w Dolinie Baryczy | Mazury",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zawiera salicylany – nie stosować przy alergii na aspirynę!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Filipendula ulmaria wiązówka błotna biały kwiat łąka",
+    "ciekawostka": "ASPIRYNA pochodzi właśnie od wiązówki! Kwas acetylosalicylowy syntezowano z tej rośliny w 1853 roku.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – wilgotne łąki"
+      },
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – brzegi rzeki"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "nazwa_polska": "Dzięgiel litwor",
+    "nazwa_lacinska": "Angelica archangelica",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 5,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode łodygi, korzenie, nasiona",
+    "zastosowanie_kulinarne": "Kandyzowane łodygi, nalewki, likiery (Chartreuse, Bénédictine)",
+    "zastosowanie_lecznicze": "Trawienie, wzdęcia, bronchit, działanie wykrztuśne",
+    "przepis_sugestia": "Kandyzowany dzięgiel: łodygi + syrop cukrowy, susz – słodka przyprawa",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne brzegi rzek, zarośla, góry",
+    "regiony_polski": "Pospolity nad rzekami i w górach całej Polski",
+    "sugestie_lokalizacji": "Brzegi Biebrzy, Narwi | Górskie potoki w Tatrach i Bieszczadach | Blisko Poznania: doliny rzek Wlkp. (rzadszy), ~150 km: Noteć",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Łatwo pomylić z TRUJĄCYM szczwołem lub barszczem Sosnowskiego! Sprawdź zapach i lokalizację!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Angelica archangelica dzięgiel litwor duży baldach rzeka",
+    "ciekawostka": "Składnik Chartreuse i Bénédictine. Przez wieki uznawany za roślinę chroniącą przed czarną magią!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – wilgotne zarośla"
+      },
+      {
+        "lat": 49.256,
+        "lng": 19.867,
+        "opis": "Tatry (Dolina Kościeliska) – górskie potoki"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "nazwa_polska": "Wrotycz pospolity",
+    "nazwa_lacinska": "Tanacetum vulgare",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Ziele – TYLKO małe ilości!",
+    "zastosowanie_kulinarne": "Przyprawa do mięs tłustych (ostrożnie, małe ilości)",
+    "zastosowanie_lecznicze": "Robaki jelitowe, odstraszanie owadów",
+    "przepis_sugestia": "Suszone liście w szafie – naturalny odpędzacz moli i owadów",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, zarośla, ruderale, brzegi rzek",
+    "regiony_polski": "Pospolity wszędzie",
+    "sugestie_lokalizacji": "Pobocza dróg i nieuporządkowane tereny w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: Trujący w dużych ilościach! Tylko małe ilości. Bezwzględnie NIE w ciąży!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tanacetum vulgare wrotycz pospolity żółte guziki",
+    "ciekawostka": "Żółte guziki wrotyczu to naturalny insektycyd – saszetki z suszem eliminują mole w szafie!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – przydroża"
+      },
+      {
+        "lat": 52.652,
+        "lng": 16.819,
+        "opis": "Oborniki – pobocza dróg"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "nazwa_polska": "Kocanka piaskowa (nieśmiertelnik)",
+    "nazwa_lacinska": "Helichrysum arenarium",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Kwiaty (koszyczki kwiatowe)",
+    "zastosowanie_kulinarne": "Herbata, wywar",
+    "zastosowanie_lecznicze": "Wspomaganie wątroby i żółci, działanie żółciopędne, leczenie żółtaczki",
+    "przepis_sugestia": "Herbata: 1 łyżka kwiatów + szklanka wrzątku, parzyć 15 min",
+    "wystepowanie_ogolne": "Suche piaski, wrzosowiska, suche łąki – Polska środkowa i zachodnia",
+    "regiony_polski": "Niziny piaszczyste: Wielkopolska, Kujawy, Mazowsze",
+    "sugestie_lokalizacji": "Suche piaski w całej Polsce | Blisko Poznania: Puszcza Notecka, wrzosowiska koło Wolsztyna | Mazowsze: Puszcza Kampinowska",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Helichrysum arenarium kocanka piaskowa żółta",
+    "ciekawostka": "Kwiaty nie więdną po zerwaniu – stąd 'nieśmiertelnik'. Suszone trzymają kolor przez lata!",
+    "ochrona": "Objęta ochroną częściową – zbieraj tylko kwiaty!",
+    "koordinaty": [
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – wrzosowiska"
+      },
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – suche piaski"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "nazwa_polska": "Szanta zwyczajna",
+    "nazwa_lacinska": "Marrubium vulgare",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Ziele",
+    "zastosowanie_kulinarne": "Herbata, likiery ziołowe",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, brak apetytu, wspomaganie trawienia",
+    "przepis_sugestia": "Herbata: 1 łyżka ziela + szklanka wrzątku, gorzki smak – dosłódź miodem",
+    "wystepowanie_ogolne": "Suche, ciepłe miejsca, przydroża, stare mury – południe Polski",
+    "regiony_polski": "Głównie południe i centrum Polski",
+    "sugestie_lokalizacji": "Stare mury i suche nieużytki w południowej Polsce | Śląsk, Małopolska, Kielecczyzna | Blisko Poznania: rzadka",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Marrubium vulgare szanta zwyczajna biała",
+    "ciekawostka": "Składnik cukierków horehound candy na kaszel w USA i UK. Stosowana od starożytności.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.82,
+        "lng": 18.75,
+        "opis": "Śląsk (Cieszyn) – suche stare mury"
+      },
+      {
+        "lat": 50.867,
+        "lng": 20.923,
+        "opis": "Świętokrzyskie – suche nieużytki"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "nazwa_polska": "Krwawnica pospolita",
+    "nazwa_lacinska": "Lythrum salicaria",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Ziele kwiatowe",
+    "zastosowanie_kulinarne": "Herbata, naturalny barwnik spożywczy (różowy/fioletowy)",
+    "zastosowanie_lecznicze": "Biegunka, zapalenie jelita, działanie ściągające, przeciwbiegunkowe",
+    "przepis_sugestia": "Herbata: 1 łyżka kwiatów + szklanka wrzątku, parzyć 15 min",
+    "wystepowanie_ogolne": "Cała Polska – brzegi rzek, stawy, bagna, wilgotne łąki",
+    "regiony_polski": "Pospolita nad rzekami i na bagnach całej Polski",
+    "sugestie_lokalizacji": "Brzegi Warty, Wisły, Noteci | Biebrza, Narew: masowe stanowiska | Blisko Poznania: brzegi Warty i Obry",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Lythrum salicaria krwawnica pospolita różowa woda",
+    "ciekawostka": "Piękne różowo-fioletowe kwiatostany tworzą naturalny barwnik. Kluczowy gatunek dla pszczół latem!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – brzegi rzeki"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – szuwary nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "nazwa_polska": "Nagietek lekarski",
+    "nazwa_lacinska": "Calendula officinalis",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Płatki kwiatowe",
+    "zastosowanie_kulinarne": "Sałatki (barwnik), ryż, zupy (zamiast szafranu)",
+    "zastosowanie_lecznicze": "Gojenie ran, egzema, stany zapalne skóry – must-have domowej apteczki",
+    "przepis_sugestia": "Maść nagietkowa: płatki + lanolina lub smalec, podgrzej 30 min, przecedź",
+    "wystepowanie_ogolne": "Ogrody, pola, przydroża – głównie uprawiany, dziczeje",
+    "regiony_polski": "W ogrodach i na miedzach całej Polski",
+    "sugestie_lokalizacji": "Ogrody działkowe i zielniki w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Calendula officinalis nagietek lekarski pomarańczowy kwiat",
+    "ciekawostka": "Herb of the Sun – kwitnie wzdłuż ruchu słońca. Maść nagietkowa to must-have każdej domowej apteczki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki – ogrody"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela – ogrody"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "nazwa_polska": "Przywrotnik pospolity",
+    "nazwa_lacinska": "Alchemilla vulgaris",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–sierpień",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Liście i ziele",
+    "zastosowanie_kulinarne": "Herbata, dodatek do sałatek",
+    "zastosowanie_lecznicze": "Regulacja cyklu miesiączkowego, wspomaganie trawienia, gojenie ran",
+    "przepis_sugestia": "Herbata: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Cała Polska – łąki, skraje lasów, góry",
+    "regiony_polski": "Pospolity na łąkach kośnych i w górach całej Polski",
+    "sugestie_lokalizacji": "Łąki kośne w całej Polsce | Tatry, Beskidy, Bieszczady | Blisko Poznania: łąki koło Mosiny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Alchemilla vulgaris przywrotnik pospolity zielony",
+    "ciekawostka": "Zapomniane zioło kobiet – reguluje hormony. Alchemicy zbierali z jego liści 'niebiańską rosę' do eliksirów!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki kośne"
+      },
+      {
+        "lat": 49.234,
+        "lng": 20.012,
+        "opis": "Tatry (Hala Gąsienicowa) – górskie łąki"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "nazwa_polska": "Marzanka wonna",
+    "nazwa_lacinska": "Galium odoratum",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 4,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Ziele kwiatowe",
+    "zastosowanie_kulinarne": "Do wina (Maibowle), herbata, nalewki",
+    "zastosowanie_lecznicze": "Działanie uspokajające, moczopędne, wspomaganie snu",
+    "przepis_sugestia": "Maibowle: ziele + białe wino + truskawki + cukier – tradycyjny napój wiosenny",
+    "wystepowanie_ogolne": "Cieniste lasy liściaste, buczyny – środkowa i zachodnia Polska",
+    "regiony_polski": "Pospolita w cienistych lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Cieniste buczyny i grądy w całej Polsce | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka | Białowieża",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie spożywać w dużych ilościach – bóle głowy",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Galium odoratum marzanka wonna biała las cienisty",
+    "ciekawostka": "Składnik tradycyjnego wina majowego Maibowle w Niemczech. Zapach jak świeże siano po uschnięciu!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – cieniste buczyny"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – grądy"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "nazwa_polska": "Glistnik jaskółcze ziele",
+    "nazwa_lacinska": "Chelidonium majus",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–czerwiec",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Sok mleczny (zewnętrznie!), ziele do naparów",
+    "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+    "zastosowanie_lecznicze": "Brodawki (zewnętrznie!), problemy żołądkowe, działanie żółciopędne",
+    "przepis_sugestia": "Na brodawki: kroplę soku mlecznego nałóż punktowo, powtarzaj tygodniami",
+    "wystepowanie_ogolne": "Cała Polska – mury, przydroża, zarośla przy zabudowaniach, ruiny",
+    "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+    "sugestie_lokalizacji": "Stare mury, przydroża i ruiny przy zabudowaniach w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "TOKSYCZNY wewnętrznie! Sok mleczny drażni skórę i błony śluzowe. TYLKO zewnętrznie na brodawki!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Chelidonium majus glistnik jaskółcze ziele żółte kwiaty",
+    "ciekawostka": "Żółty sok mleczny jest silnie trujący, ale jednocześnie najskuteczniejszym ziołowym środkiem na brodawki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela – stare mury"
+      },
+      {
+        "lat": 52.607,
+        "lng": 16.576,
+        "opis": "Szamotuły – ruiny przy zabudowaniach"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "nazwa_polska": "Fiołek trójbarwny (bratek polny)",
+    "nazwa_lacinska": "Viola tricolor",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–sierpień",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty i ziele",
+    "zastosowanie_kulinarne": "Herbata, kwiaty do sałatek i dekoracji",
+    "zastosowanie_lecznicze": "Choroby skóry (egzema, trądzik), działanie moczopędne, wykrztuśne",
+    "przepis_sugestia": "Herbata: 1 łyżka mieszanki kwiatów i ziela + szklanka wrzątku",
+    "wystepowanie_ogolne": "Cała Polska – pola, łąki, przydroża",
+    "regiony_polski": "Pospolity na polach uprawnych i łąkach całej Polski",
+    "sugestie_lokalizacji": "Pola uprawne i łąki w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Viola tricolor fiołek trójbarwny bratek polny",
+    "ciekawostka": "Dziki przodek ogrodowych bratków. W medycynie ludowej przez wieki stosowany na choroby skóry!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – pola uprawne"
+      },
+      {
+        "lat": 50.567,
+        "lng": 23.22,
+        "opis": "Roztocze – łąki"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "nazwa_polska": "Szakłak pospolity",
+    "nazwa_lacinska": "Rhamnus cathartica",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 9,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce (lecznicze, OSTROŻNIE)",
+    "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+    "zastosowanie_lecznicze": "Zaparcia (silne przeczyszczające!), choroby skóry",
+    "przepis_sugestia": "Syrop z owoców: TYLKO pod nadzorem medycznym!",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, żywopłoty",
+    "regiony_polski": "Pospolity w zaroślach całej Polski",
+    "sugestie_lokalizacji": "Zarośla i żywopłoty śródpolne w całej Polsce | Blisko Poznania: zarośla koło Śremu i Kościana",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: Bardzo silne działanie przeczyszczające! Tylko pod kontrolą medyczną. Nie dla dzieci!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Rhamnus cathartica szakłak pospolity czarne owoce",
+    "ciekawostka": "Niegdyś główny środek przeczyszczający w Europie. Dziś zastąpiony lekami, ale wciąż używany w ziołolecznictwie.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – zarośla śródpolne"
+      },
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – żywopłoty"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "nazwa_polska": "Kruszyna pospolita",
+    "nazwa_lacinska": "Frangula alnus",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 9,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kora (lecznicza – co najmniej 1 rok suszona!)",
+    "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+    "zastosowanie_lecznicze": "Zaparcia (łagodniejsze niż szakłak), kamica żółciowa",
+    "przepis_sugestia": "Odwar z kory: 1 łyżka suszonej kory + szklanka wody, gotuj 15 min",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, wilgotne miejsca",
+    "regiony_polski": "Pospolita w zaroślach całej Polski",
+    "sugestie_lokalizacji": "Wilgotne zarośla i skraje lasów w całej Polsce | Blisko Poznania: zarośla koło Mosiny, Puszcza Zielonka",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: Świeża kora wywołuje wymioty i silne biegunki! Stosować TYLKO korę suszoną minimum 1 rok!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Frangula alnus kruszyna pospolita czerwone czarne owoce",
+    "ciekawostka": "Kora musi leżakować rok przed użyciem – świeża jest toksyczna! Cierpliwość jest warunkiem bezpieczeństwa.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – wilgotne zarośla"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – zarośla leśne"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "nazwa_polska": "Czarnuszka siewna",
+    "nazwa_lacinska": "Nigella sativa",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Nasiona",
+    "zastosowanie_kulinarne": "Przyprawa do chleba, pieczywa, sera, potraw bliskowschodnich",
+    "zastosowanie_lecznicze": "Wspomaganie odporności, działanie antybakteryjne, astma, alergie",
+    "przepis_sugestia": "Chleb z czarnuszką: nasiona posyp na spód bochenka przed pieczeniem",
+    "wystepowanie_ogolne": "Uprawiana, dziczeje na polach – Polska centralna",
+    "regiony_polski": "Głównie uprawiana w ogrodach i na polach całej Polski",
+    "sugestie_lokalizacji": "Ogrody i zielniki w całej Polsce | Blisko Poznania: ogrody działkowe",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Nigella sativa czarnuszka siewna niebieska",
+    "ciekawostka": "Zwana 'lekiem na wszystko z wyjątkiem śmierci' w medycynie arabskiej. Olej z czarnuszki to superfood!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki – ogrody"
+      },
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – ogrody zielne"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "nazwa_polska": "Wierzbownica kiprzyca",
+    "nazwa_lacinska": "Epilobium angustifolium",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Liście, kwiaty, młode pędy wiosna",
+    "zastosowanie_kulinarne": "Herbata z Koporye, sałatki z młodych pędów",
+    "zastosowanie_lecznicze": "Wspomaganie prostaty, działanie przeciwzapalne, rany",
+    "przepis_sugestia": "Herbata z wierzbownicy: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Cała Polska – wyręby, skraje lasów, nasypy, suche łąki",
+    "regiony_polski": "Pospolita na wyrębach i skrajach lasów całej Polski",
+    "sugestie_lokalizacji": "Wyręby leśne w całej Polsce po wycince | Blisko Poznania: wyręby w Puszczy Zielonce, Puszczy Noteckiej",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Epilobium angustifolium wierzbownica kiprzyca różowa",
+    "ciekawostka": "W Rosji zwana herbatą z Koporye – była najpopularniejszą herbatą zanim przywieziono herbatę z Chin!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – wyręby"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – wyręby sosnowe"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "nazwa_polska": "Bylica boże drzewko",
+    "nazwa_lacinska": "Artemisia abrotanum",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Liście i pędy",
+    "zastosowanie_kulinarne": "Przyprawa do mięs, nalewki, herbata",
+    "zastosowanie_lecznicze": "Robaki jelitowe, wzmacnianie odporności, działanie żółciopędne",
+    "przepis_sugestia": "Herbata: 1 łyżka liści + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Suche miejsca, ogrody, stare wiejskie zagrody – dziczeje",
+    "regiony_polski": "Dziczeje z uprawy w całej Polsce – przy starych wsiach",
+    "sugestie_lokalizacji": "Stare wiejskie zagrody i ogrody w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie stosować w ciąży!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Artemisia abrotanum bylica boże drzewko",
+    "ciekawostka": "Zwana bożym drzewkiem. Od wieków w polskich ogrodach jako roślina odpędzająca złe duchy.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – stare ogrody wiejskie"
+      },
+      {
+        "lat": 52.652,
+        "lng": 16.819,
+        "opis": "Oborniki – wiejskie zagrody"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "nazwa_polska": "Lnica pospolita",
+    "nazwa_lacinska": "Linaria vulgaris",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Ziele kwiatowe",
+    "zastosowanie_kulinarne": "Herbata",
+    "zastosowanie_lecznicze": "Choroby skóry, działanie moczopędne, zewnętrznie na hemoroidy",
+    "przepis_sugestia": "Napar do użytku zewnętrznego: 1 łyżka + szklanka wrzątku",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, pola, suche skarpy",
+    "regiony_polski": "Pospolita na suchych nieużytkach całej Polski",
+    "sugestie_lokalizacji": "Suche pobocza dróg i nasypy kolejowe w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "Nie stosować wewnętrznie w dużych ilościach – zawiera substancje toksyczne",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Linaria vulgaris lnica pospolita żółty kwiat",
+    "ciekawostka": "Kwiatek jak miniaturowy lwi pysk – zaprojektowany wyłącznie dla trzmieli, które mają siłę go otworzyć!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.501,
+        "lng": 16.968,
+        "opis": "Biedrusko – suche nasypy"
+      },
+      {
+        "lat": 50.125,
+        "lng": 19.925,
+        "opis": "Wyżyna Krakowska – suche skarpy"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "nazwa_polska": "Goryczka zwyczajna",
+    "nazwa_lacinska": "Gentiana pneumonanthe",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Korzeń (nalewka, napar)",
+    "zastosowanie_kulinarne": "Nalewka gorzka (aperitif), bitters",
+    "zastosowanie_lecznicze": "Brak apetytu, problemy żołądkowe, wspomaganie wątroby",
+    "przepis_sugestia": "Krople żołądkowe: korzeń + spirytus, maceruj 4 tygodnie",
+    "wystepowanie_ogolne": "Wilgotne łąki torfowe, wrzosowiska – rozrzucona w Polsce",
+    "regiony_polski": "Wilgotne łąki torfowiskowe – Mazury, Podlasie, Niziny",
+    "sugestie_lokalizacji": "Wilgotne łąki torfowe w Polsce | Blisko Poznania: łąki koło Pniew | Mazury: Pojezierze Mazurskie | Biebrza",
+    "trujace_surowe": false,
+    "ostrzezenie": "Bardzo gorzka – stosuj w małych ilościach",
+    "trudnosc_zbioru": "trudny",
+    "img_search": "Gentiana pneumonanthe goryczka niebieski kwiat łąka",
+    "ciekawostka": "Producenci bitters i wermutu używają korzeni goryczki od wieków. Najgorzejsza substancja roślinna!",
+    "ochrona": "OBJĘTA OCHRONĄ – nie zbieraj korzeni!",
+    "koordinaty": [
+      {
+        "lat": 52.379,
+        "lng": 16.235,
+        "opis": "Łąki torfowe k. Pniew"
+      },
+      {
+        "lat": 53.789,
+        "lng": 21.568,
+        "opis": "Pojezierze Mazurskie – wilgotne łąki"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "nazwa_polska": "Przywrotnik alpejski",
+    "nazwa_lacinska": "Alchemilla alpina",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zapomniane zioła",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 8,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście i ziele",
+    "zastosowanie_kulinarne": "Herbata",
+    "zastosowanie_lecznicze": "Jak przywrotnik pospolity – wspomaganie kobiecych dolegliwości",
+    "przepis_sugestia": "Herbata: 1 łyżka + szklanka wrzątku",
+    "wystepowanie_ogolne": "Góry – Tatry, Beskidy, Bieszczady",
+    "regiony_polski": "Wyłącznie w górach powyżej 1000 m n.p.m.",
+    "sugestie_lokalizacji": "Tatry: hale i polany | Beskidy: grzbiety górskie | Bieszczady: połoniny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Alchemilla alpina przywrotnik alpejski góry",
+    "ciekawostka": "Górski brat przywrotnika – srebrzyste spodnie liści to charakterystyczny znak.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.234,
+        "lng": 20.012,
+        "opis": "Tatry (Hala Gąsienicowa) – górskie hale"
+      },
+      {
+        "lat": 49.067,
+        "lng": 22.734,
+        "opis": "Bieszczady – połoniny"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "nazwa_polska": "Dzięgiel leśny",
+    "nazwa_lacinska": "Angelica sylvestris",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście, nasiona (ostrożnie)",
+    "zastosowanie_kulinarne": "Herbata, przyprawa",
+    "zastosowanie_lecznicze": "Podobne do dzięgla litworu, łagodniejsze działanie",
+    "przepis_sugestia": "Herbata: szczyptę nasion + szklanka wrzątku",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne lasy, zarośla, skraje łąk",
+    "regiony_polski": "Pospolity w wilgotnych lasach całej Polski",
+    "sugestie_lokalizacji": "Wilgotne zarośla nad rzekami w całej Polsce | Blisko Poznania: doliny rzek Wielkopolski",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga na fotouczulenie – po kontakcie z rośliną unikaj silnego słońca!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Angelica sylvestris dzięgiel leśny biały baldach",
+    "ciekawostka": "Powszechniejszy niż litwor – rośnie w wilgotnych zaroślach leśnych całej Polski.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – wilgotne zarośla"
+      },
+      {
+        "lat": 52.679,
+        "lng": 17.035,
+        "opis": "Noteć – zarośla nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "nazwa_polska": "Złocień pospolity (margeryta)",
+    "nazwa_lacinska": "Leucanthemum vulgare",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty i ziele",
+    "zastosowanie_kulinarne": "Herbata",
+    "zastosowanie_lecznicze": "Robaki jelitowe, działanie przeciwgorączkowe, rany (zewnętrznie)",
+    "przepis_sugestia": "Herbata: 1 łyżka kwiatów + szklanka wrzątku, parzyć 10 min",
+    "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, skraje pól",
+    "regiony_polski": "Pospolita wszędzie",
+    "sugestie_lokalizacji": "Każda łąka w Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uczulenie u alergicznych na astrowate",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Leucanthemum vulgare złocień pospolity margeryta biała",
+    "ciekawostka": "Popularna margeryta – nie tylko piękna, ale też lecznicza!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – łąki kośne"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "nazwa_polska": "Glistnik jaskółcze ziele (lecznicze)",
+    "nazwa_lacinska": "Chelidonium majus",
+    "kategoria": "Rośliny lecznicze",
+    "podkategoria": "Zioła lecznicze",
+    "sezon_start": 4,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–czerwiec",
+    "min_temp_C": 8,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Ziele do naparów (ostrożnie)",
+    "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+    "zastosowanie_lecznicze": "Wspomaganie wątroby i żółci, działanie żółciopędne, skurcze dróg żółciowych",
+    "przepis_sugestia": "Napar: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min (MAŁE DAWKI!)",
+    "wystepowanie_ogolne": "Cała Polska – mury, przydroża, zarośla przy zabudowaniach",
+    "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+    "sugestie_lokalizacji": "Stare mury i przydroża przy zabudowaniach w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "TOKSYCZNY w dużych ilościach! Stosować ostrożnie – tylko małe dawki i krótkie kuracje!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Chelidonium majus glistnik sok mleczny",
+    "ciekawostka": "Żółty sok mleczny – trujący, ale jedno z najskuteczniejszych ziołowych środków na wątrobę i brodawki.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela – stare mury"
+      },
+      {
+        "lat": 52.472,
+        "lng": 16.984,
+        "opis": "Góra Moraska – zarośla"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "nazwa_polska": "Fiołek wonny",
+    "nazwa_lacinska": "Viola odorata",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Jadalne kwiaty",
+    "sezon_start": 3,
+    "sezon_koniec": 5,
+    "szczyt_zbioru": "marzec–kwiecień",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty i liście",
+    "zastosowanie_kulinarne": "Desery, syropy, cukierki, sałatki, dekoracja cukiernicza",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, działanie wykrztuśne",
+    "przepis_sugestia": "Syrop fiołkowy: kwiaty + cukier + woda – piękny fiolet!",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, wilgotne łąki, ogrody",
+    "regiony_polski": "Pospolity w ogrodach i skrajach lasów liściastych",
+    "sugestie_lokalizacji": "Parki i ogrody w całej Polsce wiosną | Blisko Poznania: parki Poznania, skraje lasów liściastych",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Viola odorata fiołek wonny fioletowy kwiat",
+    "ciekawostka": "Kwiaty barwią cukier na niebiesko-fioletowo – naturalne barwniki cukiernicze od wieków!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – skraje lasu"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "nazwa_polska": "Pierwiosnek lekarski",
+    "nazwa_lacinska": "Primula veris",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Jadalne kwiaty",
+    "sezon_start": 4,
+    "sezon_koniec": 5,
+    "szczyt_zbioru": "kwiecień",
+    "min_temp_C": 7,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty i liście",
+    "zastosowanie_kulinarne": "Herbata, sałatki, wino kwiatowe, nalewki",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie wykrztuśne, reumatyzm",
+    "przepis_sugestia": "Herbata wiosenna: kwiaty + liście + miód – kuracja zdrowotna",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, skraje lasów",
+    "regiony_polski": "Pospolity na łąkach kośnych całej Polski",
+    "sugestie_lokalizacji": "Łąki kośne i skraje lasów w całej Polsce | Blisko Poznania: łąki koło Mosiny, Dolina Baryczy | Małopolska: łąki podkarpackie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Primula veris pierwiosnek lekarski żółty kwiat łąka",
+    "ciekawostka": "Jeden z pierwszych wiosennych kwiatów – symbol wiosny od pokoleń.",
+    "ochrona": "Objęty ochroną – zbieraj tylko kwiaty, nigdy nie wyrywaj całej rośliny!",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki kośne"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – łąki"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "nazwa_polska": "Akacja (robinia biała) – kwiat",
+    "nazwa_lacinska": "Robinia pseudoacacia",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Kwiaty drzew",
+    "sezon_start": 5,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "maj–czerwiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "TYLKO kwiaty – reszta TRUJĄCA!",
+    "zastosowanie_kulinarne": "Frytki z kwiatów, syrop akacjowy, miód akacjowy, lody",
+    "zastosowanie_lecznicze": "Kwiaty – działanie uspokajające i rozkurczowe",
+    "przepis_sugestia": "Frytki z kwiatów akacji: grona kwiatowe + ciasto naleśnikowe + olej",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, parki, wszędzie nasadzona",
+    "regiony_polski": "Gatunek inwazyjny – wszędzie w Polsce",
+    "sugestie_lokalizacji": "Skraje parków i dróg w całej Polsce | Blisko Poznania: Puszcza Notecka, parki Poznania, aleje przy drogach",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: TYLKO kwiaty jadalne! Liście, kora, nasiona, strąki – TRUJĄCE (robinina, fitotoksyny)!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Robinia pseudoacacia akacja kwiaty białe grona",
+    "ciekawostka": "Miód akacjowy to najdłużej płynny i najjaśniejszy miód w Polsce. Kwitnienie trwa zaledwie TYDZIEŃ!",
+    "ochrona": "brak (inwazyjny)",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – aleje przy drogach"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "nazwa_polska": "Czarny bez – kwiat",
+    "nazwa_lacinska": "Sambucus nigra (kwiaty)",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Kwiaty drzew",
+    "sezon_start": 6,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "czerwiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Baldachy kwiatowe (surowe)",
+    "zastosowanie_kulinarne": "Socata (syrop elderflower), lody, naleśniki, frytki z kwiatów",
+    "zastosowanie_lecznicze": "Odporność, działanie napotne, przeziębienie",
+    "przepis_sugestia": "Socata: 20 baldachów + 1 kg cukru + 1 cytryna + 1 l wody",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, parki, wsie, skraje lasów",
+    "regiony_polski": "Wszędzie pospolity w Polsce",
+    "sugestie_lokalizacji": "Zarośla i skraje parków w całej Polsce | Blisko Poznania: Park Sołacki, zarośla nadwarciańskie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Tylko kwiaty! Liście, łodygi i niedojrzałe owoce są TRUJĄCE!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Sambucus nigra bez czarny kwiaty białe baldach",
+    "ciekawostka": "Elderflower cordial to hit Skandynawii i UK. Sezon kwiatów trwa dosłownie 2 tygodnie – bądź czujny!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – zarośla"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "nazwa_polska": "Lipa drobnolistna – kwiat",
+    "nazwa_lacinska": "Tilia cordata",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Kwiaty drzew",
+    "sezon_start": 6,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "lipiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty z przykwiatkami, młode liście",
+    "zastosowanie_kulinarne": "Herbata lipowa, miód lipowy, frytki z kwiatów, sałatki",
+    "zastosowanie_lecznicze": "Przeziębienie, kaszel, gorączka, bezsenność, nadciśnienie, stres",
+    "przepis_sugestia": "Herbata: kwiaty + miód – klasyczny lek na przeziębienie i na sen",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, aleje",
+    "regiony_polski": "Pospolita w całej Polsce – aleje lipowe przy drogach i parkach",
+    "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: Park Sołacki, Rogalin (aleje lipowe), centrum Poznania | Mazowsze: Nieborów",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – zbieraj tylko świeże, niezabrudzone kwiaty",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tilia cordata lipa kwiaty żółte zapach",
+    "ciekawostka": "Miód lipowy to jeden z najcenniejszych miodów w Polsce. Lipa kwitnie zaledwie 2 tygodnie – nie przegap!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4189,
+        "lng": 16.9356,
+        "opis": "Park Cytadela, Poznań"
+      },
+      {
+        "lat": 52.6072,
+        "lng": 16.5756,
+        "opis": "Szamotuły – stare lipy"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "nazwa_polska": "Lipa szerokolistna – kwiat",
+    "nazwa_lacinska": "Tilia platyphyllos",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Kwiaty drzew",
+    "sezon_start": 6,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "czerwiec (tydzień wcześniej niż drobnolistna)",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty z przykwiatkami, młode liście",
+    "zastosowanie_kulinarne": "Herbata lipowa, syrop, miód",
+    "zastosowanie_lecznicze": "Przeziębienie, kaszel, bezsenność, stres – jak lipa drobnolistna",
+    "przepis_sugestia": "Herbata z obu lip razem: kwiaty drobnolistnej + szerokolistnej + miód",
+    "wystepowanie_ogolne": "Lasy liściaste, parki, aleje – cała Polska",
+    "regiony_polski": "Pospolita w całej Polsce",
+    "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: aleje przy Rogalinie, Kórniku",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tilia platyphyllos lipa szerokolistna kwiaty żółte",
+    "ciekawostka": "Kwitnie tydzień wcześniej niż drobnolistna – razem dają 3 tygodnie zbiorów kwiatów!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Rogalin – aleje lipowe"
+      },
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – aleje lipowe"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "nazwa_polska": "Nasturcja ogrodowa",
+    "nazwa_lacinska": "Tropaeolum majus",
+    "kategoria": "Kwiaty jadalne",
+    "podkategoria": "Jadalne kwiaty",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "czerwiec–wrzesień",
+    "min_temp_C": 15,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty, liście, niedojrzałe nasiona",
+    "zastosowanie_kulinarne": "Sałatki, kanapki, kwiaty do dekoracji, nasiona jako kaparki",
+    "zastosowanie_lecznicze": "Witamina C, działanie antybakteryjne",
+    "przepis_sugestia": "Sałatka: kwiaty + liście + vinaigrette – pikantna i efektowna",
+    "wystepowanie_ogolne": "Ogrody, balkony – uprawiana",
+    "regiony_polski": "Sady i ogrody w całej Polsce",
+    "sugestie_lokalizacji": "Ogrody i balkony w całej Polsce – popularna roślina ozdobna | Blisko Poznania: ogrody działkowe",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tropaeolum majus nasturcja ogrodowa pomarańczowa",
+    "ciekawostka": "Cała roślina jest jadalna – jedna z nielicznych roślin ogrodowych, gdzie nie wyrzucamy niczego!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki – ogrody"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela – ogrody"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "nazwa_polska": "Poziomka pospolita",
+    "nazwa_lacinska": "Fragaria vesca",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce, liście (herbata)",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, soki, desery, herbata z liści",
+    "zastosowanie_lecznicze": "Witamina C, anemia, wspomaganie trawienia, diuretyczne",
+    "przepis_sugestia": "Na surowo z cukrem lub śmietaną. Dżem: owoce + cukier 1:1, gotuj 20 min",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, ciepłe zbocza",
+    "regiony_polski": "Pospolita w całej Polsce – od Bałtyku po Tatry",
+    "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, Lasy Jankowskie, Biedrusko, skraje lasów koło Mosiny | Bieszczady: masowe stanowiska | Mazury: polany leśne | Beskidy: skraje lasów",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – jedna z najsmaczniejszych dzikich owoców",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Fragaria vesca poziomka pospolita czerwona leśna",
+    "ciekawostka": "Pachnie 10× intensywniej niż truskawka sklepowa. Jedna poziomka = więcej wit. C niż cytryna!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.2318,
+        "lng": 17.0126,
+        "opis": "Lasy Rogalińskie – skraje"
+      },
+      {
+        "lat": 52.5186,
+        "lng": 17.1234,
+        "opis": "Puszcza Zielonka – podszycie"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "nazwa_polska": "Malina właściwa",
+    "nazwa_lacinska": "Rubus idaeus",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce, liście (herbata na gorączkę)",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, soki, nalewki, herbata z liści",
+    "zastosowanie_lecznicze": "Gorączka (herbata z liści), witamina C, antyoksydanty",
+    "przepis_sugestia": "Nalewka malinowa: maliny + cukier + spirytus, odczekaj 3 miesiące",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, wyręby, zarośla",
+    "regiony_polski": "Pospolita w całej Polsce – wyręby są kluczowe!",
+    "sugestie_lokalizacji": "Blisko Poznania: wyręby w Puszczy Zielonce, Lasy Jankowskie, Biedrusko | Bieszczady: masowe wyręby | Mazury: po wycince rosną maliny | Beskidy: wyręby",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Rubus idaeus malina dzika leśna czerwona",
+    "ciekawostka": "Herbata z liści malinowych pomaga kobietom w ciąży przygotować macicę do porodu – stosowana od stuleci.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – polany"
+      },
+      {
+        "lat": 52.4712,
+        "lng": 17.0956,
+        "opis": "Owińska – leśne polany"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "nazwa_polska": "Jeżyna fałdowana",
+    "nazwa_lacinska": "Rubus plicatus",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 15,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce, liście",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, wino, nalewki, soki",
+    "zastosowanie_lecznicze": "Antyoksydanty, witamina C i K, działanie przeciwzapalne",
+    "przepis_sugestia": "Wino jeżynowe: owoce + cukier + woda + drożdże, fermentacja 2 tygodnie",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, wyręby, żywopłoty",
+    "regiony_polski": "Bardzo pospolita w całej Polsce",
+    "sugestie_lokalizacji": "Skraje lasów i żywopłoty w całej Polsce | Blisko Poznania: Puszcza Zielonka, skraje lasów koło Mosiny, Dolina Baryczy",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – uwaga jedynie na ostre kolce!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Rubus plicatus jeżyna czarne owoce leśna",
+    "ciekawostka": "Im czarniejsza jeżyna, tym słodsza. Zbieraj tylko w pełni czarne – niedojrzałe są kwaśne!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4012,
+        "lng": 16.9314,
+        "opis": "Dolina Warty – zarośla"
+      },
+      {
+        "lat": 52.5012,
+        "lng": 16.9678,
+        "opis": "Biedrusko – skraje lasu"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "nazwa_polska": "Borówka czarna (czernica)",
+    "nazwa_lacinska": "Vaccinium myrtillus",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 15,
+    "dni_min_temp": 25,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce, liście",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, ciasta, soki, nalewki",
+    "zastosowanie_lecznicze": "Poprawa wzroku (antocyjany!), antyoksydanty, cukrzyca, biegunka",
+    "przepis_sugestia": "Ciasto jagodowe: ciasto drożdżowe + kruszonka + garść borówek",
+    "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, bory sosnowe",
+    "regiony_polski": "Pospolita w borach sosnowych całej Polski i w górach!",
+    "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, bory koło Obornik i Szamotuł | Bory Tucholskie | Puszcza Piska | Bieszczady, Beskidy | Tatry – wszędzie w borach sosnowych!",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – zabarwia usta i zęby na niebiesko- fioletowo",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Vaccinium myrtillus borówka czernica leśna niebieska",
+    "ciekawostka": "Piloci RAF w II wojnie zbierali borówki dla poprawy widzenia nocnego – potwierdzono naukowo!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – bory sosnowe"
+      },
+      {
+        "lat": 52.5186,
+        "lng": 17.1234,
+        "opis": "Puszcza Zielonka – wrzosowiska"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "nazwa_polska": "Borówka brusznica",
+    "nazwa_lacinska": "Vaccinium vitis-idaea",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 20,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Owoce, liście",
+    "zastosowanie_kulinarne": "Sos do mięs (dziczyzna!), dżemy, soki, kompoty",
+    "zastosowanie_lecznicze": "Infekcje układu moczowego (arbutyna!), antybakteryjne",
+    "przepis_sugestia": "Sos brusznicowy do dziczyzny: borówki + cukier + odrobina wody, gotuj 15 min",
+    "wystepowanie_ogolne": "Cała Polska – bory sosnowe, wrzosowiska, torfowiska",
+    "regiony_polski": "Pospolita w borach sosnowych całej Polski",
+    "sugestie_lokalizacji": "Bory sosnowe na piaszczystych glebach całej Polski | Bory Tucholskie, Puszcza Notecka, Puszcza Piska | Blisko Poznania: bory koło Obornik i Szamotuł",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Vaccinium vitis-idaea borówka brusznica czerwona",
+    "ciekawostka": "Zawiera arbutynę – naturalny antybiotyk dróg moczowych. Szwedzi jedzą ją do prawie wszystkiego!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – bory sosnowe"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – bory na piasku"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "nazwa_polska": "Żurawina błotna",
+    "nazwa_lacinska": "Oxycoccus palustris",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Jagody leśne",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Owoce",
+    "zastosowanie_kulinarne": "Soki, dżemy, sosy do mięs, nalewki",
+    "zastosowanie_lecznicze": "Infekcje pęcherza moczowego (proantocyjanidyny), antyoksydanty",
+    "przepis_sugestia": "Sok żurawinowy: owoce + woda + cukier, gotuj 15 min, przecedź",
+    "wystepowanie_ogolne": "Torfowiska, wilgotne bory, bagna",
+    "regiony_polski": "Bory Tucholskie, Podlasie, Mazury, Pomorze – torfowiska",
+    "sugestie_lokalizacji": "Bory Tucholskie k. Chojnic | Biebrzański PN | Mazury k. Pisza | Słowiński PN | Blisko Poznania: torfowiska koło Pniew ~50km",
+    "trujace_surowe": false,
+    "ostrzezenie": "Bardzo kwaśna surowa. Delikatny ekosystem torfowisk – zbieraj ostrożnie!",
+    "trudnosc_zbioru": "trudny",
+    "img_search": "Oxycoccus palustris żurawina błotna torfowisko czerwona",
+    "ciekawostka": "Naturalne stanowiska żurawin to torfowiska liczące setki lat. Nie wydeptuj mchu sfagnowego!",
+    "ochrona": "brak (siedlisko chronione)",
+    "koordinaty": [
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrzański PN – torfowiska"
+      },
+      {
+        "lat": 52.379,
+        "lng": 16.235,
+        "opis": "Torfowiska k. Pniew"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "nazwa_polska": "Rokitnik zwyczajny",
+    "nazwa_lacinska": "Hippophae rhamnoides",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Owoce (pomarańczowe jagody)",
+    "zastosowanie_kulinarne": "Soki, dżemy, nalewki, olej rokitnikowy (suplement)",
+    "zastosowanie_lecznicze": "Witamina C (100× więcej niż cytryna!), serce, odporność, regeneracja skóry",
+    "przepis_sugestia": "Sok rokitnikowy: owoce + miód + gorąca woda – NIE gotuj, niszczy witaminy!",
+    "wystepowanie_ogolne": "Nadbrzeża rzek, wydmy, nasłonecznione zbocza, piaski",
+    "regiony_polski": "Wybrzeże Bałtyku: masowe stanowiska | Doliny rzek nizinnych | Suche piaski śródlądowe",
+    "sugestie_lokalizacji": "Mierzeja Helska, klify Słowińskiego PN, Świnoujście | Blisko Poznania: Dolina Noteci ~80km, brzegi Warty koło Obornik, wydmy koło Wolsztyna | Mazury: brzegi jezior",
+    "trujace_surowe": false,
+    "ostrzezenie": "Bardzo ostre kolce! Po pierwszych mrozach łatwiej się osypuje z gałęzi.",
+    "trudnosc_zbioru": "trudny",
+    "img_search": "Hippophae rhamnoides rokitnik zwyczajny pomarańczowy",
+    "ciekawostka": "Więcej wit. C niż cokolwiek w naturze. Kosmonauci ZSRR używali oleju do ochrony przed promieniowaniem!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 54.612,
+        "lng": 18.801,
+        "opis": "Mierzeja Helska – wydmy nadmorskie"
+      },
+      {
+        "lat": 54.671,
+        "lng": 17.168,
+        "opis": "Słowiński PN – klify i wydmy"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "nazwa_polska": "Dzika róża",
+    "nazwa_lacinska": "Rosa canina",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Owoce bez nasion!, płatki kwiatów (czerwiec)",
+    "zastosowanie_kulinarne": "Herbata, dżemy, syropy, nalewki, marmolada",
+    "zastosowanie_lecznicze": "Witamina C (20× więcej niż cytryna!), odporność, stawy, antyoksydanty",
+    "przepis_sugestia": "Herbata: suszone owoce + szklanka wrzątku, parzyć 15 min",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, miedze, nieużytki",
+    "regiony_polski": "Absolutnie wszędzie w Polsce",
+    "sugestie_lokalizacji": "Miedze polne i skraje lasów w całej Polsce – brak specjalnych miejsc, rośnie wszędzie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Usuń nasiona (włoski drażnią błony śluzowe) – jadaj tylko miąższ!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Rosa canina dzika róża czerwone owoce jesień",
+    "ciekawostka": "Jeden owoc dzikiej róży = tyle wit. C co 20 cytryn. Syrop ratował Anglików przed szkorbutem w II ww.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4715,
+        "lng": 16.9836,
+        "opis": "Góra Moraska – obrzeża"
+      },
+      {
+        "lat": 52.2454,
+        "lng": 16.8542,
+        "opis": "Mosina – skraje pól"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "nazwa_polska": "Czarny bez – owoce",
+    "nazwa_lacinska": "Sambucus nigra",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 8,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 10,
+    "dni_min_temp": 20,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "DOJRZAŁE czarne owoce (gotowane!), kwiaty (surowe)",
+    "zastosowanie_kulinarne": "Syrop z kwiatów (socata), dżemy z owoców, nalewki, wino",
+    "zastosowanie_lecznicze": "Przeziębienie, grypa, odporność, działanie napotne",
+    "przepis_sugestia": "Socata: 20 baldachów kwiatów + 1 kg cukru + 1 cytryna + 1 l wody",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, parki, wsie",
+    "regiony_polski": "Wszędzie pospolity w Polsce",
+    "sugestie_lokalizacji": "Zarośla i skraje parków w całej Polsce | Blisko Poznania: Park Sołacki, zarośla nadwarciańskie",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: Surowe owoce i niedojrzałe są TRUJĄCE (sambunigrin)! ZAWSZE gotuj owoce!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Sambucus nigra czarny bez owoce czarne kiście",
+    "ciekawostka": "Masz dwa sezony z jednej rośliny – kwiaty w czerwcu, owoce w sierpniu. Sezon kwiatów trwa 2 tygodnie!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4189,
+        "lng": 16.9356,
+        "opis": "Park Cytadela, Poznań"
+      },
+      {
+        "lat": 52.4089,
+        "lng": 17.0678,
+        "opis": "Dolina Cybiny – zarośla"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "nazwa_polska": "Tarnina",
+    "nazwa_lacinska": "Prunus spinosa",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 10,
+    "sezon_koniec": 12,
+    "szczyt_zbioru": "październik–listopad",
+    "min_temp_C": 0,
+    "dni_min_temp": 3,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Owoce po przymrozkach!",
+    "zastosowanie_kulinarne": "Nalewki (sloe gin, śliwowica), dżemy, galaretki",
+    "zastosowanie_lecznicze": "Antyoksydanty, działanie ściągające, wspomaganie trawienia",
+    "przepis_sugestia": "Nalewka z tarniny: owoce + cukier + wódka, odczekaj 3 miesiące",
+    "wystepowanie_ogolne": "Cała Polska – miedze, skraje lasów, zarośla, suche zbocza",
+    "regiony_polski": "Bardzo pospolita na miedzach całej Polski",
+    "sugestie_lokalizacji": "Miedze polne w całej Polsce | Blisko Poznania: miedze wokół Poznania, Kościan, Leszno | Mazowsze: miedze Mazowsza i Kujaw",
+    "trujace_surowe": false,
+    "ostrzezenie": "Bardzo kwaśna i cierpka przed przymrozkiem – mroź przez noc lub czekaj na mróz!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Prunus spinosa tarnina owoce czarne przymrozek",
+    "ciekawostka": "Sloe gin to podstawa angielskich nalewek. Po przymrozku staje się słodka jak konfitury!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – miedze polne"
+      },
+      {
+        "lat": 52.652,
+        "lng": 16.819,
+        "opis": "Oborniki – żywopłoty śródpolne"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "nazwa_polska": "Głóg jednoszyjkowy",
+    "nazwa_lacinska": "Crataegus monogyna",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce (pestka niejadalna!), młode liście (wiosna), kwiaty",
+    "zastosowanie_kulinarne": "Dżemy, nalewki, mąka z suszonych owoców, herbata sercowa",
+    "zastosowanie_lecznicze": "Serce i układ krwionośny, ciśnienie, miażdżyca – klinicznie potwierdzone!",
+    "przepis_sugestia": "Herbata sercowa: 1 łyżka suszonych owoców + szklanka wrzątku, parzyć 15 min",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, żywopłoty, miedze",
+    "regiony_polski": "Wszędzie pospolity w Polsce",
+    "sugestie_lokalizacji": "Miedze polne i żywopłoty śródpolne w całej Polsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Pestki zawierają amygdalinę – nie jedz ich! Przy chorobach serca skonsultuj z lekarzem.",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Crataegus monogyna głóg czerwone owoce jesień",
+    "ciekawostka": "Głóg może żyć 700 lat! Klinicznie potwierdzono skuteczność w leczeniu niewydolności serca.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.246,
+        "lng": 17.091,
+        "opis": "Kórnik – żywopłoty śródpolne"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – miedze i zarośla"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "nazwa_polska": "Kalina koralowa",
+    "nazwa_lacinska": "Viburnum opulus",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "październik",
+    "min_temp_C": 0,
+    "dni_min_temp": 3,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Owoce PO przemrożeniu i gotowaniu!",
+    "zastosowanie_kulinarne": "Soki, syropy, dżemy – po obróbce cieplnej",
+    "zastosowanie_lecznicze": "Skurcze mięśni, bolesna menstruacja, nadciśnienie, kaszel",
+    "przepis_sugestia": "Sok kalinowy: owoce + cukier, gotuj 20 min, odcedź",
+    "wystepowanie_ogolne": "Cała Polska – wilgotne zarośla, brzegi rzek",
+    "regiony_polski": "Pospolita w wilgotnych zaroślach całej Polski",
+    "sugestie_lokalizacji": "Doliny rzek i brzegi jezior w całej Polsce | Blisko Poznania: dolina Warty, Dolina Baryczy, brzegi jezior gnieźnieńskich",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: Surowe owoce są TRUJĄCE! ZAWSZE gotuj lub mroź przed spożyciem.",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Viburnum opulus kalina koralowa czerwone owoce jesień",
+    "ciekawostka": "Symbol Ukrainy – w folklorze symbol miłości i kobiecości. Po pierwszym mrozie traci gorycz.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – wilgotne zarośla"
+      },
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – zarośla nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "nazwa_polska": "Aronia czarnoowocowa",
+    "nazwa_lacinska": "Aronia melanocarpa",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce",
+    "zastosowanie_kulinarne": "Soki, nalewki, dżemy, wino, susz zdrowotny",
+    "zastosowanie_lecznicze": "NAJSILNIEJSZY antyoksydant wśród owoców, obniżanie ciśnienia, cukrzyca",
+    "przepis_sugestia": "Nalewka aronii: 1 kg owoców + 0,5 kg cukru + 0,5 l wódki – 3 miesiące",
+    "wystepowanie_ogolne": "Cała Polska – zarośla, parki, dziczeje z uprawy",
+    "regiony_polski": "Sadzana w parkach całej Polski, dziczeje przy lasach",
+    "sugestie_lokalizacji": "Parki miejskie w całej Polsce | Blisko Poznania: parki Poznania, skraje lasów w całej Wielkopolsce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Bardzo cierpka surowa – najlepsza przetworzona",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Aronia melanocarpa aronia czarna owoce grona",
+    "ciekawostka": "Więcej antyoksydantów niż borówka, żurawina i granat razem wzięte! Czarny kolor = bogactwo polifenoli.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela, Poznań"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "nazwa_polska": "Dereń jadalny",
+    "nazwa_lacinska": "Cornus mas",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Krzewy owocowe",
+    "sezon_start": 8,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Dojrzałe owoce",
+    "zastosowanie_kulinarne": "Dżemy, soki, nalewki, konfitury",
+    "zastosowanie_lecznicze": "Witamina C, antyoksydanty, działanie przeciwbiegunkowe",
+    "przepis_sugestia": "Nalewka dereniowa: dojrzałe owoce + cukier + wódka, maceruj 3 miesiące",
+    "wystepowanie_ogolne": "Ciepłe zarośla, skraje lasów – szczególnie południe Polski",
+    "regiony_polski": "Wyżyna Krakowska, Śląsk (doliny Odry), Podkarpacie (pogórza)",
+    "sugestie_lokalizacji": "Wyżyna Krakowsko-Częstochowska | Śląsk (okolice Cieszyna) | Kielecczyzna | Blisko Poznania: ogrzane zbocza koło Wolsztyna – rzadki",
+    "trujace_surowe": false,
+    "ostrzezenie": "Niedojrzałe są bardzo cierpkie i kwaśne",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Cornus mas dereń jadalny czerwone owoce",
+    "ciekawostka": "Kwitnie jako jeden z pierwszych krzewów – już w lutym! Na Kaukazie podstawa konfitur i napitków.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.224,
+        "lng": 19.834,
+        "opis": "Wyżyna Krakowska (Ojców) – ciepłe zarośla"
+      },
+      {
+        "lat": 49.82,
+        "lng": 18.75,
+        "opis": "Śląsk (Cieszyn) – ciepłe zbocza"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "nazwa_polska": "Czereśnia ptasia",
+    "nazwa_lacinska": "Prunus avium",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Drzewa owocowe",
+    "sezon_start": 6,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "czerwiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce (pestka niejadalna!)",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, nalewki, kompoty, ciasta",
+    "zastosowanie_lecznicze": "Witaminy A i C, antyoksydanty, działanie przeciwzapalne",
+    "przepis_sugestia": "Nalewka: czereśnie + cukier + spirytus, maceruj 2 miesiące",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, skraje lasów, zadrzewienia śródpolne",
+    "regiony_polski": "Pospolita w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: lasy koło Mosiny, Rogalina, Śremu",
+    "trujace_surowe": false,
+    "ostrzezenie": "Pestki zawierają amygdalinę – nie gryź, nie żuj!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Prunus avium czereśnia ptasia dzika czerwona",
+    "ciekawostka": "Dzika czereśnia to przodek wszystkich odmian uprawnych. Ptaki rozsiewają ją na km2 – stąd 'avium' (ptasia).",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – lasy liściaste"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "nazwa_polska": "Dzika jabłoń",
+    "nazwa_lacinska": "Malus sylvestris",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Drzewa owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 30,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce (pestki niejadalne!)",
+    "zastosowanie_kulinarne": "Soki, dżemy, ocet jabłkowy, nalewki, suszone chipsy",
+    "zastosowanie_lecznicze": "Pektyny, witaminy, wspomaganie trawienia, obniżanie cholesterolu",
+    "przepis_sugestia": "Sok jabłkowy: owoce + woda, gotuj, przecedź – najlepszy po przymrozkach!",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów liściastych, żywopłoty, miedze",
+    "regiony_polski": "Pospolita na skrajach lasów liściastych całej Polski",
+    "sugestie_lokalizacji": "Miedze polne i skraje lasów liściastych w całej Polsce | Blisko Poznania: miedze wokół Poznania, skraje lasów w dolinie Warty",
+    "trujace_surowe": false,
+    "ostrzezenie": "Pestki zawierają amygdalinę – nie jedz ich!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Malus sylvestris dzika jabłoń małe jabłka jesień",
+    "ciekawostka": "Przodek wszystkich jabłoni uprawnych. Po przymrozku: aromatyczne i słodkie – zupełnie inne niż surowe!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Rogalin – miedze polne"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – skraje lasów liściastych"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "nazwa_polska": "Jarząb pospolity (jarzębina)",
+    "nazwa_lacinska": "Sorbus aucuparia",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Drzewa owocowe",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 5,
+    "dni_min_temp": 10,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce po przetworzeniu lub przymrozkach!",
+    "zastosowanie_kulinarne": "Nalewki, syropy, dżemy, galaretki",
+    "zastosowanie_lecznicze": "Witamina C (bardzo dużo!), witamina A, antyoksydanty",
+    "przepis_sugestia": "Nalewka jarzębinowa: owoce + cukier + wódka – pij po miesiącu",
+    "wystepowanie_ogolne": "Cała Polska – lasy, skraje lasów, parki, wszędzie",
+    "regiony_polski": "Jeden z najpospolitszych drzew w Polsce",
+    "sugestie_lokalizacji": "Parki miast i skraje lasów w całej Polsce – trudno nie znaleźć",
+    "trujace_surowe": true,
+    "ostrzezenie": "Surowe owoce powodują nudności i wymioty! Po przetworzeniu lub przymrozkach bezpieczne.",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Sorbus aucuparia jarzębina czerwone owoce jesień",
+    "ciekawostka": "Ptaki zimujące w Polsce (jemiołuszki) uzależnione są od jarzębiny przez całą zimę.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.472,
+        "lng": 16.984,
+        "opis": "Góra Moraska – skraje lasu"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – skraje lasów"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "nazwa_polska": "Morwa biała",
+    "nazwa_lacinska": "Morus alba",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Drzewa owocowe",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "lipiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce, liście (herbata)",
+    "zastosowanie_kulinarne": "Na surowo, dżemy, soki, nalewki, syropy",
+    "zastosowanie_lecznicze": "Cukrzyca (obniżanie glukozy – liście!), antyoksydanty, odporność",
+    "przepis_sugestia": "Na surowo prosto z drzewa – słodkie i delikatne w smaku",
+    "wystepowanie_ogolne": "Parki, aleje, żywopłoty – nasadzana, czasem dziczeje",
+    "regiony_polski": "Głównie parki miejskie środkowej i południowej Polski",
+    "sugestie_lokalizacji": "Parki miejskie: Poznań, Warszawa, Kraków, Wrocław | Blisko Poznania: Park Sołacki, Park Cytadela",
+    "trujace_surowe": false,
+    "ostrzezenie": "Niedojrzałe owoce mogą powodować lekkie nudności",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Morus alba morwa biała owoce białe",
+    "ciekawostka": "Liście morwy to JEDYNE pożywienie jedwabników. Herbata z liści reguluje poziom cukru we krwi!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela, Poznań"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "nazwa_polska": "Pigwa pospolita",
+    "nazwa_lacinska": "Cydonia oblonga",
+    "kategoria": "Owoce dzikie",
+    "podkategoria": "Drzewa owocowe",
+    "sezon_start": 10,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 30,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Owoce po obróbce!",
+    "zastosowanie_kulinarne": "Dżemy, galaretki, nalewki, kompoty, konfitury",
+    "zastosowanie_lecznicze": "Witamina C, działanie ściągające, wspomaganie trawienia, pektyny",
+    "przepis_sugestia": "Galaretka pigwowa: owoce + cukier + woda, gotuj do zgęstnienia",
+    "wystepowanie_ogolne": "Ogrody, żywopłoty przy wsiach, sady – rzadziej dziko",
+    "regiony_polski": "Głównie ogrody przydomowe całej Polski",
+    "sugestie_lokalizacji": "Stare sady i ogrody wiejskie w całej Polsce – pytaj u miejscowych!",
+    "trujace_surowe": false,
+    "ostrzezenie": "Surowa bardzo cierpka i twarda – zawsze przetwarzaj!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Cydonia oblonga pigwa owoce żółte",
+    "ciekawostka": "Galaretka pigwowa jadana w starożytnym Rzymie. Nasiona zawierają naturalne pektyny – żelujące bez dodawania!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – stare sady wiejskie"
+      },
+      {
+        "lat": 52.652,
+        "lng": 16.819,
+        "opis": "Oborniki – ogrody przydomowe"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "nazwa_polska": "Brzoza brodawkowata – sok",
+    "nazwa_lacinska": "Betula pendula",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa liściaste",
+    "sezon_start": 3,
+    "sezon_koniec": 4,
+    "szczyt_zbioru": "marzec–kwiecień",
+    "min_temp_C": 1,
+    "dni_min_temp": 5,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Sok (marzec–kwiecień), młode liście, pąki",
+    "zastosowanie_kulinarne": "Sok brzozowy jako napój, syropy, wino brzozowe",
+    "zastosowanie_lecznicze": "Detoks nerek, działanie moczopędne, reumatyzm, choroby skóry",
+    "przepis_sugestia": "Sok pitny: świeży sok z brzozy + miód + cytryna – wiosenna kuracja zdrowotna",
+    "wystepowanie_ogolne": "Cała Polska – lasy, parki, piaszczyste gleby",
+    "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+    "sugestie_lokalizacji": "Bory sosnowo-brzozowe w całej Polsce | Blisko Poznania: Puszcza Notecka, bory koło Obornik | Mazury: lasy brzozowe",
+    "trujace_surowe": false,
+    "ostrzezenie": "Nie pobieraj więcej niż 3-4 litry z jednego drzewa. Zalep dziurę po pobraniu!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Betula pendula brzoza brodawkowata sok wiosna",
+    "ciekawostka": "Jeden litr soku brzozowego zawiera ok. 40 minerałów. Tradycja wiosenna w Rosji, Finlandii i Łotwie.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5012,
+        "lng": 16.9678,
+        "opis": "Biedrusko – młode brzeziny"
+      },
+      {
+        "lat": 52.6517,
+        "lng": 16.8187,
+        "opis": "Oborniki – lasy nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "nazwa_polska": "Dąb szypułkowy – żołędzie",
+    "nazwa_lacinska": "Quercus robur",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa liściaste",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 10,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Żołędzie po wypłukaniu garbników",
+    "zastosowanie_kulinarne": "Mąka żołędziowa, kawa z żołędzi, chleb żołędziowy",
+    "zastosowanie_lecznicze": "Kora – działanie ściągające, leczenie biegunek, zapalenie gardła",
+    "przepis_sugestia": "Kawa żołędziowa: obierz, posiekaj, upraż na patelni, zmiel, zalej wrzątkiem",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, grądy, parki, aleje",
+    "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+    "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie (najstarsze dęby w Polsce 700-800 lat!), Puszcza Notecka | Białowieża: stare dębrzyny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Surowe żołędzie są bardzo gorzkie (garbniki). Wymoczyć w wodzie 2-3 dni zmieniając wodę.",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Quercus robur żołędzie dąb jesienny",
+    "ciekawostka": "Rogalińskie dęby mają 700-800 lat! Żołędzie były podstawowym pożywieniem człowieka przed zbożem.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.2318,
+        "lng": 17.0126,
+        "opis": "Lasy Rogalińskie – stare dęby"
+      },
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – grądy"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "nazwa_polska": "Leszczyna pospolita",
+    "nazwa_lacinska": "Corylus avellana",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Krzewy leśne",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Orzechy, bazie (pąki kwiatowe – surowe)",
+    "zastosowanie_kulinarne": "Na surowo, masło orzechowe, olej leszczynowy, ciasta, pralinki, nugat",
+    "zastosowanie_lecznicze": "Witamina E, zdrowe tłuszcze jednonienasycone, obniżanie cholesterolu",
+    "przepis_sugestia": "Pralinki domowe: prażone orzechy + roztopiona czekolada, formuj i ostudź",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, grądy",
+    "regiony_polski": "Pospolita na skrajach lasów liściastych całej Polski",
+    "sugestie_lokalizacji": "Skraje lasów liściastych w całej Polsce | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka, lasy koło Czempinia",
+    "trujace_surowe": false,
+    "ostrzezenie": "Alergia na orzechy – może wywołać silną reakcję u uczulonych!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Corylus avellana leszczyna orzechy laskowe",
+    "ciekawostka": "Bazie leszczyny to pierwszy sygnał wiosny – pojawiają się w lutym. Obserwuj wiewiórki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – skraje grądów"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – skraje lasów"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "nazwa_polska": "Sosna zwyczajna – pąki i igły",
+    "nazwa_lacinska": "Pinus sylvestris",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa iglaste",
+    "sezon_start": 1,
+    "sezon_koniec": 12,
+    "szczyt_zbioru": "kwiecień–maj (pąki), cały rok (igły)",
+    "min_temp_C": -10,
+    "dni_min_temp": 0,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "Młode pąki (kwiecień), igły (cały rok), nasiona, pyłek",
+    "zastosowanie_kulinarne": "Syrop z pąków sosnowych, herbata z igieł, nasiona do sałatek",
+    "zastosowanie_lecznicze": "Drogi oddechowe, witamina C z igieł!, działanie antybakteryjne",
+    "przepis_sugestia": "Syrop z pąków sosnowych: pąki + cukier 1:1, maceruj tydzień – tradycja polskich babć!",
+    "wystepowanie_ogolne": "Cała Polska – bory sosnowe, lasy mieszane, piaski",
+    "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+    "sugestie_lokalizacji": "Bory sosnowe w całej Polsce: Bory Tucholskie, Puszcza Notecka, Puszcza Piska, Bory Dolnośląskie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Pinus sylvestris sosna pąki wiosna zielone",
+    "ciekawostka": "Igły sosny mają 5× więcej wit. C niż cytryna! Żołnierze w średniowieczu leczyli nimi szkorbut.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – bory sosnowe"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – bory sosnowe"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "nazwa_polska": "Świerk pospolity – pędy",
+    "nazwa_lacinska": "Picea abies",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa iglaste",
+    "sezon_start": 4,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode pędy (różowe szyszeczki), igły, nasiona",
+    "zastosowanie_kulinarne": "Syrop ze świerka, herbata, pikle z młodych szyszek, nalewka",
+    "zastosowanie_lecznicze": "Drogi oddechowe, działanie antybiotyczne żywicy, witamina C",
+    "przepis_sugestia": "Pikle ze świerkowych szyszeczek: młode szyszki + ocet + cukier + zioła",
+    "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, szczególnie góry",
+    "regiony_polski": "Masowy w Karpatach i Sudetach | Bory – mniej pospolity",
+    "sugestie_lokalizacji": "Góry: Tatry, Beskidy, Gorce, Bieszczady | Bory Tucholskie | Blisko Poznania: nieliczne w Puszczy Zielonce",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Picea abies świerk pędy różowe szyszki wiosna",
+    "ciekawostka": "Różowe pędy świerka to hit kuchni nordyckiej – restauracja Noma w Kopenhadze zrobiła je sławnymi!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.256,
+        "lng": 19.867,
+        "opis": "Tatry (Dolina Kościeliska) – bory świerkowe"
+      },
+      {
+        "lat": 49.14,
+        "lng": 22.53,
+        "opis": "Bieszczady (Wetlina) – lasy świerkowe"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "nazwa_polska": "Buk zwyczajny – orzeszki",
+    "nazwa_lacinska": "Fagus sylvatica",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa liściaste",
+    "sezon_start": 9,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 10,
+    "dni_min_temp": 20,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Orzeszki bukowe po prażeniu!, młode liście wiosna",
+    "zastosowanie_kulinarne": "Prażone orzeszki bukowe jako przekąska, olej bukowy",
+    "zastosowanie_lecznicze": "Zdrowe tłuszcze, kwas para-kumarowy (przeciwzapalny)",
+    "przepis_sugestia": "Prażone orzeszki: na suchej patelni aż lekko zbrązowieją – jak migdały!",
+    "wystepowanie_ogolne": "Buczyny – zachodnia i południowa Polska",
+    "regiony_polski": "Masowy w Karpatach i Sudetach | Buczyny zachodniej Polski",
+    "sugestie_lokalizacji": "Tatry i Beskidy: masowe buczyny | Bieszczady: rozległe buczyny | Sudety: Góry Stołowe | Blisko Poznania: buczyny Puszczy Zielonki",
+    "trujace_surowe": true,
+    "ostrzezenie": "Surowe orzeszki bukowe zawierają fagina – toksyczna w dużych ilościach. Prażenie neutralizuje toksynę!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Fagus sylvatica buk orzeszki bukowe jesień",
+    "ciekawostka": "Z orzeszków bukowych wytwarza się doskonały olej podobny do migdałowego. Jedzone od prehistorii!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.234,
+        "lng": 20.012,
+        "opis": "Tatry (Hala Gąsienicowa) – regiel dolny"
+      },
+      {
+        "lat": 49.067,
+        "lng": 22.734,
+        "opis": "Bieszczady – rozległe buczyny"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "nazwa_polska": "Jodła pospolita – pędy",
+    "nazwa_lacinska": "Abies alba",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa iglaste",
+    "sezon_start": 4,
+    "sezon_koniec": 6,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 5,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode pędy, igły, żywica",
+    "zastosowanie_kulinarne": "Herbata z igieł, syrop, żywica jako przyprawa",
+    "zastosowanie_lecznicze": "Drogi oddechowe, działanie antyseptyczne żywicy, witamina C",
+    "przepis_sugestia": "Syrop jodłowy: młode pędy + cukier 1:1, maceruj tydzień",
+    "wystepowanie_ogolne": "Góry – Karpaty i Sudety",
+    "regiony_polski": "Tatry, Beskidy, Bieszczady, Góry Świętokrzyskie, Sudety",
+    "sugestie_lokalizacji": "Tatry: jodłowy las reglowy | Bieszczady: masowe stanowiska | Góry Świętokrzyskie | Blisko Poznania: brak – tylko południe Polski",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Abies alba jodła pospolita pędy igły",
+    "ciekawostka": "Żywica jodłowa była przez wieki używana do uszczelniania łodzi i jako klej! Dziś do aromaterapii.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.256,
+        "lng": 19.867,
+        "opis": "Tatry (Dolina Kościeliska) – jodłowy las reglowy"
+      },
+      {
+        "lat": 50.867,
+        "lng": 20.923,
+        "opis": "Góry Świętokrzyskie – jodłowe bory"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "nazwa_polska": "Lipa drobnolistna – miód i herbata",
+    "nazwa_lacinska": "Tilia cordata",
+    "kategoria": "Drzewa jadalne",
+    "podkategoria": "Drzewa liściaste",
+    "sezon_start": 6,
+    "sezon_koniec": 7,
+    "szczyt_zbioru": "lipiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 14,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kwiaty, młode liście (wiosna), nasiona",
+    "zastosowanie_kulinarne": "Herbata lipowa, miód lipowy, frytki z kwiatów, sałatki z liści",
+    "zastosowanie_lecznicze": "Przeziębienie, kaszel, gorączka, bezsenność, nadciśnienie, stres",
+    "przepis_sugestia": "Herbata: kwiaty + miód – klasyczny lek na przeziębienie",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, aleje",
+    "regiony_polski": "Pospolita w całej Polsce – aleje lipowe przy drogach i parkach",
+    "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: Park Sołacki, Rogalin, centrum Poznania | Mazowsze: Nieborów",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Tilia cordata lipa kwiaty żółte zapach",
+    "ciekawostka": "Miód lipowy to jeden z najcenniejszych miodów w Polsce. Lipa kwitnie zaledwie 2 tygodnie – nie przegap!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.425,
+        "lng": 16.91,
+        "opis": "Park Sołacki, Poznań"
+      },
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Rogalin – aleje lipowe"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "nazwa_polska": "Borowik szlachetny (prawdziwek)",
+    "nazwa_lacinska": "Boletus edulis",
+    "kategoria": "Grzyby",
+    "podkategoria": "Borowikowate",
+    "sezon_start": 6,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażony, suszony, marynowany, zupa grzybowa, sosy, risotto",
+    "zastosowanie_lecznicze": "Białko, witaminy z grupy B, wspomaganie odporności, beta-glukany",
+    "przepis_sugestia": "Klasyczna zupa grzybowa: suszone borowiki + śmietana + makaron – tradycja wigilijna",
+    "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane pod sosnami i świerkami",
+    "regiony_polski": "Pospolity w lasach iglastych całej Polski – szczególnie po deszczach w sierpniu",
+    "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, Puszcza Notecka, lasy koło Obornik | Mazury: Puszcza Piska | Bieszczady, Beskidy | Bory Tucholskie",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga na pomylenie z borowikiem szatanem (czerwone pory, sinieje) i goryczakiem żółciowym (gorzki smak)!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Boletus edulis prawdziwek borowik szlachetny las",
+    "ciekawostka": "Król polskich grzybów. Wysuszony intensywniejszy w smaku. Nie da się wyhodować – tylko w naturze!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – bory"
+      },
+      {
+        "lat": 52.5186,
+        "lng": 17.1234,
+        "opis": "Puszcza Zielonka – dąbrowy"
+      },
+      {
+        "lat": 52.6517,
+        "lng": 16.8187,
+        "opis": "Lasy obornickie"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "nazwa_polska": "Kurka (pieprznik jadalny)",
+    "nazwa_lacinska": "Cantharellus cibarius",
+    "kategoria": "Grzyby",
+    "podkategoria": "Lejkowcowate",
+    "sezon_start": 6,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Cały owocnik",
+    "zastosowanie_kulinarne": "Smażona na maśle, do jajecznicy, sosów, zup, risotto, omletów",
+    "zastosowanie_lecznicze": "Witamina D, beta-karoten, antyoksydanty",
+    "przepis_sugestia": "Kurki z jajecznicą: masło + cebula + kurki + jajka – absolutny klasyk!",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste i mieszane, buczyny, grądy",
+    "regiony_polski": "Pospolita w lasach liściastych i mieszanych całej Polski po deszczach",
+    "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka, buczyny koło Pniew | Mazury, Bieszczady, Beskidy",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga: lisówka pomarańczowa (trująca) ma prawdziwe blaszki – kurka ma pseudoblaszki jak fałdy!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Cantharellus cibarius kurka pieprznik żółta las",
+    "ciekawostka": "Kurki są dosłownie nie do wyhodowania – rosną tylko w naturze, w symbiozie z drzewami!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5025,
+        "lng": 17.0876,
+        "opis": "Puszcza Zielonka – grądy"
+      },
+      {
+        "lat": 52.2318,
+        "lng": 17.0126,
+        "opis": "Lasy Rogalińskie"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "nazwa_polska": "Podgrzybek brunatny",
+    "nazwa_lacinska": "Imleria badia",
+    "kategoria": "Grzyby",
+    "podkategoria": "Borowikowate",
+    "sezon_start": 7,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "sierpień–październik",
+    "min_temp_C": 10,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Suszony, smażony, do bigosu i zup – doskonały do suszenia",
+    "zastosowanie_lecznicze": "Białko roślinne, witaminy z grupy B",
+    "przepis_sugestia": "Suszone podgrzybki do bigosu lub rosołu – intensywny leśny smak",
+    "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, bory sosnowe",
+    "regiony_polski": "Bardzo pospolity w borach sosnowych całej Polski",
+    "sugestie_lokalizacji": "Bory sosnowe w całej Polsce | Blisko Poznania: wszędzie w borach",
+    "trujace_surowe": false,
+    "ostrzezenie": "Miąższ sinieje po nacięciu – to normalne! Nie jest trujący.",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Imleria badia podgrzybek brunatny brązowy grzyb",
+    "ciekawostka": "Najczęściej zbierany grzyb w Polsce, choć często pomijany przez snobów grzybiarskich!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.501,
+        "lng": 16.968,
+        "opis": "Biedrusko – bory sosnowe"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – bory"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "nazwa_polska": "Maślak zwyczajny",
+    "nazwa_lacinska": "Suillus luteus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Borowikowate",
+    "sezon_start": 8,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz bez śluzu! i trzon",
+    "zastosowanie_kulinarne": "Marynowany, smażony, do zup i sosów",
+    "zastosowanie_lecznicze": "Białko, składniki odżywcze, beta-glukany",
+    "przepis_sugestia": "Marynowane maślaki: grzyby + ocet + cukier + pieprz + liść laurowy + ziele angielskie",
+    "wystepowanie_ogolne": "Bory sosnowe i plantacje sosnowe – wyłącznie pod sosnami",
+    "regiony_polski": "Wszędzie gdzie jest sosna – cała Polska",
+    "sugestie_lokalizacji": "Bory sosnowe w całej Polsce: Puszcza Notecka, Bory Tucholskie, Puszcza Piska | Blisko Poznania: wszędzie w borach",
+    "trujace_surowe": false,
+    "ostrzezenie": "ZAWSZE zdejmuj śluzowatą skórkę kapelusza – może powodować zaburzenia żołądkowe!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Suillus luteus maślak zwyczajny brązowy śluzowaty",
+    "ciekawostka": "Rośnie WYŁĄCZNIE pod sosnami – grzybnia oplata korzenie sosny. Znajdź sosnę = znajdziesz maślaki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – bory sosnowe"
+      },
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – plantacje sosnowe"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "nazwa_polska": "Mleczaj rydz",
+    "nazwa_lacinska": "Lactarius deliciosus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Mleczajowate",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "wrzesień",
+    "min_temp_C": 8,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażony, marynowany, solony – tradycja podkarpacka",
+    "zastosowanie_lecznicze": "Białko, witaminy, laktarozyna (badania antynowotworowe)",
+    "przepis_sugestia": "Rydze smażone z cebulką i śmietaną – przysmak Podkarpacia i Bieszczad",
+    "wystepowanie_ogolne": "Lasy iglaste – szczególnie pod sosnami i świerkami",
+    "regiony_polski": "Podkarpacie i Bieszczady: najliczniejsze | Bory sosnowe całej Polski",
+    "sugestie_lokalizacji": "Bieszczady i Beskidy (pod sosnami i świerkami) | Tatry: bory sosnowe | Blisko Poznania: bory sosnowe Puszczy Noteckiej",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga na podobne mleczaje – rydz ma POMARAŃCZOWY mleczny sok po nacięciu!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Lactarius deliciosus rydz mleczaj pomarańczowy grzyb",
+    "ciekawostka": "Łacińska 'deliciosus' = pyszny. Mleczko jest pomarańczowe – absolutnie unikalny wygląd!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.5186,
+        "lng": 17.1234,
+        "opis": "Puszcza Zielonka – bory sosnowe"
+      },
+      {
+        "lat": 52.5012,
+        "lng": 16.9678,
+        "opis": "Biedrusko – bory"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "nazwa_polska": "Czubajka kania",
+    "nazwa_lacinska": "Macrolepiota procera",
+    "kategoria": "Grzyby",
+    "podkategoria": "Pieczarkowate",
+    "sezon_start": 7,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 7,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kapelusz (trzon twardy)",
+    "zastosowanie_kulinarne": "Smażona jak kotlet, panierowana w jajku i bułce tartej",
+    "zastosowanie_lecznicze": "Białko, niskokaloryczny, błonnik",
+    "przepis_sugestia": "Kotlet z kani: kapelusz + jajko + bułka tarta + smażenie na maśle",
+    "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, leśne łąki, wyręby",
+    "regiony_polski": "Pospolita na polanach i skrajach lasów całej Polski",
+    "sugestie_lokalizacji": "Polany leśne w całej Polsce | Blisko Poznania: polany Puszczy Zielonki, skraje lasów koło Mosiny i Śremu",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Łatwo pomylić z ŚMIERTELNIE TRUJĄCYM muchomorem sromotnikowym! Kania ma RUCHOMY pierścień, łuskowaty kapelusz i NIE zmienia koloru po nacięciu.",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Macrolepiota procera czubajka kania duży grzyb polana",
+    "ciekawostka": "Kapelusz do 30 cm średnicy – jeden kapelusz to pełny kotlet! Rośnie samotnie, widoczna z daleka.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.4715,
+        "lng": 16.9836,
+        "opis": "Góra Moraska – polany"
+      },
+      {
+        "lat": 52.4089,
+        "lng": 17.0678,
+        "opis": "Dolina Cybiny – łąki"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "nazwa_polska": "Boczniak ostrygowaty",
+    "nazwa_lacinska": "Pleurotus ostreatus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Boczniakowate",
+    "sezon_start": 9,
+    "sezon_koniec": 12,
+    "szczyt_zbioru": "październik–listopad",
+    "min_temp_C": 0,
+    "dni_min_temp": 3,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażony, duszony, do zup, zamiennik mięsa",
+    "zastosowanie_lecznicze": "Obniżanie cholesterolu (lowastatyna!), białko, witamina D, beta-glukany",
+    "przepis_sugestia": "Boczniaki duszone: grzyby + oliwa + czosnek + tymianek – szybkie i pyszne",
+    "wystepowanie_ogolne": "Na martwym drewnie liściastym (buk, topola, wierzba) – cała Polska",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski – jesień i zima",
+    "sugestie_lokalizacji": "Stare martwe drzewa liściaste w lasach całej Polski | Blisko Poznania: lasy łęgowe nad Wartą, Puszcza Zielonka",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – rośnie na drzewach, niemal niemożliwy do pomylenia",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Pleurotus ostreatus boczniak ostrygowaty na drzewie szary",
+    "ciekawostka": "Rośnie zimą gdy inne grzyby śpią! Jedyny dziki grzyb zbierany w grudniu i przy ujemnych temperaturach.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – martwe lipy i dęby"
+      },
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – łęgi nadrzeczne"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "nazwa_polska": "Purchawka olbrzymia",
+    "nazwa_lacinska": "Calvatia gigantea",
+    "kategoria": "Grzyby",
+    "podkategoria": "Purchawkowate",
+    "sezon_start": 7,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Cały owocnik TYLKO gdy w środku jednolicie biały!",
+    "zastosowanie_kulinarne": "Smażona w plastrach jak steak, do zup, suszona",
+    "zastosowanie_lecznicze": "Białko, calvacyna (badania antynowotworowe), beta-glukany",
+    "przepis_sugestia": "Steak z purchawki: plastry 2 cm + jajko + bułka tarta + smażenie na maśle",
+    "wystepowanie_ogolne": "Łąki, polany, pastwiska, skraje lasów – cała Polska",
+    "regiony_polski": "Cała Polska – łąki kośne i pastwiska",
+    "sugestie_lokalizacji": "Łąki kośne i pastwiska w całej Polsce | Blisko Poznania: pastwiska w Dolinie Baryczy, polany koło Mosiny",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zbieraj TYLKO gdy w środku biała jak twaróg – żółta lub szara to TRUJĄCE stadium!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Calvatia gigantea purchawka olbrzymia biała łąka",
+    "ciekawostka": "Może ważyć do 20 kg! Zawiera biliony zarodników. Kiedy żółknie – nie jedz!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – pastwiska"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki kośne"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "nazwa_polska": "Soplówka jeżowata",
+    "nazwa_lacinska": "Hericium erinaceus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Soplowcowate",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Cały owocnik",
+    "zastosowanie_kulinarne": "Smażona – smakuje jak krab lub homar, do zup, zamiennik mięsa",
+    "zastosowanie_lecznicze": "Regeneracja układu nerwowego (NGF!), pamięć, Alzheimer, adaptogen",
+    "przepis_sugestia": "Smażona soplówka: plastry + masło + czosnek + sól – smak owoców morza!",
+    "wystepowanie_ogolne": "Na starych drzewach liściastych (buk, dąb) – rzadka",
+    "regiony_polski": "Rzadka w całej Polsce – szukaj na bardzo starych bukach i dębach",
+    "sugestie_lokalizacji": "Bieszczady (stare buczyny) | Białowieża (stare dęby) | Blisko Poznania: Rogalin (stare dęby 700-letnie!) | Góry Stołowe (buczyny)",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – biały jeż na drzewie jest absolutnie niepowtarzalny w wyglądzie",
+    "trudnosc_zbioru": "trudny",
+    "img_search": "Hericium erinaceus soplówka jeżowata biała grzyb drzewo",
+    "ciekawostka": "Badania kliniczne potwierdzają wpływ na Alzheimera i Parkinsona. Superstar medycyny funkcjonalnej!",
+    "ochrona": "OBJĘTA OCHRONĄ – w Polsce zbieraj tylko za pewnym przyzwoleniem!",
+    "koordinaty": [
+      {
+        "lat": 49.067,
+        "lng": 22.734,
+        "opis": "Bieszczady – stare buczyny"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – stare dęby"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "nazwa_polska": "Pieczarka łąkowa",
+    "nazwa_lacinska": "Agaricus campestris",
+    "kategoria": "Grzyby",
+    "podkategoria": "Pieczarkowate",
+    "sezon_start": 6,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 5,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażona, do zup, na pizzy, surowa w sałatkach",
+    "zastosowanie_lecznicze": "Białko, witaminy z grupy B, niskotłuszczowy, beta- glukany",
+    "przepis_sugestia": "Pieczarki duszone: pieczarki + cebula + śmietana + koper",
+    "wystepowanie_ogolne": "Łąki, pastwiska, trawniki, ogrody – cała Polska",
+    "regiony_polski": "Pospolita na łąkach kośnych i pastwiskach całej Polski",
+    "sugestie_lokalizacji": "Łąki kośne i pastwiska w całej Polsce – szukaj rano na rosistych łąkach | Blisko Poznania: pastwiska w Dolinie Baryczy",
+    "trujace_surowe": false,
+    "ostrzezenie": "UWAGA: Pomylenie z muchomorem sromotnikowym! Pieczarka ma RÓŻOWE lub BRĄZOWE blaszki – NIGDY białe!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Agaricus campestris pieczarka łąkowa biała trawa",
+    "ciekawostka": "Dzika kuzynka sklepowej pieczarki – smakuje 5× lepiej! Poluj rano na rosistych łąkach.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 51.524,
+        "lng": 17.457,
+        "opis": "Dolina Baryczy – pastwiska"
+      },
+      {
+        "lat": 52.245,
+        "lng": 16.854,
+        "opis": "Mosina – łąki kośne"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "nazwa_polska": "Lejkowiec dęty (trąbka śmierci)",
+    "nazwa_lacinska": "Craterellus cornucopioides",
+    "kategoria": "Grzyby",
+    "podkategoria": "Lejkowcowate",
+    "sezon_start": 8,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 10,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Cały owocnik",
+    "zastosowanie_kulinarne": "Doskonały do suszenia – do risotto, sosów – intensywny truflowy aromat!",
+    "zastosowanie_lecznicze": "Białko, witaminy z grupy B, witamina D",
+    "przepis_sugestia": "Suszony lejkowiec do risotto: proszek + ryż + cebula + wino białe",
+    "wystepowanie_ogolne": "Lasy liściaste, wilgotne buczyny, grądy – wschodnia i południowa Polska",
+    "regiony_polski": "Buczyny zachodniej i południowej Polski: Sudety, Karpaty, Bieszczady",
+    "sugestie_lokalizacji": "Buczyny w Górach Stołowych | Beskidy i Bieszczady | Drawieński PN | Blisko Poznania: buczyny w Puszczy Zielonce (rzadszy)",
+    "trujace_surowe": false,
+    "ostrzezenie": "Brak – mimo groźnej nazwy 'trąbka śmierci' jest całkowicie bezpieczny i pyszny!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Craterellus cornucopioides lejkowiec dęty czarny trąbka",
+    "ciekawostka": "Czarny jak smoła, prawie niewidoczny w ściółce – ale truflowy aromat! Francuzi zwą go 'truflą biedaka'.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 50.483,
+        "lng": 16.352,
+        "opis": "Sudety (Góry Stołowe) – buczyny"
+      },
+      {
+        "lat": 49.067,
+        "lng": 22.734,
+        "opis": "Bieszczady – wilgotne buczyny"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "nazwa_polska": "Gołąbek zielonawy",
+    "nazwa_lacinska": "Russula virescens",
+    "kategoria": "Grzyby",
+    "podkategoria": "Gołąbkowate",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażony, do zup, na surowo w sałatkach – jeden z nielicznych jadalnych surowo!",
+    "zastosowanie_lecznicze": "Białko, składniki odżywcze, enzymy trawienne",
+    "przepis_sugestia": "Surowy w sałatce: pokrojony + oliwa + sól + zioła – orzechowy smak!",
+    "wystepowanie_ogolne": "Lasy liściaste, buczyny, grądy – cała Polska",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Buczyny i grądy w lasach liściastych całej Polski | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka",
+    "trujace_surowe": false,
+    "ostrzezenie": "Uwaga na inne gołąbki – wiele jest niejadalnych. Gołąbek zielonawy = nieregularny, zielony kapelusz!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Russula virescens gołąbek zienonawy zielony kapelusz",
+    "ciekawostka": "Jeden z nielicznych grzybów, który można jeść surowy! Smakuje lekko orzechowo.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – buczyny i grądy"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – grądy"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "nazwa_polska": "Maślak żółty",
+    "nazwa_lacinska": "Suillus grevillei",
+    "kategoria": "Grzyby",
+    "podkategoria": "Borowikowate",
+    "sezon_start": 7,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "sierpień–październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz bez śluzu!",
+    "zastosowanie_kulinarne": "Marynowany, smażony",
+    "zastosowanie_lecznicze": "Białko, składniki odżywcze",
+    "przepis_sugestia": "Marynowany maślak żółty: grzyby + ocet + czosnek + zioła + cukier",
+    "wystepowanie_ogolne": "Wyłącznie pod modrzewiami – cała Polska",
+    "regiony_polski": "Wszędzie gdzie rośnie modrzew – parki miejskie, aleje, lasy",
+    "sugestie_lokalizacji": "Parki i aleje z modrzewiem w całej Polsce | Blisko Poznania: parki z modrzewiem, Rogalin",
+    "trujace_surowe": false,
+    "ostrzezenie": "Jak maślak zwyczajny – ZAWSZE zdejmuj śluzowatą skórkę kapelusza!",
+    "trudnosc_zbioru": "łatwy",
+    "img_search": "Suillus grevillei maślak żółty modrzew złoty",
+    "ciekawostka": "Rośnie WYŁĄCZNIE pod modrzewiami. Znajdź modrzew, znajdziesz złote maślaki!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Rogalin – aleje z modrzewiem"
+      },
+      {
+        "lat": 52.419,
+        "lng": 16.936,
+        "opis": "Park Cytadela – modrzewie"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "nazwa_polska": "Borowik ceglastopory",
+    "nazwa_lacinska": "Boletus luridus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Borowikowate",
+    "sezon_start": 6,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "lipiec–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon – TYLKO po ugotowaniu!",
+    "zastosowanie_kulinarne": "Smażony, do sosów – WYŁĄCZNIE po obróbce cieplnej!",
+    "zastosowanie_lecznicze": "Białko, składniki odżywcze",
+    "przepis_sugestia": "Gulasz grzybowy: gotuj minimum 20 min + śmietana + zioła",
+    "wystepowanie_ogolne": "Lasy liściaste, grądy, buczyny – środkowa i południowa Polska",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: Lasy Rogalińskie, lasy liściaste koło Mosiny",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA: TRUJĄCY NA SUROWO! Toksyczny bez obróbki cieplnej, po gotowaniu (min. 20 min) jadalny. Sinieje intensywnie po nacięciu.",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Boletus luridus borowik ceglastopory sinawy",
+    "ciekawostka": "Intensywnie sinieje po nacięciu – stresuje zbieraczy, ale jest jadalny po ugotowaniu. Nie jedz surowego!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – grądy"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "nazwa_polska": "Pieczarka leśna",
+    "nazwa_lacinska": "Agaricus sylvaticus",
+    "kategoria": "Grzyby",
+    "podkategoria": "Pieczarkowate",
+    "sezon_start": 7,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 5,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kapelusz i trzon",
+    "zastosowanie_kulinarne": "Smażona, do zup i sosów",
+    "zastosowanie_lecznicze": "Białko, witaminy, immunostymulujące",
+    "przepis_sugestia": "Sos pieczarkowy leśny: pieczarki + śmietana + cebula + tymianek",
+    "wystepowanie_ogolne": "Lasy iglaste, bory sosnowe – cała Polska",
+    "regiony_polski": "Pospolita w borach sosnowych całej Polski",
+    "sugestie_lokalizacji": "Bory sosnowe w całej Polsce – rośnie w grupach pod sosnami | Blisko Poznania: bory sosnowe Puszczy Noteckiej",
+    "trujace_surowe": false,
+    "ostrzezenie": "Jak pieczarka łąkowa – sprawdź kolor blaszek (różowe lub brązowe, nigdy białe)!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Agaricus sylvaticus pieczarka leśna łuskowana",
+    "ciekawostka": "Rośnie w grupach pod sosnami – gdzie jedna, tam wiele!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.501,
+        "lng": 16.968,
+        "opis": "Biedrusko – bory sosnowe"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – bory sosnowe"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "nazwa_polska": "Grzybówka czysta – EDUKACYJNIE TRUJĄCA",
+    "nazwa_lacinska": "Mycena pura",
+    "kategoria": "Grzyby",
+    "podkategoria": "Grzybówkowate (TRUJĄCA)",
+    "sezon_start": 9,
+    "sezon_koniec": 11,
+    "szczyt_zbioru": "wrzesień–październik",
+    "min_temp_C": 8,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "NIE JADALNA – umieszczona edukacyjnie",
+    "zastosowanie_kulinarne": "NIEJADALNA",
+    "zastosowanie_lecznicze": "Brak",
+    "przepis_sugestia": "NIE ZBIERAJ – wpisana edukacyjnie (mylona z jadalnymi)",
+    "wystepowanie_ogolne": "Lasy liściaste, cała Polska",
+    "regiony_polski": "Pospolita w lasach całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "UWAGA EDUKACYJNA: Trujący! Zawiera muskarynę. Często mylona z jadalnymi grzybówkami. Lilac/fioletowy kolor, zapach rzodkwi.",
+    "trudnosc_zbioru": "nie zbieraj",
+    "img_search": "Mycena pura grzybówka czysta fioletowa",
+    "ciekawostka": "Wpisana EDUKACYJNIE – nie zbieraj! Piękna fioletowa grzybówka jest trująca. Muskaryna = poważne zatrucie.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – ściółka liściasta"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "nazwa_polska": "Pałka szerokolistna",
+    "nazwa_lacinska": "Typha latifolia",
+    "kategoria": "Rośliny wodne",
+    "podkategoria": "Rośliny bagienne",
+    "sezon_start": 4,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "kwiecień–czerwiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Młode pędy (kwiecień-maj), pyłek (czerwiec), korzenie",
+    "zastosowanie_kulinarne": "Pędy jak szparagi, pyłek jako mąka do pieczywa, korzenie gotowane",
+    "zastosowanie_lecznicze": "Pyłek: działanie ściągające, tamowanie krwawień",
+    "przepis_sugestia": "Pędy pałki gotowane: jak szparagi + masło + sól – delikatny smak",
+    "wystepowanie_ogolne": "Cała Polska – brzegi jezior, rzek, bagna, stawy",
+    "regiony_polski": "Wszędzie nad wodą – jeziora mazurskie, rzeki nizinne",
+    "sugestie_lokalizacji": "Jeziora Pojezierza Mazurskiego, Gnieźnieńskiego | Brzegi Warty, Wisły, Odry, Biebrzy | Blisko Poznania: jeziora gnieźnieńskie, brzegi Warty",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zbieraj tylko z czystych terenów – pałka akumuluje zanieczyszczenia z wody!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Typha latifolia pałka szerokolistna brązowa woda",
+    "ciekawostka": "Jedna roślina daje jedzenie przez cały sezon – pędy, pyłek, kwiatostany, korzenie. 'McDonald's natury'!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.3189,
+        "lng": 16.8891,
+        "opis": "Rogalin – staw przy Warcie"
+      },
+      {
+        "lat": 52.2454,
+        "lng": 16.8542,
+        "opis": "Mosina – brzegi rowów"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "nazwa_polska": "Tatarak zwyczajny",
+    "nazwa_lacinska": "Acorus calamus",
+    "kategoria": "Rośliny wodne",
+    "podkategoria": "Rośliny bagienne",
+    "sezon_start": 5,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "maj–czerwiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 10,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Kłącze (przyprawa), młode łodygi",
+    "zastosowanie_kulinarne": "Kłącze jako przyprawa do nalewek i cukierków tatarkowych",
+    "zastosowanie_lecznicze": "Trawienie, wzdęcia, apetyt, bóle żołądka, poprawa koncentracji",
+    "przepis_sugestia": "Cukierki tatarkowe: kłącze + syrop cukrowy, kandyzuj – tradycyjna słodycz",
+    "wystepowanie_ogolne": "Cała Polska – brzegi rzek, jezior, stawy, bagna",
+    "regiony_polski": "Wszędzie nad wodą",
+    "sugestie_lokalizacji": "Brzegi rzek i jezior w całej Polsce | Blisko Poznania: Gopło ~80km, brzegi Warty, jeziora gnieźnieńskie",
+    "trujace_surowe": true,
+    "ostrzezenie": "Świeże kłącze zawiera beta-azaron (potencjalnie rakotwórczy) – stosuj tylko SUSZONE i w małych ilościach!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Acorus calamus tatarak zwyczajny kłącze woda",
+    "ciekawostka": "Sprowadzony przez Tatarów jako lek i przyprawa – stąd nazwa 'tatarak'. Oczyszczali nim wodę!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.579,
+        "lng": 18.234,
+        "opis": "Gopło – brzegi jeziora"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – szuwary"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "nazwa_polska": "Rzeżucha wodna",
+    "nazwa_lacinska": "Nasturtium officinale",
+    "kategoria": "Rośliny wodne",
+    "podkategoria": "Rośliny wodne",
+    "sezon_start": 3,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 10,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "Liście i łodygi",
+    "zastosowanie_kulinarne": "Sałatki, kanapki, smoothie, zupa kremowa, garnirowanie",
+    "zastosowanie_lecznicze": "Witamina C, moczopędne, oczyszczanie krwi, wspomaganie tarczycy (jod)",
+    "przepis_sugestia": "Zupa krem: rzeżucha + ziemniaki + śmietana + sól i pieprz",
+    "wystepowanie_ogolne": "Cała Polska – czyste strumienie, źródliska, rowy z bieżącą wodą",
+    "regiony_polski": "Głównie górskie i podgórskie czyste strumienie",
+    "sugestie_lokalizacji": "Czyste strumienie górskie całej Polski | Tatry, Beskidy, Sudety, Bieszczady | Blisko Poznania: czyste strumienie w Puszczy Zielonce (sprawdź czystość wody!)",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zbieraj TYLKO z czystych, PŁYNĄCYCH strumieni – ryzyko przywry wątrobowej przy zanieczyszczonej wodzie!",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Nasturtium officinale rzeżucha wodna strumień zielona",
+    "ciekawostka": "Gordon Ramsay dodaje ją do sosów jako naturalną pikantność. Grecy i Persowie jedli ją od tysięcy lat!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 49.256,
+        "lng": 19.867,
+        "opis": "Tatry (Dolina Kościeliska) – czyste potoki"
+      },
+      {
+        "lat": 49.723,
+        "lng": 19.053,
+        "opis": "Beskid Śląski – górskie strumienie"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "nazwa_polska": "Płucnica islandzka",
+    "nazwa_lacinska": "Cetraria islandica",
+    "kategoria": "Porosty",
+    "podkategoria": "Porosty jadalne",
+    "sezon_start": 1,
+    "sezon_koniec": 12,
+    "szczyt_zbioru": "cały rok (najlepiej zima–wiosna)",
+    "min_temp_C": -20,
+    "dni_min_temp": 0,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Cała plecha",
+    "zastosowanie_kulinarne": "Herbata, odwar, niegdyś do pieczenia chleba",
+    "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, biegunka, odporność, antybiotyczne (kwas usninowy!)",
+    "przepis_sugestia": "Herbata: 1 łyżka + szklanka ZIMNEJ wody, doprowadź do wrzenia (zimna woda usuwa gorycz)",
+    "wystepowanie_ogolne": "Bory sosnowe, wrzosowiska, mchy – uboga gleba",
+    "regiony_polski": "Bory sosnowe na ubogich glebach całej Polski – szczególnie: Bory Tucholskie, Puszcza Notecka, Tatry",
+    "sugestie_lokalizacji": "Bory Tucholskie (największa populacja w Polsce) | Tatry: powyżej granicy lasu | Puszcza Piska: suche bory sosnowe | Blisko Poznania: Puszcza Notecka ~80km",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zbieraj z dala od dróg i przemysłu – porosty AKUMULUJĄ zanieczyszczenia! Sprawdź jakość powietrza.",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Cetraria islandica płucnica islandzka porost bor",
+    "ciekawostka": "Żyje setki lat. W Islandii jedzono ją podczas głodu – robi się z niej chleb. Kwas usninowy = naturalny antybiotyk kliniczny!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 53.645,
+        "lng": 18.023,
+        "opis": "Bory Tucholskie – suche bory sosnowe"
+      },
+      {
+        "lat": 52.723,
+        "lng": 16.534,
+        "opis": "Puszcza Notecka – wrzosowiska"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "nazwa_polska": "Mąkla tarniowa",
+    "nazwa_lacinska": "Evernia prunastri",
+    "kategoria": "Porosty",
+    "podkategoria": "Porosty jadalne",
+    "sezon_start": 1,
+    "sezon_koniec": 12,
+    "szczyt_zbioru": "cały rok",
+    "min_temp_C": -20,
+    "dni_min_temp": 0,
+    "wilgotnosc": "srednia",
+    "jadalne_czesci": "Cała plecha",
+    "zastosowanie_kulinarne": "Dawniej do pieczenia chleba i jako zagęstnik, herbata",
+    "zastosowanie_lecznicze": "Działanie antybiotyczne, wykrztuśne",
+    "przepis_sugestia": "Dawny chleb leśny: mąka zbożowa + mielona mąkla 20%",
+    "wystepowanie_ogolne": "Lasy liściaste i iglaste – na korze drzew",
+    "regiony_polski": "Pospolita w lasach całej Polski – szczególnie na starych drzewach",
+    "sugestie_lokalizacji": "Stare drzewa w lasach całej Polski – korony starych dębów i sosen | Blisko Poznania: stare dęby Rogalina",
+    "trujace_surowe": false,
+    "ostrzezenie": "Zbieraj z dala od dróg – jak wszystkie porosty akumuluje zanieczyszczenia",
+    "trudnosc_zbioru": "sredni",
+    "img_search": "Evernia prunastri mąkla tarniowa porost szary zielony",
+    "ciekawostka": "Stosowana w perfumiarstwie jako utrwalacz zapachów! Do dziś używana w przemyśle kosmetycznym.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.232,
+        "lng": 17.013,
+        "opis": "Lasy Rogalińskie – stare dęby"
+      },
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – stare drzewa"
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "nazwa_polska": "Pokrzyk wilcza jagoda – TRUJĄCA!",
+    "nazwa_lacinska": "Atropa belladonna",
+    "kategoria": "Rośliny TRUJĄCE",
+    "podkategoria": "Wpisane edukacyjnie",
+    "sezon_start": 7,
+    "sezon_koniec": 9,
+    "szczyt_zbioru": "lipiec–sierpień",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "ŻADNA – roślina ŚMIERTELNIE trująca",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "W farmaceutyce: atropina do oczu, leki na skurcze – TYLKO medycyna",
+    "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+    "wystepowanie_ogolne": "Lasy liściaste, zarośla – rozrzucona w Polsce",
+    "regiony_polski": "Niepospolita – głównie południe Polski, zarośla leśne",
+    "sugestie_lokalizacji": "Cieniste zarośla leśne w całej Polsce | Blisko Poznania: bardzo rzadka",
+    "trujace_surowe": true,
+    "ostrzezenie": "ŚMIERTELNIE TRUJĄCA! Już kilka owoców może zabić dziecko. NIE DOTYKAJ, NIE JEDZ. Czarne lśniące owoce podobne do wiśni!",
+    "trudnosc_zbioru": "NIE ZBIERAJ",
+    "img_search": "Atropa belladonna pokrzyk wilcza jagoda czarne jagody",
+    "ciekawostka": "Wpisana EDUKACYJNIE – aby wiedzieć czego NIE ZBIERAĆ! Atropina z tej rośliny rozszerza źrenice – stąd 'belladonna' (piękna dama).",
+    "ochrona": "objęta ochroną częściową",
+    "koordinaty": [
+      {
+        "lat": 49.14,
+        "lng": 22.53,
+        "opis": "Bieszczady – cieniste zarośla leśne"
+      },
+      {
+        "lat": 50.867,
+        "lng": 20.923,
+        "opis": "Świętokrzyskie – wilgotne zarośla"
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "nazwa_polska": "Lulek czarny – TRUJĄCY!",
+    "nazwa_lacinska": "Hyoscyamus niger",
+    "kategoria": "Rośliny TRUJĄCE",
+    "podkategoria": "Wpisane edukacyjnie",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "lipiec",
+    "min_temp_C": 10,
+    "dni_min_temp": 14,
+    "wilgotnosc": "niska",
+    "jadalne_czesci": "ŻADNA – roślina TRUJĄCA",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "W farmaceutyce: skopolamina (lek na mdłości, morze) – TYLKO medycyna",
+    "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+    "wystepowanie_ogolne": "Stare mury, ruiny, przydroża – rozrzucona w Polsce",
+    "regiony_polski": "Niepospolita – stare zabudowania, miejsca historyczne",
+    "sugestie_lokalizacji": "Stare mury i ruiny w całej Polsce",
+    "trujace_surowe": true,
+    "ostrzezenie": "SILNIE TRUJĄCY! Cała roślina zawiera tropan alkaloidy. Nie dotykaj, nie jedz, nie wdychaj dymu!",
+    "trudnosc_zbioru": "NIE ZBIERAJ",
+    "img_search": "Hyoscyamus niger lulek czarny",
+    "ciekawostka": "Wpisany EDUKACYJNIE! Czarownice używały lulka do lotnych maści – skopolamina powoduje halucynacje i uczucie latania.",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.607,
+        "lng": 16.576,
+        "opis": "Szamotuły – stare mury przy drogach"
+      },
+      {
+        "lat": 50.867,
+        "lng": 20.923,
+        "opis": "Świętokrzyskie – ruiny i stare zabudowania"
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "nazwa_polska": "Szczwół plamisty – TRUJĄCY!",
+    "nazwa_lacinska": "Conium maculatum",
+    "kategoria": "Rośliny TRUJĄCE",
+    "podkategoria": "Wpisane edukacyjnie",
+    "sezon_start": 5,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 12,
+    "dni_min_temp": 14,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "ŻADNA – roślina ŚMIERTELNIE trująca",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "Brak zastosowań – wyłącznie trucizna",
+    "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, rowy, zarośla, nieużytki",
+    "regiony_polski": "Pospolity na wilgotnych nieużytkach całej Polski",
+    "sugestie_lokalizacji": "Wilgotne przydroża i rowy w całej Polsce – UWAGA: mylony z marchewką dziką, dzięglem i pietruszką!",
+    "trujace_surowe": true,
+    "ostrzezenie": "ŚMIERTELNIE TRUJĄCY! Tym sokiem otruto Sokratesa. Cała roślina jest trucizną – szczególnie nasiona i korzeń. Czerwone plamy na łodydze = szczwół!",
+    "trudnosc_zbioru": "NIE ZBIERAJ",
+    "img_search": "Conium maculatum szczwół plamisty biały baldach",
+    "ciekawostka": "Wpisany EDUKACYJNIE – tym sokiem otruto Sokratesa! Mylony z marchewką dziką. Łodyga z czerwonymi plamami = szczwół!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.401,
+        "lng": 16.931,
+        "opis": "Dolina Warty – wilgotne przydroża"
+      },
+      {
+        "lat": 53.067,
+        "lng": 22.123,
+        "opis": "Narew – rowy i przydroża"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "nazwa_polska": "Barszcz Sosnowskiego – NIEBEZPIECZNY!",
+    "nazwa_lacinska": "Heracleum sosnowskyi",
+    "kategoria": "Rośliny TRUJĄCE",
+    "podkategoria": "Wpisane edukacyjnie",
+    "sezon_start": 6,
+    "sezon_koniec": 8,
+    "szczyt_zbioru": "czerwiec–lipiec",
+    "min_temp_C": 15,
+    "dni_min_temp": 20,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "ŻADNA – roślina NIEBEZPIECZNA",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "Brak zastosowań – powoduje poparzenia skóry",
+    "przepis_sugestia": "NIE ZBIERAJ, NIE DOTYKAJ – wpisany EDUKACYJNIE",
+    "wystepowanie_ogolne": "Cała Polska – przydroża, nadbrzeża rzek, nieużytki (gatunek inwazyjny!)",
+    "regiony_polski": "Masowy w całej Polsce – szczególnie wschodnia i centralna Polska",
+    "sugestie_lokalizacji": "Brzegi rzek i przydroża w całej Polsce – OGROMNA roślina do 3 m wysokości | Blisko Poznania: rowy przy drogach, brzegi rzek",
+    "trujace_surowe": true,
+    "ostrzezenie": "NIEBEZPIECZNY! Sok roślinny w kontakcie ze skórą i słońcem powoduje POWAŻNE POPARZENIA II i III stopnia! NIE DOTYKAJ! Zadzwoń po pomoc jeśli miałeś kontakt ze sokiem!",
+    "trudnosc_zbioru": "NIE DOTYKAJ",
+    "img_search": "Heracleum sosnowskyi barszcz Sosnowskiego ogromny",
+    "ciekawostka": "Wpisany EDUKACYJNIE – inwazyjny gigant powodujący poparzenia II stopnia po kontakcie ze słońcem! Zadzwoń po straż pożarną!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.55,
+        "lng": 21.9,
+        "opis": "Bug – brzegi rzeki (UWAGA: nie zbierać!)"
+      },
+      {
+        "lat": 53.495,
+        "lng": 22.654,
+        "opis": "Biebrza – nadbrzeżne nieużytki (UWAGA!)"
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "nazwa_polska": "Konwalia majowa – TRUJĄCA!",
+    "nazwa_lacinska": "Convallaria majalis",
+    "kategoria": "Rośliny TRUJĄCE",
+    "podkategoria": "Wpisane edukacyjnie",
+    "sezon_start": 4,
+    "sezon_koniec": 5,
+    "szczyt_zbioru": "kwiecień–maj",
+    "min_temp_C": 8,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "ŻADNA – roślina TRUJĄCA",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "W kardiologii: glikozydy nasercowe (digoksyna-podobne) – TYLKO medycyna",
+    "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+    "wystepowanie_ogolne": "Cała Polska – lasy liściaste, grądy, parki",
+    "regiony_polski": "Pospolita w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: MYLONA Z CZOSNKIEM NIEDŹWIEDZIM",
+    "trujace_surowe": true,
+    "ostrzezenie": "TRUJĄCA! Cała roślina zawiera kardioaktywne glikozydy – mogą wywołać arytmię serca. Mylona z czosnkiem niedźwiedzim – sprawdź ZAWSZE zapach!",
+    "trudnosc_zbioru": "NIE ZBIERAJ",
+    "img_search": "Convallaria majalis konwalia majowa białe dzwonki",
+    "ciekawostka": "Wpisana EDUKACYJNIE – NAJCZĘŚCIEJ MYLONA Z CZOSNKIEM NIEDŹWIEDZIM! Nie ma czosnkowego zapachu!",
+    "ochrona": "objęta ochroną",
+    "koordinaty": [
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – grądy liściaste"
+      },
+      {
+        "lat": 52.324,
+        "lng": 20.413,
+        "opis": "Kampinos – lasy liściaste"
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "nazwa_polska": "Muchomor sromotnikowy – ŚMIERTELNY!",
+    "nazwa_lacinska": "Amanita phalloides",
+    "kategoria": "Grzyby",
+    "podkategoria": "TRUJĄCE edukacyjnie",
+    "sezon_start": 7,
+    "sezon_koniec": 10,
+    "szczyt_zbioru": "sierpień–wrzesień",
+    "min_temp_C": 12,
+    "dni_min_temp": 7,
+    "wilgotnosc": "wysoka",
+    "jadalne_czesci": "ŻADNA – grzyb ŚMIERTELNIE TRUJĄCY",
+    "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+    "zastosowanie_lecznicze": "Brak zastosowań – amotoksyny niszczą wątrobę bez antidotum",
+    "przepis_sugestia": "NIE ZBIERAJ – wpisany EDUKACYJNIE",
+    "wystepowanie_ogolne": "Lasy liściaste i mieszane – cała Polska",
+    "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+    "sugestie_lokalizacji": "Lasy liściaste w całej Polsce – UWAGA: mylony z czubajką kanią, pieczarką i gąską zielonką!",
+    "trujace_surowe": true,
+    "ostrzezenie": "ŚMIERTELNIE TRUJĄCY! Jeden kapelusz może zabić dorosłego człowieka. Amotoksyny niszczą wątrobę – objawy pojawiają się 6-24h po spożyciu, gdy jest już za późno! Biały, zielonkawy, biała u nasady nóżka, biały pierścień.",
+    "trudnosc_zbioru": "NIE ZBIERAJ",
+    "img_search": "Amanita phalloides muchomor sromotnikowy zielony biały",
+    "ciekawostka": "EDUKACYJNIE – sprawca 90% śmiertelnych zatruć grzybowych w Europie! Mylony z kanią, pieczarką i zielonką. Jeśli kapelusz jest zielonkawy i biały u nasady – ZOSTAW!",
+    "ochrona": "brak",
+    "koordinaty": [
+      {
+        "lat": 52.703,
+        "lng": 23.853,
+        "opis": "Białowieża – lasy liściaste"
+      },
+      {
+        "lat": 52.519,
+        "lng": 17.123,
+        "opis": "Puszcza Zielonka – lasy liściaste"
+      }
+    ]
+  }
+]

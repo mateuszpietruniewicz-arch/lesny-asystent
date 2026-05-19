@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1b4332"/>
+  <!-- tree trunk -->
+  <rect x="232" y="348" width="48" height="88" rx="8" fill="#74c69d"/>
+  <!-- tree canopy layers -->
+  <polygon points="256,76 352,240 160,240" fill="#40916c"/>
+  <polygon points="256,144 368,292 144,292" fill="#52b788"/>
+  <polygon points="256,208 380,348 132,348" fill="#74c69d"/>
+  <!-- decorative dots -->
+  <circle cx="400" cy="132" r="32" fill="#d8f3dc" opacity="0.55"/>
+  <circle cx="112" cy="176" r="22" fill="#d8f3dc" opacity="0.38"/>
+  <circle cx="420" cy="280" r="16" fill="#d8f3dc" opacity="0.3"/>
+</svg>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atlas dzikich roślin i grzybów jadalnych. Asystent terenowy.">
+  <meta name="theme-color" content="#1b4332">
+  <title>Forest Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">🌿</span>
+        <span class="brand-name">Forest Assistant</span>
+      </div>
+      <div class="hdr-nav">
+        <button class="journal-btn" id="map-view-btn" aria-label="Mapa zbiorów">🗺 Mapa</button>
+        <button class="journal-btn" id="journal-open-btn" aria-label="Dziennik zbiorów">📓 Dziennik</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="welcome-dashboard" aria-label="Panel powitalny">
+    <div class="welcome-inner">
+      <div class="hero-top">
+        <div class="hero-text">
+          <div class="hero-title">Odkryj las na nowo</div>
+          <div class="hero-subtitle">120 dzikich roślin i grzybów · mapy stanowisk · prognoza zbiorów</div>
+        </div>
+        <div id="hero-weather" class="hero-weather-widget" aria-live="polite">
+          <div class="hww-loading"><div class="rdy-spin"></div></div>
+        </div>
+      </div>
+      <div class="hero-search-wrap">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Szukaj gatunku lub zastosowania…"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Szukaj gatunku"
+          aria-autocomplete="list"
+          aria-controls="suggestions-list"
+        >
+        <ul id="suggestions-list" role="listbox" aria-label="Sugestie wyszukiwania"></ul>
+      </div>
+      <div class="hero-toolbar">
+        <select id="sort-select" class="toolbar-select" aria-label="Sposób sortowania">
+          <option value="default">Domyślne</option>
+          <option value="alpha">Alfabetycznie A–Z</option>
+          <option value="readiness">Wg gotowości ↓</option>
+        </select>
+        <label class="toolbar-season-label" for="season-toggle">
+          <input type="checkbox" id="season-toggle" class="toggle-input">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span class="toggle-text">Tylko w sezonie</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <nav id="tab-nav" role="tablist" aria-label="Kategorie">
+    <button class="tab-btn active" role="tab" data-tab="all"      aria-selected="true" >Wszystkie        <span class="tab-count" id="cnt-all"     ></span></button>
+    <button class="tab-btn"        role="tab" data-tab="warzywa"  aria-selected="false">Dzikie warzywa   <span class="tab-count" id="cnt-warzywa" ></span></button>
+    <button class="tab-btn"        role="tab" data-tab="ziola"    aria-selected="false">Zioła            <span class="tab-count" id="cnt-ziola"   ></span></button>
+    <button class="tab-btn"        role="tab" data-tab="grzyby"   aria-selected="false">Grzyby           <span class="tab-count" id="cnt-grzyby"  ></span></button>
+    <button class="tab-btn"        role="tab" data-tab="lecznicze"aria-selected="false">Część lecznicza  <span class="tab-count" id="cnt-lecznicze"></span></button>
+  </nav>
+
+  <main id="species-grid"></main>
+
+  <dialog id="species-modal" aria-modal="true">
+    <div id="modal-content"></div>
+  </dialog>
+
+  <dialog id="journal-modal" aria-modal="true" aria-label="Dziennik zbiorów">
+    <div id="journal-modal-content"></div>
+  </dialog>
+
+  <!-- Mapa Skarbów (V10) -->
+  <div id="map-view" hidden aria-label="Mapa zbiorów">
+    <div class="mv-topbar">
+      <span class="mv-title">🗺 Mapa zbiorów</span>
+      <div class="mv-topbar-actions">
+        <button class="mv-refresh-btn" id="mv-refresh-btn" aria-label="Odśwież mapę">↻ Odśwież</button>
+        <button class="mv-close-btn" id="mv-close-btn" aria-label="Zamknij mapę">✕</button>
+      </div>
+    </div>
+    <div class="mv-filters" id="mv-filters">
+      <button class="mv-filter active" data-filter="all">Wszystkie</button>
+      <button class="mv-filter" data-filter="warzywa">Dzikie warzywa</button>
+      <button class="mv-filter" data-filter="ziola">Zioła</button>
+      <button class="mv-filter" data-filter="kwiaty">Jadalne kwiaty</button>
+      <button class="mv-filter" data-filter="grzyby">Grzyby</button>
+    </div>
+    <div class="mv-map-wrap">
+      <div id="treasure-map"></div>
+      <div class="mv-loader" id="mv-loader">
+        <div class="mv-loader-spinner"></div>
+        <span class="mv-loader-text">Ładowanie mapy…</span>
+      </div>
+      <div class="mv-empty" id="mv-empty" hidden>
+        <span class="mv-empty-icon">📍</span>
+        <p>Brak wpisów z lokalizacją.<br>Dodaj lokalizację podczas zapisywania zbioru.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
