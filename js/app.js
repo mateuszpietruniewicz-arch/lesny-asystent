@@ -1484,20 +1484,21 @@ function openGoogleLens(photoData) {
     return;
   }
 
-  const hlInput   = document.createElement('input');
-  hlInput.type    = 'hidden';
-  hlInput.name    = 'hl';
-  hlInput.value   = 'pl';
+  // Unikalna nazwa okna — otwieramy je jako about:blank zanim wyślemy form.
+  // To blokuje Android Chrome przed przechwyceniem nawigacji jako intencji aplikacji
+  // (intent matching działa tylko przy window.open z docelowym URL, nie przy navigacji
+  // w już otwartym oknie).
+  const targetName = '_glens_' + Date.now();
+  window.open('', targetName);
 
   const form      = document.createElement('form');
   form.method     = 'POST';
-  form.action     = 'https://www.google.com/searchbyimage/upload';
+  form.action     = 'https://lens.google.com/v3/upload';
   form.enctype    = 'multipart/form-data';
-  form.target     = '_blank';
+  form.target     = targetName;
   form.style.cssText = 'display:none;position:fixed';
 
   form.appendChild(imgInput);
-  form.appendChild(hlInput);
   document.body.appendChild(form);
   form.submit();
   setTimeout(() => form.parentNode?.removeChild(form), 500);
