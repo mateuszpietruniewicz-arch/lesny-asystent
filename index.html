@@ -91,6 +91,15 @@
         <div class="slc-inner"></div>
       </div>
 
+      <!-- Radar parkingowy -->
+      <div class="parking-row" id="parking-row">
+        <button class="parking-btn" id="parking-save-btn" aria-label="Zapisz punkt startowy">
+          <span class="parking-btn-icon">📍</span>
+          <span class="parking-btn-label">Zapisz punkt startu</span>
+        </button>
+        <button class="parking-reset-btn" id="parking-reset-btn" hidden aria-label="Resetuj punkt startowy">Resetuj</button>
+      </div>
+
       <div class="hero-toolbar">
         <select id="sort-select" class="toolbar-select" aria-label="Sposób sortowania">
           <option value="default">Domyślne</option>
@@ -150,6 +159,23 @@
         <span class="mv-empty-icon">📍</span>
         <p>Brak wpisów z lokalizacją.<br>Dodaj lokalizację podczas zapisywania zbioru.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- Radar modal -->
+  <div id="radar-modal" class="radar-modal" hidden aria-label="Nawiguj do auta" role="dialog" aria-modal="true">
+    <div class="radar-inner">
+      <button class="radar-close-btn" id="radar-close-btn" aria-label="Zamknij radar">✕</button>
+      <div class="radar-title">Wróć do auta</div>
+      <div class="radar-distance" id="radar-distance">— m</div>
+      <div class="radar-arrow-wrap" id="radar-arrow-wrap">
+        <svg class="radar-arrow-svg" id="radar-arrow-svg" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,8 62,55 50,47 38,55" fill="#f4c430" />
+          <circle cx="50" cy="66" r="9" fill="#f4c430" opacity=".35" />
+        </svg>
+      </div>
+      <div class="radar-hint" id="radar-hint">Kalibracja kompasu…</div>
+      <div class="radar-saved-at" id="radar-saved-at"></div>
     </div>
   </div>
 

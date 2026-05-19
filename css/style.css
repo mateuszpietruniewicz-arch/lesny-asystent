@@ -2938,3 +2938,174 @@ body.high-contrast .jrn-photo-btn {
 @media (min-width: 1200px) {
   #species-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 }
+
+/* ── Parking Radar ──────────────────────────────────────────────────────────── */
+
+.parking-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.parking-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: var(--radius-m);
+  background: rgba(255,255,255,.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--ease), transform .12s;
+  border: 1px solid rgba(255,255,255,.1);
+}
+.parking-btn:active { transform: scale(.97); }
+.parking-btn--active {
+  background: rgba(244,196,48,.13);
+  border-color: rgba(244,196,48,.35);
+  color: #f4c430;
+}
+.parking-btn--saving { opacity: .6; pointer-events: none; }
+
+.parking-btn-icon { font-size: 18px; line-height: 1; }
+.parking-btn-label { flex: 1; text-align: left; }
+
+.parking-reset-btn {
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background var(--ease), color var(--ease);
+  white-space: nowrap;
+}
+.parking-reset-btn:hover { background: rgba(255,80,80,.15); color: #ff6b6b; border-color: rgba(255,80,80,.3); }
+
+.parking-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: rgba(30,40,30,.92);
+  color: #e0ffe0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 500;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.parking-toast--visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ── Radar modal ── */
+
+.radar-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(10,18,14,.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radar-modal[hidden] { display: none; }
+
+.radar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 32px 48px;
+  width: min(420px, 92vw);
+  border-radius: 28px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.09);
+  position: relative;
+  text-align: center;
+}
+
+.radar-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  color: var(--text-primary);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--ease);
+}
+.radar-close-btn:hover { background: rgba(255,255,255,.2); }
+
+.radar-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.radar-distance {
+  font-size: 56px;
+  font-weight: 800;
+  color: #f4c430;
+  line-height: 1;
+  letter-spacing: -.02em;
+  min-height: 68px;
+}
+
+.radar-arrow-wrap {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244,196,48,.08) 0%, transparent 70%);
+  border: 1px solid rgba(244,196,48,.15);
+  margin: 8px 0;
+}
+
+.radar-arrow-svg {
+  width: 110px;
+  height: 110px;
+  transition: transform .2s cubic-bezier(0.25,0.46,0.45,0.94);
+  filter: drop-shadow(0 0 12px rgba(244,196,48,.5));
+}
+
+.radar-hint {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-height: 22px;
+}
+
+.radar-saved-at {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  opacity: .7;
+  margin-top: 4px;
+}

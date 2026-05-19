@@ -75,6 +75,7 @@ async function init() {
   bindMainLens();
   bindSeasonalBar();
   initOfflineDetection();
+  initParkingRadar();
   setTimeout(warmImageCache, 4000); // start po 4s, by nie blokować krytycznych zasobów
 }
 
@@ -1967,6 +1968,204 @@ function initOfflineDetection() {
   window.addEventListener('offline', render);
   render();
 }
+
+// ── Parking Radar ─────────────────────────────────────────────────────────────
+
+const PARKING_KEY = 'fa_parking_v1';
+
+let radarWatchId     = null;
+let radarHeading     = null;
+let radarCurrentLat  = null;
+let radarCurrentLng  = null;
+let radarOpen        = false;
+
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371000;
+  const φ1 = lat1 * Math.PI / 180, φ2 = lat2 * Math.PI / 180;
+  const Δφ = (lat2 - lat1) * Math.PI / 180, Δλ = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(Δφ / 2) ** 2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function calcBearing(lat1, lng1, lat2, lng2) {
+  const φ1 = lat1 * Math.PI / 180, φ2 = lat2 * Math.PI / 180;
+  const Δλ = (lng2 - lng1) * Math.PI / 180;
+  const y = Math.sin(Δλ) * Math.cos(φ2);
+  const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+  return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+}
+
+function loadParking() {
+  try { return JSON.parse(localStorage.getItem(PARKING_KEY)); } catch { return null; }
+}
+
+function updateParkingBtn() {
+  const saved = loadParking();
+  const saveBtn  = $('parking-save-btn');
+  const resetBtn = $('parking-reset-btn');
+  if (!saveBtn) return;
+  if (saved) {
+    saveBtn.querySelector('.parking-btn-icon').textContent = '🧭';
+    saveBtn.querySelector('.parking-btn-label').textContent = 'Prowadź do auta';
+    saveBtn.classList.add('parking-btn--active');
+    resetBtn?.removeAttribute('hidden');
+  } else {
+    saveBtn.querySelector('.parking-btn-icon').textContent = '📍';
+    saveBtn.querySelector('.parking-btn-label').textContent = 'Zapisz punkt startu';
+    saveBtn.classList.remove('parking-btn--active');
+    resetBtn?.setAttribute('hidden', '');
+  }
+}
+
+function saveParkingLocation() {
+  if (!navigator.geolocation) {
+    showParkingToast('GPS niedostępny na tym urządzeniu.');
+    return;
+  }
+  const saveBtn = $('parking-save-btn');
+  saveBtn?.classList.add('parking-btn--saving');
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const data = { lat: pos.coords.latitude, lng: pos.coords.longitude, savedAt: Date.now() };
+      try { localStorage.setItem(PARKING_KEY, JSON.stringify(data)); } catch {}
+      saveBtn?.classList.remove('parking-btn--saving');
+      updateParkingBtn();
+      showParkingToast('Punkt startu zapisany!');
+    },
+    () => {
+      saveBtn?.classList.remove('parking-btn--saving');
+      showParkingToast('Nie udało się pobrać lokalizacji. Sprawdź uprawnienia GPS.');
+    },
+    { enableHighAccuracy: true, timeout: 10000 }
+  );
+}
+
+function showParkingToast(msg) {
+  const existing = document.getElementById('parking-toast');
+  existing?.remove();
+  const t = document.createElement('div');
+  t.id = 'parking-toast';
+  t.className = 'parking-toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('parking-toast--visible'));
+  setTimeout(() => { t.classList.remove('parking-toast--visible'); setTimeout(() => t.remove(), 400); }, 3000);
+}
+
+function openRadarModal() {
+  const saved = loadParking();
+  if (!saved) return;
+  const modal = $('radar-modal');
+  if (!modal) return;
+  radarOpen = true;
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+
+  const when = new Date(saved.savedAt);
+  const pad = n => String(n).padStart(2, '0');
+  $('radar-saved-at').textContent = `Zapisano: ${pad(when.getDate())}.${pad(when.getMonth()+1)} ${pad(when.getHours())}:${pad(when.getMinutes())}`;
+
+  radarCurrentLat = null;
+  radarCurrentLng = null;
+  $('radar-distance').textContent = '— m';
+  $('radar-hint').textContent = 'Szukam Twojej pozycji…';
+
+  radarWatchId = navigator.geolocation.watchPosition(
+    pos => {
+      radarCurrentLat = pos.coords.latitude;
+      radarCurrentLng = pos.coords.longitude;
+      updateRadarDisplay();
+    },
+    () => { $('radar-hint').textContent = 'Błąd GPS — sprawdź uprawnienia.'; },
+    { enableHighAccuracy: true, maximumAge: 2000 }
+  );
+
+  const evtName = 'ondeviceorientationabsolute' in window ? 'deviceorientationabsolute' : 'deviceorientation';
+  window.addEventListener(evtName, onDeviceOrientation, true);
+}
+
+function closeRadarModal() {
+  radarOpen = false;
+  const modal = $('radar-modal');
+  if (modal) modal.hidden = true;
+  document.body.style.overflow = '';
+  if (radarWatchId !== null) { navigator.geolocation.clearWatch(radarWatchId); radarWatchId = null; }
+  const evtName = 'ondeviceorientationabsolute' in window ? 'deviceorientationabsolute' : 'deviceorientation';
+  window.removeEventListener(evtName, onDeviceOrientation, true);
+  radarHeading = null;
+}
+
+function onDeviceOrientation(e) {
+  if (!radarOpen) return;
+  let heading = null;
+  if (e.webkitCompassHeading != null) {
+    heading = e.webkitCompassHeading;
+  } else if (e.absolute && e.alpha != null) {
+    heading = (360 - e.alpha) % 360;
+  } else if (e.alpha != null) {
+    heading = (360 - e.alpha) % 360;
+  }
+  if (heading === null) return;
+  radarHeading = heading;
+  updateRadarDisplay();
+}
+
+function updateRadarDisplay() {
+  const saved = loadParking();
+  if (!saved || radarCurrentLat === null) return;
+
+  const dist = haversine(radarCurrentLat, radarCurrentLng, saved.lat, saved.lng);
+  const distText = dist < 1000 ? `${Math.round(dist)} m` : `${(dist / 1000).toFixed(2)} km`;
+  $('radar-distance').textContent = distText;
+
+  const bearing = calcBearing(radarCurrentLat, radarCurrentLng, saved.lat, saved.lng);
+
+  if (radarHeading !== null) {
+    const arrowAngle = (bearing - radarHeading + 360) % 360;
+    const svg = $('radar-arrow-svg');
+    if (svg) svg.style.transform = `rotate(${arrowAngle}deg)`;
+    $('radar-hint').textContent = dist < 10 ? 'Jesteś na miejscu!' : getDirectionHint(arrowAngle);
+  } else {
+    $('radar-hint').textContent = 'Obróć telefon, aby skalibrować kompas.';
+  }
+}
+
+function getDirectionHint(angle) {
+  const dirs = ['Prosto','Lekko w prawo','W prawo','Ostro w prawo','Za tobą','Ostro w lewo','W lewo','Lekko w lewo'];
+  return dirs[Math.round(angle / 45) % 8];
+}
+
+function initParkingRadar() {
+  updateParkingBtn();
+
+  $('parking-save-btn')?.addEventListener('click', () => {
+    const saved = loadParking();
+    if (saved) {
+      openRadarModal();
+    } else {
+      saveParkingLocation();
+    }
+  });
+
+  $('parking-reset-btn')?.addEventListener('click', e => {
+    e.stopPropagation();
+    localStorage.removeItem(PARKING_KEY);
+    updateParkingBtn();
+    showParkingToast('Punkt startu usunięty.');
+  });
+
+  $('radar-close-btn')?.addEventListener('click', closeRadarModal);
+
+  $('radar-modal')?.addEventListener('click', e => {
+    if (e.target === $('radar-modal')) closeRadarModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && radarOpen) closeRadarModal();
+  });
+}
+
+// ── Image cache warm-up ────────────────────────────────────────────────────────
 
 const CACHE_WARM_KEY = 'fa_img_cache_warm_v1';
 
