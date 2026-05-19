@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v29-favorites';
+const CACHE_NAME = 'forest-assistant-v30-voice-notes';
 
 const APP_SHELL = [
   './index.html',

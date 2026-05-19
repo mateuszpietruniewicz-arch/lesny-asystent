@@ -3111,6 +3111,90 @@ body.high-contrast .jrn-photo-btn {
   margin-top: 4px;
 }
 
+/* ── NOTATKI GŁOSOWE (VOICE NOTES) ──────────────────────────── */
+
+.jrn-notes-wrap {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.jrn-notes-wrap .journal-textarea {
+  flex: 1;
+  min-width: 0;
+}
+
+.jrn-mic-btn {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--green-700);
+  font-size: 19px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background var(--ease), border-color var(--ease), transform var(--ease), box-shadow var(--ease);
+}
+
+.jrn-mic-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: var(--green-500);
+  transform: scale(1.06);
+  box-shadow: var(--shadow-s);
+}
+
+.jrn-mic-btn--active {
+  background: rgba(220, 38, 38, 0.10) !important;
+  border-color: rgba(220, 38, 38, 0.55) !important;
+  color: #dc2626 !important;
+  animation: voice-pulse 1.3s ease-in-out infinite;
+}
+
+.jrn-mic-btn--unsupported {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+@keyframes voice-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.32); }
+  55%       { box-shadow: 0 0 0 9px rgba(220, 38, 38, 0); }
+}
+
+.voice-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(14px);
+  background: rgba(22, 28, 25, 0.93);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f0f4f1;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  padding: 10px 22px;
+  border-radius: 30px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.32s ease, transform 0.32s ease;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0,0,0,.28);
+  pointer-events: none;
+}
+
+.voice-toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* ── ULUBIONE (FAVORITES) ─────────────────────────────────── */
 
 /* Przycisk gwiazdki na karcie */

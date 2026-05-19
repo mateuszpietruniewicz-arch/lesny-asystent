@@ -40,6 +40,7 @@ const readinessScores = new Map();
 const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
 let imgObserver = null;
 let jrnLat = null, jrnLng = null, jrnPhoto = null;
+let activeRecognition = null;
 let jrnLocMap = null, jrnLocMarker = null, jrnHistoryMap = null;
 let treasureMap = null, mvMarkers = [], mvFilter = 'all', gpsMarker = null;
 
@@ -1468,7 +1469,12 @@ function openModal(s) {
         </div>
         <div class="journal-form-row">
           <label class="journal-label" for="jrn-notes">Notatki</label>
-          <textarea id="jrn-notes" class="journal-input journal-textarea" placeholder="Opcjonalnie…" rows="2"></textarea>
+          <div class="jrn-notes-wrap">
+            <textarea id="jrn-notes" class="journal-input journal-textarea" placeholder="Opcjonalnie… lub dyktuj 🎙" rows="2"></textarea>
+            <button type="button" class="jrn-mic-btn" id="jrn-mic-btn"
+                    aria-label="Dyktowanie głosowe — tryb brudnych rąk"
+                    title="Tryb brudnych rąk — dyktuj notatkę głosowo">🎙</button>
+          </div>
         </div>
         <div class="journal-form-row">
           <label class="journal-label">Zdjęcie (opcjonalnie)</label>
@@ -1604,11 +1610,14 @@ function openModal(s) {
     }
   });
 
+  initVoiceNote();
+
   const onBackdropClick = e => { if (e.target === modal) modal.close(); };
   modal.addEventListener('click', onBackdropClick);
   modal.addEventListener('close', () => {
     modal.removeEventListener('click', onBackdropClick);
     destroyMap();
+    stopVoiceRecognition();
   }, { once: true });
 }
 
@@ -2203,6 +2212,91 @@ async function warmImageCache() {
   }
 
   try { localStorage.setItem(CACHE_WARM_KEY, '1'); } catch {}
+}
+
+// ── NOTATKI GŁOSOWE (VOICE NOTES) ────────────────────────────────────────────
+
+function stopVoiceRecognition() {
+  if (!activeRecognition) return;
+  try { activeRecognition.abort(); } catch {}
+  activeRecognition = null;
+}
+
+function showVoiceToast(msg) {
+  document.getElementById('voice-toast')?.remove();
+  const toast = document.createElement('div');
+  toast.id = 'voice-toast';
+  toast.className = 'voice-toast';
+  toast.setAttribute('role', 'alert');
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  requestAnimationFrame(() => toast.classList.add('voice-toast--visible'));
+  setTimeout(() => {
+    toast.classList.remove('voice-toast--visible');
+    setTimeout(() => toast.remove(), 380);
+  }, 4500);
+}
+
+function initVoiceNote() {
+  const btn = $('jrn-mic-btn');
+  if (!btn) return;
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    btn.disabled = true;
+    btn.title = 'Twoja przeglądarka nie wspiera rozpoznawania mowy';
+    btn.classList.add('jrn-mic-btn--unsupported');
+    return;
+  }
+
+  btn.addEventListener('click', () => {
+    if (activeRecognition) {
+      stopVoiceRecognition();
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'pl-PL';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    activeRecognition = recognition;
+
+    recognition.onstart = () => {
+      btn.classList.add('jrn-mic-btn--active');
+      btn.setAttribute('aria-label', 'Zatrzymaj dyktowanie');
+    };
+
+    recognition.onresult = e => {
+      const transcript = e.results[0][0].transcript;
+      const ta = $('jrn-notes');
+      if (ta) ta.value = ta.value ? ta.value + ' ' + transcript : transcript;
+    };
+
+    recognition.onerror = e => {
+      if (e.error === 'not-allowed') {
+        showVoiceToast('🎙 Brak dostępu do mikrofonu. Sprawdź uprawnienia w ustawieniach przeglądarki.');
+      } else if (e.error === 'no-speech') {
+        showVoiceToast('Nie wykryto mowy. Spróbuj ponownie.');
+      } else if (e.error === 'network') {
+        showVoiceToast('Brak połączenia — rozpoznawanie mowy wymaga internetu.');
+      } else {
+        showVoiceToast('Błąd mikrofonu. Spróbuj ponownie.');
+      }
+    };
+
+    recognition.onend = () => {
+      activeRecognition = null;
+      btn.classList.remove('jrn-mic-btn--active');
+      btn.setAttribute('aria-label', 'Dyktowanie głosowe — tryb brudnych rąk');
+    };
+
+    try {
+      recognition.start();
+    } catch {
+      activeRecognition = null;
+      showVoiceToast('Nie udało się uruchomić mikrofonu.');
+    }
+  });
 }
 
 // ── ULUBIONE (FAVORITES) ──────────────────────────────────────────────────────
