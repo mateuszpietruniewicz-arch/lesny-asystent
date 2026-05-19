@@ -1461,8 +1461,8 @@ function openModal(s) {
         <div class="journal-form-row">
           <label class="journal-label">Zdjęcie (opcjonalnie)</label>
           <div class="jrn-photo-row">
-            <label class="jrn-photo-btn" for="jrnl-photo-input">📷 Zrób zdjęcie w terenie</label>
-            <input type="file" accept="image/*" capture="environment" id="jrnl-photo-input" style="display:none">
+            <label class="jrn-photo-btn" for="jrnl-photo-input">📷 Zdjęcie / Galeria</label>
+            <input type="file" accept="image/*" id="jrnl-photo-input" style="display:none">
             <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
               <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
               <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
