@@ -1235,6 +1235,17 @@ function openModal(s) {
           <textarea id="jrn-notes" class="journal-input journal-textarea" placeholder="Opcjonalnie…" rows="2"></textarea>
         </div>
         <div class="journal-form-row">
+          <label class="journal-label">Zdjęcie (opcjonalnie)</label>
+          <div class="jrn-photo-row">
+            <label class="jrn-photo-btn" for="jrnl-photo-input">📷 Zrób zdjęcie w terenie</label>
+            <input type="file" accept="image/*" capture="environment" id="jrnl-photo-input" style="display:none">
+            <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
+              <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
+              <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
+            </div>
+          </div>
+        </div>
+        <div class="journal-form-row">
           <label class="journal-label">Lokalizacja (opcjonalnie)</label>
           <div class="jrn-loc-wrap">
             <div id="jrn-loc-info" class="jrn-loc-info">Brak lokalizacji</div>
@@ -1246,17 +1257,6 @@ function openModal(s) {
           <div id="jrn-loc-map-wrap" class="jrn-loc-map-wrap" hidden>
             <div id="jrn-loc-map"></div>
             <div class="jrn-loc-map-hint">Kliknij mapę, aby ustawić lokalizację zbioru</div>
-          </div>
-        </div>
-        <div class="journal-form-row">
-          <label class="journal-label">Zdjęcie (opcjonalnie)</label>
-          <div class="jrn-photo-row">
-            <label class="jrn-photo-btn" for="jrnl-photo-input">📷 Zrób zdjęcie w terenie</label>
-            <input type="file" accept="image/*" capture="environment" id="jrnl-photo-input" style="display:none">
-            <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
-              <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
-              <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
-            </div>
           </div>
         </div>
         <button class="journal-save-btn" id="journal-save-btn">📓 Zapisz w dzienniku</button>
