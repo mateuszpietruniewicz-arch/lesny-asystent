@@ -39,7 +39,7 @@ const readinessScores = new Map();
 
 const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
 let imgObserver = null;
-let jrnLat = null, jrnLng = null;
+let jrnLat = null, jrnLng = null, jrnPhoto = null;
 let jrnLocMap = null, jrnLocMarker = null, jrnHistoryMap = null;
 let treasureMap = null, mvMarkers = [], mvFilter = 'all';
 
@@ -492,9 +492,10 @@ function initSpeciesMap(s) {
   privatePins.forEach(pin => addPrivatePinMarker(s, pin));
 
   journalPins.forEach(e => {
+    const photoHtml = e.photo ? `<img style="width:100%;max-height:110px;object-fit:cover;border-radius:6px;display:block;margin-bottom:6px" src="${e.photo}" alt="">` : '';
     L.marker([e.lat, e.lng], { icon: createIcon('📓', 28) })
       .addTo(leafletMap)
-      .bindPopup(`<strong>📓 ${e.nazwaPolska}</strong><br><span style="font-size:11.5px;color:#637168">${e.data} · ${e.ilosc_g} g</span>`);
+      .bindPopup(`${photoHtml}<strong>📓 ${e.nazwaPolska}</strong><br><span style="font-size:11.5px;color:#637168">${e.data} · ${e.ilosc_g} g</span>`, { maxWidth: 220 });
   });
 
   setTimeout(() => { if (leafletMap) leafletMap.invalidateSize(); }, 400);
@@ -598,9 +599,10 @@ function initJrnHistoryMap(entries) {
   }).addTo(jrnHistoryMap);
   const bounds = [];
   entries.forEach(e => {
+    const photoHtml = e.photo ? `<img style="width:100%;max-height:110px;object-fit:cover;border-radius:6px;display:block;margin-bottom:6px" src="${e.photo}" alt="">` : '';
     L.marker([e.lat, e.lng], { icon: createIcon('📓', 28) })
       .addTo(jrnHistoryMap)
-      .bindPopup(`<strong>${e.nazwaPolska}</strong><br><span style="font-size:11.5px;color:#637168">${e.data} · ${e.ilosc_g} g</span>`);
+      .bindPopup(`${photoHtml}<strong>${e.nazwaPolska}</strong><br><span style="font-size:11.5px;color:#637168">${e.data} · ${e.ilosc_g} g</span>`, { maxWidth: 220 });
     bounds.push([e.lat, e.lng]);
   });
   if (bounds.length === 1) jrnHistoryMap.setView(bounds[0], 12);
@@ -617,7 +619,7 @@ function getJournal() {
   catch { return []; }
 }
 
-function saveJournalEntry(speciesId, nazwaPolska, data, ilosc_g, notatki, lat = null, lng = null) {
+function saveJournalEntry(speciesId, nazwaPolska, data, ilosc_g, notatki, lat = null, lng = null, photo = null) {
   try {
     const entries = getJournal();
     const entry = {
@@ -630,6 +632,7 @@ function saveJournalEntry(speciesId, nazwaPolska, data, ilosc_g, notatki, lat = 
       savedAt: Date.now(),
     };
     if (lat != null && lng != null) { entry.lat = lat; entry.lng = lng; }
+    if (photo) entry.photo = photo;
     entries.unshift(entry);
     localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
     return entry;
@@ -643,7 +646,31 @@ function deleteJournalEntry(id) {
   } catch {}
 }
 
+function compressPhoto(file) {
+  return new Promise(resolve => {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const img = new Image();
+      img.onload = () => {
+        const MAX_W = 800;
+        const scale = img.width > MAX_W ? MAX_W / img.width : 1;
+        const w = Math.round(img.width * scale);
+        const h = Math.round(img.height * scale);
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', 0.7));
+      };
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
 function buildJournalEntryHTML(e) {
+  const photoHtml = e.photo
+    ? `<img class="jrnl-entry-photo" src="${e.photo}" alt="Zdjęcie zbioru">` : '';
   const notesHtml = e.notatki
     ? `<div class="jrnl-entry-notes">${e.notatki}</div>` : '';
   const locHtml = (e.lat != null && e.lng != null)
@@ -651,6 +678,7 @@ function buildJournalEntryHTML(e) {
     : '';
   return `
     <div class="jrnl-entry">
+      ${photoHtml}
       <div class="jrnl-entry-main">
         <div class="jrnl-entry-name">${e.nazwaPolska}</div>
         <div class="jrnl-entry-meta">
@@ -1091,7 +1119,7 @@ function openModal(s) {
   const modal   = $('species-modal');
   const content = $('modal-content');
   const color   = CAT_COLOR[s.kategoria] || '#2d6a4f';
-  jrnLat = null; jrnLng = null;
+  jrnLat = null; jrnLng = null; jrnPhoto = null;
   const isToxic    = s.trujace_surowe || s.kategoria === 'Rośliny TRUJĄCE';
   const isSeason   = NOW >= s.sezon_start && NOW <= s.sezon_koniec;
   const isProtected= s.ochrona && s.ochrona !== 'brak';
@@ -1220,6 +1248,17 @@ function openModal(s) {
             <div class="jrn-loc-map-hint">Kliknij mapę, aby ustawić lokalizację zbioru</div>
           </div>
         </div>
+        <div class="journal-form-row">
+          <label class="journal-label">Zdjęcie (opcjonalnie)</label>
+          <div class="jrn-photo-row">
+            <label class="jrn-photo-btn" for="jrnl-photo-input">📷 Zrób zdjęcie w terenie</label>
+            <input type="file" accept="image/*" capture="environment" id="jrnl-photo-input" style="display:none">
+            <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
+              <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
+              <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
+            </div>
+          </div>
+        </div>
         <button class="journal-save-btn" id="journal-save-btn">📓 Zapisz w dzienniku</button>
         <div id="journal-save-msg" class="journal-save-msg"></div>
       </div>
@@ -1256,9 +1295,14 @@ function openModal(s) {
       msg.className = 'journal-save-msg journal-save-err';
       return;
     }
-    saveJournalEntry(s.id, s.nazwa_polska, date, qty, notes, jrnLat, jrnLng);
+    saveJournalEntry(s.id, s.nazwa_polska, date, qty, notes, jrnLat, jrnLng, jrnPhoto);
     $('jrn-qty').value   = '';
     $('jrn-notes').value = '';
+    const photoInput = $('jrnl-photo-input');
+    const photoWrap  = $('jrn-photo-preview-wrap');
+    if (photoInput) photoInput.value = '';
+    if (photoWrap)  photoWrap.hidden = true;
+    jrnPhoto = null;
     msg.textContent = '✓ Zapisano w dzienniku!';
     msg.className = 'journal-save-msg journal-save-ok';
     setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 3000);
@@ -1293,6 +1337,24 @@ function openModal(s) {
         setTimeout(() => { if (jrnLocMap) jrnLocMap.invalidateSize(); }, 50);
       }
     }
+  });
+
+  $('jrnl-photo-input')?.addEventListener('change', async ev => {
+    const file = ev.target.files[0];
+    if (!file) return;
+    jrnPhoto = await compressPhoto(file);
+    const preview = $('jrn-photo-preview');
+    const wrap    = $('jrn-photo-preview-wrap');
+    if (preview) preview.src = jrnPhoto;
+    if (wrap)    wrap.hidden = false;
+  });
+
+  $('jrn-photo-clear')?.addEventListener('click', () => {
+    jrnPhoto = null;
+    const input = $('jrnl-photo-input');
+    const wrap  = $('jrn-photo-preview-wrap');
+    if (input) input.value = '';
+    if (wrap)  wrap.hidden = true;
   });
 
   const onBackdropClick = e => { if (e.target === modal) modal.close(); };
@@ -1377,11 +1439,14 @@ function makePinIcon(color, delay = 0) {
 function buildTreasurePopup(entry, species) {
   const dateStr  = entry.data || new Date(entry.savedAt).toLocaleDateString('pl-PL');
   const color    = species ? (CAT_COLOR[species.kategoria] || '#276049') : '#276049';
+  const photoHtml = entry.photo
+    ? `<img class="tv-popup-photo" src="${entry.photo}" alt="Zdjęcie">` : '';
   const qtyHtml  = entry.ilosc_g
     ? `<span class="tv-popup-chip">⚖ ${entry.ilosc_g} g</span>` : '';
   const noteHtml = entry.notatki
     ? `<div class="tv-popup-note">${entry.notatki}</div>` : '';
   return `<div class="tv-popup">
+    ${photoHtml}
     <div class="tv-popup-name" style="border-left-color:${color}">${entry.nazwaPolska}</div>
     <div class="tv-popup-meta">
       <span class="tv-popup-chip">📅 ${dateStr}</span>${qtyHtml}

@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v12';
+const CACHE_NAME = 'forest-assistant-v14-photo';
 
 const APP_SHELL = [
   './index.html',
