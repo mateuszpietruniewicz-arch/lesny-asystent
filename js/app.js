@@ -74,6 +74,8 @@ async function init() {
   initHighContrast();
   bindMainLens();
   bindSeasonalBar();
+  initOfflineDetection();
+  setTimeout(warmImageCache, 4000); // start po 4s, by nie blokować krytycznych zasobów
 }
 
 function getFiltered() {
@@ -1941,6 +1943,58 @@ function initTreasureMapGps() {
     document.querySelector('.mv-gps-btn')?.classList.remove('mv-gps-btn--locating');
     showMvToast('GPS niedostępny — sprawdź uprawnienia urządzenia');
   });
+}
+
+// ── TRYB OFFLINE ──────────────────────────────────────────────────────────────
+
+function initOfflineDetection() {
+  const render = () => {
+    const existing = document.getElementById('offline-bar');
+    if (!navigator.onLine) {
+      if (existing) return;
+      const bar = document.createElement('div');
+      bar.id        = 'offline-bar';
+      bar.className = 'offline-bar';
+      bar.setAttribute('role', 'status');
+      bar.setAttribute('aria-live', 'polite');
+      bar.innerHTML = '<span aria-hidden="true">📵</span> Tryb offline — przeglądasz zapisane dane';
+      document.getElementById('app-header')?.insertAdjacentElement('afterend', bar);
+    } else {
+      existing?.remove();
+    }
+  };
+  window.addEventListener('online',  render);
+  window.addEventListener('offline', render);
+  render();
+}
+
+const CACHE_WARM_KEY = 'fa_img_cache_warm_v1';
+
+async function warmImageCache() {
+  if (!navigator.onLine)           return;
+  if (!allSpecies.length)          return;
+  if (!('serviceWorker' in navigator)) return;
+  if (localStorage.getItem(CACHE_WARM_KEY)) return;
+
+  const BATCH = 4;
+  const DELAY = 350;
+
+  for (let i = 0; i < allSpecies.length; i += BATCH) {
+    if (!navigator.onLine) break;
+    await Promise.allSettled(
+      allSpecies.slice(i, i + BATCH).map(async s => {
+        try {
+          const url = await fetchWikiImage(s.nazwa_lacinska, s.nazwa_polska);
+          if (url) await fetch(url); // SW przechwyci i zapisze w cache
+        } catch {}
+      })
+    );
+    if (i + BATCH < allSpecies.length) {
+      await new Promise(r => setTimeout(r, DELAY));
+    }
+  }
+
+  try { localStorage.setItem(CACHE_WARM_KEY, '1'); } catch {}
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -70,6 +70,29 @@ body {
   min-height: 100vh;
 }
 
+/* ── PASEK OFFLINE ───────────────────────────────── */
+
+.offline-bar {
+  position: sticky;
+  top: 57px; /* tuż pod sticky headerem */
+  z-index: 95;
+  background: rgba(180, 60, 0, .96);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px 16px;
+  letter-spacing: .15px;
+  animation: offline-slide-in .3s cubic-bezier(.4, 0, .2, 1) both;
+}
+
+@keyframes offline-slide-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* ── HEADER ─────────────────────────────────────── */
 
 #app-header {
