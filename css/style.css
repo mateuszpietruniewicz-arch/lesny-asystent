@@ -46,7 +46,7 @@
   --shadow-m: 0 4px 14px rgba(0,0,0,.11), 0 2px 4px rgba(0,0,0,.07);
   --shadow-l: 0 14px 36px rgba(0,0,0,.16), 0 4px 10px rgba(0,0,0,.09);
 
-  --ease: 0.18s ease;
+  --ease: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   --cat-warzywa:  #276049;
   --cat-ziola:    #4a6128;
@@ -463,6 +463,218 @@ body.high-contrast .jrn-photo-btn {
 .qs-banner:hover .qs-arrow {
   transform: translateX(3px);
   color: rgba(255, 255, 255, .6);
+}
+
+/* ── SEZONOWY PASEK SKRÓTÓW ──────────────────────── */
+
+.ssb-wrap {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.ssb-btn {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 13px 8px 11px;
+  background: rgba(255, 255, 255, .07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 12px;
+  cursor: pointer;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition:
+    background .3s cubic-bezier(.4, 0, .2, 1),
+    border-color .3s cubic-bezier(.4, 0, .2, 1),
+    transform .18s cubic-bezier(.4, 0, .2, 1);
+}
+
+.ssb-btn:hover {
+  background: rgba(255, 255, 255, .13);
+  border-color: rgba(255, 255, 255, .20);
+}
+
+.ssb-btn:active { transform: scale(.96); }
+
+.ssb-btn.active {
+  background: rgba(255, 255, 255, .16);
+  border-color: rgba(255, 255, 255, .30);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12);
+}
+
+.ssb-emoji { font-size: 22px; line-height: 1; }
+
+.ssb-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .70);
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: .1px;
+}
+
+.ssb-count {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .35);
+  line-height: 1;
+  min-height: 12px;
+}
+
+.ssb-btn.active .ssb-label { color: #fff; font-weight: 700; }
+.ssb-btn.active .ssb-count { color: rgba(255, 255, 255, .65); }
+
+/* ── LISTA SEZONOWA (ACCORDION) ──────────────────── */
+
+.slc-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition:
+    grid-template-rows .38s cubic-bezier(.4, 0, .2, 1),
+    margin-top .38s cubic-bezier(.4, 0, .2, 1);
+  margin-top: 0;
+}
+
+.slc-wrap.open {
+  grid-template-rows: 1fr;
+  margin-top: 10px;
+}
+
+.slc-inner {
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity .28s cubic-bezier(.4, 0, .2, 1) .06s,
+    transform .34s cubic-bezier(.4, 0, .2, 1) .02s;
+}
+
+.slc-wrap.open .slc-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slc-content {
+  background: rgba(0, 0, 0, .24);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slc-mode-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 9px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.slc-mode-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .52);
+  text-transform: uppercase;
+  letter-spacing: .9px;
+}
+
+.slc-mode-count {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, .30);
+  font-weight: 500;
+}
+
+.slc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  cursor: pointer;
+  transition: background .2s cubic-bezier(.4, 0, .2, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slc-item:last-child { border-bottom: none; }
+.slc-item:hover  { background: rgba(255, 255, 255, .05); }
+.slc-item:active { background: rgba(255, 255, 255, .10); }
+
+.slc-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.slc-item-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .92);
+  line-height: 1.2;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slc-item-tip {
+  font-size: 11px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .42);
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slc-score-badge {
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  min-width: 34px;
+  text-align: right;
+  line-height: 1;
+}
+
+.slc-plus-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .18);
+  background: rgba(255, 255, 255, .09);
+  color: rgba(255, 255, 255, .68);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-bottom: 1px;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+.slc-plus-btn:hover {
+  background: rgba(255, 255, 255, .18);
+  border-color: rgba(255, 255, 255, .38);
+  color: #fff;
+}
+
+.slc-empty {
+  padding: 18px 14px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .38);
+  text-align: center;
+  font-style: italic;
 }
 
 /* ── HERO TOOLBAR ────────────────────────────────── */

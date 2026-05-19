@@ -69,6 +69,28 @@
       </label>
       <input type="file" accept="image/*" capture="environment" id="main-lens-input" style="display:none">
 
+      <!-- Sezonowe przyciski skrótów -->
+      <div class="ssb-wrap" id="seasonal-shortcut-bar" aria-label="Skróty sezonowe">
+        <button class="ssb-btn" data-mode="hot" aria-expanded="false">
+          <span class="ssb-emoji" aria-hidden="true">🔥</span>
+          <span class="ssb-label">Gorące zbiory</span>
+          <span class="ssb-count" id="ssb-cnt-hot"></span>
+        </button>
+        <button class="ssb-btn" data-mode="last" aria-expanded="false">
+          <span class="ssb-emoji" aria-hidden="true">⏳</span>
+          <span class="ssb-label">Ostatni moment</span>
+          <span class="ssb-count" id="ssb-cnt-last"></span>
+        </button>
+        <button class="ssb-btn" data-mode="soon" aria-expanded="false">
+          <span class="ssb-emoji" aria-hidden="true">🌱</span>
+          <span class="ssb-label">Już za chwilę</span>
+          <span class="ssb-count" id="ssb-cnt-soon"></span>
+        </button>
+      </div>
+      <div id="seasonal-list-container" class="slc-wrap" aria-live="polite" aria-label="Lista sezonowa">
+        <div class="slc-inner"></div>
+      </div>
+
       <div class="hero-toolbar">
         <select id="sort-select" class="toolbar-select" aria-label="Sposób sortowania">
           <option value="default">Domyślne</option>

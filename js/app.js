@@ -73,6 +73,7 @@ async function init() {
   bindMapView();
   initHighContrast();
   bindMainLens();
+  bindSeasonalBar();
 }
 
 function getFiltered() {
@@ -241,6 +242,8 @@ async function loadDashboardWeather() {
     dashboardWeather = weather;
     allSpecies.forEach(s => readinessScores.set(s.id, calcReadiness(s, weather).total));
     renderForestWidget(weather);
+    updateSsbCounts();
+    refreshSsbList();
     if (isDashboardMode) {
       updateHotPicksSection(weather);
     } else if (sortMode === 'readiness') {
@@ -415,6 +418,148 @@ function highlightSuggestion(items) {
 function closeSuggestions() {
   $('suggestions-list').innerHTML = '';
   suggestIdx = -1;
+}
+
+// ── SEZONOWY PASEK SKRÓTÓW ────────────────────────────────────────────────────
+
+let activeSsbMode = null;
+
+function getSsbSpecies(mode) {
+  if (mode === 'hot') {
+    if (dashboardWeather) {
+      return allSpecies
+        .filter(s => (readinessScores.get(s.id) || 0) >= 65)
+        .sort((a, b) => (readinessScores.get(b.id) || 0) - (readinessScores.get(a.id) || 0))
+        .slice(0, 14);
+    }
+    return allSpecies
+      .filter(s => NOW >= s.sezon_start && NOW <= s.sezon_koniec)
+      .sort((a, b) => a.nazwa_polska.localeCompare(b.nazwa_polska, 'pl'))
+      .slice(0, 14);
+  }
+  if (mode === 'last') {
+    return allSpecies
+      .filter(s => s.sezon_koniec === NOW && NOW >= s.sezon_start)
+      .sort((a, b) => a.nazwa_polska.localeCompare(b.nazwa_polska, 'pl'));
+  }
+  if (mode === 'soon') {
+    return allSpecies
+      .filter(s => { const d = s.sezon_start - NOW; return d >= 1 && d <= 2; })
+      .sort((a, b) => a.sezon_start - b.sezon_start || a.nazwa_polska.localeCompare(b.nazwa_polska, 'pl'));
+  }
+  return [];
+}
+
+function getExpertTip(s, mode) {
+  const jade = s.jadalne_czesci ? s.jadalne_czesci.split(',')[0].trim() : '';
+  if (mode === 'hot') {
+    if (s.szczyt_zbioru) return `Szczyt: ${s.szczyt_zbioru}`;
+    return jade ? `Zbieraj: ${jade}` : '';
+  }
+  if (mode === 'last') {
+    const m = MONTH_ABBR[s.sezon_koniec - 1];
+    return jade ? `Ostatnia szansa · sezon do ${m}` : `Sezon kończy się w ${m}`;
+  }
+  if (mode === 'soon') {
+    const m = MONTH_ABBR[s.sezon_start - 1];
+    return jade ? `Sezon od ${m} · ${jade}` : `Sezon od ${m}`;
+  }
+  return '';
+}
+
+function buildSsbListHTML(mode) {
+  const species = getSsbSpecies(mode);
+  const titles  = { hot: '🔥 Gorące zbiory', last: '⏳ Ostatni moment', soon: '🌱 Już za chwilę' };
+  if (!species.length) {
+    return `<div class="slc-content"><div class="slc-empty">Brak gatunków w tej kategorii w tym miesiącu.</div></div>`;
+  }
+  const items = species.map(s => {
+    const tip   = getExpertTip(s, mode);
+    const score = readinessScores.get(s.id);
+    const badge = score != null
+      ? `<span class="slc-score-badge" style="color:${readinessColor(score)}">${score}%</span>` : '';
+    return `
+      <div class="slc-item" data-id="${s.id}">
+        <div class="slc-item-info">
+          <div class="slc-item-name">${s.nazwa_polska}</div>
+          ${tip ? `<div class="slc-item-tip">${tip}</div>` : ''}
+        </div>
+        ${badge}
+        <button class="slc-plus-btn" data-id="${s.id}" aria-label="Zaloguj zbiór ${s.nazwa_polska}" title="Zaloguj zbiór">+</button>
+      </div>`;
+  }).join('');
+  return `
+    <div class="slc-content">
+      <div class="slc-mode-header">
+        <span class="slc-mode-title">${titles[mode]}</span>
+        <span class="slc-mode-count">${species.length} gatunków</span>
+      </div>
+      ${items}
+    </div>`;
+}
+
+function updateSsbCounts() {
+  ['hot', 'last', 'soon'].forEach(m => {
+    const el = $(`ssb-cnt-${m}`);
+    if (el) el.textContent = getSsbSpecies(m).length || '';
+  });
+}
+
+function refreshSsbList() {
+  if (!activeSsbMode) return;
+  const container = $('seasonal-list-container');
+  if (!container) return;
+  container.querySelector('.slc-inner').innerHTML = buildSsbListHTML(activeSsbMode);
+  bindSsbItemEvents(container);
+}
+
+function bindSsbItemEvents(container) {
+  container.querySelectorAll('.slc-item').forEach(item => {
+    item.addEventListener('click', e => {
+      if (e.target.closest('.slc-plus-btn')) return;
+      const sp = allSpecies.find(s => s.id === Number(item.dataset.id));
+      if (sp) openModal(sp);
+    });
+  });
+  container.querySelectorAll('.slc-plus-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const sp = allSpecies.find(s => s.id === Number(btn.dataset.id));
+      if (!sp) return;
+      openModal(sp);
+      setTimeout(() => {
+        const jrn = document.querySelector('#modal-content .modal-journal-section');
+        if (jrn) jrn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 220);
+    });
+  });
+}
+
+function bindSeasonalBar() {
+  const container = $('seasonal-list-container');
+  if (!container) return;
+  updateSsbCounts();
+  document.querySelectorAll('.ssb-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode      = btn.dataset.mode;
+      const wasActive = btn.classList.contains('active');
+      document.querySelectorAll('.ssb-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-expanded', 'false');
+      });
+      if (wasActive) {
+        container.classList.remove('open');
+        activeSsbMode = null;
+        return;
+      }
+      activeSsbMode = mode;
+      btn.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+      container.querySelector('.slc-inner').innerHTML = buildSsbListHTML(mode);
+      container.classList.add('open');
+      bindSsbItemEvents(container);
+    });
+  });
 }
 
 // ── MAPA LEAFLET ──────────────────────────────────────────────────────────────
