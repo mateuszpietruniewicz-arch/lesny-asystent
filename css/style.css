@@ -1709,6 +1709,31 @@ body.high-contrast .jrn-photo-btn {
 
 .jrn-photo-clear:hover { background: rgba(0, 0, 0, .8); }
 
+.jrn-lens-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  margin-top: 7px;
+  padding: 8px 12px;
+  background: #fff;
+  color: #1a73e8;
+  border: 1.5px solid #dadce0;
+  border-radius: var(--radius-s);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--ease), border-color var(--ease), box-shadow var(--ease);
+}
+
+.jrn-lens-btn:hover {
+  background: #f0f4ff;
+  border-color: #1a73e8;
+  box-shadow: 0 1px 4px rgba(26, 115, 232, .22);
+}
+
 /* Zdjęcie w liście wpisów dziennika */
 .jrnl-entry-photo {
   width: 100%;

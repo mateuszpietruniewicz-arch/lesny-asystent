@@ -1243,6 +1243,7 @@ function openModal(s) {
             <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
               <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
               <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
+              <button type="button" class="jrn-lens-btn" id="jrn-lens-btn">🔍 Zweryfikuj z Google Lens</button>
             </div>
           </div>
         </div>
@@ -1358,12 +1359,69 @@ function openModal(s) {
     if (wrap)  wrap.hidden = true;
   });
 
+  $('jrn-lens-btn')?.addEventListener('click', openGoogleLens);
+
   const onBackdropClick = e => { if (e.target === modal) modal.close(); };
   modal.addEventListener('click', onBackdropClick);
   modal.addEventListener('close', () => {
     modal.removeEventListener('click', onBackdropClick);
     destroyMap();
   }, { once: true });
+}
+
+// ── GOOGLE LENS ──────────────────────────────────────────────────────────────
+
+function base64ToBlob(dataUrl) {
+  const [header, data] = dataUrl.split(',');
+  const mime = header.match(/:(.*?);/)[1];
+  const raw  = atob(data);
+  const arr  = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+  return new Blob([arr], { type: mime });
+}
+
+function openGoogleLens() {
+  if (!jrnPhoto) return;
+
+  const blob = base64ToBlob(jrnPhoto);
+  const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
+
+  const imgInput = document.createElement('input');
+  imgInput.type  = 'file';
+  imgInput.name  = 'encoded_image';
+
+  try {
+    const dt = new DataTransfer();
+    dt.items.add(file);
+    imgInput.files = dt.files;
+  } catch {
+    // DataTransfer niedostępne w tej przeglądarce
+    const msg = $('journal-save-msg');
+    if (msg) {
+      msg.textContent = '⚠ Ta przeglądarka nie obsługuje wysyłania zdjęć do Google.';
+      msg.className   = 'journal-save-msg journal-save-err';
+      setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4000);
+    }
+    return;
+  }
+
+  const hlInput   = document.createElement('input');
+  hlInput.type    = 'hidden';
+  hlInput.name    = 'hl';
+  hlInput.value   = 'pl';
+
+  const form      = document.createElement('form');
+  form.method     = 'POST';
+  form.action     = 'https://www.google.com/searchbyimage/upload';
+  form.enctype    = 'multipart/form-data';
+  form.target     = '_blank';
+  form.style.cssText = 'display:none;position:fixed';
+
+  form.appendChild(imgInput);
+  form.appendChild(hlInput);
+  document.body.appendChild(form);
+  form.submit();
+  setTimeout(() => form.parentNode?.removeChild(form), 500);
 }
 
 // ── KOPIA ZAPASOWA ────────────────────────────────────────────────────────────
