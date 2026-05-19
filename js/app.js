@@ -41,7 +41,7 @@ const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
 let imgObserver = null;
 let jrnLat = null, jrnLng = null, jrnPhoto = null;
 let jrnLocMap = null, jrnLocMarker = null, jrnHistoryMap = null;
-let treasureMap = null, mvMarkers = [], mvFilter = 'all';
+let treasureMap = null, mvMarkers = [], mvFilter = 'all', gpsMarker = null;
 
 const $ = id => document.getElementById(id);
 
@@ -71,6 +71,7 @@ async function init() {
   renderHeroWeather();
   loadDashboardWeather();
   bindMapView();
+  initHighContrast();
 }
 
 function getFiltered() {
@@ -1535,6 +1536,7 @@ function openMapView() {
       tiles.once('load', hideMapLoader);
       setTimeout(hideMapLoader, 4000); // fallback gdy kafelki nie odpalą eventu
       renderTreasureMarkers();
+      initTreasureMapGps();
     }));
   } else {
     // Mapa już istnieje — tylko odśwież rozmiar i naniesienia
@@ -1564,6 +1566,71 @@ function bindMapView() {
       mvFilter = btn.dataset.filter;
       renderTreasureMarkers();
     });
+  });
+}
+
+// ── TRYB WYSOKIEGO KONTRASTU ──────────────────────────────────────────────────
+
+function initHighContrast() {
+  if (localStorage.getItem('fa_high_contrast') === '1') {
+    document.body.classList.add('high-contrast');
+  }
+  $('contrast-toggle-btn')?.addEventListener('click', () => {
+    const on = document.body.classList.toggle('high-contrast');
+    localStorage.setItem('fa_high_contrast', on ? '1' : '0');
+  });
+}
+
+// ── GPS NA ŻYWO (MAPA SKARBÓW) ────────────────────────────────────────────────
+
+function showMvToast(text) {
+  const wrap = $('map-view');
+  if (!wrap) return;
+  let toast = wrap.querySelector('.mv-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.className = 'mv-toast';
+    wrap.appendChild(toast);
+  }
+  toast.textContent = text;
+  toast.classList.add('mv-toast--visible');
+  setTimeout(() => toast.classList.remove('mv-toast--visible'), 3000);
+}
+
+function initTreasureMapGps() {
+  const GpsControl = L.Control.extend({
+    onAdd() {
+      const btn = L.DomUtil.create('button', 'mv-gps-btn');
+      btn.title = 'Moja lokalizacja GPS';
+      btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="2" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="22" y2="12"/></svg>`;
+      L.DomEvent.on(btn, 'click', L.DomEvent.stop);
+      L.DomEvent.on(btn, 'click', () => {
+        btn.classList.add('mv-gps-btn--locating');
+        treasureMap.locate({ setView: true, maxZoom: 16 });
+      });
+      return btn;
+    },
+    onRemove() {},
+  });
+  new GpsControl({ position: 'bottomright' }).addTo(treasureMap);
+
+  treasureMap.on('locationfound', e => {
+    document.querySelector('.mv-gps-btn')?.classList.remove('mv-gps-btn--locating');
+    if (gpsMarker) { gpsMarker.remove(); gpsMarker = null; }
+    gpsMarker = L.marker(e.latlng, {
+      icon: L.divIcon({
+        className: '',
+        html: '<div class="mv-gps-dot"><div class="mv-gps-dot-ring"></div></div>',
+        iconSize:   [20, 20],
+        iconAnchor: [10, 10],
+      }),
+      zIndexOffset: 1000,
+    }).addTo(treasureMap);
+  });
+
+  treasureMap.on('locationerror', () => {
+    document.querySelector('.mv-gps-btn')?.classList.remove('mv-gps-btn--locating');
+    showMvToast('GPS niedostępny — sprawdź uprawnienia urządzenia');
   });
 }
 

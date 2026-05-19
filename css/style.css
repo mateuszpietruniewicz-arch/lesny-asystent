@@ -115,6 +115,114 @@ body {
   white-space: nowrap;
 }
 
+.hdr-contrast-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(255, 255, 255, .45);
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--ease), background var(--ease);
+  flex-shrink: 0;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.hdr-contrast-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .14);
+}
+
+body.high-contrast .hdr-contrast-btn {
+  color: #f5c400;
+  background: rgba(255, 255, 255, .12);
+}
+
+/* ── TRYB WYSOKIEGO KONTRASTU ─────────────────────── */
+
+body.high-contrast {
+  --bg:          #ffffff;
+  --surface:     #ffffff;
+  --border:      #111111;
+  --text:        #000000;
+  --text-muted:  #111111;
+  --green-50:    #e6ffe6;
+  --green-100:   #c0ffc0;
+  --green-300:   #009933;
+  --green-400:   #007722;
+  --green-500:   #005c1b;
+  --green-700:   #004400;
+  --green-800:   #002b00;
+  --green-900:   #001500;
+  --forest-950:  #000000;
+  --shadow-s:    0 0 0 2px #000;
+  --shadow-m:    0 0 0 2px #000;
+  --shadow-l:    0 0 0 3px #000;
+}
+
+body.high-contrast #app-header { background: #000; }
+body.high-contrast .brand-name { color: #ffffff; }
+
+body.high-contrast .journal-btn {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: rgba(255,255,255,.4) !important;
+}
+
+body.high-contrast .species-card {
+  border: 2px solid #000 !important;
+  background: #fff;
+}
+
+body.high-contrast .tab-btn {
+  color: #000;
+  border-bottom-color: #000;
+  font-weight: 700;
+}
+
+body.high-contrast .tab-btn.active {
+  background: #000 !important;
+  color: #fff !important;
+  border-bottom-color: #000 !important;
+}
+
+body.high-contrast .journal-input,
+body.high-contrast .journal-textarea,
+body.high-contrast select,
+body.high-contrast input[type="search"],
+body.high-contrast input[type="date"],
+body.high-contrast input[type="number"] {
+  border: 2px solid #000 !important;
+  background: #fff !important;
+  color: #000 !important;
+}
+
+body.high-contrast dialog {
+  border: 3px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+body.high-contrast .modal-header {
+  background: #000 !important;
+}
+
+body.high-contrast .warn-block {
+  border: 2px solid #b52020;
+  background: #fff8f8;
+}
+
+body.high-contrast .jrn-loc-wrap,
+body.high-contrast .jrn-photo-btn {
+  border-color: #000 !important;
+}
+
 /* ── WYSZUKIWARKA ────────────────────────────────── */
 
 .search-wrapper {
@@ -2090,6 +2198,85 @@ body {
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #dce4dd;
+}
+
+/* ── GPS KONTROLKA I PULSUJĄCA KROPKA ───────────── */
+
+.mv-gps-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-s);
+  border: 2px solid rgba(0, 0, 0, .2);
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .35);
+  transition: background var(--ease), color var(--ease), box-shadow var(--ease);
+  padding: 0;
+}
+
+.mv-gps-btn:hover {
+  background: #f0f4ff;
+  color: #1157b5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .28);
+}
+
+.mv-gps-btn--locating {
+  color: #1157b5;
+  animation: mv-gps-spin 1s linear infinite;
+}
+
+@keyframes mv-gps-spin {
+  to { transform: rotate(360deg); }
+}
+
+.mv-gps-dot {
+  width: 16px;
+  height: 16px;
+  background: #2979ff;
+  border: 2.5px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+
+.mv-gps-dot-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: rgba(41, 121, 255, .38);
+  animation: mv-gps-pulse 1.8s ease-out infinite;
+}
+
+@keyframes mv-gps-pulse {
+  0%   { transform: scale(.5); opacity: .9; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+.mv-toast {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: rgba(0, 0, 0, .72);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: system-ui, sans-serif;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s ease, transform .25s ease;
+  white-space: nowrap;
+  z-index: 600;
+}
+
+.mv-toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* ── RESPONSYWNOŚĆ ───────────────────────────────── */
