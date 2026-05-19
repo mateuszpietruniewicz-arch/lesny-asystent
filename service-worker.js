@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v14-lens';
+const CACHE_NAME = 'forest-assistant-v14-main-lens-styled';
 
 const APP_SHELL = [
   './index.html',

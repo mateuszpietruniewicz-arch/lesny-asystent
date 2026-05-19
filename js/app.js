@@ -72,6 +72,7 @@ async function init() {
   loadDashboardWeather();
   bindMapView();
   initHighContrast();
+  bindMainLens();
 }
 
 function getFiltered() {
@@ -1380,10 +1381,11 @@ function base64ToBlob(dataUrl) {
   return new Blob([arr], { type: mime });
 }
 
-function openGoogleLens() {
-  if (!jrnPhoto) return;
+function openGoogleLens(photoData) {
+  const photo = photoData ?? jrnPhoto;
+  if (!photo) return;
 
-  const blob = base64ToBlob(jrnPhoto);
+  const blob = base64ToBlob(photo);
   const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
 
   const imgInput = document.createElement('input');
@@ -1624,6 +1626,18 @@ function bindMapView() {
       mvFilter = btn.dataset.filter;
       renderTreasureMarkers();
     });
+  });
+}
+
+// ── SZYBKI SKAN (STRONA GŁÓWNA) ──────────────────────────────────────────────
+
+function bindMainLens() {
+  $('main-lens-input')?.addEventListener('change', async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const compressed = await compressPhoto(file);
+    openGoogleLens(compressed);
+    e.target.value = '';
   });
 }
 

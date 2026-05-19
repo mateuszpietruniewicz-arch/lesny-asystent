@@ -345,6 +345,128 @@ body.high-contrast .jrn-photo-btn {
 
 /* ── HERO TOOLBAR ────────────────────────────────── */
 
+/* ── BANER SZYBKIEGO SKANU ───────────────────────── */
+
+.qs-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 13px 16px 13px 14px;
+  margin-top: 14px;
+  background:
+    linear-gradient(135deg, #0b1c12 0%, #122b1c 45%, #173a26 75%, #1d4d32 100%);
+  border: 1px solid rgba(110, 210, 145, .22);
+  border-radius: 14px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: transform .13s ease, box-shadow .13s ease;
+}
+
+/* Top shimmer line */
+.qs-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  right: 14px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(110, 210, 145, .38), transparent);
+  pointer-events: none;
+}
+
+/* Hover glow overlay */
+.qs-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 20%, rgba(110, 210, 145, .07) 60%, transparent 100%);
+  opacity: 0;
+  transition: opacity .2s ease;
+  pointer-events: none;
+}
+
+.qs-banner:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 6px 22px rgba(0, 0, 0, .42),
+    0 0 0 1px rgba(110, 210, 145, .28);
+}
+
+.qs-banner:hover::after { opacity: 1; }
+
+.qs-banner:active {
+  transform: scale(.982);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  transition: transform .07s ease, box-shadow .07s ease;
+}
+
+.qs-icon-wrap {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.qs-icon-cam  { font-size: 22px; line-height: 1; }
+
+.qs-icon-lens {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 13px;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+}
+
+.qs-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.qs-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: .05px;
+}
+
+.qs-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.45;
+}
+
+.qs-arrow {
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .32);
+  flex-shrink: 0;
+  line-height: 1;
+  transition: transform .15s ease, color .15s ease;
+}
+
+.qs-banner:hover .qs-arrow {
+  transform: translateX(3px);
+  color: rgba(255, 255, 255, .6);
+}
+
+/* ── HERO TOOLBAR ────────────────────────────────── */
+
 .hero-toolbar {
   display: flex;
   align-items: center;

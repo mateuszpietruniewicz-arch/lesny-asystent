@@ -50,6 +50,19 @@
         >
         <ul id="suggestions-list" role="listbox" aria-label="Sugestie wyszukiwania"></ul>
       </div>
+      <label class="qs-banner" for="main-lens-input" role="button" aria-label="Szybka identyfikacja rośliny przez Google Lens">
+        <div class="qs-icon-wrap" aria-hidden="true">
+          <span class="qs-icon-cam">📸</span>
+          <span class="qs-icon-lens">🔍</span>
+        </div>
+        <div class="qs-text">
+          <span class="qs-title">Szybka identyfikacja rośliny</span>
+          <span class="qs-sub">Zrób zdjęcie, aby automatycznie rozpoznać gatunek przez Google Lens</span>
+        </div>
+        <span class="qs-arrow" aria-hidden="true">›</span>
+      </label>
+      <input type="file" accept="image/*" capture="environment" id="main-lens-input" style="display:none">
+
       <div class="hero-toolbar">
         <select id="sort-select" class="toolbar-select" aria-label="Sposób sortowania">
           <option value="default">Domyślne</option>
