@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v26-offline';
+const CACHE_NAME = 'forest-assistant-v27-zindex-fix';
 
 const APP_SHELL = [
   './index.html',

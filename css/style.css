@@ -301,11 +301,13 @@ body.high-contrast .jrn-photo-btn {
   top: calc(100% + 6px);
   left: 0;
   right: 0;
-  background: var(--surface);
+  /* backdrop-filter na baner tworzy nowy stacking context — potrzebujemy
+     z-index wyraźnie wyższy niż jakikolwiek element z blur/transform */
+  z-index: 9999;
+  background: var(--surface); /* solidny kolor #f8faf8 — bez prześwitu */
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-l);
   list-style: none;
-  z-index: 300;
   overflow: hidden;
   max-height: 340px;
   overflow-y: auto;
