@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v16';
+const CACHE_NAME = 'forest-assistant-v17';
 
 const APP_SHELL = [
   './index.html',

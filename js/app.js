@@ -225,16 +225,30 @@ function updateHotPicksSection(weather) {
 }
 
 async function loadDashboardWeather() {
+  let lat = 52.4064, lng = 16.9252; // fallback: Poznań
   try {
-    const weather = await fetchWeather(52.4064, 16.9252);
+    const pos = await new Promise((resolve, reject) =>
+      navigator.geolocation.getCurrentPosition(resolve, reject, {
+        timeout: 4000, maximumAge: 600_000,
+      })
+    );
+    lat = pos.coords.latitude;
+    lng = pos.coords.longitude;
+  } catch {}
+
+  try {
+    const weather = await fetchWeather(lat, lng);
     dashboardWeather = weather;
     allSpecies.forEach(s => readinessScores.set(s.id, calcReadiness(s, weather).total));
+    renderForestWidget(weather);
     if (isDashboardMode) {
       updateHotPicksSection(weather);
     } else if (sortMode === 'readiness') {
       renderGrid(getFiltered());
     }
   } catch {
+    const frw = $('forest-readiness-widget');
+    if (frw) frw.innerHTML = '<div class="frw-error">🌿 Brak danych pogodowych — sprawdź połączenie.</div>';
     if (isDashboardMode) {
       const hotGrid = document.getElementById('rec-hot-grid');
       if (hotGrid) hotGrid.innerHTML = '<div class="rec-empty">Nie można pobrać danych pogodowych.</div>';
@@ -898,6 +912,67 @@ async function renderHeroWeather() {
   }
 }
 
+function getForestComment(score, temp, month) {
+  if (score >= 80) {
+    if ([8, 9, 10].includes(month)) return 'Złoty sezon grzybów i owoców leśnych!';
+    if ([5, 6].includes(month))     return 'Szczyt sezonu wiosenno-letniego — zbierać!';
+    if (temp >= 18)                 return 'Idealne warunki — las w pełni sił!';
+    return 'Doskonała gotowość lasu — wyruszyć!';
+  }
+  if (score >= 60) {
+    if ([7, 8].includes(month)) return 'Letnia aktywność lasu — grzyby po deszczach.';
+    if ([4, 5].includes(month)) return 'Wiosna budzi las — dobry czas na wyjście.';
+    return 'Dobra aktywność lasu. Warto sprawdzić.';
+  }
+  if (score >= 40) {
+    if (temp < 5) return 'Chłodnawo — aktywne tylko mroźne specjalności.';
+    return 'Umiarkowane warunki. Sprawdź lokalnie przed wyjściem.';
+  }
+  if (score >= 20) {
+    if ([12, 1, 2].includes(month)) return 'Zima w lesie — bardzo mała aktywność.';
+    return 'Susza w ściółce — niska aktywność grzybów i roślin.';
+  }
+  if ([12, 1, 2].includes(month)) return 'Las odpoczywa — prawie żaden gatunek nie jest aktywny.';
+  return 'Niska gotowość lasu. Poczekaj na lepsze warunki.';
+}
+
+function renderForestWidget(weather) {
+  const el = $('forest-readiness-widget');
+  if (!el) return;
+
+  const inSeasonSpecies = allSpecies.filter(
+    s => NOW >= (s.sezon_start || 1) && NOW <= (s.sezon_koniec || 12)
+  );
+  const avgScore = inSeasonSpecies.length
+    ? Math.round(
+        inSeasonSpecies.reduce((sum, s) => sum + (readinessScores.get(s.id) || 0), 0) /
+        inSeasonSpecies.length
+      )
+    : 0;
+
+  const temp    = Math.round(+(weather.current?.temperature_2m ?? 0));
+  const rh      = Math.round(+(weather.current?.relative_humidity_2m ?? 0));
+  const color   = readinessColor(avgScore);
+  const comment = getForestComment(avgScore, temp, NOW);
+
+  el.classList.remove('frw-loading');
+  el.innerHTML = `
+    <div class="frw-top">
+      <span class="frw-label">🌳 Ogólna Gotowość Lasu</span>
+      <span class="frw-pct" style="color:${color}">${avgScore}<span class="frw-pct-unit">%</span></span>
+    </div>
+    <div class="frw-bar-bg">
+      <div class="frw-bar-fill" style="width:${avgScore}%;background:${color}"></div>
+    </div>
+    <div class="frw-comment">${comment}</div>
+    <div class="frw-meta">
+      <span class="frw-chip">🌡️ ${temp}°C</span>
+      <span class="frw-chip">💧 ${rh}% RH</span>
+      <span class="frw-chip">📅 ${MONTH_ABBR[NOW - 1]}</span>
+      <span class="frw-chip">🌿 ${inSeasonSpecies.length} gat. w sezonie</span>
+    </div>`;
+}
+
 function getBestCoords(s) {
   const pins = getPrivatePins(s.id);
   if (pins.length) return { lat: pins[0].lat, lng: pins[0].lng, source: 'pin' };
@@ -953,12 +1028,14 @@ function calcReadiness(s, weather) {
               : Math.max(0, 100 - (rainSum - 25) * 4);
   }
 
-  const total = Math.min(100, Math.max(0, Math.round(
+  const rawTotal = Math.min(100, Math.max(0, Math.round(
     seasonScore * 0.25 +
     tempScore   * 0.40 +
     humScore    * 0.25 +
     rainScore   * 0.10
   )));
+  // Poza sezonem: max 5% (anomalie fenologiczne), nie pokazujemy fałszywej gotowości
+  const total = inSeason ? rawTotal : Math.min(rawTotal, 5);
 
   return {
     total,

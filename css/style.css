@@ -658,6 +658,123 @@ body.high-contrast .jrn-photo-btn {
   text-align: right;
 }
 
+/* ── FOREST READINESS WIDGET ─────────────────────── */
+
+.frw-card {
+  width: 100%;
+  background: rgba(255, 255, 255, .09);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: var(--radius-m);
+  padding: 14px 16px 13px;
+  margin-bottom: 16px;
+}
+
+.frw-loading {
+  min-height: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.frw-skeleton-row {
+  height: 14px;
+  background: rgba(255, 255, 255, .12);
+  border-radius: 6px;
+  width: 70%;
+  animation: frw-shimmer 1.4s ease-in-out infinite;
+}
+
+.frw-skeleton-row--narrow { width: 45%; }
+
+.frw-skeleton-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, .10);
+  border-radius: 3px;
+  animation: frw-shimmer 1.4s ease-in-out infinite .2s;
+}
+
+@keyframes frw-shimmer {
+  0%, 100% { opacity: .5; }
+  50%       { opacity: 1; }
+}
+
+.frw-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.frw-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: rgba(255, 255, 255, .58);
+}
+
+.frw-pct {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.frw-pct-unit {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 1px;
+}
+
+.frw-bar-bg {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, .13);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.frw-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width .9s cubic-bezier(.22,.68,0,1.2);
+}
+
+.frw-comment {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .92);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.frw-meta {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.frw-chip {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, .72);
+  white-space: nowrap;
+}
+
+.frw-error {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, .45);
+  text-align: center;
+  padding: 14px 0;
+}
+
 /* ── TABS ────────────────────────────────────────── */
 
 #tab-nav {
