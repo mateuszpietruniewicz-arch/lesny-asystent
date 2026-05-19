@@ -1474,7 +1474,6 @@ function openGoogleLens(photoData) {
     dt.items.add(file);
     imgInput.files = dt.files;
   } catch {
-    // DataTransfer niedostępne w tej przeglądarce
     const msg = $('journal-save-msg');
     if (msg) {
       msg.textContent = '⚠ Ta przeglądarka nie obsługuje wysyłania zdjęć do Google.';
@@ -1484,20 +1483,23 @@ function openGoogleLens(photoData) {
     return;
   }
 
-  // Unikalna nazwa okna — otwieramy je jako about:blank zanim wyślemy form.
-  // To blokuje Android Chrome przed przechwyceniem nawigacji jako intencji aplikacji
-  // (intent matching działa tylko przy window.open z docelowym URL, nie przy navigacji
-  // w już otwartym oknie).
-  const targetName = '_glens_' + Date.now();
-  window.open('', targetName);
+  // image_url jest wymaganym polem kompanionem formularza Google —
+  // bez niego serwer odrzuca żądanie; wartość pusta = wyślij plik z inputa
+  const imageUrlInput   = document.createElement('input');
+  imageUrlInput.type    = 'hidden';
+  imageUrlInput.name    = 'image_url';
+  imageUrlInput.value   = '';
 
   const form      = document.createElement('form');
   form.method     = 'POST';
-  form.action     = 'https://lens.google.com/v3/upload';
+  // google.com/searchbyimage/upload: publiczny endpoint bez auth (nie lens.google.com,
+  // który wymaga OAuth i na Androidzie triggeruje intent aplikacji Google Lens)
+  form.action     = 'https://www.google.com/searchbyimage/upload';
   form.enctype    = 'multipart/form-data';
-  form.target     = targetName;
+  form.target     = '_blank';
   form.style.cssText = 'display:none;position:fixed';
 
+  form.appendChild(imageUrlInput);
   form.appendChild(imgInput);
   document.body.appendChild(form);
   form.submit();
