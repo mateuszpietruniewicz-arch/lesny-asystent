@@ -1466,7 +1466,7 @@ function openModal(s) {
             <div id="jrn-photo-preview-wrap" class="jrn-photo-preview-wrap" hidden>
               <img id="jrn-photo-preview" class="jrn-photo-preview" alt="Podgląd zdjęcia">
               <button type="button" class="jrn-photo-clear" id="jrn-photo-clear" aria-label="Usuń zdjęcie">✕</button>
-              <button type="button" class="jrn-lens-btn" id="jrn-lens-btn">🔍 Skaner Botaniczny</button>
+              <button type="button" class="jrn-lens-btn" id="jrn-lens-btn">🔍 Google Lens</button>
             </div>
           </div>
         </div>
@@ -1582,21 +1582,13 @@ function openModal(s) {
     if (wrap)  wrap.hidden = true;
   });
 
-  $('jrn-lens-btn')?.addEventListener('click', () => {
+  $('jrn-lens-btn')?.addEventListener('click', async () => {
     if (!jrnPhoto) return;
-    const btn = $('jrn-lens-btn');
-    if (btn) btn.disabled = true;
     try {
-      openVisualSearch(jrnPhoto);
-    } catch {
-      const msg = $('journal-save-msg');
-      if (msg) {
-        msg.textContent = '⚠ Skaner Botaniczny niedostępny w tej przeglądarce.';
-        msg.className   = 'journal-save-msg journal-save-err';
-        setTimeout(() => { msg.textContent = ''; msg.className = 'journal-save-msg'; }, 4000);
-      }
-    } finally {
-      setTimeout(() => { if (btn) btn.disabled = false; }, 800);
+      await openVisualSearch(jrnPhoto);
+    } catch (err) {
+      if (err.name === 'AbortError') return; // użytkownik anulował — OK
+      showShareFallbackToast();
     }
   });
 
@@ -1608,7 +1600,7 @@ function openModal(s) {
   }, { once: true });
 }
 
-// ── SKANER BOTANICZNY — wyszukiwanie obrazem przez Yandex Images ─────────────
+// ── GOOGLE LENS / SKANER SYSTEMOWY — natywne Web Share API ──────────────────
 
 function base64ToBlob(dataUrl) {
   const [header, data] = dataUrl.split(',');
@@ -1619,37 +1611,45 @@ function base64ToBlob(dataUrl) {
   return new Blob([arr], { type: mime });
 }
 
-function openVisualSearch(photo) {
+async function openVisualSearch(photo) {
   const img = photo ?? jrnPhoto;
   if (!img) return;
 
   const blob = base64ToBlob(img);
   const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
 
-  // DataTransfer przypisuje binarny plik do inputa bez interakcji użytkownika
-  const fileInput  = document.createElement('input');
-  fileInput.type   = 'file';
-  fileInput.name   = 'upfile'; // pole wymagane przez Yandex Images POST
-
-  try {
-    const dt = new DataTransfer();
-    dt.items.add(file);
-    fileInput.files = dt.files;
-  } catch {
-    throw new Error('DataTransfer niedostępny');
+  if (navigator.canShare?.({ files: [file] })) {
+    // Natywny system share — użytkownik wybiera Google Lens lub inną aplikację
+    await navigator.share({
+      files: [file],
+      title: 'Zidentyfikuj gatunek',
+      text: 'Sprawdź co to za roślina lub grzyb',
+    });
+    return;
   }
 
-  const form      = document.createElement('form');
-  form.method     = 'POST';
-  form.action     = 'https://yandex.com/images/search?rpt=imageview';
-  form.enctype    = 'multipart/form-data';
-  form.target     = '_blank';
-  form.style.cssText = 'display:none;position:fixed;inset:0';
+  // Fallback — przeglądarka / system nie obsługuje share z plikami
+  const e = new Error('Web Share API niedostępne');
+  e.code = 'NO_SHARE';
+  throw e;
+}
 
-  form.appendChild(fileInput);
-  document.body.appendChild(form);
-  form.submit();
-  setTimeout(() => form.parentNode?.removeChild(form), 500);
+function showShareFallbackToast() {
+  document.getElementById('share-fallback-toast')?.remove();
+  const toast = document.createElement('div');
+  toast.id = 'share-fallback-toast';
+  toast.className = 'sft-wrap';
+  toast.innerHTML = `
+    <span class="sft-icon" aria-hidden="true">📸</span>
+    <div class="sft-body">
+      <div class="sft-title">Udostępnianie niedostępne</div>
+      <div class="sft-msg">Zapisz zdjęcie przytrzymując je, a następnie otwórz Google Lens na swoim telefonie, by zidentyfikować gatunek.</div>
+    </div>
+    <button class="sft-close" aria-label="Zamknij">✕</button>`;
+  document.body.appendChild(toast);
+  toast.querySelector('.sft-close').addEventListener('click', () => toast.remove());
+  requestAnimationFrame(() => toast.classList.add('sft-visible'));
+  setTimeout(() => { toast.classList.remove('sft-visible'); setTimeout(() => toast.remove(), 400); }, 8000);
 }
 
 // ── KOPIA ZAPASOWA ────────────────────────────────────────────────────────────
@@ -1863,31 +1863,17 @@ function bindMainLens() {
     if (!file) return;
     e.target.value = '';
 
-    const banner    = document.querySelector('.qs-banner');
-    const titleEl   = banner?.querySelector('.qs-title');
-    const subEl     = banner?.querySelector('.qs-sub');
-    const origTitle = titleEl?.textContent ?? '';
-    const origSub   = subEl?.textContent   ?? '';
-
-    const resetBanner = () => {
-      if (titleEl) titleEl.textContent = origTitle;
-      if (subEl)   subEl.textContent   = origSub;
-      banner?.classList.remove('qs-banner--loading');
-    };
-
-    if (titleEl) titleEl.textContent = 'Analizowanie obrazu…';
-    if (subEl)   subEl.textContent   = 'Kompresowanie zdjęcia…';
+    const banner  = document.querySelector('.qs-banner');
     banner?.classList.add('qs-banner--loading');
 
     try {
       const compressed = await compressPhoto(file);
-      openVisualSearch(compressed);
-      resetBanner();
-    } catch {
-      if (titleEl) titleEl.textContent = '⚠ Skaner niedostępny w tej przeglądarce';
-      if (subEl)   subEl.textContent   = 'Spróbuj ponownie lub użyj innej przeglądarki';
+      await openVisualSearch(compressed);
+    } catch (err) {
+      if (err.name === 'AbortError') return; // użytkownik anulował share — OK
+      showShareFallbackToast();
+    } finally {
       banner?.classList.remove('qs-banner--loading');
-      setTimeout(resetBanner, 3500);
     }
   });
 }

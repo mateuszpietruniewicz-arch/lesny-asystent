@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v22-visual-search';
+const CACHE_NAME = 'forest-assistant-v24-native-share';
 
 const APP_SHELL = [
   './index.html',

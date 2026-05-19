@@ -490,10 +490,73 @@ body.high-contrast .jrn-photo-btn {
   to { transform: rotate(360deg); }
 }
 
-.jrn-lens-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+/* ── FALLBACK TOAST — Web Share niedostępny ─────────── */
+
+.sft-wrap {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(24px);
+  opacity: 0;
+  z-index: 9999;
+  width: min(400px, calc(100vw - 32px));
+  background: var(--green-900);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 14px 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.45);
+  transition:
+    transform .35s cubic-bezier(.4, 0, .2, 1),
+    opacity   .35s ease;
+  pointer-events: none;
 }
+
+.sft-wrap.sft-visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sft-icon { font-size: 26px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+
+.sft-body { flex: 1; min-width: 0; }
+
+.sft-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.sft-msg {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255,255,255,.72);
+  line-height: 1.5;
+}
+
+.sft-close {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: rgba(255,255,255,.14);
+  border-radius: 50%;
+  color: rgba(255,255,255,.8);
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background .18s ease;
+}
+
+.sft-close:hover { background: rgba(255,255,255,.26); }
 
 /* ── SEZONOWY PASEK SKRÓTÓW ──────────────────────── */
 
