@@ -76,6 +76,8 @@ async function init() {
   bindSeasonalBar();
   initOfflineDetection();
   initParkingRadar();
+  renderFavorites();
+  bindFavorites();
   setTimeout(warmImageCache, 4000); // start po 4s, by nie blokować krytycznych zasobów
 }
 
@@ -140,6 +142,7 @@ function buildCard(s) {
   const isSeason = NOW >= s.sezon_start && NOW <= s.sezon_koniec;
   const isToxic  = s.trujace_surowe || s.kategoria === 'Rośliny TRUJĄCE';
   const isProtected = s.ochrona && s.ochrona !== 'brak';
+  const isFav = getFavorites().has(String(s.id));
 
   const flags = [
     isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : '',
@@ -151,6 +154,11 @@ function buildCard(s) {
     <article class="species-card" data-id="${s.id}"
              style="--card-accent:${color}" tabindex="0" role="button"
              aria-label="${s.nazwa_polska}">
+      <button class="fav-btn${isFav ? ' fav-btn--active' : ''}" data-id="${s.id}"
+              aria-label="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}"
+              title="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}">
+        ${isFav ? '★' : '☆'}
+      </button>
       <div class="card-img-wrap">
         <div class="card-img-ph" aria-hidden="true"></div>
         <img class="card-img" data-latin="${s.nazwa_lacinska}" data-polish="${s.nazwa_polska}" alt="${s.nazwa_polska}">
@@ -349,6 +357,7 @@ function bindSearch() {
   });
 
   $('species-grid').addEventListener('click', e => {
+    if (e.target.closest('.fav-btn')) return;
     const card = e.target.closest('.species-card');
     if (!card) return;
     const sp = allSpecies.find(s => s.id === Number(card.dataset.id));
@@ -2194,6 +2203,61 @@ async function warmImageCache() {
   }
 
   try { localStorage.setItem(CACHE_WARM_KEY, '1'); } catch {}
+}
+
+// ── ULUBIONE (FAVORITES) ──────────────────────────────────────────────────────
+
+function getFavorites() {
+  try { return new Set(JSON.parse(localStorage.getItem('favoriteSpecies') || '[]')); }
+  catch { return new Set(); }
+}
+
+function toggleFavorite(id) {
+  const favs = getFavorites();
+  const sid = String(id);
+  if (favs.has(sid)) favs.delete(sid);
+  else favs.add(sid);
+  localStorage.setItem('favoriteSpecies', JSON.stringify([...favs]));
+  const isFav = favs.has(sid);
+  document.querySelectorAll(`.fav-btn[data-id="${id}"]`).forEach(btn => {
+    btn.classList.toggle('fav-btn--active', isFav);
+    btn.setAttribute('aria-label', isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
+    btn.title = isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych';
+    btn.textContent = isFav ? '★' : '☆';
+  });
+  renderFavorites();
+}
+
+function renderFavorites() {
+  const section = $('favorites-section');
+  const countEl = $('fav-count');
+  if (!section) return;
+  const favs = getFavorites();
+  if (countEl) countEl.textContent = favs.size > 0 ? String(favs.size) : '';
+  if (!favs.size) {
+    section.innerHTML = `<p class="fav-empty">Twoja leśna lista jest pusta. Oznacz gwiazdką ulubione gatunki w atlasie.</p>`;
+    return;
+  }
+  const favSpecies = allSpecies.filter(s => favs.has(String(s.id)));
+  section.innerHTML = `<div class="fav-grid">${favSpecies.map(buildCard).join('')}</div>`;
+  observeCardImages();
+}
+
+function bindFavorites() {
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.fav-btn');
+    if (!btn) return;
+    e.stopPropagation();
+    toggleFavorite(Number(btn.dataset.id));
+  });
+
+  $('favorites-wrap')?.addEventListener('click', e => {
+    if (e.target.closest('.fav-btn')) return;
+    const card = e.target.closest('.species-card');
+    if (!card) return;
+    const sp = allSpecies.find(s => s.id === Number(card.dataset.id));
+    if (sp) openModal(sp);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init);

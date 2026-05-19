@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v28-radar';
+const CACHE_NAME = 'forest-assistant-v29-favorites';
 
 const APP_SHELL = [
   './index.html',

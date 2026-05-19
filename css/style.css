@@ -1209,6 +1209,7 @@ body.high-contrast .jrn-photo-btn {
 /* ── KARTA GATUNKU ───────────────────────────────── */
 
 .species-card {
+  position: relative;
   background: var(--surface);
   border-radius: var(--radius-m);
   border: 1px solid var(--border);
@@ -3108,4 +3109,133 @@ body.high-contrast .jrn-photo-btn {
   color: var(--text-secondary);
   opacity: .7;
   margin-top: 4px;
+}
+
+/* ── ULUBIONE (FAVORITES) ─────────────────────────────────── */
+
+/* Przycisk gwiazdki na karcie */
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #9aab9e;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
+
+.fav-btn:hover {
+  transform: scale(1.18);
+  color: var(--gold);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+
+.fav-btn--active {
+  color: var(--gold);
+  background: var(--gold-bg);
+}
+
+.fav-btn--active:hover {
+  transform: scale(1.2);
+  color: #a07a00;
+}
+
+/* Sekcja Moje Ulubione */
+.fav-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 20px 4px;
+}
+
+.fav-wrap-inner {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: var(--radius-l);
+  padding: 24px 24px 20px;
+  box-shadow: 0 4px 24px rgba(22, 53, 39, .07), 0 1px 4px rgba(0,0,0,.05);
+}
+
+.fav-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.fav-header-icon {
+  font-size: 20px;
+  color: var(--gold);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.fav-header-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+  flex: 1;
+}
+
+.fav-header-count {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg);
+  border-radius: 20px;
+  padding: 2px 9px;
+  min-width: 20px;
+  text-align: center;
+  letter-spacing: .2px;
+}
+
+.fav-content {
+  /* dynamic content container */
+}
+
+.fav-empty {
+  padding: 4px 0 4px;
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+  font-style: italic;
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+/* High contrast overrides */
+body.high-contrast .fav-wrap-inner {
+  background: #fff;
+  border-color: #111;
+  backdrop-filter: none;
+}
+
+body.high-contrast .fav-btn {
+  background: #fff;
+  border: 1.5px solid #111;
+}
+
+body.high-contrast .fav-btn--active {
+  color: #7a5c00;
 }
