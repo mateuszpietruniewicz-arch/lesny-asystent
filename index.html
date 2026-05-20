@@ -122,7 +122,17 @@
         <span class="fav-header-icon" aria-hidden="true">★</span>
         <h2 class="fav-header-title">Moje Ulubione</h2>
         <span class="fav-header-count" id="fav-count"></span>
+        <label class="fav-notif-toggle" for="fav-notif-checkbox"
+               title="Powiadomienia o sezonie ulubionych gatunków">
+          <span class="fav-notif-toggle-text">Powiadomienia</span>
+          <span class="fav-notif-switch" aria-hidden="true">
+            <input type="checkbox" id="fav-notif-checkbox"
+                   aria-label="Powiadomienia o sezonie ulubionych gatunków">
+            <span class="fav-notif-knob"></span>
+          </span>
+        </label>
       </div>
+      <div id="fav-notif-msg" class="fav-notif-msg" hidden></div>
       <div id="favorites-section" class="fav-content"></div>
     </div>
   </section>

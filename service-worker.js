@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v33-offline-maps';
+const CACHE_NAME = 'forest-assistant-v34-seasonal-push';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 
@@ -21,6 +21,24 @@ const CDN_ASSETS = [
   'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 ];
+
+// ── NOTIFICATION CLICK: otwórz lub przejdź do karty aplikacji ─────────────
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
+      // Jeśli karta z aplikacją już jest otwarta — przenieś na nią focus
+      for (const client of clientList) {
+        if (client.url.startsWith(self.registration.scope) && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      // Inaczej otwórz nową kartę
+      if (clients.openWindow) return clients.openWindow('./');
+    })
+  );
+});
 
 // ── INSTALL: cache app shell + CDN assets ──────────────────────────────────
 

@@ -79,6 +79,8 @@ async function init() {
   initParkingRadar();
   renderFavorites();
   bindFavorites();
+  bindNotificationToggle();
+  checkActiveSeasonNotifications();
   setTimeout(warmImageCache, 4000); // start po 4s, by nie blokować krytycznych zasobów
 }
 
@@ -2437,6 +2439,99 @@ function bindFavorites() {
     if (!card) return;
     const sp = allSpecies.find(s => s.id === Number(card.dataset.id));
     if (sp) openModal(sp);
+  });
+}
+
+// ── POWIADOMIENIA SEZONOWE ────────────────────────────────────────────────────
+
+function showFavNotifMsg(text, duration = 5000) {
+  const el = $('fav-notif-msg');
+  if (!el) return;
+  el.textContent = text;
+  el.hidden = false;
+  clearTimeout(el._hideTimer);
+  el._hideTimer = setTimeout(() => { el.hidden = true; }, duration);
+}
+
+function checkActiveSeasonNotifications() {
+  if (!('Notification' in window)) return;
+  if (Notification.permission !== 'granted') return;
+  if (localStorage.getItem('notificationsEnabled') !== 'true') return;
+
+  const favs = getFavorites();
+  if (!favs.size) return;
+
+  const year     = new Date().getFullYear();
+  const monthStr = String(NOW).padStart(2, '0');
+
+  const inSeason = allSpecies.filter(s =>
+    favs.has(String(s.id)) &&
+    NOW >= s.sezon_start && NOW <= s.sezon_koniec
+  );
+
+  const unsent = inSeason.filter(s =>
+    !localStorage.getItem(`notified_${year}_${monthStr}_${s.id}`)
+  );
+
+  if (!unsent.length) return;
+
+  try {
+    if (unsent.length === 1) {
+      new Notification('Leśny Asystent 🌱', {
+        body: `Właśnie trwa szczyt sezonu na Twój ulubiony gatunek: ${unsent[0].nazwa_polska}!`,
+        icon: './icons/icon-192.svg',
+        tag: `season-${year}-${monthStr}`,
+      });
+    } else {
+      const preview = unsent.slice(0, 2).map(s => s.nazwa_polska).join(', ');
+      const rest    = unsent.length > 2 ? ` i ${unsent.length - 2} więcej` : '';
+      new Notification('Leśny Asystent 🌱', {
+        body: `${unsent.length} Twoich ulubionych gatunków jest teraz w sezonie: ${preview}${rest}!`,
+        icon: './icons/icon-192.svg',
+        tag: `season-${year}-${monthStr}`,
+      });
+    }
+  } catch { /* przeglądarka może blokować mimo granted */ }
+
+  // Zapisz flagę dla każdego gatunku — nie spamujemy w tym miesiącu
+  unsent.forEach(s =>
+    localStorage.setItem(`notified_${year}_${monthStr}_${s.id}`, '1')
+  );
+}
+
+function bindNotificationToggle() {
+  const checkbox = $('fav-notif-checkbox');
+  const label    = document.querySelector('.fav-notif-toggle');
+  if (!checkbox) return;
+
+  // Jeśli przeglądarka nie obsługuje Notification API — wyłącz toggle
+  if (!('Notification' in window)) {
+    if (label) label.classList.add('fav-notif-toggle--disabled');
+    checkbox.disabled = true;
+    return;
+  }
+
+  // Odtwórz zapisany stan
+  const isGranted = Notification.permission === 'granted';
+  const isEnabled = localStorage.getItem('notificationsEnabled') === 'true';
+  checkbox.checked = isGranted && isEnabled;
+
+  checkbox.addEventListener('change', async () => {
+    if (checkbox.checked) {
+      const permission = await Notification.requestPermission();
+      if (permission === 'granted') {
+        localStorage.setItem('notificationsEnabled', 'true');
+        showFavNotifMsg('Powiadomienia włączone — dostaniesz znać, gdy Twoje ulubione będą w sezonie 🌿');
+        checkActiveSeasonNotifications();
+      } else {
+        // Cofnij toggle i poinformuj użytkownika
+        checkbox.checked = false;
+        localStorage.setItem('notificationsEnabled', 'false');
+        showFavNotifMsg('Brak zgody — zmień ustawienia przeglądarki, aby włączyć powiadomienia.');
+      }
+    } else {
+      localStorage.setItem('notificationsEnabled', 'false');
+    }
   });
 }
 
