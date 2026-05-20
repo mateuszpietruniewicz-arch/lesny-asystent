@@ -49,6 +49,10 @@ const detailsCache = {};
 
 const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
 let imgObserver = null;
+let loadMoreObserver = null;
+let visibleSpecies = [];
+let visibleCount = 0;
+const PAGE_SIZE = 20;
 let jrnLat = null, jrnLng = null, jrnPhoto = null;
 let activeRecognition = null;
 let jrnLocMap = null, jrnLocMarker = null, jrnHistoryMap = null;
@@ -139,6 +143,7 @@ function renderError(e) {
 
 function renderGrid(species) {
   const grid = $('species-grid');
+  disconnectLoadMore();
   if (!species.length) {
     grid.innerHTML = `
       <div class="empty-state">
@@ -147,8 +152,46 @@ function renderGrid(species) {
       </div>`;
     return;
   }
-  grid.innerHTML = getSorted(species).map(buildCard).join('');
+  visibleSpecies = getSorted(species);
+  visibleCount = 0;
+  grid.innerHTML = '';
+  appendMoreCards();
+}
+
+function appendMoreCards() {
+  const grid = $('species-grid');
+  const slice = visibleSpecies.slice(visibleCount, visibleCount + PAGE_SIZE);
+  if (!slice.length) return;
+  const frag = document.createDocumentFragment();
+  slice.forEach(s => {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = buildCard(s);
+    frag.appendChild(tmp.firstElementChild);
+  });
+  grid.appendChild(frag);
+  visibleCount += slice.length;
   observeCardImages();
+  if (visibleCount < visibleSpecies.length) {
+    attachLoadMoreSentinel(grid);
+  } else {
+    disconnectLoadMore();
+  }
+}
+
+function attachLoadMoreSentinel(grid) {
+  disconnectLoadMore();
+  const sentinel = document.createElement('div');
+  sentinel.className = 'load-more-sentinel';
+  grid.appendChild(sentinel);
+  loadMoreObserver = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) appendMoreCards();
+  }, { rootMargin: '300px' });
+  loadMoreObserver.observe(sentinel);
+}
+
+function disconnectLoadMore() {
+  if (loadMoreObserver) { loadMoreObserver.disconnect(); loadMoreObserver = null; }
+  $('species-grid')?.querySelector('.load-more-sentinel')?.remove();
 }
 
 function buildCard(s) {
@@ -206,6 +249,7 @@ function getLastCallSpecies() {
 }
 
 function renderDashboard() {
+  disconnectLoadMore();
   const lastCall = getLastCallSpecies();
   $('species-grid').innerHTML = `
     <div class="rec-section">
@@ -326,17 +370,21 @@ function bindTabs() {
 
 function bindSearch() {
   const input = $('search-input');
+  let searchDebounce = null;
   input.addEventListener('input', () => {
     searchQuery = input.value;
     suggestIdx  = -1;
     renderSuggestions(getSuggestions(searchQuery));
-    if (searchQuery.trim()) {
-      exitDashboard();
-    } else if (currentTab === 'all') {
-      enterDashboard();
-    } else {
-      renderGrid(getFiltered());
-    }
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(() => {
+      if (searchQuery.trim()) {
+        exitDashboard();
+      } else if (currentTab === 'all') {
+        enterDashboard();
+      } else {
+        renderGrid(getFiltered());
+      }
+    }, 300);
   });
 
   input.addEventListener('keydown', e => {
