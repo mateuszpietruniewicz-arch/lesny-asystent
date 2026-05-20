@@ -27,6 +27,15 @@ const CAT_COLOR = {
   'Rośliny TRUJĄCE':  '#c62828',
 };
 
+let ATLAS_DATA = [
+  ...(typeof LEGACY_DATA !== 'undefined' ? LEGACY_DATA : []),
+  ...(typeof AAA_DATA !== 'undefined' ? AAA_DATA : []),
+  ...(typeof GRZYBY_DATA !== 'undefined' ? GRZYBY_DATA : []),
+  ...(typeof ZBIOR_DATA !== 'undefined' ? ZBIOR_DATA : []),
+  ...(typeof ZIOLA_DATA !== 'undefined' ? ZIOLA_DATA : []),
+  ...(typeof ZIOMA2_DATA !== 'undefined' ? ZIOMA2_DATA : []),
+];
+
 let allSpecies = [];
 let currentTab = 'all';
 let searchQuery = '';
@@ -59,7 +68,8 @@ async function init() {
   try {
     const res = await fetch('data/index.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    allSpecies = await res.json();
+    const legacyData = await res.json();
+    allSpecies = [...legacyData, ...ATLAS_DATA];
   } catch (e) {
     renderError(e);
     return;
