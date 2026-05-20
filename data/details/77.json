@@ -1,0 +1,38 @@
+{
+  "id": 77,
+  "nazwa_polska": "Głóg jednoszyjkowy",
+  "nazwa_lacinska": "Crataegus monogyna",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce (pestka niejadalna!), młode liście (wiosna), kwiaty",
+  "zastosowanie_kulinarne": "Dżemy, nalewki, mąka z suszonych owoców, herbata sercowa",
+  "zastosowanie_lecznicze": "Serce i układ krwionośny, ciśnienie, miażdżyca – klinicznie potwierdzone!",
+  "przepis_sugestia": "Herbata sercowa: 1 łyżka suszonych owoców + szklanka wrzątku, parzyć 15 min",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, żywopłoty, miedze",
+  "regiony_polski": "Wszędzie pospolity w Polsce",
+  "sugestie_lokalizacji": "Miedze polne i żywopłoty śródpolne w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Pestki zawierają amygdalinę – nie jedz ich! Przy chorobach serca skonsultuj z lekarzem.",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Crataegus monogyna głóg czerwone owoce jesień",
+  "ciekawostka": "Głóg może żyć 700 lat! Klinicznie potwierdzono skuteczność w leczeniu niewydolności serca.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – żywopłoty śródpolne"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – miedze i zarośla"
+    }
+  ]
+}

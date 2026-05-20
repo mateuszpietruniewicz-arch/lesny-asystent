@@ -1,0 +1,38 @@
+{
+  "id": 115,
+  "nazwa_polska": "Pokrzyk wilcza jagoda – TRUJĄCA!",
+  "nazwa_lacinska": "Atropa belladonna",
+  "kategoria": "Rośliny TRUJĄCE",
+  "podkategoria": "Wpisane edukacyjnie",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "ŻADNA – roślina ŚMIERTELNIE trująca",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "W farmaceutyce: atropina do oczu, leki na skurcze – TYLKO medycyna",
+  "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+  "wystepowanie_ogolne": "Lasy liściaste, zarośla – rozrzucona w Polsce",
+  "regiony_polski": "Niepospolita – głównie południe Polski, zarośla leśne",
+  "sugestie_lokalizacji": "Cieniste zarośla leśne w całej Polsce | Blisko Poznania: bardzo rzadka",
+  "trujace_surowe": true,
+  "ostrzezenie": "ŚMIERTELNIE TRUJĄCA! Już kilka owoców może zabić dziecko. NIE DOTYKAJ, NIE JEDZ. Czarne lśniące owoce podobne do wiśni!",
+  "trudnosc_zbioru": "NIE ZBIERAJ",
+  "img_search": "Atropa belladonna pokrzyk wilcza jagoda czarne jagody",
+  "ciekawostka": "Wpisana EDUKACYJNIE – aby wiedzieć czego NIE ZBIERAĆ! Atropina z tej rośliny rozszerza źrenice – stąd 'belladonna' (piękna dama).",
+  "ochrona": "objęta ochroną częściową",
+  "koordinaty": [
+    {
+      "lat": 49.14,
+      "lng": 22.53,
+      "opis": "Bieszczady – cieniste zarośla leśne"
+    },
+    {
+      "lat": 50.867,
+      "lng": 20.923,
+      "opis": "Świętokrzyskie – wilgotne zarośla"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 86,
+  "nazwa_polska": "Brzoza brodawkowata – sok",
+  "nazwa_lacinska": "Betula pendula",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa liściaste",
+  "sezon_start": 3,
+  "sezon_koniec": 4,
+  "szczyt_zbioru": "marzec–kwiecień",
+  "min_temp_C": 1,
+  "dni_min_temp": 5,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Sok (marzec–kwiecień), młode liście, pąki",
+  "zastosowanie_kulinarne": "Sok brzozowy jako napój, syropy, wino brzozowe",
+  "zastosowanie_lecznicze": "Detoks nerek, działanie moczopędne, reumatyzm, choroby skóry",
+  "przepis_sugestia": "Sok pitny: świeży sok z brzozy + miód + cytryna – wiosenna kuracja zdrowotna",
+  "wystepowanie_ogolne": "Cała Polska – lasy, parki, piaszczyste gleby",
+  "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+  "sugestie_lokalizacji": "Bory sosnowo-brzozowe w całej Polsce | Blisko Poznania: Puszcza Notecka, bory koło Obornik | Mazury: lasy brzozowe",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie pobieraj więcej niż 3-4 litry z jednego drzewa. Zalep dziurę po pobraniu!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Betula pendula brzoza brodawkowata sok wiosna",
+  "ciekawostka": "Jeden litr soku brzozowego zawiera ok. 40 minerałów. Tradycja wiosenna w Rosji, Finlandii i Łotwie.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5012,
+      "lng": 16.9678,
+      "opis": "Biedrusko – młode brzeziny"
+    },
+    {
+      "lat": 52.6517,
+      "lng": 16.8187,
+      "opis": "Oborniki – lasy nadrzeczne"
+    }
+  ]
+}

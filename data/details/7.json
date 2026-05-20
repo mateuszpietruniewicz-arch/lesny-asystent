@@ -1,0 +1,38 @@
+{
+  "id": 7,
+  "nazwa_polska": "Babka lancetowata",
+  "nazwa_lacinska": "Plantago lanceolata",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "kwiecień–czerwiec",
+  "min_temp_C": 8,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Młode liście, nasiona",
+  "zastosowanie_kulinarne": "Liście do sałatek i zup, nasiona jako zagęstnik",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, rany, ukąszenia owadów",
+  "przepis_sugestia": "Herbatka: 2 łyżki suszu + szklanka wrzątku, parzyć 10 min",
+  "wystepowanie_ogolne": "Cała Polska – łąki, drogi, trawniki – wszędzie",
+  "regiony_polski": "Absolutnie wszędzie w Polsce",
+  "sugestie_lokalizacji": "Każde pobocze drogi i łąka w Polsce – brak specjalnych miejsc",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Plantago lanceolata babka lancetowata",
+  "ciekawostka": "Zwana 'plastrem natury' – przyłożona do ukąszenia pszczoły natychmiast łagodzi ból.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty, Poznań"
+    },
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – łąki przy drodze"
+    }
+  ]
+}

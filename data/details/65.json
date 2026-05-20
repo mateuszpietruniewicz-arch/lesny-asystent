@@ -1,0 +1,38 @@
+{
+  "id": 65,
+  "nazwa_polska": "Lipa szerokolistna – kwiat",
+  "nazwa_lacinska": "Tilia platyphyllos",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Kwiaty drzew",
+  "sezon_start": 6,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "czerwiec (tydzień wcześniej niż drobnolistna)",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty z przykwiatkami, młode liście",
+  "zastosowanie_kulinarne": "Herbata lipowa, syrop, miód",
+  "zastosowanie_lecznicze": "Przeziębienie, kaszel, bezsenność, stres – jak lipa drobnolistna",
+  "przepis_sugestia": "Herbata z obu lip razem: kwiaty drobnolistnej + szerokolistnej + miód",
+  "wystepowanie_ogolne": "Lasy liściaste, parki, aleje – cała Polska",
+  "regiony_polski": "Pospolita w całej Polsce",
+  "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: aleje przy Rogalinie, Kórniku",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tilia platyphyllos lipa szerokolistna kwiaty żółte",
+  "ciekawostka": "Kwitnie tydzień wcześniej niż drobnolistna – razem dają 3 tygodnie zbiorów kwiatów!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Rogalin – aleje lipowe"
+    },
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – aleje lipowe"
+    }
+  ]
+}

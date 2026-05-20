@@ -1,0 +1,38 @@
+{
+  "id": 25,
+  "nazwa_polska": "Koniczyna czerwona",
+  "nazwa_lacinska": "Trifolium pratense",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty, liście, kiełki",
+  "zastosowanie_kulinarne": "Herbata z kwiatów, kiełki do sałatek, kwiaty do pieczywa i deserów",
+  "zastosowanie_lecznicze": "Menopauza (izoflawony!), kaszel, obniżanie cholesterolu",
+  "przepis_sugestia": "Herbata: kwiaty koniczyny + rumianek + miód – kojąca i smaczna",
+  "wystepowanie_ogolne": "Cała Polska – łąki, pastwiska, pobocza dróg",
+  "regiony_polski": "Wszędzie pospolita w Polsce",
+  "sugestie_lokalizacji": "Każda łąka w Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Trifolium pratense koniczyna czerwona różowy kwiat łąka",
+  "ciekawostka": "Miód koniczynowy to jeden z najsmaczniejszych. Izoflawony naukowo potwierdzone w leczeniu menopauzy.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – łąki kośne"
+    },
+    {
+      "lat": 52.579,
+      "lng": 18.234,
+      "opis": "Gopło – łąki pastwiskowe"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 13,
+  "nazwa_polska": "Rdestowiec ostrokończysty",
+  "nazwa_lacinska": "Reynoutria japonica",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode pędy do 30 cm przed kwitnieniem",
+  "zastosowanie_kulinarne": "Gotowane jak szparag, do kompotów i przetworów – kwaśny smak",
+  "zastosowanie_lecznicze": "Resweratrol (antynowotworowy!), działanie przeciwzapalne, detoks",
+  "przepis_sugestia": "Kompot rdestowcowy: pędy + jabłka + cukier – kwaśny i orzeźwiający",
+  "wystepowanie_ogolne": "Cała Polska – brzegi rzek, przydroża, nieużytki (gatunek inwazyjny!)",
+  "regiony_polski": "Masowy w całej Polsce wzdłuż rzek i autostrad",
+  "sugestie_lokalizacji": "Dosłownie wszędzie w Polsce – wzdłuż każdej rzeki, drogi i torów kolejowych",
+  "trujace_surowe": false,
+  "ostrzezenie": "Gatunek inwazyjny – zbierając, pomagasz przyrodzie!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Reynoutria japonica rdestowiec ostrokończysty pędy",
+  "ciekawostka": "Zawiera RESWERATROL – substancję z czerwonego wina słynną z działania antynowotworowego!",
+  "ochrona": "brak (inwazyjny)",
+  "koordinaty": [
+    {
+      "lat": 52.679,
+      "lng": 17.035,
+      "opis": "Dolina Noteci – brzegi rzeki"
+    },
+    {
+      "lat": 53.067,
+      "lng": 22.123,
+      "opis": "Narew – brzegi rzeki"
+    }
+  ]
+}

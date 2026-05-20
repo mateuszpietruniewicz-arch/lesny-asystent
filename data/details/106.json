@@ -1,0 +1,38 @@
+{
+  "id": 106,
+  "nazwa_polska": "Maślak żółty",
+  "nazwa_lacinska": "Suillus grevillei",
+  "kategoria": "Grzyby",
+  "podkategoria": "Borowikowate",
+  "sezon_start": 7,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "sierpień–październik",
+  "min_temp_C": 8,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz bez śluzu!",
+  "zastosowanie_kulinarne": "Marynowany, smażony",
+  "zastosowanie_lecznicze": "Białko, składniki odżywcze",
+  "przepis_sugestia": "Marynowany maślak żółty: grzyby + ocet + czosnek + zioła + cukier",
+  "wystepowanie_ogolne": "Wyłącznie pod modrzewiami – cała Polska",
+  "regiony_polski": "Wszędzie gdzie rośnie modrzew – parki miejskie, aleje, lasy",
+  "sugestie_lokalizacji": "Parki i aleje z modrzewiem w całej Polsce | Blisko Poznania: parki z modrzewiem, Rogalin",
+  "trujace_surowe": false,
+  "ostrzezenie": "Jak maślak zwyczajny – ZAWSZE zdejmuj śluzowatą skórkę kapelusza!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Suillus grevillei maślak żółty modrzew złoty",
+  "ciekawostka": "Rośnie WYŁĄCZNIE pod modrzewiami. Znajdź modrzew, znajdziesz złote maślaki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Rogalin – aleje z modrzewiem"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela – modrzewie"
+    }
+  ]
+}

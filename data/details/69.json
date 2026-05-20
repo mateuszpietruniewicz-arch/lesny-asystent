@@ -1,0 +1,38 @@
+{
+  "id": 69,
+  "nazwa_polska": "Jeżyna fałdowana",
+  "nazwa_lacinska": "Rubus plicatus",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 15,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce, liście",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, wino, nalewki, soki",
+  "zastosowanie_lecznicze": "Antyoksydanty, witamina C i K, działanie przeciwzapalne",
+  "przepis_sugestia": "Wino jeżynowe: owoce + cukier + woda + drożdże, fermentacja 2 tygodnie",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, wyręby, żywopłoty",
+  "regiony_polski": "Bardzo pospolita w całej Polsce",
+  "sugestie_lokalizacji": "Skraje lasów i żywopłoty w całej Polsce | Blisko Poznania: Puszcza Zielonka, skraje lasów koło Mosiny, Dolina Baryczy",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – uwaga jedynie na ostre kolce!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Rubus plicatus jeżyna czarne owoce leśna",
+  "ciekawostka": "Im czarniejsza jeżyna, tym słodsza. Zbieraj tylko w pełni czarne – niedojrzałe są kwaśne!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4012,
+      "lng": 16.9314,
+      "opis": "Dolina Warty – zarośla"
+    },
+    {
+      "lat": 52.5012,
+      "lng": 16.9678,
+      "opis": "Biedrusko – skraje lasu"
+    }
+  ]
+}

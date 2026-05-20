@@ -1,0 +1,38 @@
+{
+  "id": 45,
+  "nazwa_polska": "Przywrotnik pospolity",
+  "nazwa_lacinska": "Alchemilla vulgaris",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–sierpień",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Liście i ziele",
+  "zastosowanie_kulinarne": "Herbata, dodatek do sałatek",
+  "zastosowanie_lecznicze": "Regulacja cyklu miesiączkowego, wspomaganie trawienia, gojenie ran",
+  "przepis_sugestia": "Herbata: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min",
+  "wystepowanie_ogolne": "Cała Polska – łąki, skraje lasów, góry",
+  "regiony_polski": "Pospolity na łąkach kośnych i w górach całej Polski",
+  "sugestie_lokalizacji": "Łąki kośne w całej Polsce | Tatry, Beskidy, Bieszczady | Blisko Poznania: łąki koło Mosiny",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Alchemilla vulgaris przywrotnik pospolity zielony",
+  "ciekawostka": "Zapomniane zioło kobiet – reguluje hormony. Alchemicy zbierali z jego liści 'niebiańską rosę' do eliksirów!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – łąki kośne"
+    },
+    {
+      "lat": 49.234,
+      "lng": 20.012,
+      "opis": "Tatry (Hala Gąsienicowa) – górskie łąki"
+    }
+  ]
+}

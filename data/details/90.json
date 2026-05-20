@@ -1,0 +1,38 @@
+{
+  "id": 90,
+  "nazwa_polska": "Świerk pospolity – pędy",
+  "nazwa_lacinska": "Picea abies",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa iglaste",
+  "sezon_start": 4,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode pędy (różowe szyszeczki), igły, nasiona",
+  "zastosowanie_kulinarne": "Syrop ze świerka, herbata, pikle z młodych szyszek, nalewka",
+  "zastosowanie_lecznicze": "Drogi oddechowe, działanie antybiotyczne żywicy, witamina C",
+  "przepis_sugestia": "Pikle ze świerkowych szyszeczek: młode szyszki + ocet + cukier + zioła",
+  "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, szczególnie góry",
+  "regiony_polski": "Masowy w Karpatach i Sudetach | Bory – mniej pospolity",
+  "sugestie_lokalizacji": "Góry: Tatry, Beskidy, Gorce, Bieszczady | Bory Tucholskie | Blisko Poznania: nieliczne w Puszczy Zielonce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Picea abies świerk pędy różowe szyszki wiosna",
+  "ciekawostka": "Różowe pędy świerka to hit kuchni nordyckiej – restauracja Noma w Kopenhadze zrobiła je sławnymi!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 49.256,
+      "lng": 19.867,
+      "opis": "Tatry (Dolina Kościeliska) – bory świerkowe"
+    },
+    {
+      "lat": 49.14,
+      "lng": 22.53,
+      "opis": "Bieszczady (Wetlina) – lasy świerkowe"
+    }
+  ]
+}

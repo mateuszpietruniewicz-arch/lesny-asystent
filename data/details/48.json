@@ -1,0 +1,38 @@
+{
+  "id": 48,
+  "nazwa_polska": "Fiołek trójbarwny (bratek polny)",
+  "nazwa_lacinska": "Viola tricolor",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–sierpień",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty i ziele",
+  "zastosowanie_kulinarne": "Herbata, kwiaty do sałatek i dekoracji",
+  "zastosowanie_lecznicze": "Choroby skóry (egzema, trądzik), działanie moczopędne, wykrztuśne",
+  "przepis_sugestia": "Herbata: 1 łyżka mieszanki kwiatów i ziela + szklanka wrzątku",
+  "wystepowanie_ogolne": "Cała Polska – pola, łąki, przydroża",
+  "regiony_polski": "Pospolity na polach uprawnych i łąkach całej Polski",
+  "sugestie_lokalizacji": "Pola uprawne i łąki w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Viola tricolor fiołek trójbarwny bratek polny",
+  "ciekawostka": "Dziki przodek ogrodowych bratków. W medycynie ludowej przez wieki stosowany na choroby skóry!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – pola uprawne"
+    },
+    {
+      "lat": 50.567,
+      "lng": 23.22,
+      "opis": "Roztocze – łąki"
+    }
+  ]
+}

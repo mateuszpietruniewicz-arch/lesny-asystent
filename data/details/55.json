@@ -1,0 +1,38 @@
+{
+  "id": 55,
+  "nazwa_polska": "Goryczka zwyczajna",
+  "nazwa_lacinska": "Gentiana pneumonanthe",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 10,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Korzeń (nalewka, napar)",
+  "zastosowanie_kulinarne": "Nalewka gorzka (aperitif), bitters",
+  "zastosowanie_lecznicze": "Brak apetytu, problemy żołądkowe, wspomaganie wątroby",
+  "przepis_sugestia": "Krople żołądkowe: korzeń + spirytus, maceruj 4 tygodnie",
+  "wystepowanie_ogolne": "Wilgotne łąki torfowe, wrzosowiska – rozrzucona w Polsce",
+  "regiony_polski": "Wilgotne łąki torfowiskowe – Mazury, Podlasie, Niziny",
+  "sugestie_lokalizacji": "Wilgotne łąki torfowe w Polsce | Blisko Poznania: łąki koło Pniew | Mazury: Pojezierze Mazurskie | Biebrza",
+  "trujace_surowe": false,
+  "ostrzezenie": "Bardzo gorzka – stosuj w małych ilościach",
+  "trudnosc_zbioru": "trudny",
+  "img_search": "Gentiana pneumonanthe goryczka niebieski kwiat łąka",
+  "ciekawostka": "Producenci bitters i wermutu używają korzeni goryczki od wieków. Najgorzejsza substancja roślinna!",
+  "ochrona": "OBJĘTA OCHRONĄ – nie zbieraj korzeni!",
+  "koordinaty": [
+    {
+      "lat": 52.379,
+      "lng": 16.235,
+      "opis": "Łąki torfowe k. Pniew"
+    },
+    {
+      "lat": 53.789,
+      "lng": 21.568,
+      "opis": "Pojezierze Mazurskie – wilgotne łąki"
+    }
+  ]
+}

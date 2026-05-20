@@ -1,0 +1,38 @@
+{
+  "id": 61,
+  "nazwa_polska": "Pierwiosnek lekarski",
+  "nazwa_lacinska": "Primula veris",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Jadalne kwiaty",
+  "sezon_start": 4,
+  "sezon_koniec": 5,
+  "szczyt_zbioru": "kwiecień",
+  "min_temp_C": 7,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty i liście",
+  "zastosowanie_kulinarne": "Herbata, sałatki, wino kwiatowe, nalewki",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie wykrztuśne, reumatyzm",
+  "przepis_sugestia": "Herbata wiosenna: kwiaty + liście + miód – kuracja zdrowotna",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, skraje lasów",
+  "regiony_polski": "Pospolity na łąkach kośnych całej Polski",
+  "sugestie_lokalizacji": "Łąki kośne i skraje lasów w całej Polsce | Blisko Poznania: łąki koło Mosiny, Dolina Baryczy | Małopolska: łąki podkarpackie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Primula veris pierwiosnek lekarski żółty kwiat łąka",
+  "ciekawostka": "Jeden z pierwszych wiosennych kwiatów – symbol wiosny od pokoleń.",
+  "ochrona": "Objęty ochroną – zbieraj tylko kwiaty, nigdy nie wyrywaj całej rośliny!",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – łąki kośne"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – łąki"
+    }
+  ]
+}

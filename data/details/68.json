@@ -1,0 +1,38 @@
+{
+  "id": 68,
+  "nazwa_polska": "Malina właściwa",
+  "nazwa_lacinska": "Rubus idaeus",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce, liście (herbata na gorączkę)",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, soki, nalewki, herbata z liści",
+  "zastosowanie_lecznicze": "Gorączka (herbata z liści), witamina C, antyoksydanty",
+  "przepis_sugestia": "Nalewka malinowa: maliny + cukier + spirytus, odczekaj 3 miesiące",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, wyręby, zarośla",
+  "regiony_polski": "Pospolita w całej Polsce – wyręby są kluczowe!",
+  "sugestie_lokalizacji": "Blisko Poznania: wyręby w Puszczy Zielonce, Lasy Jankowskie, Biedrusko | Bieszczady: masowe wyręby | Mazury: po wycince rosną maliny | Beskidy: wyręby",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Rubus idaeus malina dzika leśna czerwona",
+  "ciekawostka": "Herbata z liści malinowych pomaga kobietom w ciąży przygotować macicę do porodu – stosowana od stuleci.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – polany"
+    },
+    {
+      "lat": 52.4712,
+      "lng": 17.0956,
+      "opis": "Owińska – leśne polany"
+    }
+  ]
+}

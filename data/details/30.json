@@ -1,0 +1,38 @@
+{
+  "id": 30,
+  "nazwa_polska": "Mięta polna",
+  "nazwa_lacinska": "Mentha arvensis",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście i łodygi",
+  "zastosowanie_kulinarne": "Herbata, sałatki, desery, sosy, napoje (mojito!)",
+  "zastosowanie_lecznicze": "Trawienie, wzdęcia, bóle głowy, przeziębienie, nausea",
+  "przepis_sugestia": "Herbata miętowa: liście + wrzątek, parzyć 5 min – orzeźwiająca",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rzek, rowy",
+  "regiony_polski": "Pospolita nad rzekami i na podmokłych łąkach całej Polski",
+  "sugestie_lokalizacji": "Brzegi rzek w całej Polsce – Warta, Wisła, Odra, Bug, Narew | Blisko Poznania: brzegi Warty i Obry",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Mentha arvensis mięta polna fioletowe kwiaty łąka",
+  "ciekawostka": "Dzika mięta pachnie intensywniej niż uprawna. Znajdź jeden kęp – znajdziesz całą kolonię!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty, Poznań – brzegi"
+    },
+    {
+      "lat": 53.067,
+      "lng": 22.123,
+      "opis": "Narew – wilgotne łąki nadrzeczne"
+    }
+  ]
+}

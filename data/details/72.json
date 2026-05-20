@@ -1,0 +1,38 @@
+{
+  "id": 72,
+  "nazwa_polska": "Żurawina błotna",
+  "nazwa_lacinska": "Oxycoccus palustris",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Owoce",
+  "zastosowanie_kulinarne": "Soki, dżemy, sosy do mięs, nalewki",
+  "zastosowanie_lecznicze": "Infekcje pęcherza moczowego (proantocyjanidyny), antyoksydanty",
+  "przepis_sugestia": "Sok żurawinowy: owoce + woda + cukier, gotuj 15 min, przecedź",
+  "wystepowanie_ogolne": "Torfowiska, wilgotne bory, bagna",
+  "regiony_polski": "Bory Tucholskie, Podlasie, Mazury, Pomorze – torfowiska",
+  "sugestie_lokalizacji": "Bory Tucholskie k. Chojnic | Biebrzański PN | Mazury k. Pisza | Słowiński PN | Blisko Poznania: torfowiska koło Pniew ~50km",
+  "trujace_surowe": false,
+  "ostrzezenie": "Bardzo kwaśna surowa. Delikatny ekosystem torfowisk – zbieraj ostrożnie!",
+  "trudnosc_zbioru": "trudny",
+  "img_search": "Oxycoccus palustris żurawina błotna torfowisko czerwona",
+  "ciekawostka": "Naturalne stanowiska żurawin to torfowiska liczące setki lat. Nie wydeptuj mchu sfagnowego!",
+  "ochrona": "brak (siedlisko chronione)",
+  "koordinaty": [
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrzański PN – torfowiska"
+    },
+    {
+      "lat": 52.379,
+      "lng": 16.235,
+      "opis": "Torfowiska k. Pniew"
+    }
+  ]
+}

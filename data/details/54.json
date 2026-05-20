@@ -1,0 +1,38 @@
+{
+  "id": 54,
+  "nazwa_polska": "Lnica pospolita",
+  "nazwa_lacinska": "Linaria vulgaris",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Ziele kwiatowe",
+  "zastosowanie_kulinarne": "Herbata",
+  "zastosowanie_lecznicze": "Choroby skóry, działanie moczopędne, zewnętrznie na hemoroidy",
+  "przepis_sugestia": "Napar do użytku zewnętrznego: 1 łyżka + szklanka wrzątku",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, pola, suche skarpy",
+  "regiony_polski": "Pospolita na suchych nieużytkach całej Polski",
+  "sugestie_lokalizacji": "Suche pobocza dróg i nasypy kolejowe w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "Nie stosować wewnętrznie w dużych ilościach – zawiera substancje toksyczne",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Linaria vulgaris lnica pospolita żółty kwiat",
+  "ciekawostka": "Kwiatek jak miniaturowy lwi pysk – zaprojektowany wyłącznie dla trzmieli, które mają siłę go otworzyć!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.501,
+      "lng": 16.968,
+      "opis": "Biedrusko – suche nasypy"
+    },
+    {
+      "lat": 50.125,
+      "lng": 19.925,
+      "opis": "Wyżyna Krakowska – suche skarpy"
+    }
+  ]
+}

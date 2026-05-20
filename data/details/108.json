@@ -1,0 +1,38 @@
+{
+  "id": 108,
+  "nazwa_polska": "Pieczarka leśna",
+  "nazwa_lacinska": "Agaricus sylvaticus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Pieczarkowate",
+  "sezon_start": 7,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażona, do zup i sosów",
+  "zastosowanie_lecznicze": "Białko, witaminy, immunostymulujące",
+  "przepis_sugestia": "Sos pieczarkowy leśny: pieczarki + śmietana + cebula + tymianek",
+  "wystepowanie_ogolne": "Lasy iglaste, bory sosnowe – cała Polska",
+  "regiony_polski": "Pospolita w borach sosnowych całej Polski",
+  "sugestie_lokalizacji": "Bory sosnowe w całej Polsce – rośnie w grupach pod sosnami | Blisko Poznania: bory sosnowe Puszczy Noteckiej",
+  "trujace_surowe": false,
+  "ostrzezenie": "Jak pieczarka łąkowa – sprawdź kolor blaszek (różowe lub brązowe, nigdy białe)!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Agaricus sylvaticus pieczarka leśna łuskowana",
+  "ciekawostka": "Rośnie w grupach pod sosnami – gdzie jedna, tam wiele!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.501,
+      "lng": 16.968,
+      "opis": "Biedrusko – bory sosnowe"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – bory sosnowe"
+    }
+  ]
+}

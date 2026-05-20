@@ -1,0 +1,38 @@
+{
+  "id": 101,
+  "nazwa_polska": "Purchawka olbrzymia",
+  "nazwa_lacinska": "Calvatia gigantea",
+  "kategoria": "Grzyby",
+  "podkategoria": "Purchawkowate",
+  "sezon_start": 7,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Cały owocnik TYLKO gdy w środku jednolicie biały!",
+  "zastosowanie_kulinarne": "Smażona w plastrach jak steak, do zup, suszona",
+  "zastosowanie_lecznicze": "Białko, calvacyna (badania antynowotworowe), beta-glukany",
+  "przepis_sugestia": "Steak z purchawki: plastry 2 cm + jajko + bułka tarta + smażenie na maśle",
+  "wystepowanie_ogolne": "Łąki, polany, pastwiska, skraje lasów – cała Polska",
+  "regiony_polski": "Cała Polska – łąki kośne i pastwiska",
+  "sugestie_lokalizacji": "Łąki kośne i pastwiska w całej Polsce | Blisko Poznania: pastwiska w Dolinie Baryczy, polany koło Mosiny",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zbieraj TYLKO gdy w środku biała jak twaróg – żółta lub szara to TRUJĄCE stadium!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Calvatia gigantea purchawka olbrzymia biała łąka",
+  "ciekawostka": "Może ważyć do 20 kg! Zawiera biliony zarodników. Kiedy żółknie – nie jedz!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – pastwiska"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – łąki kośne"
+    }
+  ]
+}

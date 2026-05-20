@@ -1,0 +1,38 @@
+{
+  "id": 73,
+  "nazwa_polska": "Rokitnik zwyczajny",
+  "nazwa_lacinska": "Hippophae rhamnoides",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Owoce (pomarańczowe jagody)",
+  "zastosowanie_kulinarne": "Soki, dżemy, nalewki, olej rokitnikowy (suplement)",
+  "zastosowanie_lecznicze": "Witamina C (100× więcej niż cytryna!), serce, odporność, regeneracja skóry",
+  "przepis_sugestia": "Sok rokitnikowy: owoce + miód + gorąca woda – NIE gotuj, niszczy witaminy!",
+  "wystepowanie_ogolne": "Nadbrzeża rzek, wydmy, nasłonecznione zbocza, piaski",
+  "regiony_polski": "Wybrzeże Bałtyku: masowe stanowiska | Doliny rzek nizinnych | Suche piaski śródlądowe",
+  "sugestie_lokalizacji": "Mierzeja Helska, klify Słowińskiego PN, Świnoujście | Blisko Poznania: Dolina Noteci ~80km, brzegi Warty koło Obornik, wydmy koło Wolsztyna | Mazury: brzegi jezior",
+  "trujace_surowe": false,
+  "ostrzezenie": "Bardzo ostre kolce! Po pierwszych mrozach łatwiej się osypuje z gałęzi.",
+  "trudnosc_zbioru": "trudny",
+  "img_search": "Hippophae rhamnoides rokitnik zwyczajny pomarańczowy",
+  "ciekawostka": "Więcej wit. C niż cokolwiek w naturze. Kosmonauci ZSRR używali oleju do ochrony przed promieniowaniem!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 54.612,
+      "lng": 18.801,
+      "opis": "Mierzeja Helska – wydmy nadmorskie"
+    },
+    {
+      "lat": 54.671,
+      "lng": 17.168,
+      "opis": "Słowiński PN – klify i wydmy"
+    }
+  ]
+}

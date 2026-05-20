@@ -1,0 +1,38 @@
+{
+  "id": 60,
+  "nazwa_polska": "Fiołek wonny",
+  "nazwa_lacinska": "Viola odorata",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Jadalne kwiaty",
+  "sezon_start": 3,
+  "sezon_koniec": 5,
+  "szczyt_zbioru": "marzec–kwiecień",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty i liście",
+  "zastosowanie_kulinarne": "Desery, syropy, cukierki, sałatki, dekoracja cukiernicza",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, działanie wykrztuśne",
+  "przepis_sugestia": "Syrop fiołkowy: kwiaty + cukier + woda – piękny fiolet!",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, wilgotne łąki, ogrody",
+  "regiony_polski": "Pospolity w ogrodach i skrajach lasów liściastych",
+  "sugestie_lokalizacji": "Parki i ogrody w całej Polsce wiosną | Blisko Poznania: parki Poznania, skraje lasów liściastych",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Viola odorata fiołek wonny fioletowy kwiat",
+  "ciekawostka": "Kwiaty barwią cukier na niebiesko-fioletowo – naturalne barwniki cukiernicze od wieków!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – skraje lasu"
+    }
+  ]
+}

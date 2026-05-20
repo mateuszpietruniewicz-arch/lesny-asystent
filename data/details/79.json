@@ -1,0 +1,38 @@
+{
+  "id": 79,
+  "nazwa_polska": "Aronia czarnoowocowa",
+  "nazwa_lacinska": "Aronia melanocarpa",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce",
+  "zastosowanie_kulinarne": "Soki, nalewki, dżemy, wino, susz zdrowotny",
+  "zastosowanie_lecznicze": "NAJSILNIEJSZY antyoksydant wśród owoców, obniżanie ciśnienia, cukrzyca",
+  "przepis_sugestia": "Nalewka aronii: 1 kg owoców + 0,5 kg cukru + 0,5 l wódki – 3 miesiące",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, parki, dziczeje z uprawy",
+  "regiony_polski": "Sadzana w parkach całej Polski, dziczeje przy lasach",
+  "sugestie_lokalizacji": "Parki miejskie w całej Polsce | Blisko Poznania: parki Poznania, skraje lasów w całej Wielkopolsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Bardzo cierpka surowa – najlepsza przetworzona",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Aronia melanocarpa aronia czarna owoce grona",
+  "ciekawostka": "Więcej antyoksydantów niż borówka, żurawina i granat razem wzięte! Czarny kolor = bogactwo polifenoli.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela, Poznań"
+    }
+  ]
+}

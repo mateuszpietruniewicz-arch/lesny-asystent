@@ -1,0 +1,38 @@
+{
+  "id": 62,
+  "nazwa_polska": "Akacja (robinia biała) – kwiat",
+  "nazwa_lacinska": "Robinia pseudoacacia",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Kwiaty drzew",
+  "sezon_start": 5,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "maj–czerwiec",
+  "min_temp_C": 12,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "TYLKO kwiaty – reszta TRUJĄCA!",
+  "zastosowanie_kulinarne": "Frytki z kwiatów, syrop akacjowy, miód akacjowy, lody",
+  "zastosowanie_lecznicze": "Kwiaty – działanie uspokajające i rozkurczowe",
+  "przepis_sugestia": "Frytki z kwiatów akacji: grona kwiatowe + ciasto naleśnikowe + olej",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, parki, wszędzie nasadzona",
+  "regiony_polski": "Gatunek inwazyjny – wszędzie w Polsce",
+  "sugestie_lokalizacji": "Skraje parków i dróg w całej Polsce | Blisko Poznania: Puszcza Notecka, parki Poznania, aleje przy drogach",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: TYLKO kwiaty jadalne! Liście, kora, nasiona, strąki – TRUJĄCE (robinina, fitotoksyny)!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Robinia pseudoacacia akacja kwiaty białe grona",
+  "ciekawostka": "Miód akacjowy to najdłużej płynny i najjaśniejszy miód w Polsce. Kwitnienie trwa zaledwie TYDZIEŃ!",
+  "ochrona": "brak (inwazyjny)",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – aleje przy drogach"
+    }
+  ]
+}

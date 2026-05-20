@@ -1,0 +1,38 @@
+{
+  "id": 112,
+  "nazwa_polska": "Rzeżucha wodna",
+  "nazwa_lacinska": "Nasturtium officinale",
+  "kategoria": "Rośliny wodne",
+  "podkategoria": "Rośliny wodne",
+  "sezon_start": 3,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 10,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście i łodygi",
+  "zastosowanie_kulinarne": "Sałatki, kanapki, smoothie, zupa kremowa, garnirowanie",
+  "zastosowanie_lecznicze": "Witamina C, moczopędne, oczyszczanie krwi, wspomaganie tarczycy (jod)",
+  "przepis_sugestia": "Zupa krem: rzeżucha + ziemniaki + śmietana + sól i pieprz",
+  "wystepowanie_ogolne": "Cała Polska – czyste strumienie, źródliska, rowy z bieżącą wodą",
+  "regiony_polski": "Głównie górskie i podgórskie czyste strumienie",
+  "sugestie_lokalizacji": "Czyste strumienie górskie całej Polski | Tatry, Beskidy, Sudety, Bieszczady | Blisko Poznania: czyste strumienie w Puszczy Zielonce (sprawdź czystość wody!)",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zbieraj TYLKO z czystych, PŁYNĄCYCH strumieni – ryzyko przywry wątrobowej przy zanieczyszczonej wodzie!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Nasturtium officinale rzeżucha wodna strumień zielona",
+  "ciekawostka": "Gordon Ramsay dodaje ją do sosów jako naturalną pikantność. Grecy i Persowie jedli ją od tysięcy lat!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 49.256,
+      "lng": 19.867,
+      "opis": "Tatry (Dolina Kościeliska) – czyste potoki"
+    },
+    {
+      "lat": 49.723,
+      "lng": 19.053,
+      "opis": "Beskid Śląski – górskie strumienie"
+    }
+  ]
+}

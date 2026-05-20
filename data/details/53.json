@@ -1,0 +1,38 @@
+{
+  "id": 53,
+  "nazwa_polska": "Bylica boże drzewko",
+  "nazwa_lacinska": "Artemisia abrotanum",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Liście i pędy",
+  "zastosowanie_kulinarne": "Przyprawa do mięs, nalewki, herbata",
+  "zastosowanie_lecznicze": "Robaki jelitowe, wzmacnianie odporności, działanie żółciopędne",
+  "przepis_sugestia": "Herbata: 1 łyżka liści + szklanka wrzątku, parzyć 10 min",
+  "wystepowanie_ogolne": "Suche miejsca, ogrody, stare wiejskie zagrody – dziczeje",
+  "regiony_polski": "Dziczeje z uprawy w całej Polsce – przy starych wsiach",
+  "sugestie_lokalizacji": "Stare wiejskie zagrody i ogrody w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie stosować w ciąży!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Artemisia abrotanum bylica boże drzewko",
+  "ciekawostka": "Zwana bożym drzewkiem. Od wieków w polskich ogrodach jako roślina odpędzająca złe duchy.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – stare ogrody wiejskie"
+    },
+    {
+      "lat": 52.652,
+      "lng": 16.819,
+      "opis": "Oborniki – wiejskie zagrody"
+    }
+  ]
+}

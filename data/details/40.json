@@ -1,0 +1,38 @@
+{
+  "id": 40,
+  "nazwa_polska": "Wrotycz pospolity",
+  "nazwa_lacinska": "Tanacetum vulgare",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Ziele – TYLKO małe ilości!",
+  "zastosowanie_kulinarne": "Przyprawa do mięs tłustych (ostrożnie, małe ilości)",
+  "zastosowanie_lecznicze": "Robaki jelitowe, odstraszanie owadów",
+  "przepis_sugestia": "Suszone liście w szafie – naturalny odpędzacz moli i owadów",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, zarośla, ruderale, brzegi rzek",
+  "regiony_polski": "Pospolity wszędzie",
+  "sugestie_lokalizacji": "Pobocza dróg i nieuporządkowane tereny w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: Trujący w dużych ilościach! Tylko małe ilości. Bezwzględnie NIE w ciąży!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tanacetum vulgare wrotycz pospolity żółte guziki",
+  "ciekawostka": "Żółte guziki wrotyczu to naturalny insektycyd – saszetki z suszem eliminują mole w szafie!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – przydroża"
+    },
+    {
+      "lat": 52.652,
+      "lng": 16.819,
+      "opis": "Oborniki – pobocza dróg"
+    }
+  ]
+}

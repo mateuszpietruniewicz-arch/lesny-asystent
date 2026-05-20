@@ -1,0 +1,38 @@
+{
+  "id": 66,
+  "nazwa_polska": "Nasturcja ogrodowa",
+  "nazwa_lacinska": "Tropaeolum majus",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Jadalne kwiaty",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–wrzesień",
+  "min_temp_C": 15,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty, liście, niedojrzałe nasiona",
+  "zastosowanie_kulinarne": "Sałatki, kanapki, kwiaty do dekoracji, nasiona jako kaparki",
+  "zastosowanie_lecznicze": "Witamina C, działanie antybakteryjne",
+  "przepis_sugestia": "Sałatka: kwiaty + liście + vinaigrette – pikantna i efektowna",
+  "wystepowanie_ogolne": "Ogrody, balkony – uprawiana",
+  "regiony_polski": "Sady i ogrody w całej Polsce",
+  "sugestie_lokalizacji": "Ogrody i balkony w całej Polsce – popularna roślina ozdobna | Blisko Poznania: ogrody działkowe",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tropaeolum majus nasturcja ogrodowa pomarańczowa",
+  "ciekawostka": "Cała roślina jest jadalna – jedna z nielicznych roślin ogrodowych, gdzie nie wyrzucamy niczego!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki – ogrody"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela – ogrody"
+    }
+  ]
+}

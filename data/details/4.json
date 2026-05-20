@@ -1,0 +1,38 @@
+{
+  "id": 4,
+  "nazwa_polska": "Mniszek lekarski",
+  "nazwa_lacinska": "Taraxacum officinale",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 3,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 6,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty, liście, korzeń, pąki kwiatowe – wszystkie jadalne",
+  "zastosowanie_kulinarne": "Syrop z kwiatów, sałatki z liści, kawa z korzenia, kaparki z pąków",
+  "zastosowanie_lecznicze": "Wątroba, nerki, działanie moczopędne, detoks, prebiotyk (inulina)",
+  "przepis_sugestia": "Syrop z mniszka: 200 kwiatów + 1 kg cukru + cytryna, gotuj 30 min",
+  "wystepowanie_ogolne": "Cała Polska – łąki, trawniki, pastwiska, pobocza – dosłownie wszędzie",
+  "regiony_polski": "Absolutnie wszędzie w Polsce – od morza po Tatry",
+  "sugestie_lokalizacji": "Dosłownie każda łąka, trawnik i pobocze w Polsce – rośnie wszędzie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – jedna z najbezpieczniejszych dzikich roślin",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Taraxacum officinale mniszek lekarski kwiaty",
+  "ciekawostka": "Francuzi jedzą liście surowe jako sałatkę 'pissenlit'. Korzeń prażony zastępuje kawę bez kofeiny!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4012,
+      "lng": 16.9314,
+      "opis": "Dolina Warty, Poznań"
+    },
+    {
+      "lat": 52.2454,
+      "lng": 16.8542,
+      "opis": "Łąki koło Mosiny"
+    }
+  ]
+}

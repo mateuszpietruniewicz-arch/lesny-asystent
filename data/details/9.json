@@ -1,0 +1,38 @@
+{
+  "id": 9,
+  "nazwa_polska": "Cykoria podróżnik",
+  "nazwa_lacinska": "Cichorium intybus",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 5,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "czerwiec–sierpień",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Liście gorzkie, korzeń prażony, kwiaty",
+  "zastosowanie_kulinarne": "Kawa cykoryjka z korzenia, liście do sałatek, kwiaty jadalne",
+  "zastosowanie_lecznicze": "Wspomaganie wątroby, działanie żółciopędne, prebiotyk (inulina)",
+  "przepis_sugestia": "Kawa cykoryjka: korzeń prażony i zmielony + mleko",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, łąki, nieużytki, skraje pól",
+  "regiony_polski": "Pospolita na suchych poboczach i nieużytkach całej Polski",
+  "sugestie_lokalizacji": "Pobocza dróg krajowych i wojewódzkich w całej Polsce – niebieskie kwiaty otwierają się o 5:00 rano",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Cichorium intybus cykoria podróżnik niebieski kwiat",
+  "ciekawostka": "Niebieskie kwiaty otwierają się dokładnie o 5:00 i zamykają po południu – naturalne horologium!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.125,
+      "lng": 19.925,
+      "opis": "Wyżyna Krakowska – suche pobocza"
+    },
+    {
+      "lat": 50.567,
+      "lng": 23.22,
+      "opis": "Roztocze – przydroża"
+    }
+  ]
+}

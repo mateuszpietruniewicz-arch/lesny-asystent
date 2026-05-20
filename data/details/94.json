@@ -1,0 +1,43 @@
+{
+  "id": 94,
+  "nazwa_polska": "Borowik szlachetny (prawdziwek)",
+  "nazwa_lacinska": "Boletus edulis",
+  "kategoria": "Grzyby",
+  "podkategoria": "Borowikowate",
+  "sezon_start": 6,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażony, suszony, marynowany, zupa grzybowa, sosy, risotto",
+  "zastosowanie_lecznicze": "Białko, witaminy z grupy B, wspomaganie odporności, beta-glukany",
+  "przepis_sugestia": "Klasyczna zupa grzybowa: suszone borowiki + śmietana + makaron – tradycja wigilijna",
+  "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane pod sosnami i świerkami",
+  "regiony_polski": "Pospolity w lasach iglastych całej Polski – szczególnie po deszczach w sierpniu",
+  "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, Puszcza Notecka, lasy koło Obornik | Mazury: Puszcza Piska | Bieszczady, Beskidy | Bory Tucholskie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga na pomylenie z borowikiem szatanem (czerwone pory, sinieje) i goryczakiem żółciowym (gorzki smak)!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Boletus edulis prawdziwek borowik szlachetny las",
+  "ciekawostka": "Król polskich grzybów. Wysuszony intensywniejszy w smaku. Nie da się wyhodować – tylko w naturze!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – bory"
+    },
+    {
+      "lat": 52.5186,
+      "lng": 17.1234,
+      "opis": "Puszcza Zielonka – dąbrowy"
+    },
+    {
+      "lat": 52.6517,
+      "lng": 16.8187,
+      "opis": "Lasy obornickie"
+    }
+  ]
+}

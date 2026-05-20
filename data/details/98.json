@@ -1,0 +1,38 @@
+{
+  "id": 98,
+  "nazwa_polska": "Mleczaj rydz",
+  "nazwa_lacinska": "Lactarius deliciosus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Mleczajowate",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "wrzesień",
+  "min_temp_C": 8,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażony, marynowany, solony – tradycja podkarpacka",
+  "zastosowanie_lecznicze": "Białko, witaminy, laktarozyna (badania antynowotworowe)",
+  "przepis_sugestia": "Rydze smażone z cebulką i śmietaną – przysmak Podkarpacia i Bieszczad",
+  "wystepowanie_ogolne": "Lasy iglaste – szczególnie pod sosnami i świerkami",
+  "regiony_polski": "Podkarpacie i Bieszczady: najliczniejsze | Bory sosnowe całej Polski",
+  "sugestie_lokalizacji": "Bieszczady i Beskidy (pod sosnami i świerkami) | Tatry: bory sosnowe | Blisko Poznania: bory sosnowe Puszczy Noteckiej",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga na podobne mleczaje – rydz ma POMARAŃCZOWY mleczny sok po nacięciu!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Lactarius deliciosus rydz mleczaj pomarańczowy grzyb",
+  "ciekawostka": "Łacińska 'deliciosus' = pyszny. Mleczko jest pomarańczowe – absolutnie unikalny wygląd!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5186,
+      "lng": 17.1234,
+      "opis": "Puszcza Zielonka – bory sosnowe"
+    },
+    {
+      "lat": 52.5012,
+      "lng": 16.9678,
+      "opis": "Biedrusko – bory"
+    }
+  ]
+}

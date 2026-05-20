@@ -1,0 +1,38 @@
+{
+  "id": 76,
+  "nazwa_polska": "Tarnina",
+  "nazwa_lacinska": "Prunus spinosa",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 10,
+  "sezon_koniec": 12,
+  "szczyt_zbioru": "październik–listopad",
+  "min_temp_C": 0,
+  "dni_min_temp": 3,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Owoce po przymrozkach!",
+  "zastosowanie_kulinarne": "Nalewki (sloe gin, śliwowica), dżemy, galaretki",
+  "zastosowanie_lecznicze": "Antyoksydanty, działanie ściągające, wspomaganie trawienia",
+  "przepis_sugestia": "Nalewka z tarniny: owoce + cukier + wódka, odczekaj 3 miesiące",
+  "wystepowanie_ogolne": "Cała Polska – miedze, skraje lasów, zarośla, suche zbocza",
+  "regiony_polski": "Bardzo pospolita na miedzach całej Polski",
+  "sugestie_lokalizacji": "Miedze polne w całej Polsce | Blisko Poznania: miedze wokół Poznania, Kościan, Leszno | Mazowsze: miedze Mazowsza i Kujaw",
+  "trujace_surowe": false,
+  "ostrzezenie": "Bardzo kwaśna i cierpka przed przymrozkiem – mroź przez noc lub czekaj na mróz!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Prunus spinosa tarnina owoce czarne przymrozek",
+  "ciekawostka": "Sloe gin to podstawa angielskich nalewek. Po przymrozku staje się słodka jak konfitury!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – miedze polne"
+    },
+    {
+      "lat": 52.652,
+      "lng": 16.819,
+      "opis": "Oborniki – żywopłoty śródpolne"
+    }
+  ]
+}

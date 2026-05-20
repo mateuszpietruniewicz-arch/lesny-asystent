@@ -1,0 +1,38 @@
+{
+  "id": 19,
+  "nazwa_polska": "Czosnaczek pospolity",
+  "nazwa_lacinska": "Alliaria petiolata",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 3,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście, kwiaty, nasiona, korzeń",
+  "zastosowanie_kulinarne": "Pesto, sałatki, kanapki, sos do makaronu, twarożek",
+  "zastosowanie_lecznicze": "Działanie antybakteryjne, wspomaganie trawienia, witamina C",
+  "przepis_sugestia": "Pesto czosnaczkowe: liście + nasiona słonecznika + oliwa + parmezan",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, zarośla, cieniste miejsca",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce – skraje leśne, cieniste ścieżki | Blisko Poznania: Puszcza Zielonka, lasy wokół Mosiny",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Alliaria petiolata czosnaczek białe kwiaty",
+  "ciekawostka": "Jedna z nielicznych roślin łącząca smak czosnku i chrzanu przez cały sezon.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – skraje lasu"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – cieniste lasy liściaste"
+    }
+  ]
+}

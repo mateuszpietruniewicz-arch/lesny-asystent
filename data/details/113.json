@@ -1,0 +1,38 @@
+{
+  "id": 113,
+  "nazwa_polska": "Płucnica islandzka",
+  "nazwa_lacinska": "Cetraria islandica",
+  "kategoria": "Porosty",
+  "podkategoria": "Porosty jadalne",
+  "sezon_start": 1,
+  "sezon_koniec": 12,
+  "szczyt_zbioru": "cały rok (najlepiej zima–wiosna)",
+  "min_temp_C": -20,
+  "dni_min_temp": 0,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Cała plecha",
+  "zastosowanie_kulinarne": "Herbata, odwar, niegdyś do pieczenia chleba",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie gardła, biegunka, odporność, antybiotyczne (kwas usninowy!)",
+  "przepis_sugestia": "Herbata: 1 łyżka + szklanka ZIMNEJ wody, doprowadź do wrzenia (zimna woda usuwa gorycz)",
+  "wystepowanie_ogolne": "Bory sosnowe, wrzosowiska, mchy – uboga gleba",
+  "regiony_polski": "Bory sosnowe na ubogich glebach całej Polski – szczególnie: Bory Tucholskie, Puszcza Notecka, Tatry",
+  "sugestie_lokalizacji": "Bory Tucholskie (największa populacja w Polsce) | Tatry: powyżej granicy lasu | Puszcza Piska: suche bory sosnowe | Blisko Poznania: Puszcza Notecka ~80km",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zbieraj z dala od dróg i przemysłu – porosty AKUMULUJĄ zanieczyszczenia! Sprawdź jakość powietrza.",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Cetraria islandica płucnica islandzka porost bor",
+  "ciekawostka": "Żyje setki lat. W Islandii jedzono ją podczas głodu – robi się z niej chleb. Kwas usninowy = naturalny antybiotyk kliniczny!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 53.645,
+      "lng": 18.023,
+      "opis": "Bory Tucholskie – suche bory sosnowe"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – wrzosowiska"
+    }
+  ]
+}

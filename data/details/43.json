@@ -1,0 +1,38 @@
+{
+  "id": 43,
+  "nazwa_polska": "Krwawnica pospolita",
+  "nazwa_lacinska": "Lythrum salicaria",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Ziele kwiatowe",
+  "zastosowanie_kulinarne": "Herbata, naturalny barwnik spożywczy (różowy/fioletowy)",
+  "zastosowanie_lecznicze": "Biegunka, zapalenie jelita, działanie ściągające, przeciwbiegunkowe",
+  "przepis_sugestia": "Herbata: 1 łyżka kwiatów + szklanka wrzątku, parzyć 15 min",
+  "wystepowanie_ogolne": "Cała Polska – brzegi rzek, stawy, bagna, wilgotne łąki",
+  "regiony_polski": "Pospolita nad rzekami i na bagnach całej Polski",
+  "sugestie_lokalizacji": "Brzegi Warty, Wisły, Noteci | Biebrza, Narew: masowe stanowiska | Blisko Poznania: brzegi Warty i Obry",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Lythrum salicaria krwawnica pospolita różowa woda",
+  "ciekawostka": "Piękne różowo-fioletowe kwiatostany tworzą naturalny barwnik. Kluczowy gatunek dla pszczół latem!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – brzegi rzeki"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – szuwary nadrzeczne"
+    }
+  ]
+}

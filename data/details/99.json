@@ -1,0 +1,38 @@
+{
+  "id": 99,
+  "nazwa_polska": "Czubajka kania",
+  "nazwa_lacinska": "Macrolepiota procera",
+  "kategoria": "Grzyby",
+  "podkategoria": "Pieczarkowate",
+  "sezon_start": 7,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kapelusz (trzon twardy)",
+  "zastosowanie_kulinarne": "Smażona jak kotlet, panierowana w jajku i bułce tartej",
+  "zastosowanie_lecznicze": "Białko, niskokaloryczny, błonnik",
+  "przepis_sugestia": "Kotlet z kani: kapelusz + jajko + bułka tarta + smażenie na maśle",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, leśne łąki, wyręby",
+  "regiony_polski": "Pospolita na polanach i skrajach lasów całej Polski",
+  "sugestie_lokalizacji": "Polany leśne w całej Polsce | Blisko Poznania: polany Puszczy Zielonki, skraje lasów koło Mosiny i Śremu",
+  "trujace_surowe": false,
+  "ostrzezenie": "UWAGA: Łatwo pomylić z ŚMIERTELNIE TRUJĄCYM muchomorem sromotnikowym! Kania ma RUCHOMY pierścień, łuskowaty kapelusz i NIE zmienia koloru po nacięciu.",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Macrolepiota procera czubajka kania duży grzyb polana",
+  "ciekawostka": "Kapelusz do 30 cm średnicy – jeden kapelusz to pełny kotlet! Rośnie samotnie, widoczna z daleka.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4715,
+      "lng": 16.9836,
+      "opis": "Góra Moraska – polany"
+    },
+    {
+      "lat": 52.4089,
+      "lng": 17.0678,
+      "opis": "Dolina Cybiny – łąki"
+    }
+  ]
+}

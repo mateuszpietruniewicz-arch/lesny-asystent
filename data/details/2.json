@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "nazwa_polska": "Szczaw zwyczajny",
+  "nazwa_lacinska": "Rumex acetosa",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "kwiecień–czerwiec",
+  "min_temp_C": 8,
+  "dni_min_temp": 7,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Liście (najlepiej młode, przed kwitnieniem)",
+  "zastosowanie_kulinarne": "Zupa szczawiowa, sałatki, sosy do ryb i mięs",
+  "zastosowanie_lecznicze": "Witamina C, działanie moczopędne, wspomaganie trawienia",
+  "przepis_sugestia": "Klasyczna zupa szczawiowa: liście + jajko na twardo + śmietana",
+  "wystepowanie_ogolne": "Cała Polska – łąki, pastwiska, pobocza dróg",
+  "regiony_polski": "Wszędzie pospolity na łąkach i polanach",
+  "sugestie_lokalizacji": "Blisko Poznania: łąki nadwarciańskie, Dolina Baryczy | Mazury: podmokłe łąki | Podlasie: nadnarwiańskie łąki | Bieszczady: górskie polany | Roztocze: doliny rzek",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zawiera szczawiany – umiarkowane spożycie przy kamicy nerkowej",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Rumex acetosa szczaw zwyczajny",
+  "ciekawostka": "W średniowieczu był pierwszym wiosennym warzywem po zimie. Kwaśny smak = kwas szczawiowy.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrzański PN – wilgotne łąki"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – łąki nadrzeczne"
+    }
+  ]
+}

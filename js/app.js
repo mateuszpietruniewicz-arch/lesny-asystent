@@ -36,6 +36,7 @@ let dashboardWeather = null;
 let sortMode = 'default';
 let onlyInSeason = false;
 const readinessScores = new Map();
+const detailsCache = {};
 
 const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
 let imgObserver = null;
@@ -56,7 +57,7 @@ async function init() {
   }
   renderSpinner();
   try {
-    const res = await fetch('data/species.json');
+    const res = await fetch('data/index.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allSpecies = await res.json();
   } catch (e) {
@@ -1354,36 +1355,82 @@ async function renderReadiness(container, s, overrideCoords = null) {
 
 // ── MODAL ─────────────────────────────────────────────────────────────────────
 
-function openModal(s) {
+async function openModal(s) {
   const modal   = $('species-modal');
   const content = $('modal-content');
   const color   = CAT_COLOR[s.kategoria] || '#2d6a4f';
   jrnLat = null; jrnLng = null; jrnPhoto = null;
-  const isToxic    = s.trujace_surowe || s.kategoria === 'Rośliny TRUJĄCE';
-  const isSeason   = NOW >= s.sezon_start && NOW <= s.sezon_koniec;
-  const isProtected= s.ochrona && s.ochrona !== 'brak';
-  const hasCoords  = Array.isArray(s.koordinaty) && s.koordinaty.length > 0;
-  const pinCount   = getPrivatePins(s.id).length;
 
-  const isFav = getFavorites().has(String(s.id));
+  // Faza 1: natychmiastowy szkielet — modal otwiera się bez czekania na sieć
+  const isFavSkeleton = getFavorites().has(String(s.id));
+  content.innerHTML = `
+    <div class="modal-header" style="background:${color}">
+      <button class="modal-close" id="modal-close-btn" aria-label="Zamknij">✕</button>
+      <button class="fav-btn fav-btn--modal${isFavSkeleton ? ' fav-btn--active' : ''}" data-id="${s.id}"
+              aria-label="${isFavSkeleton ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}"
+              title="${isFavSkeleton ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}">
+        ${isFavSkeleton ? '★' : '☆'}
+      </button>
+      <div class="modal-name">${s.nazwa_polska}</div>
+      <div class="modal-latin">${s.nazwa_lacinska}</div>
+    </div>
+    <div class="spinner-wrap" style="padding:3rem 1rem"><div class="spinner"></div></div>`;
+
+  modal.style.setProperty('--modal-accent', color);
+  if (!modal.open) modal.showModal();
+
+  $('modal-close-btn').addEventListener('click', () => modal.close());
+  const onBackdropClick = e => { if (e.target === modal) modal.close(); };
+  modal.addEventListener('click', onBackdropClick);
+  modal.addEventListener('close', () => {
+    modal.removeEventListener('click', onBackdropClick);
+    destroyMap();
+    stopVoiceRecognition();
+  }, { once: true });
+
+  // Faza 2: szczegóły on-demand z pamięci podręcznej lub sieci
+  if (!detailsCache[s.id]) {
+    try {
+      const res = await fetch(`data/details/${s.id}.json`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      detailsCache[s.id] = await res.json();
+    } catch (e) {
+      if (!modal.open) return;
+      content.querySelector('.spinner-wrap').innerHTML =
+        `<div class="empty-state"><span class="empty-icon">⚠️</span><p>Błąd ładowania szczegółów.<br><small>${e.message}</small></p></div>`;
+      return;
+    }
+  }
+
+  if (!modal.open) return; // modal zamknięty podczas ładowania
+
+  const det = detailsCache[s.id]; // pełne dane gatunku
+  const isToxic    = det.trujace_surowe || det.kategoria === 'Rośliny TRUJĄCE';
+  const isSeason   = NOW >= det.sezon_start && NOW <= det.sezon_koniec;
+  const isProtected= det.ochrona && det.ochrona !== 'brak';
+  const hasCoords  = Array.isArray(det.koordinaty) && det.koordinaty.length > 0;
+  const pinCount   = getPrivatePins(det.id).length;
+  const isFav      = getFavorites().has(String(det.id));
+
   const d = new Date();
   const todayStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-  const speciesEntries = getJournal().filter(e => e.speciesId === s.id);
+  const speciesEntries = getJournal().filter(e => e.speciesId === det.id);
   const totalG = speciesEntries.reduce((sum, e) => sum + (e.ilosc_g || 0), 0);
   const speciesSummary = speciesEntries.length > 0
     ? `<div class="journal-species-summary">Zebrano łącznie: <strong>${totalG} g</strong> (${speciesEntries.length} ${speciesEntries.length === 1 ? 'wpis' : speciesEntries.length < 5 ? 'wpisy' : 'wpisów'})</div>`
     : '';
 
+  // Faza 3: pełny render — wymienia szkielet pełną treścią
   content.innerHTML = `
     <div class="modal-header" style="background:${color}">
       <button class="modal-close" id="modal-close-btn" aria-label="Zamknij">✕</button>
-      <button class="fav-btn fav-btn--modal${isFav ? ' fav-btn--active' : ''}" data-id="${s.id}"
+      <button class="fav-btn fav-btn--modal${isFav ? ' fav-btn--active' : ''}" data-id="${det.id}"
               aria-label="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}"
               title="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}">
         ${isFav ? '★' : '☆'}
       </button>
-      <div class="modal-name">${s.nazwa_polska}</div>
-      <div class="modal-latin">${s.nazwa_lacinska}</div>
+      <div class="modal-name">${det.nazwa_polska}</div>
+      <div class="modal-latin">${det.nazwa_lacinska}</div>
       <div class="modal-flags">
         ${isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : ''}
         ${isToxic     ? '<span class="flag flag-toxic">⚠ Trujące</span>'   : ''}
@@ -1394,12 +1441,12 @@ function openModal(s) {
 
     <div class="modal-section">
       <div class="modal-sec-title">Sezon zbioru</div>
-      <div class="modal-season-track">${buildSeasonBar(s.sezon_start, s.sezon_koniec)}</div>
+      <div class="modal-season-track">${buildSeasonBar(det.sezon_start, det.sezon_koniec)}</div>
       <div class="modal-month-labels">${MONTH_ABBR.map(m=>`<span>${m}</span>`).join('')}</div>
       <dl class="detail-grid">
-        <dt>Szczyt</dt><dd>${s.szczyt_zbioru}</dd>
-        <dt>Min. temp.</dt><dd>${s.min_temp_C}°C przez min. ${s.dni_min_temp} dni</dd>
-        <dt>Wilgotność</dt><dd>${s.wilgotnosc}</dd>
+        <dt>Szczyt</dt><dd>${det.szczyt_zbioru}</dd>
+        <dt>Min. temp.</dt><dd>${det.min_temp_C}°C przez min. ${det.dni_min_temp} dni</dd>
+        <dt>Wilgotność</dt><dd>${det.wilgotnosc}</dd>
       </dl>
     </div>
 
@@ -1412,25 +1459,25 @@ function openModal(s) {
     <div class="modal-section">
       <div class="modal-sec-title">Kulinaria</div>
       <dl class="detail-grid">
-        <dt>Zbierasz</dt><dd>${s.jadalne_czesci}</dd>
-        <dt>Zastosowanie</dt><dd>${s.zastosowanie_kulinarne}</dd>
-        <dt>Przepis / tip</dt><dd>${s.przepis_sugestia}</dd>
+        <dt>Zbierasz</dt><dd>${det.jadalne_czesci}</dd>
+        <dt>Zastosowanie</dt><dd>${det.zastosowanie_kulinarne}</dd>
+        <dt>Przepis / tip</dt><dd>${det.przepis_sugestia}</dd>
       </dl>
     </div>
 
     <div class="modal-section">
       <div class="modal-sec-title">Lecznicze</div>
       <dl class="detail-grid">
-        <dt>Działanie</dt><dd>${s.zastosowanie_lecznicze}</dd>
+        <dt>Działanie</dt><dd>${det.zastosowanie_lecznicze}</dd>
       </dl>
     </div>
 
     <div class="modal-section">
       <div class="modal-sec-title">Lokalizacja</div>
       <dl class="detail-grid">
-        <dt>Ogólnie</dt><dd>${s.wystepowanie_ogolne}</dd>
-        <dt>Regiony PL</dt><dd>${s.regiony_polski}</dd>
-        <dt>Sugestie</dt><dd>${s.sugestie_lokalizacji}</dd>
+        <dt>Ogólnie</dt><dd>${det.wystepowanie_ogolne}</dd>
+        <dt>Regiony PL</dt><dd>${det.regiony_polski}</dd>
+        <dt>Sugestie</dt><dd>${det.sugestie_lokalizacji}</dd>
       </dl>
     </div>
 
@@ -1449,16 +1496,16 @@ function openModal(s) {
     <div class="modal-section">
       <div class="modal-sec-title">Bezpieczeństwo i zbiór</div>
       <dl class="detail-grid">
-        <dt>Trudność</dt><dd>${s.trudnosc_zbioru}</dd>
-        ${isProtected ? `<dt>Ochrona</dt><dd>${s.ochrona}</dd>` : ''}
+        <dt>Trudność</dt><dd>${det.trudnosc_zbioru}</dd>
+        ${isProtected ? `<dt>Ochrona</dt><dd>${det.ochrona}</dd>` : ''}
       </dl>
-      ${s.ostrzezenie && s.ostrzezenie !== 'Brak'
-        ? `<div class="warn-block">⚠ ${s.ostrzezenie}</div>` : ''}
+      ${det.ostrzezenie && det.ostrzezenie !== 'Brak'
+        ? `<div class="warn-block">⚠ ${det.ostrzezenie}</div>` : ''}
     </div>
 
     <div class="modal-section">
       <div class="modal-sec-title">Ciekawostka</div>
-      <div class="curious-block">${s.ciekawostka}</div>
+      <div class="curious-block">${det.ciekawostka}</div>
     </div>
 
     <div class="modal-section modal-journal-section">
@@ -1516,9 +1563,8 @@ function openModal(s) {
     </div>`;
 
   modal.style.setProperty('--modal-accent', color);
-  modal.showModal();
 
-  fetchWikiImage(s.nazwa_lacinska, s.nazwa_polska).then(url => {
+  fetchWikiImage(det.nazwa_lacinska, det.nazwa_polska).then(url => {
     if (!url) return;
     const hdr = content.querySelector('.modal-header');
     if (hdr) {
@@ -1530,9 +1576,9 @@ function openModal(s) {
 
   requestAnimationFrame(() => {
     const rw = document.getElementById('readiness-widget');
-    if (rw) renderReadiness(rw, s);
+    if (rw) renderReadiness(rw, det);
   });
-  setTimeout(() => initSpeciesMap(s), 300);
+  setTimeout(() => initSpeciesMap(det), 300);
 
   $('modal-close-btn').addEventListener('click', () => modal.close());
 
@@ -1546,7 +1592,7 @@ function openModal(s) {
       msg.className = 'journal-save-msg journal-save-err';
       return;
     }
-    saveJournalEntry(s.id, s.nazwa_polska, date, qty, notes, jrnLat, jrnLng, jrnPhoto);
+    saveJournalEntry(det.id, det.nazwa_polska, date, qty, notes, jrnLat, jrnLng, jrnPhoto);
     $('jrn-qty').value   = '';
     $('jrn-notes').value = '';
     const photoInput = $('jrnl-photo-input');
@@ -1613,20 +1659,12 @@ function openModal(s) {
     try {
       await openVisualSearch(jrnPhoto);
     } catch (err) {
-      if (err.name === 'AbortError') return; // użytkownik anulował — OK
+      if (err.name === 'AbortError') return;
       showShareFallbackToast();
     }
   });
 
   initVoiceNote();
-
-  const onBackdropClick = e => { if (e.target === modal) modal.close(); };
-  modal.addEventListener('click', onBackdropClick);
-  modal.addEventListener('close', () => {
-    modal.removeEventListener('click', onBackdropClick);
-    destroyMap();
-    stopVoiceRecognition();
-  }, { once: true });
 }
 
 // ── GOOGLE LENS / SKANER SYSTEMOWY — natywne Web Share API ──────────────────

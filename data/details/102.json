@@ -1,0 +1,38 @@
+{
+  "id": 102,
+  "nazwa_polska": "Soplówka jeżowata",
+  "nazwa_lacinska": "Hericium erinaceus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Soplowcowate",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 8,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Cały owocnik",
+  "zastosowanie_kulinarne": "Smażona – smakuje jak krab lub homar, do zup, zamiennik mięsa",
+  "zastosowanie_lecznicze": "Regeneracja układu nerwowego (NGF!), pamięć, Alzheimer, adaptogen",
+  "przepis_sugestia": "Smażona soplówka: plastry + masło + czosnek + sól – smak owoców morza!",
+  "wystepowanie_ogolne": "Na starych drzewach liściastych (buk, dąb) – rzadka",
+  "regiony_polski": "Rzadka w całej Polsce – szukaj na bardzo starych bukach i dębach",
+  "sugestie_lokalizacji": "Bieszczady (stare buczyny) | Białowieża (stare dęby) | Blisko Poznania: Rogalin (stare dęby 700-letnie!) | Góry Stołowe (buczyny)",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – biały jeż na drzewie jest absolutnie niepowtarzalny w wyglądzie",
+  "trudnosc_zbioru": "trudny",
+  "img_search": "Hericium erinaceus soplówka jeżowata biała grzyb drzewo",
+  "ciekawostka": "Badania kliniczne potwierdzają wpływ na Alzheimera i Parkinsona. Superstar medycyny funkcjonalnej!",
+  "ochrona": "OBJĘTA OCHRONĄ – w Polsce zbieraj tylko za pewnym przyzwoleniem!",
+  "koordinaty": [
+    {
+      "lat": 49.067,
+      "lng": 22.734,
+      "opis": "Bieszczady – stare buczyny"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – stare dęby"
+    }
+  ]
+}

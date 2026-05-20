@@ -1,0 +1,38 @@
+{
+  "id": 63,
+  "nazwa_polska": "Czarny bez – kwiat",
+  "nazwa_lacinska": "Sambucus nigra (kwiaty)",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Kwiaty drzew",
+  "sezon_start": 6,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "czerwiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Baldachy kwiatowe (surowe)",
+  "zastosowanie_kulinarne": "Socata (syrop elderflower), lody, naleśniki, frytki z kwiatów",
+  "zastosowanie_lecznicze": "Odporność, działanie napotne, przeziębienie",
+  "przepis_sugestia": "Socata: 20 baldachów + 1 kg cukru + 1 cytryna + 1 l wody",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, parki, wsie, skraje lasów",
+  "regiony_polski": "Wszędzie pospolity w Polsce",
+  "sugestie_lokalizacji": "Zarośla i skraje parków w całej Polsce | Blisko Poznania: Park Sołacki, zarośla nadwarciańskie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Tylko kwiaty! Liście, łodygi i niedojrzałe owoce są TRUJĄCE!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Sambucus nigra bez czarny kwiaty białe baldach",
+  "ciekawostka": "Elderflower cordial to hit Skandynawii i UK. Sezon kwiatów trwa dosłownie 2 tygodnie – bądź czujny!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – zarośla"
+    }
+  ]
+}

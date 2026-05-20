@@ -1,0 +1,38 @@
+{
+  "id": 64,
+  "nazwa_polska": "Lipa drobnolistna – kwiat",
+  "nazwa_lacinska": "Tilia cordata",
+  "kategoria": "Kwiaty jadalne",
+  "podkategoria": "Kwiaty drzew",
+  "sezon_start": 6,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "lipiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty z przykwiatkami, młode liście",
+  "zastosowanie_kulinarne": "Herbata lipowa, miód lipowy, frytki z kwiatów, sałatki",
+  "zastosowanie_lecznicze": "Przeziębienie, kaszel, gorączka, bezsenność, nadciśnienie, stres",
+  "przepis_sugestia": "Herbata: kwiaty + miód – klasyczny lek na przeziębienie i na sen",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, aleje",
+  "regiony_polski": "Pospolita w całej Polsce – aleje lipowe przy drogach i parkach",
+  "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: Park Sołacki, Rogalin (aleje lipowe), centrum Poznania | Mazowsze: Nieborów",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – zbieraj tylko świeże, niezabrudzone kwiaty",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tilia cordata lipa kwiaty żółte zapach",
+  "ciekawostka": "Miód lipowy to jeden z najcenniejszych miodów w Polsce. Lipa kwitnie zaledwie 2 tygodnie – nie przegap!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4189,
+      "lng": 16.9356,
+      "opis": "Park Cytadela, Poznań"
+    },
+    {
+      "lat": 52.6072,
+      "lng": 16.5756,
+      "opis": "Szamotuły – stare lipy"
+    }
+  ]
+}

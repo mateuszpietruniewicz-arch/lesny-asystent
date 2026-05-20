@@ -1,0 +1,38 @@
+{
+  "id": 33,
+  "nazwa_polska": "Lebiodka pospolita (oregano dzikie)",
+  "nazwa_lacinska": "Origanum vulgare",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Liście i kwiaty",
+  "zastosowanie_kulinarne": "Przyprawa do mięs, pizzy, sosu pomidorowego, herbata",
+  "zastosowanie_lecznicze": "Działanie antybakteryjne, wspomaganie trawienia, kaszel",
+  "przepis_sugestia": "Suszone liście do pizzy i sosów – intensywniejsze niż sklepowe oregano!",
+  "wystepowanie_ogolne": "Ciepłe zbocza, skraje lasów, suche łąki – środkowa i południowa Polska",
+  "regiony_polski": "Pospolita w środkowej i południowej Polsce",
+  "sugestie_lokalizacji": "Blisko Poznania: suche skarpy nad Wartą, okolice Ostrzeszowa | Małopolska: murawy kserotermiczne | Śląsk: doliny Odry | Roztocze",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Origanum vulgare lebiodka pospolita różowy kwiat oregano",
+  "ciekawostka": "To jest PRAWDZIWE dzikie oregano – 3× intensywniejsze w smaku niż ze sklepu!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.125,
+      "lng": 19.925,
+      "opis": "Wyżyna Krakowska – murawy ciepłolubne"
+    },
+    {
+      "lat": 49.82,
+      "lng": 18.75,
+      "opis": "Śląsk (Cieszyn) – suche zbocza"
+    }
+  ]
+}

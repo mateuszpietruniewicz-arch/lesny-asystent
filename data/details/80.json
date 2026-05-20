@@ -1,0 +1,38 @@
+{
+  "id": 80,
+  "nazwa_polska": "Dereń jadalny",
+  "nazwa_lacinska": "Cornus mas",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 8,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Dojrzałe owoce",
+  "zastosowanie_kulinarne": "Dżemy, soki, nalewki, konfitury",
+  "zastosowanie_lecznicze": "Witamina C, antyoksydanty, działanie przeciwbiegunkowe",
+  "przepis_sugestia": "Nalewka dereniowa: dojrzałe owoce + cukier + wódka, maceruj 3 miesiące",
+  "wystepowanie_ogolne": "Ciepłe zarośla, skraje lasów – szczególnie południe Polski",
+  "regiony_polski": "Wyżyna Krakowska, Śląsk (doliny Odry), Podkarpacie (pogórza)",
+  "sugestie_lokalizacji": "Wyżyna Krakowsko-Częstochowska | Śląsk (okolice Cieszyna) | Kielecczyzna | Blisko Poznania: ogrzane zbocza koło Wolsztyna – rzadki",
+  "trujace_surowe": false,
+  "ostrzezenie": "Niedojrzałe są bardzo cierpkie i kwaśne",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Cornus mas dereń jadalny czerwone owoce",
+  "ciekawostka": "Kwitnie jako jeden z pierwszych krzewów – już w lutym! Na Kaukazie podstawa konfitur i napitków.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.224,
+      "lng": 19.834,
+      "opis": "Wyżyna Krakowska (Ojców) – ciepłe zarośla"
+    },
+    {
+      "lat": 49.82,
+      "lng": 18.75,
+      "opis": "Śląsk (Cieszyn) – ciepłe zbocza"
+    }
+  ]
+}

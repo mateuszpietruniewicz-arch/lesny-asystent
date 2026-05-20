@@ -1,0 +1,38 @@
+{
+  "id": 6,
+  "nazwa_polska": "Komosa biała",
+  "nazwa_lacinska": "Chenopodium album",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–lipiec",
+  "min_temp_C": 12,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Młode liście i wierzchołki, nasiona",
+  "zastosowanie_kulinarne": "Gotowane jak szpinak, nasiona jak komosa ryżowa quinoa",
+  "zastosowanie_lecznicze": "Bogata w białko, żelazo, wapń, witaminę K",
+  "przepis_sugestia": "Gotowane liście z masłem i czosnkiem – zamiennik szpinaku",
+  "wystepowanie_ogolne": "Cała Polska – pola uprawne, ogrody, przydroża, ruderale",
+  "regiony_polski": "Wszędzie pospolita na terenach uprawnych",
+  "sugestie_lokalizacji": "Pola uprawne i ogródki w każdym regionie Polski – klasyczny chwast polny",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zawiera szczawiany – umiarkowane spożycie",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Chenopodium album komosa biała",
+  "ciekawostka": "Krewna quinoa – nasiona zawierają kompletne białko. W Europie jedzona od 9000 lat p.n.e.!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.125,
+      "lng": 19.925,
+      "opis": "Wyżyna Krakowska – pola uprawne"
+    },
+    {
+      "lat": 50.567,
+      "lng": 23.22,
+      "opis": "Roztocze – nieużytki polne"
+    }
+  ]
+}

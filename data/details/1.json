@@ -1,0 +1,38 @@
+{
+  "id": 1,
+  "nazwa_polska": "Pokrzywa zwyczajna",
+  "nazwa_lacinska": "Urtica dioica",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 3,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode liście i pędy do 20 cm",
+  "zastosowanie_kulinarne": "Zupy, herbaty, szpinak, pesto, smoothie, naleśniki, risotto",
+  "zastosowanie_lecznicze": "Anemia, reumatyzm, nerki, żelazo, wit. C, wspomaganie laktacji",
+  "przepis_sugestia": "Zupa pokrzywowa: liście + ziemniaki + śmietana + czosnek",
+  "wystepowanie_ogolne": "Cała Polska – lasy, łąki, parki, przydroża, ruiny, żyzne gleby",
+  "regiony_polski": "Wszędzie – od Bałtyku po Tatry, absolutnie pospolita",
+  "sugestie_lokalizacji": "Blisko Poznania: Park Sołacki, brzegi Warty, Puszcza Zielonka, Mosina | Mazowsze: Park Łazienkowski, dolina Wisły | Śląsk: skraje lasów | Bieszczady, Tatry, Mazury: łąki nadrzeczne | Sugestia: każdy las i łąka w Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Parz lub gotuj – surowa parzy skórę, traci to po obróbce cieplnej",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Urtica dioica pokrzywa zwyczajna liście",
+  "ciekawostka": "Więcej żelaza niż szpinak, więcej wit. C niż cytryna. Wikingowie robili z niej tkaniny!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4246,
+      "lng": 16.9099,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – skraj lasu"
+    }
+  ]
+}

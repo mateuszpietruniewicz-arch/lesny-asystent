@@ -1,0 +1,38 @@
+{
+  "id": 23,
+  "nazwa_polska": "Żywokost lekarski",
+  "nazwa_lacinska": "Symphytum officinale",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–czerwiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Korzeń (zewnętrznie), młode liście (ograniczone)",
+  "zastosowanie_kulinarne": "Liście smażone w cieście tempura (okazjonalnie)",
+  "zastosowanie_lecznicze": "Gojenie złamań i skręceń (alantoina!), maść na stawy, okłady na rany",
+  "przepis_sugestia": "Maść żywokostowa: korzeń + smalec, gotuj 30 min, przecedź",
+  "wystepowanie_ogolne": "Cała Polska – brzegi rzek, rowy, wilgotne łąki",
+  "regiony_polski": "Pospolity nad rzekami i w rowach całej Polski",
+  "sugestie_lokalizacji": "Brzegi Warty, Wisły, Odry, Noteci | Blisko Poznania: brzegi Warty od Poznania do Śremu, dolina Noteci | Mazury: brzegi jezior",
+  "trujace_surowe": true,
+  "ostrzezenie": "OGRANICZONE spożycie wewnętrzne – alkaloidy pirolizydynowe szkodliwe dla wątroby. Stosuj GŁÓWNIE zewnętrznie!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Symphytum officinale żywokost fioletowy kwiat rzeka",
+  "ciekawostka": "Zwany 'kość-zrost' – alantoina przyspiesza regenerację tkanek. Grecy zawijali nim złamane kości!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty, Poznań – brzegi"
+    },
+    {
+      "lat": 52.679,
+      "lng": 17.035,
+      "opis": "Noteć – brzegi rzeki"
+    }
+  ]
+}

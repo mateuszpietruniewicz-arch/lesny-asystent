@@ -1,0 +1,38 @@
+{
+  "id": 11,
+  "nazwa_polska": "Szczawik zajęczy",
+  "nazwa_lacinska": "Oxalis acetosella",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 7,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście i kwiaty",
+  "zastosowanie_kulinarne": "Sałatki, dekoracja, lemoniadka z liści + woda + miód",
+  "zastosowanie_lecznicze": "Witamina C, działanie orzeźwiające i chłodzące",
+  "przepis_sugestia": "Lemoniadka: liście rozgnieć + zimna woda + miód + lód",
+  "wystepowanie_ogolne": "Cała Polska – cieniste lasy liściaste i mieszane",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Cieniste buczyny i grądy całej Polski: Białowieża, Bieszczady | Blisko Poznania: Puszcza Zielonka, lasy Rogalińskie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zawiera szczawiany – nie jedz w nadmiarze",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Oxalis acetosella szczawik zajęczy biały kwiat las",
+  "ciekawostka": "To prawdziwa koniczyna szczęścia! Liście zwijają się nocą i rozwijają z pierwszym światłem.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – cieniste grądy"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – buczyny"
+    }
+  ]
+}

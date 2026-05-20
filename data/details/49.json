@@ -1,0 +1,38 @@
+{
+  "id": 49,
+  "nazwa_polska": "Szakłak pospolity",
+  "nazwa_lacinska": "Rhamnus cathartica",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 9,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce (lecznicze, OSTROŻNIE)",
+  "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+  "zastosowanie_lecznicze": "Zaparcia (silne przeczyszczające!), choroby skóry",
+  "przepis_sugestia": "Syrop z owoców: TYLKO pod nadzorem medycznym!",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, żywopłoty",
+  "regiony_polski": "Pospolity w zaroślach całej Polski",
+  "sugestie_lokalizacji": "Zarośla i żywopłoty śródpolne w całej Polsce | Blisko Poznania: zarośla koło Śremu i Kościana",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: Bardzo silne działanie przeczyszczające! Tylko pod kontrolą medyczną. Nie dla dzieci!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Rhamnus cathartica szakłak pospolity czarne owoce",
+  "ciekawostka": "Niegdyś główny środek przeczyszczający w Europie. Dziś zastąpiony lekami, ale wciąż używany w ziołolecznictwie.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – zarośla śródpolne"
+    },
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – żywopłoty"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 29,
+  "nazwa_polska": "Rumianek pospolity",
+  "nazwa_lacinska": "Matricaria chamomilla",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Kwiaty",
+  "zastosowanie_kulinarne": "Herbata, syrop, do piwa kraftowego",
+  "zastosowanie_lecznicze": "Stres, bezsenność, kolki, stany zapalne, skóra (zewnętrznie)",
+  "przepis_sugestia": "Herbata: 2 łyżki kwiatów + szklanka wrzątku, parzyć 10 min + miód",
+  "wystepowanie_ogolne": "Cała Polska – pola, ogrody, przydroża, ugory",
+  "regiony_polski": "Wszędzie pospolity",
+  "sugestie_lokalizacji": "Pola i ugory w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uczulenie u alergicznych na astrowate",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Matricaria chamomilla rumianek pospolity biały kwiat",
+  "ciekawostka": "Apigenina w rumianku działa jak naturalna benzodiazepina – łagodny spokój bez uzależnienia!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.607,
+      "lng": 16.576,
+      "opis": "Szamotuły – pola uprawne"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – ugory polne"
+    }
+  ]
+}

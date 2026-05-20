@@ -1,0 +1,38 @@
+{
+  "id": 14,
+  "nazwa_polska": "Rzeżucha łąkowa",
+  "nazwa_lacinska": "Cardamine pratensis",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 3,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście, łodygi, kwiaty",
+  "zastosowanie_kulinarne": "Sałatki, kanapki, twarożek – lekko pikantna",
+  "zastosowanie_lecznicze": "Witamina C, działanie moczopędne, wspomaganie tarczycy (jod)",
+  "przepis_sugestia": "Twarożek ziołowy: ser + rzeżucha + czosnek + sól + pieprz",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rowów, podmokłe miejsca",
+  "regiony_polski": "Pospolita na podmokłych łąkach całej Polski",
+  "sugestie_lokalizacji": "Podmokłe łąki nad rzekami w całej Polsce | Blisko Poznania: łąki nad Wartą, doliną Baryczy | Mazury: wilgotne polany",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Cardamine pratensis rzeżucha łąkowa różowy kwiat",
+  "ciekawostka": "Kwitnie różowo jak dywan – jedna z piękniejszych wiosennych łąk!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrzański PN – podmokłe łąki"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – wilgotne łąki"
+    }
+  ]
+}

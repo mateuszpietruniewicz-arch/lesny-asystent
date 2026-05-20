@@ -1,0 +1,38 @@
+{
+  "id": 105,
+  "nazwa_polska": "Gołąbek zielonawy",
+  "nazwa_lacinska": "Russula virescens",
+  "kategoria": "Grzyby",
+  "podkategoria": "Gołąbkowate",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażony, do zup, na surowo w sałatkach – jeden z nielicznych jadalnych surowo!",
+  "zastosowanie_lecznicze": "Białko, składniki odżywcze, enzymy trawienne",
+  "przepis_sugestia": "Surowy w sałatce: pokrojony + oliwa + sól + zioła – orzechowy smak!",
+  "wystepowanie_ogolne": "Lasy liściaste, buczyny, grądy – cała Polska",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Buczyny i grądy w lasach liściastych całej Polski | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga na inne gołąbki – wiele jest niejadalnych. Gołąbek zielonawy = nieregularny, zielony kapelusz!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Russula virescens gołąbek zienonawy zielony kapelusz",
+  "ciekawostka": "Jeden z nielicznych grzybów, który można jeść surowy! Smakuje lekko orzechowo.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – buczyny i grądy"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – grądy"
+    }
+  ]
+}

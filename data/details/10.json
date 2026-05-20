@@ -1,0 +1,38 @@
+{
+  "id": 10,
+  "nazwa_polska": "Łopian większy",
+  "nazwa_lacinska": "Arctium lappa",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "kwiecień–maj liście; wrzesień korzeń",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Korzeń 1. rok, ogonki liściowe, młode pędy kwiatostanowe",
+  "zastosowanie_kulinarne": "Korzeń gotowany jak pietruszka – w Japonii gobo, podstawa diety",
+  "zastosowanie_lecznicze": "Oczyszczanie krwi, wspomaganie wątroby, działanie antybiotyczne",
+  "przepis_sugestia": "Gobo kinpira: korzeń w paski + sos sojowy + sezam + chili",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, zarośla przy zabudowaniach",
+  "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+  "sugestie_lokalizacji": "Zarośla przy zabudowaniach i rowy melioracyjne w każdym regionie Polski",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Arctium lappa łopian większy korzeń",
+  "ciekawostka": "Rzepy łopianu zainspirowały wynalezienie rzepów velcro w 1948 roku!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – zarośla"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – zarośla przy zabudowaniach"
+    }
+  ]
+}

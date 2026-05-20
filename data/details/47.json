@@ -1,0 +1,38 @@
+{
+  "id": 47,
+  "nazwa_polska": "Glistnik jaskółcze ziele",
+  "nazwa_lacinska": "Chelidonium majus",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–czerwiec",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Sok mleczny (zewnętrznie!), ziele do naparów",
+  "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+  "zastosowanie_lecznicze": "Brodawki (zewnętrznie!), problemy żołądkowe, działanie żółciopędne",
+  "przepis_sugestia": "Na brodawki: kroplę soku mlecznego nałóż punktowo, powtarzaj tygodniami",
+  "wystepowanie_ogolne": "Cała Polska – mury, przydroża, zarośla przy zabudowaniach, ruiny",
+  "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+  "sugestie_lokalizacji": "Stare mury, przydroża i ruiny przy zabudowaniach w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "TOKSYCZNY wewnętrznie! Sok mleczny drażni skórę i błony śluzowe. TYLKO zewnętrznie na brodawki!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Chelidonium majus glistnik jaskółcze ziele żółte kwiaty",
+  "ciekawostka": "Żółty sok mleczny jest silnie trujący, ale jednocześnie najskuteczniejszym ziołowym środkiem na brodawki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela – stare mury"
+    },
+    {
+      "lat": 52.607,
+      "lng": 16.576,
+      "opis": "Szamotuły – ruiny przy zabudowaniach"
+    }
+  ]
+}

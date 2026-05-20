@@ -1,0 +1,38 @@
+{
+  "id": 103,
+  "nazwa_polska": "Pieczarka łąkowa",
+  "nazwa_lacinska": "Agaricus campestris",
+  "kategoria": "Grzyby",
+  "podkategoria": "Pieczarkowate",
+  "sezon_start": 6,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 5,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażona, do zup, na pizzy, surowa w sałatkach",
+  "zastosowanie_lecznicze": "Białko, witaminy z grupy B, niskotłuszczowy, beta- glukany",
+  "przepis_sugestia": "Pieczarki duszone: pieczarki + cebula + śmietana + koper",
+  "wystepowanie_ogolne": "Łąki, pastwiska, trawniki, ogrody – cała Polska",
+  "regiony_polski": "Pospolita na łąkach kośnych i pastwiskach całej Polski",
+  "sugestie_lokalizacji": "Łąki kośne i pastwiska w całej Polsce – szukaj rano na rosistych łąkach | Blisko Poznania: pastwiska w Dolinie Baryczy",
+  "trujace_surowe": false,
+  "ostrzezenie": "UWAGA: Pomylenie z muchomorem sromotnikowym! Pieczarka ma RÓŻOWE lub BRĄZOWE blaszki – NIGDY białe!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Agaricus campestris pieczarka łąkowa biała trawa",
+  "ciekawostka": "Dzika kuzynka sklepowej pieczarki – smakuje 5× lepiej! Poluj rano na rosistych łąkach.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – pastwiska"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – łąki kośne"
+    }
+  ]
+}

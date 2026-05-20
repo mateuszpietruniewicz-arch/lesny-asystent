@@ -1,0 +1,38 @@
+{
+  "id": 3,
+  "nazwa_polska": "Podagrycznik pospolity",
+  "nazwa_lacinska": "Aegopodium podagraria",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 4,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode liście i łodygi przed kwitnieniem",
+  "zastosowanie_kulinarne": "Zupy, warzywo gotowane, farsz do pierogów, zamiennik pietruszki",
+  "zastosowanie_lecznicze": "Leczenie podagry (dny moczanowej), działanie przeciwzapalne",
+  "przepis_sugestia": "Farsz do pierogów: liście + twaróg + cebula + sól",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, wilgotne zarośla, cieniste miejsca",
+  "regiony_polski": "Pospolity w całej Polsce z wyjątkiem wysokich gór",
+  "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie, Park Cytadela, Puszcza Zielonka | Mazowsze: Kampinos | Białowieża: grądy | Bieszczady: buczyny | Wszędzie cieniste leśne ścieżki",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie mylić z bluszczem – podagrycznik nie pnie się, ma trójkowy układ liści",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Aegopodium podagraria podagrycznik",
+  "ciekawostka": "Przez wieki uprawiany jako warzywo. Dziś chwast ogrodowy – a smakuje jak pietruszka!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – grądy"
+    },
+    {
+      "lat": 52.324,
+      "lng": 20.413,
+      "opis": "Kampinos – lasy liściaste"
+    }
+  ]
+}

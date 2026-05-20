@@ -1,0 +1,38 @@
+{
+  "id": 71,
+  "nazwa_polska": "Borówka brusznica",
+  "nazwa_lacinska": "Vaccinium vitis-idaea",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 20,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Owoce, liście",
+  "zastosowanie_kulinarne": "Sos do mięs (dziczyzna!), dżemy, soki, kompoty",
+  "zastosowanie_lecznicze": "Infekcje układu moczowego (arbutyna!), antybakteryjne",
+  "przepis_sugestia": "Sos brusznicowy do dziczyzny: borówki + cukier + odrobina wody, gotuj 15 min",
+  "wystepowanie_ogolne": "Cała Polska – bory sosnowe, wrzosowiska, torfowiska",
+  "regiony_polski": "Pospolita w borach sosnowych całej Polski",
+  "sugestie_lokalizacji": "Bory sosnowe na piaszczystych glebach całej Polski | Bory Tucholskie, Puszcza Notecka, Puszcza Piska | Blisko Poznania: bory koło Obornik i Szamotuł",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Vaccinium vitis-idaea borówka brusznica czerwona",
+  "ciekawostka": "Zawiera arbutynę – naturalny antybiotyk dróg moczowych. Szwedzi jedzą ją do prawie wszystkiego!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 53.645,
+      "lng": 18.023,
+      "opis": "Bory Tucholskie – bory sosnowe"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – bory na piasku"
+    }
+  ]
+}

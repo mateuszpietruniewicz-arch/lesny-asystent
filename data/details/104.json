@@ -1,0 +1,38 @@
+{
+  "id": 104,
+  "nazwa_polska": "Lejkowiec dęty (trąbka śmierci)",
+  "nazwa_lacinska": "Craterellus cornucopioides",
+  "kategoria": "Grzyby",
+  "podkategoria": "Lejkowcowate",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 10,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Cały owocnik",
+  "zastosowanie_kulinarne": "Doskonały do suszenia – do risotto, sosów – intensywny truflowy aromat!",
+  "zastosowanie_lecznicze": "Białko, witaminy z grupy B, witamina D",
+  "przepis_sugestia": "Suszony lejkowiec do risotto: proszek + ryż + cebula + wino białe",
+  "wystepowanie_ogolne": "Lasy liściaste, wilgotne buczyny, grądy – wschodnia i południowa Polska",
+  "regiony_polski": "Buczyny zachodniej i południowej Polski: Sudety, Karpaty, Bieszczady",
+  "sugestie_lokalizacji": "Buczyny w Górach Stołowych | Beskidy i Bieszczady | Drawieński PN | Blisko Poznania: buczyny w Puszczy Zielonce (rzadszy)",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – mimo groźnej nazwy 'trąbka śmierci' jest całkowicie bezpieczny i pyszny!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Craterellus cornucopioides lejkowiec dęty czarny trąbka",
+  "ciekawostka": "Czarny jak smoła, prawie niewidoczny w ściółce – ale truflowy aromat! Francuzi zwą go 'truflą biedaka'.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.483,
+      "lng": 16.352,
+      "opis": "Sudety (Góry Stołowe) – buczyny"
+    },
+    {
+      "lat": 49.067,
+      "lng": 22.734,
+      "opis": "Bieszczady – wilgotne buczyny"
+    }
+  ]
+}

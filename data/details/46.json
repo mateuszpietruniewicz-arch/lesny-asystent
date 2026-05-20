@@ -1,0 +1,38 @@
+{
+  "id": 46,
+  "nazwa_polska": "Marzanka wonna",
+  "nazwa_lacinska": "Galium odoratum",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 4,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Ziele kwiatowe",
+  "zastosowanie_kulinarne": "Do wina (Maibowle), herbata, nalewki",
+  "zastosowanie_lecznicze": "Działanie uspokajające, moczopędne, wspomaganie snu",
+  "przepis_sugestia": "Maibowle: ziele + białe wino + truskawki + cukier – tradycyjny napój wiosenny",
+  "wystepowanie_ogolne": "Cieniste lasy liściaste, buczyny – środkowa i zachodnia Polska",
+  "regiony_polski": "Pospolita w cienistych lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Cieniste buczyny i grądy w całej Polsce | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka | Białowieża",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie spożywać w dużych ilościach – bóle głowy",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Galium odoratum marzanka wonna biała las cienisty",
+  "ciekawostka": "Składnik tradycyjnego wina majowego Maibowle w Niemczech. Zapach jak świeże siano po uschnięciu!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – cieniste buczyny"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – grądy"
+    }
+  ]
+}

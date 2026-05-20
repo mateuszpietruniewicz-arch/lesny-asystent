@@ -1,0 +1,38 @@
+{
+  "id": 35,
+  "nazwa_polska": "Waleriana lekarska (kozłek)",
+  "nazwa_lacinska": "Valeriana officinalis",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Korzeń (zbiór wiosną lub jesienią), kwiaty",
+  "zastosowanie_kulinarne": "Herbata, nalewka uspokajająca",
+  "zastosowanie_lecznicze": "Bezsenność, stres, nerwica, nadciśnienie, działanie uspokajające",
+  "przepis_sugestia": "Herbata: 1 łyżka suszonego korzenia + szklanka wrzątku (brzydko pachnie – ale działa!)",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne łąki, brzegi rzek, zarośla, skraje lasów",
+  "regiony_polski": "Pospolita nad rzekami i na wilgotnych łąkach całej Polski",
+  "sugestie_lokalizacji": "Wilgotne łąki i brzegi rzek w całej Polsce | Blisko Poznania: brzegi Warty, łąki w Dolinie Baryczy | Mazury: wilgotne łąki",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie prowadzić pojazdów po zażyciu dużych dawek – działanie uspokajające!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Valeriana officinalis kozłek lekarski biały kwiat",
+  "ciekawostka": "Korzenie silnie przyciągają koty jak kocimiętka! Zapach nieprzyjemny, ale skuteczność potwierdzona klinicznie.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – wilgotne łąki"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – wilgotne łąki nadrzeczne"
+    }
+  ]
+}

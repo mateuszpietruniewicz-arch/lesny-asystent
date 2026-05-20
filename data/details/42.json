@@ -1,0 +1,38 @@
+{
+  "id": 42,
+  "nazwa_polska": "Szanta zwyczajna",
+  "nazwa_lacinska": "Marrubium vulgare",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Ziele",
+  "zastosowanie_kulinarne": "Herbata, likiery ziołowe",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, brak apetytu, wspomaganie trawienia",
+  "przepis_sugestia": "Herbata: 1 łyżka ziela + szklanka wrzątku, gorzki smak – dosłódź miodem",
+  "wystepowanie_ogolne": "Suche, ciepłe miejsca, przydroża, stare mury – południe Polski",
+  "regiony_polski": "Głównie południe i centrum Polski",
+  "sugestie_lokalizacji": "Stare mury i suche nieużytki w południowej Polsce | Śląsk, Małopolska, Kielecczyzna | Blisko Poznania: rzadka",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Marrubium vulgare szanta zwyczajna biała",
+  "ciekawostka": "Składnik cukierków horehound candy na kaszel w USA i UK. Stosowana od starożytności.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 49.82,
+      "lng": 18.75,
+      "opis": "Śląsk (Cieszyn) – suche stare mury"
+    },
+    {
+      "lat": 50.867,
+      "lng": 20.923,
+      "opis": "Świętokrzyskie – suche nieużytki"
+    }
+  ]
+}

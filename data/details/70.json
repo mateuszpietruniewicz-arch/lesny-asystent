@@ -1,0 +1,38 @@
+{
+  "id": 70,
+  "nazwa_polska": "Borówka czarna (czernica)",
+  "nazwa_lacinska": "Vaccinium myrtillus",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 15,
+  "dni_min_temp": 25,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce, liście",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, ciasta, soki, nalewki",
+  "zastosowanie_lecznicze": "Poprawa wzroku (antocyjany!), antyoksydanty, cukrzyca, biegunka",
+  "przepis_sugestia": "Ciasto jagodowe: ciasto drożdżowe + kruszonka + garść borówek",
+  "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, bory sosnowe",
+  "regiony_polski": "Pospolita w borach sosnowych całej Polski i w górach!",
+  "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, bory koło Obornik i Szamotuł | Bory Tucholskie | Puszcza Piska | Bieszczady, Beskidy | Tatry – wszędzie w borach sosnowych!",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – zabarwia usta i zęby na niebiesko- fioletowo",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Vaccinium myrtillus borówka czernica leśna niebieska",
+  "ciekawostka": "Piloci RAF w II wojnie zbierali borówki dla poprawy widzenia nocnego – potwierdzono naukowo!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – bory sosnowe"
+    },
+    {
+      "lat": 52.5186,
+      "lng": 17.1234,
+      "opis": "Puszcza Zielonka – wrzosowiska"
+    }
+  ]
+}

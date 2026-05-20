@@ -1,0 +1,38 @@
+{
+  "id": 34,
+  "nazwa_polska": "Chmiel zwyczajny",
+  "nazwa_lacinska": "Humulus lupulus",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 8,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 15,
+  "dni_min_temp": 20,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Szyszki (kwiaty żeńskie), młode pędy jak szparagi",
+  "zastosowanie_kulinarne": "Do warzenia piwa, herbata uspokajająca, młode pędy jak szparagi",
+  "zastosowanie_lecznicze": "Bezsenność, stres, działanie uspokajające, apetyt",
+  "przepis_sugestia": "Poduszeczka z szyszek chmielowych pod poduszkę – naturalny środek na bezsenność",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, płoty, brzegi rzek",
+  "regiony_polski": "Pospolity w zaroślach i żywopłotach całej Polski",
+  "sugestie_lokalizacji": "Zarośla i płoty wzdłuż rzek w całej Polsce | Blisko Poznania: zarośla nadwarciańskie, żywopłoty śródpolne",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Humulus lupulus chmiel zwyczajny szyszki zielone",
+  "ciekawostka": "Chmiel to ta sama rodzina co marihuana (Cannabaceae) – stąd jego uspokajające właściwości!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – zarośla nadrzeczne"
+    },
+    {
+      "lat": 52.55,
+      "lng": 21.9,
+      "opis": "Bug – zarośla nadrzeczne"
+    }
+  ]
+}

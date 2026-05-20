@@ -1,0 +1,38 @@
+{
+  "id": 28,
+  "nazwa_polska": "Skrzyp polny",
+  "nazwa_lacinska": "Equisetum arvense",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–sierpień",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Zielone gałązki letnie (NIE wiosenne kłosy)",
+  "zastosowanie_kulinarne": "Herbata, odwar",
+  "zastosowanie_lecznicze": "Wzmocnienie paznokci i włosów (krzem!), moczopędne, zapalenie pęcherza",
+  "przepis_sugestia": "Herbata: 2 łyżki suszu + szklanka wrzątku, gotuj 3 min (mocniejszy odwar)",
+  "wystepowanie_ogolne": "Cała Polska – pola, łąki, przydroża, rowy, wilgotne miejsca",
+  "regiony_polski": "Wszędzie pospolity",
+  "sugestie_lokalizacji": "Wilgotne pola i rowy w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "Surowy może być szkodliwy. Nie stosować długotrwale bez przerw. Nie mylić z innymi skrzypami!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Equisetum arvense skrzyp polny zielony",
+  "ciekawostka": "Żywa skamielina – ten sam gatunek rósł obok dinozaurów 300 milionów lat temu!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.379,
+      "lng": 16.235,
+      "opis": "Łąki torfowe k. Pniew – rowy"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – wilgotne łąki"
+    }
+  ]
+}

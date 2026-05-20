@@ -1,0 +1,38 @@
+{
+  "id": 78,
+  "nazwa_polska": "Kalina koralowa",
+  "nazwa_lacinska": "Viburnum opulus",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "październik",
+  "min_temp_C": 0,
+  "dni_min_temp": 3,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Owoce PO przemrożeniu i gotowaniu!",
+  "zastosowanie_kulinarne": "Soki, syropy, dżemy – po obróbce cieplnej",
+  "zastosowanie_lecznicze": "Skurcze mięśni, bolesna menstruacja, nadciśnienie, kaszel",
+  "przepis_sugestia": "Sok kalinowy: owoce + cukier, gotuj 20 min, odcedź",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne zarośla, brzegi rzek",
+  "regiony_polski": "Pospolita w wilgotnych zaroślach całej Polski",
+  "sugestie_lokalizacji": "Doliny rzek i brzegi jezior w całej Polsce | Blisko Poznania: dolina Warty, Dolina Baryczy, brzegi jezior gnieźnieńskich",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: Surowe owoce są TRUJĄCE! ZAWSZE gotuj lub mroź przed spożyciem.",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Viburnum opulus kalina koralowa czerwone owoce jesień",
+  "ciekawostka": "Symbol Ukrainy – w folklorze symbol miłości i kobiecości. Po pierwszym mrozie traci gorycz.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – wilgotne zarośla"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – zarośla nadrzeczne"
+    }
+  ]
+}

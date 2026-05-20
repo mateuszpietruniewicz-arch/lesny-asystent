@@ -1,0 +1,38 @@
+{
+  "id": 36,
+  "nazwa_polska": "Kocimiętka właściwa",
+  "nazwa_lacinska": "Nepeta cataria",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Liście i kwiaty",
+  "zastosowanie_kulinarne": "Herbata, przyprawa (miętowy smak)",
+  "zastosowanie_lecznicze": "Bezsenność u dzieci, kolki, działanie uspokajające, poty przy przeziębieniu",
+  "przepis_sugestia": "Herbata dla dzieci: kocimiętka + rumianek + melisa + miód",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, nieużytki, stare mury, ruiny",
+  "regiony_polski": "Niepospolita – szczególnie przy starych zabudowaniach",
+  "sugestie_lokalizacji": "Stare mury, ruiny i przydroża przy osadach | Blisko Poznania: stare mury Szamotuł, Kościana | Śląsk: zamki i stare miasteczka",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Nepeta cataria kocimiętka właściwa biała",
+  "ciekawostka": "Koty szaleją na jej punkcie – nepetalakton działa jak feromony. Używana jako herbata przez wieki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.607,
+      "lng": 16.576,
+      "opis": "Szamotuły – stare mury miejskie"
+    },
+    {
+      "lat": 50.867,
+      "lng": 20.923,
+      "opis": "Świętokrzyskie – ruiny przy drogach"
+    }
+  ]
+}

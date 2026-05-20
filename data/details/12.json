@@ -1,0 +1,38 @@
+{
+  "id": 12,
+  "nazwa_polska": "Tasznik pospolity",
+  "nazwa_lacinska": "Capsella bursa-pastoris",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 3,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 3,
+  "dni_min_temp": 5,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Młode liście, nasiona",
+  "zastosowanie_kulinarne": "Sałatki, zupy, nasiona jako substytut pieprzu",
+  "zastosowanie_lecznicze": "Tamowanie krwawień wewnętrznych, regulacja ciśnienia",
+  "przepis_sugestia": "Dodaj liście do sałatki jarzynowej – pikantny akcent",
+  "wystepowanie_ogolne": "Cała Polska – pola, ogrody, przydroża, chodniki",
+  "regiony_polski": "Jeden z najpospolitszych chwastów polnych – wszędzie",
+  "sugestie_lokalizacji": "Pola uprawne i ogródki w każdej części Polski",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie stosować w ciąży – może pobudzać macicę",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Capsella bursa-pastoris tasznik pospolity",
+  "ciekawostka": "Torebki nasienne wyglądają jak serduszka – stąd łacińska nazwa 'sakiewka pasterza'.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki – obrzeża ogrodów"
+    },
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – pola uprawne"
+    }
+  ]
+}

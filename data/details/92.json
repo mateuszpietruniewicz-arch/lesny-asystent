@@ -1,0 +1,38 @@
+{
+  "id": 92,
+  "nazwa_polska": "Jodła pospolita – pędy",
+  "nazwa_lacinska": "Abies alba",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa iglaste",
+  "sezon_start": 4,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode pędy, igły, żywica",
+  "zastosowanie_kulinarne": "Herbata z igieł, syrop, żywica jako przyprawa",
+  "zastosowanie_lecznicze": "Drogi oddechowe, działanie antyseptyczne żywicy, witamina C",
+  "przepis_sugestia": "Syrop jodłowy: młode pędy + cukier 1:1, maceruj tydzień",
+  "wystepowanie_ogolne": "Góry – Karpaty i Sudety",
+  "regiony_polski": "Tatry, Beskidy, Bieszczady, Góry Świętokrzyskie, Sudety",
+  "sugestie_lokalizacji": "Tatry: jodłowy las reglowy | Bieszczady: masowe stanowiska | Góry Świętokrzyskie | Blisko Poznania: brak – tylko południe Polski",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Abies alba jodła pospolita pędy igły",
+  "ciekawostka": "Żywica jodłowa była przez wieki używana do uszczelniania łodzi i jako klej! Dziś do aromaterapii.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 49.256,
+      "lng": 19.867,
+      "opis": "Tatry (Dolina Kościeliska) – jodłowy las reglowy"
+    },
+    {
+      "lat": 50.867,
+      "lng": 20.923,
+      "opis": "Góry Świętokrzyskie – jodłowe bory"
+    }
+  ]
+}

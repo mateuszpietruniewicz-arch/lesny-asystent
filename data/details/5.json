@@ -1,0 +1,38 @@
+{
+  "id": 5,
+  "nazwa_polska": "Gwiazdnica pospolita",
+  "nazwa_lacinska": "Stellaria media",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 2,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "marzec–kwiecień",
+  "min_temp_C": 2,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Cała roślina nadziemna",
+  "zastosowanie_kulinarne": "Sałatki, kanapki, smoothie, gotowane jak szpinak",
+  "zastosowanie_lecznicze": "Łagodzenie świądu skóry, wykrztuśne, witamina C",
+  "przepis_sugestia": "Sałatka wiosenna: gwiazdnica + rzodkiewka + oliwa + sól",
+  "wystepowanie_ogolne": "Cała Polska – ogrody, pola, przydroża, żyzne miejsca",
+  "regiony_polski": "Wszędzie pospolita – rośnie nawet pod śniegiem",
+  "sugestie_lokalizacji": "Ogrody działkowe, pola uprawne i skraje ścieżek w całej Polsce – zbieraj już w lutym!",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Stellaria media gwiazdnica pospolita",
+  "ciekawostka": "Jedna z pierwszych roślin jadalnych w roku – zbierasz ją w lutym spod śniegu!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela, Poznań"
+    }
+  ]
+}

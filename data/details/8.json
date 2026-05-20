@@ -1,0 +1,38 @@
+{
+  "id": 8,
+  "nazwa_polska": "Marchew dzika",
+  "nazwa_lacinska": "Daucus carota",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Korzeń (1. rok), nasiona, liście",
+  "zastosowanie_kulinarne": "Korzeń jak marchew uprawna, nasiona jako przyprawa do chleba i mięs",
+  "zastosowanie_lecznicze": "Beta-karoten, działanie moczopędne, wspomaganie trawienia",
+  "przepis_sugestia": "Korzeń pieczony z ziołami, nasiona do chleba i mięs",
+  "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, suche zbocza, skraje pól",
+  "regiony_polski": "Pospolita na suchych łąkach i skrajach pól całej Polski",
+  "sugestie_lokalizacji": "Blisko Poznania: suche skarpy nad Wartą, Dolina Baryczy | Małopolska: murawy kserotermiczne Wyżyny Krakowskiej | Śląsk: ciepłe zbocza dolin | Roztocze: suche łąki",
+  "trujace_surowe": false,
+  "ostrzezenie": "UWAGA: Łatwo pomylić z TRUJĄCYM szczwołem plamistym! Marchew PACHNIE marchewką po rozgnieceniu liścia!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Daucus carota marchew dzika kwiat parasol",
+  "ciekawostka": "Centralny czerwony kwiatek w baldachu to 'mucha' – wabi owady drapieżne. Przodek marchewki uprawnej.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.224,
+      "lng": 19.834,
+      "opis": "Wyżyna Krakowska (Ojców) – murawy kserotermiczne"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – suche skarpy"
+    }
+  ]
+}

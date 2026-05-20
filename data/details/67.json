@@ -1,0 +1,38 @@
+{
+  "id": 67,
+  "nazwa_polska": "Poziomka pospolita",
+  "nazwa_lacinska": "Fragaria vesca",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Jagody leśne",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce, liście (herbata)",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, soki, desery, herbata z liści",
+  "zastosowanie_lecznicze": "Witamina C, anemia, wspomaganie trawienia, diuretyczne",
+  "przepis_sugestia": "Na surowo z cukrem lub śmietaną. Dżem: owoce + cukier 1:1, gotuj 20 min",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, polany, ciepłe zbocza",
+  "regiony_polski": "Pospolita w całej Polsce – od Bałtyku po Tatry",
+  "sugestie_lokalizacji": "Blisko Poznania: Puszcza Zielonka, Lasy Jankowskie, Biedrusko, skraje lasów koło Mosiny | Bieszczady: masowe stanowiska | Mazury: polany leśne | Beskidy: skraje lasów",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – jedna z najsmaczniejszych dzikich owoców",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Fragaria vesca poziomka pospolita czerwona leśna",
+  "ciekawostka": "Pachnie 10× intensywniej niż truskawka sklepowa. Jedna poziomka = więcej wit. C niż cytryna!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.2318,
+      "lng": 17.0126,
+      "opis": "Lasy Rogalińskie – skraje"
+    },
+    {
+      "lat": 52.5186,
+      "lng": 17.1234,
+      "opis": "Puszcza Zielonka – podszycie"
+    }
+  ]
+}

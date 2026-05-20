@@ -1,0 +1,38 @@
+{
+  "id": 21,
+  "nazwa_polska": "Czosnek skalny",
+  "nazwa_lacinska": "Allium scorodoprasum",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 4,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Liście, cebulki, kwiaty",
+  "zastosowanie_kulinarne": "Zamiennik czosnku i pora, zupy, sałatki, masło ziołowe",
+  "zastosowanie_lecznicze": "Działanie antybakteryjne, obniżanie ciśnienia",
+  "przepis_sugestia": "Masło ziołowe: masło + posiekane liście + sól + pieprz",
+  "wystepowanie_ogolne": "Skraje lasów, zarośla, suche zbocza – środkowa i zachodnia Polska",
+  "regiony_polski": "Niezbyt pospolity – zachodnia Polska, suche zbocza",
+  "sugestie_lokalizacji": "Suche zbocza nad rzekami | Blisko Poznania: okolice Wolsztyna, skarpy nad Wartą | Śląsk: suche zbocza dolin",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zawsze sprawdź czosnkowy zapach po rozgnieceniu!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Allium scorodoprasum czosnek skalny fioletowy",
+  "ciekawostka": "Rzadszy brat czosnku niedźwiedziego – smak między czosnkiem a porem. W Polsce mało znany.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 50.125,
+      "lng": 19.925,
+      "opis": "Wyżyna Krakowska – suche zbocza"
+    },
+    {
+      "lat": 49.82,
+      "lng": 18.75,
+      "opis": "Śląsk (Cieszyn) – ciepłe zbocza"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 82,
+  "nazwa_polska": "Dzika jabłoń",
+  "nazwa_lacinska": "Malus sylvestris",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Drzewa owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 8,
+  "dni_min_temp": 30,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce (pestki niejadalne!)",
+  "zastosowanie_kulinarne": "Soki, dżemy, ocet jabłkowy, nalewki, suszone chipsy",
+  "zastosowanie_lecznicze": "Pektyny, witaminy, wspomaganie trawienia, obniżanie cholesterolu",
+  "przepis_sugestia": "Sok jabłkowy: owoce + woda, gotuj, przecedź – najlepszy po przymrozkach!",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów liściastych, żywopłoty, miedze",
+  "regiony_polski": "Pospolita na skrajach lasów liściastych całej Polski",
+  "sugestie_lokalizacji": "Miedze polne i skraje lasów liściastych w całej Polsce | Blisko Poznania: miedze wokół Poznania, skraje lasów w dolinie Warty",
+  "trujace_surowe": false,
+  "ostrzezenie": "Pestki zawierają amygdalinę – nie jedz ich!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Malus sylvestris dzika jabłoń małe jabłka jesień",
+  "ciekawostka": "Przodek wszystkich jabłoni uprawnych. Po przymrozku: aromatyczne i słodkie – zupełnie inne niż surowe!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Rogalin – miedze polne"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – skraje lasów liściastych"
+    }
+  ]
+}

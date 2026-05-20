@@ -1,0 +1,33 @@
+{
+  "id": 15,
+  "nazwa_polska": "Podbiał pospolity",
+  "nazwa_lacinska": "Tussilago farfara",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie warzywa",
+  "sezon_start": 2,
+  "sezon_koniec": 5,
+  "szczyt_zbioru": "marzec–kwiecień",
+  "min_temp_C": 3,
+  "dni_min_temp": 5,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty przed liśćmi, młode liście",
+  "zastosowanie_kulinarne": "Kwiaty do sałatek, liście smażone, herbata",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie wykrztuśne – klasyk",
+  "przepis_sugestia": "Herbata z kwiatów: 1 łyżka kwiatów + szklanka wrzątku – na kaszel",
+  "wystepowanie_ogolne": "Cała Polska – gliniaste skarpy, przydroża, rowy",
+  "regiony_polski": "Wszędzie pospolity – jeden z pierwszych wiosennych kwiatów",
+  "sugestie_lokalizacji": "Gliniaste skarpy i przydroża w całej Polsce – kwitnie już w lutym!",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zawiera alkaloidy pirolizydynowe – nie stosować długotrwale wewnętrznie",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tussilago farfara podbiał pospolity żółty kwiat wiosna",
+  "ciekawostka": "Kwitnie PRZED liśćmi – po angielsku 'son before father'. Jeden z pierwszych kwiatów, już w lutym!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4715,
+      "lng": 16.9836,
+      "opis": "Góra Moraska – podmokłe polany"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 120,
+  "nazwa_polska": "Muchomor sromotnikowy – ŚMIERTELNY!",
+  "nazwa_lacinska": "Amanita phalloides",
+  "kategoria": "Grzyby",
+  "podkategoria": "TRUJĄCE edukacyjnie",
+  "sezon_start": 7,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "ŻADNA – grzyb ŚMIERTELNIE TRUJĄCY",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "Brak zastosowań – amotoksyny niszczą wątrobę bez antidotum",
+  "przepis_sugestia": "NIE ZBIERAJ – wpisany EDUKACYJNIE",
+  "wystepowanie_ogolne": "Lasy liściaste i mieszane – cała Polska",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce – UWAGA: mylony z czubajką kanią, pieczarką i gąską zielonką!",
+  "trujace_surowe": true,
+  "ostrzezenie": "ŚMIERTELNIE TRUJĄCY! Jeden kapelusz może zabić dorosłego człowieka. Amotoksyny niszczą wątrobę – objawy pojawiają się 6-24h po spożyciu, gdy jest już za późno! Biały, zielonkawy, biała u nasady nóżka, biały pierścień.",
+  "trudnosc_zbioru": "NIE ZBIERAJ",
+  "img_search": "Amanita phalloides muchomor sromotnikowy zielony biały",
+  "ciekawostka": "EDUKACYJNIE – sprawca 90% śmiertelnych zatruć grzybowych w Europie! Mylony z kanią, pieczarką i zielonką. Jeśli kapelusz jest zielonkawy i biały u nasady – ZOSTAW!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – lasy liściaste"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – lasy liściaste"
+    }
+  ]
+}

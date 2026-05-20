@@ -1,0 +1,38 @@
+{
+  "id": 74,
+  "nazwa_polska": "Dzika róża",
+  "nazwa_lacinska": "Rosa canina",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Owoce bez nasion!, płatki kwiatów (czerwiec)",
+  "zastosowanie_kulinarne": "Herbata, dżemy, syropy, nalewki, marmolada",
+  "zastosowanie_lecznicze": "Witamina C (20× więcej niż cytryna!), odporność, stawy, antyoksydanty",
+  "przepis_sugestia": "Herbata: suszone owoce + szklanka wrzątku, parzyć 15 min",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, miedze, nieużytki",
+  "regiony_polski": "Absolutnie wszędzie w Polsce",
+  "sugestie_lokalizacji": "Miedze polne i skraje lasów w całej Polsce – brak specjalnych miejsc, rośnie wszędzie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Usuń nasiona (włoski drażnią błony śluzowe) – jadaj tylko miąższ!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Rosa canina dzika róża czerwone owoce jesień",
+  "ciekawostka": "Jeden owoc dzikiej róży = tyle wit. C co 20 cytryn. Syrop ratował Anglików przed szkorbutem w II ww.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4715,
+      "lng": 16.9836,
+      "opis": "Góra Moraska – obrzeża"
+    },
+    {
+      "lat": 52.2454,
+      "lng": 16.8542,
+      "opis": "Mosina – skraje pól"
+    }
+  ]
+}

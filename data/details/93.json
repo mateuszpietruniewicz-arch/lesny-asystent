@@ -1,0 +1,38 @@
+{
+  "id": 93,
+  "nazwa_polska": "Lipa drobnolistna – miód i herbata",
+  "nazwa_lacinska": "Tilia cordata",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa liściaste",
+  "sezon_start": 6,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "lipiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Kwiaty, młode liście (wiosna), nasiona",
+  "zastosowanie_kulinarne": "Herbata lipowa, miód lipowy, frytki z kwiatów, sałatki z liści",
+  "zastosowanie_lecznicze": "Przeziębienie, kaszel, gorączka, bezsenność, nadciśnienie, stres",
+  "przepis_sugestia": "Herbata: kwiaty + miód – klasyczny lek na przeziębienie",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, parki, aleje",
+  "regiony_polski": "Pospolita w całej Polsce – aleje lipowe przy drogach i parkach",
+  "sugestie_lokalizacji": "Aleje lipowe i parki w całej Polsce | Blisko Poznania: Park Sołacki, Rogalin, centrum Poznania | Mazowsze: Nieborów",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Tilia cordata lipa kwiaty żółte zapach",
+  "ciekawostka": "Miód lipowy to jeden z najcenniejszych miodów w Polsce. Lipa kwitnie zaledwie 2 tygodnie – nie przegap!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Rogalin – aleje lipowe"
+    }
+  ]
+}

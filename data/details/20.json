@@ -1,0 +1,38 @@
+{
+  "id": 20,
+  "nazwa_polska": "Kminek zwyczajny",
+  "nazwa_lacinska": "Carum carvi",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 5,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Nasiona, liście, korzeń 1. rok",
+  "zastosowanie_kulinarne": "Przyprawa do chleba, kapusty, mięs, serów, nalewek",
+  "zastosowanie_lecznicze": "Wzdęcia, kolki jelitowe, wspomaganie laktacji, trawienie",
+  "przepis_sugestia": "Chleb z kminkiem: 1 łyżka nasion do każdego bochenka",
+  "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, pastwiska",
+  "regiony_polski": "Pospolity na łąkach kośnych całej Polski",
+  "sugestie_lokalizacji": "Łąki kośne w całej Polsce | Blisko Poznania: Dolina Baryczy, okolice Ostrzeszowa | Mazowsze: łąki nadwiślańskie | Podkarpacie: łąki górskie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga na podobne baldaszkowate – sprawdź kminkowy zapach po rozgnieceniu",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Carum carvi kminek zwyczajny nasiona baldach",
+  "ciekawostka": "Najstarszy znaleziony kminek liczy 8000 lat – znaleziony w neolitycznym stanowisku w Szwajcarii.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.579,
+      "lng": 18.234,
+      "opis": "Gopło – łąki kośne"
+    },
+    {
+      "lat": 51.524,
+      "lng": 17.457,
+      "opis": "Dolina Baryczy – łąki"
+    }
+  ]
+}

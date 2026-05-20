@@ -1,0 +1,38 @@
+{
+  "id": 18,
+  "nazwa_polska": "Czosnek niedźwiedzi",
+  "nazwa_lacinska": "Allium ursinum",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 3,
+  "sezon_koniec": 5,
+  "szczyt_zbioru": "kwiecień",
+  "min_temp_C": 7,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście, kwiaty (cebulki chronione!)",
+  "zastosowanie_kulinarne": "Pesto, masło czosnkowe, zupy, sałatki, twarożek",
+  "zastosowanie_lecznicze": "Obniżanie ciśnienia, działanie antybakteryjne, detoks, miażdżyca",
+  "przepis_sugestia": "Pesto: liście + parmezan + orzechy włoskie + oliwa + sól – 5 min roboty",
+  "wystepowanie_ogolne": "Lasy liściaste, wilgotne doliny rzeczne, buczyny",
+  "regiony_polski": "Podkarpacie i Bieszczady: masowe stanowiska | Małopolska: Ojców, Gorce | Śląsk: Beskidy | Wielkopolska: nad Wartą",
+  "sugestie_lokalizacji": "Najlepiej: Bieszczady (Wetlina, Cisna) | Beskid Śląski (dolina Olzy) | Tatry (Dolina Kościeliska) | Blisko Poznania: Las Pniewiański, Dolina Noteci k. Czarnkowa ~100 km | Mazowsze: nielicznie nad Bugiem",
+  "trujace_surowe": false,
+  "ostrzezenie": "UWAGA: Łatwo pomylić z TRUJĄCĄ konwalią majową! ZAWSZE sprawdź czosnkowy zapach po rozgnieceniu liścia!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Allium ursinum czosnek niedźwiedzi las biały",
+  "ciekawostka": "Niedźwiedzie jedzą go jako pierwszy posiłek po hibernacji. Sezon trwa tylko 3–4 tygodnie!",
+  "ochrona": "cebulki chronione – zbieraj tylko liście",
+  "koordinaty": [
+    {
+      "lat": 52.5186,
+      "lng": 17.1234,
+      "opis": "Puszcza Zielonka – buczyny"
+    },
+    {
+      "lat": 52.2318,
+      "lng": 17.0126,
+      "opis": "Lasy Rogalińskie"
+    }
+  ]
+}

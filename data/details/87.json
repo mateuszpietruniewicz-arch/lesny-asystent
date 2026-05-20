@@ -1,0 +1,38 @@
+{
+  "id": 87,
+  "nazwa_polska": "Dąb szypułkowy – żołędzie",
+  "nazwa_lacinska": "Quercus robur",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa liściaste",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 10,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Żołędzie po wypłukaniu garbników",
+  "zastosowanie_kulinarne": "Mąka żołędziowa, kawa z żołędzi, chleb żołędziowy",
+  "zastosowanie_lecznicze": "Kora – działanie ściągające, leczenie biegunek, zapalenie gardła",
+  "przepis_sugestia": "Kawa żołędziowa: obierz, posiekaj, upraż na patelni, zmiel, zalej wrzątkiem",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, grądy, parki, aleje",
+  "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+  "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie (najstarsze dęby w Polsce 700-800 lat!), Puszcza Notecka | Białowieża: stare dębrzyny",
+  "trujace_surowe": false,
+  "ostrzezenie": "Surowe żołędzie są bardzo gorzkie (garbniki). Wymoczyć w wodzie 2-3 dni zmieniając wodę.",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Quercus robur żołędzie dąb jesienny",
+  "ciekawostka": "Rogalińskie dęby mają 700-800 lat! Żołędzie były podstawowym pożywieniem człowieka przed zbożem.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.2318,
+      "lng": 17.0126,
+      "opis": "Lasy Rogalińskie – stare dęby"
+    },
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – grądy"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v34-seasonal-push';
+const CACHE_NAME = 'forest-assistant-v35-index-details';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 
@@ -8,7 +8,7 @@ const APP_SHELL = [
   './index.html',
   './css/style.css',
   './js/app.js',
-  './data/species.json',
+  './data/index.json',
   './manifest.json',
   './icons/icon-192.svg',
   './icons/icon-512.svg',
@@ -67,20 +67,40 @@ self.addEventListener('activate', event => {
   );
 });
 
-// ── FETCH: cache-first for app shell, network-first for map tiles ──────────
+// ── FETCH: strategie per-typ zasobu ──────────────────────────────────────────
 
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Map tiles: network-first → TILE_CACHE (znormalizowany subdomain) → CACHE_NAME
+  // Kafelki OSM: network-first → TILE_CACHE
   if (url.hostname.endsWith('tile.openstreetmap.org')) {
     event.respondWith(networkFirstTile(event.request));
     return;
   }
 
-  // Everything else: cache-first
+  // Szczegóły gatunków on-demand: stale-while-revalidate
+  if (url.pathname.includes('/data/details/')) {
+    event.respondWith(staleWhileRevalidate(event.request));
+    return;
+  }
+
+  // App shell + data/index.json: cache-first
   event.respondWith(cacheFirst(event.request));
 });
+
+// Stale-while-revalidate: zwróć z cache natychmiast, odśwież w tle
+async function staleWhileRevalidate(request) {
+  const cache  = await caches.open(CACHE_NAME);
+  const cached = await cache.match(request);
+  const revalidate = fetch(request).then(res => {
+    if (res.ok) cache.put(request, res.clone());
+    return res;
+  }).catch(() => null);
+  return cached || await revalidate || new Response('Offline', {
+    status: 503,
+    headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+  });
+}
 
 async function cacheFirst(request) {
   const cached = await caches.match(request);

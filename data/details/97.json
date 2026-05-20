@@ -1,0 +1,38 @@
+{
+  "id": 97,
+  "nazwa_polska": "Maślak zwyczajny",
+  "nazwa_lacinska": "Suillus luteus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Borowikowate",
+  "sezon_start": 8,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 8,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz bez śluzu! i trzon",
+  "zastosowanie_kulinarne": "Marynowany, smażony, do zup i sosów",
+  "zastosowanie_lecznicze": "Białko, składniki odżywcze, beta-glukany",
+  "przepis_sugestia": "Marynowane maślaki: grzyby + ocet + cukier + pieprz + liść laurowy + ziele angielskie",
+  "wystepowanie_ogolne": "Bory sosnowe i plantacje sosnowe – wyłącznie pod sosnami",
+  "regiony_polski": "Wszędzie gdzie jest sosna – cała Polska",
+  "sugestie_lokalizacji": "Bory sosnowe w całej Polsce: Puszcza Notecka, Bory Tucholskie, Puszcza Piska | Blisko Poznania: wszędzie w borach",
+  "trujace_surowe": false,
+  "ostrzezenie": "ZAWSZE zdejmuj śluzowatą skórkę kapelusza – może powodować zaburzenia żołądkowe!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Suillus luteus maślak zwyczajny brązowy śluzowaty",
+  "ciekawostka": "Rośnie WYŁĄCZNIE pod sosnami – grzybnia oplata korzenie sosny. Znajdź sosnę = znajdziesz maślaki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – bory sosnowe"
+    },
+    {
+      "lat": 53.645,
+      "lng": 18.023,
+      "opis": "Bory Tucholskie – plantacje sosnowe"
+    }
+  ]
+}

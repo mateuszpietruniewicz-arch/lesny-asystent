@@ -1,0 +1,38 @@
+{
+  "id": 81,
+  "nazwa_polska": "Czereśnia ptasia",
+  "nazwa_lacinska": "Prunus avium",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Drzewa owocowe",
+  "sezon_start": 6,
+  "sezon_koniec": 7,
+  "szczyt_zbioru": "czerwiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce (pestka niejadalna!)",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, nalewki, kompoty, ciasta",
+  "zastosowanie_lecznicze": "Witaminy A i C, antyoksydanty, działanie przeciwzapalne",
+  "przepis_sugestia": "Nalewka: czereśnie + cukier + spirytus, maceruj 2 miesiące",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, skraje lasów, zadrzewienia śródpolne",
+  "regiony_polski": "Pospolita w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: lasy koło Mosiny, Rogalina, Śremu",
+  "trujace_surowe": false,
+  "ostrzezenie": "Pestki zawierają amygdalinę – nie gryź, nie żuj!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Prunus avium czereśnia ptasia dzika czerwona",
+  "ciekawostka": "Dzika czereśnia to przodek wszystkich odmian uprawnych. Ptaki rozsiewają ją na km2 – stąd 'avium' (ptasia).",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – lasy liściaste"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – lasy liściaste"
+    }
+  ]
+}

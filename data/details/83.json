@@ -1,0 +1,38 @@
+{
+  "id": 83,
+  "nazwa_polska": "Jarząb pospolity (jarzębina)",
+  "nazwa_lacinska": "Sorbus aucuparia",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Drzewa owocowe",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce po przetworzeniu lub przymrozkach!",
+  "zastosowanie_kulinarne": "Nalewki, syropy, dżemy, galaretki",
+  "zastosowanie_lecznicze": "Witamina C (bardzo dużo!), witamina A, antyoksydanty",
+  "przepis_sugestia": "Nalewka jarzębinowa: owoce + cukier + wódka – pij po miesiącu",
+  "wystepowanie_ogolne": "Cała Polska – lasy, skraje lasów, parki, wszędzie",
+  "regiony_polski": "Jeden z najpospolitszych drzew w Polsce",
+  "sugestie_lokalizacji": "Parki miast i skraje lasów w całej Polsce – trudno nie znaleźć",
+  "trujace_surowe": true,
+  "ostrzezenie": "Surowe owoce powodują nudności i wymioty! Po przetworzeniu lub przymrozkach bezpieczne.",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Sorbus aucuparia jarzębina czerwone owoce jesień",
+  "ciekawostka": "Ptaki zimujące w Polsce (jemiołuszki) uzależnione są od jarzębiny przez całą zimę.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.472,
+      "lng": 16.984,
+      "opis": "Góra Moraska – skraje lasu"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – skraje lasów"
+    }
+  ]
+}

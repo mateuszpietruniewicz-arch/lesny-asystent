@@ -1,0 +1,38 @@
+{
+  "id": 119,
+  "nazwa_polska": "Konwalia majowa – TRUJĄCA!",
+  "nazwa_lacinska": "Convallaria majalis",
+  "kategoria": "Rośliny TRUJĄCE",
+  "podkategoria": "Wpisane edukacyjnie",
+  "sezon_start": 4,
+  "sezon_koniec": 5,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 8,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "ŻADNA – roślina TRUJĄCA",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "W kardiologii: glikozydy nasercowe (digoksyna-podobne) – TYLKO medycyna",
+  "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste, grądy, parki",
+  "regiony_polski": "Pospolita w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: MYLONA Z CZOSNKIEM NIEDŹWIEDZIM",
+  "trujace_surowe": true,
+  "ostrzezenie": "TRUJĄCA! Cała roślina zawiera kardioaktywne glikozydy – mogą wywołać arytmię serca. Mylona z czosnkiem niedźwiedzim – sprawdź ZAWSZE zapach!",
+  "trudnosc_zbioru": "NIE ZBIERAJ",
+  "img_search": "Convallaria majalis konwalia majowa białe dzwonki",
+  "ciekawostka": "Wpisana EDUKACYJNIE – NAJCZĘŚCIEJ MYLONA Z CZOSNKIEM NIEDŹWIEDZIM! Nie ma czosnkowego zapachu!",
+  "ochrona": "objęta ochroną",
+  "koordinaty": [
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – grądy liściaste"
+    },
+    {
+      "lat": 52.324,
+      "lng": 20.413,
+      "opis": "Kampinos – lasy liściaste"
+    }
+  ]
+}

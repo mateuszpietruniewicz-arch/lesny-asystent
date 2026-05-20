@@ -1,0 +1,38 @@
+{
+  "id": 107,
+  "nazwa_polska": "Borowik ceglastopory",
+  "nazwa_lacinska": "Boletus luridus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Borowikowate",
+  "sezon_start": 6,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "lipiec–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon – TYLKO po ugotowaniu!",
+  "zastosowanie_kulinarne": "Smażony, do sosów – WYŁĄCZNIE po obróbce cieplnej!",
+  "zastosowanie_lecznicze": "Białko, składniki odżywcze",
+  "przepis_sugestia": "Gulasz grzybowy: gotuj minimum 20 min + śmietana + zioła",
+  "wystepowanie_ogolne": "Lasy liściaste, grądy, buczyny – środkowa i południowa Polska",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce | Blisko Poznania: Lasy Rogalińskie, lasy liściaste koło Mosiny",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: TRUJĄCY NA SUROWO! Toksyczny bez obróbki cieplnej, po gotowaniu (min. 20 min) jadalny. Sinieje intensywnie po nacięciu.",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Boletus luridus borowik ceglastopory sinawy",
+  "ciekawostka": "Intensywnie sinieje po nacięciu – stresuje zbieraczy, ale jest jadalny po ugotowaniu. Nie jedz surowego!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – grądy"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – lasy liściaste"
+    }
+  ]
+}

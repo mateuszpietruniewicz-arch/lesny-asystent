@@ -1,0 +1,38 @@
+{
+  "id": 37,
+  "nazwa_polska": "Oman wielki",
+  "nazwa_lacinska": "Inula helenium",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Korzeń (lecznicze), liście",
+  "zastosowanie_kulinarne": "Korzeń jako przyprawa, dawniej jako warzywo",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, wykrztuśne, wspomaganie odporności (inulina!)",
+  "przepis_sugestia": "Nalewka omanu: korzeń + miód + wódka – tradycyjny środek na kaszel",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, brzegi rzek, wilgotne łąki, skraje lasów",
+  "regiony_polski": "Pospolity w wilgotnych miejscach całej Polski",
+  "sugestie_lokalizacji": "Wilgotne zarośla i brzegi rzek w całej Polsce | Blisko Poznania: zarośla nadwarciańskie | Mazury: doliny rzek",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Inula helenium oman wielki żółty kwiat duży",
+  "ciekawostka": "Jedna z największych roślin zielarskich – może mieć 2 m wysokości! Korzenie = inulina (prebiotyk).",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – wilgotne zarośla"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – zarośla nadrzeczne"
+    }
+  ]
+}

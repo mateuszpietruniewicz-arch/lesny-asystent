@@ -1,0 +1,38 @@
+{
+  "id": 50,
+  "nazwa_polska": "Kruszyna pospolita",
+  "nazwa_lacinska": "Frangula alnus",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 9,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 5,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kora (lecznicza – co najmniej 1 rok suszona!)",
+  "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+  "zastosowanie_lecznicze": "Zaparcia (łagodniejsze niż szakłak), kamica żółciowa",
+  "przepis_sugestia": "Odwar z kory: 1 łyżka suszonej kory + szklanka wody, gotuj 15 min",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, wilgotne miejsca",
+  "regiony_polski": "Pospolita w zaroślach całej Polski",
+  "sugestie_lokalizacji": "Wilgotne zarośla i skraje lasów w całej Polsce | Blisko Poznania: zarośla koło Mosiny, Puszcza Zielonka",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: Świeża kora wywołuje wymioty i silne biegunki! Stosować TYLKO korę suszoną minimum 1 rok!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Frangula alnus kruszyna pospolita czerwone czarne owoce",
+  "ciekawostka": "Kora musi leżakować rok przed użyciem – świeża jest toksyczna! Cierpliwość jest warunkiem bezpieczeństwa.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – wilgotne zarośla"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – zarośla leśne"
+    }
+  ]
+}

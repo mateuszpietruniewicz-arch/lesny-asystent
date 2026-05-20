@@ -1,0 +1,38 @@
+{
+  "id": 88,
+  "nazwa_polska": "Leszczyna pospolita",
+  "nazwa_lacinska": "Corylus avellana",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Krzewy leśne",
+  "sezon_start": 8,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 12,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Orzechy, bazie (pąki kwiatowe – surowe)",
+  "zastosowanie_kulinarne": "Na surowo, masło orzechowe, olej leszczynowy, ciasta, pralinki, nugat",
+  "zastosowanie_lecznicze": "Witamina E, zdrowe tłuszcze jednonienasycone, obniżanie cholesterolu",
+  "przepis_sugestia": "Pralinki domowe: prażone orzechy + roztopiona czekolada, formuj i ostudź",
+  "wystepowanie_ogolne": "Cała Polska – skraje lasów, zarośla, grądy",
+  "regiony_polski": "Pospolita na skrajach lasów liściastych całej Polski",
+  "sugestie_lokalizacji": "Skraje lasów liściastych w całej Polsce | Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka, lasy koło Czempinia",
+  "trujace_surowe": false,
+  "ostrzezenie": "Alergia na orzechy – może wywołać silną reakcję u uczulonych!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Corylus avellana leszczyna orzechy laskowe",
+  "ciekawostka": "Bazie leszczyny to pierwszy sygnał wiosny – pojawiają się w lutym. Obserwuj wiewiórki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – skraje grądów"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – skraje lasów"
+    }
+  ]
+}

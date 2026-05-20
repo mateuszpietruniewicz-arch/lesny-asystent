@@ -1,0 +1,38 @@
+{
+  "id": 52,
+  "nazwa_polska": "Wierzbownica kiprzyca",
+  "nazwa_lacinska": "Epilobium angustifolium",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Liście, kwiaty, młode pędy wiosna",
+  "zastosowanie_kulinarne": "Herbata z Koporye, sałatki z młodych pędów",
+  "zastosowanie_lecznicze": "Wspomaganie prostaty, działanie przeciwzapalne, rany",
+  "przepis_sugestia": "Herbata z wierzbownicy: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min",
+  "wystepowanie_ogolne": "Cała Polska – wyręby, skraje lasów, nasypy, suche łąki",
+  "regiony_polski": "Pospolita na wyrębach i skrajach lasów całej Polski",
+  "sugestie_lokalizacji": "Wyręby leśne w całej Polsce po wycince | Blisko Poznania: wyręby w Puszczy Zielonce, Puszczy Noteckiej",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Epilobium angustifolium wierzbownica kiprzyca różowa",
+  "ciekawostka": "W Rosji zwana herbatą z Koporye – była najpopularniejszą herbatą zanim przywieziono herbatę z Chin!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – wyręby"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – wyręby sosnowe"
+    }
+  ]
+}

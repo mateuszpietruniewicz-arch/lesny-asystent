@@ -1,0 +1,38 @@
+{
+  "id": 96,
+  "nazwa_polska": "Podgrzybek brunatny",
+  "nazwa_lacinska": "Imleria badia",
+  "kategoria": "Grzyby",
+  "podkategoria": "Borowikowate",
+  "sezon_start": 7,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "sierpień–październik",
+  "min_temp_C": 10,
+  "dni_min_temp": 5,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Suszony, smażony, do bigosu i zup – doskonały do suszenia",
+  "zastosowanie_lecznicze": "Białko roślinne, witaminy z grupy B",
+  "przepis_sugestia": "Suszone podgrzybki do bigosu lub rosołu – intensywny leśny smak",
+  "wystepowanie_ogolne": "Cała Polska – lasy iglaste i mieszane, bory sosnowe",
+  "regiony_polski": "Bardzo pospolity w borach sosnowych całej Polski",
+  "sugestie_lokalizacji": "Bory sosnowe w całej Polsce | Blisko Poznania: wszędzie w borach",
+  "trujace_surowe": false,
+  "ostrzezenie": "Miąższ sinieje po nacięciu – to normalne! Nie jest trujący.",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Imleria badia podgrzybek brunatny brązowy grzyb",
+  "ciekawostka": "Najczęściej zbierany grzyb w Polsce, choć często pomijany przez snobów grzybiarskich!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.501,
+      "lng": 16.968,
+      "opis": "Biedrusko – bory sosnowe"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – bory"
+    }
+  ]
+}

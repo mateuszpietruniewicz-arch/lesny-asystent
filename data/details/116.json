@@ -1,0 +1,38 @@
+{
+  "id": 116,
+  "nazwa_polska": "Lulek czarny – TRUJĄCY!",
+  "nazwa_lacinska": "Hyoscyamus niger",
+  "kategoria": "Rośliny TRUJĄCE",
+  "podkategoria": "Wpisane edukacyjnie",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "ŻADNA – roślina TRUJĄCA",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "W farmaceutyce: skopolamina (lek na mdłości, morze) – TYLKO medycyna",
+  "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+  "wystepowanie_ogolne": "Stare mury, ruiny, przydroża – rozrzucona w Polsce",
+  "regiony_polski": "Niepospolita – stare zabudowania, miejsca historyczne",
+  "sugestie_lokalizacji": "Stare mury i ruiny w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "SILNIE TRUJĄCY! Cała roślina zawiera tropan alkaloidy. Nie dotykaj, nie jedz, nie wdychaj dymu!",
+  "trudnosc_zbioru": "NIE ZBIERAJ",
+  "img_search": "Hyoscyamus niger lulek czarny",
+  "ciekawostka": "Wpisany EDUKACYJNIE! Czarownice używały lulka do lotnych maści – skopolamina powoduje halucynacje i uczucie latania.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.607,
+      "lng": 16.576,
+      "opis": "Szamotuły – stare mury przy drogach"
+    },
+    {
+      "lat": 50.867,
+      "lng": 20.923,
+      "opis": "Świętokrzyskie – ruiny i stare zabudowania"
+    }
+  ]
+}

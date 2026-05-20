@@ -1,0 +1,38 @@
+{
+  "id": 100,
+  "nazwa_polska": "Boczniak ostrygowaty",
+  "nazwa_lacinska": "Pleurotus ostreatus",
+  "kategoria": "Grzyby",
+  "podkategoria": "Boczniakowate",
+  "sezon_start": 9,
+  "sezon_koniec": 12,
+  "szczyt_zbioru": "październik–listopad",
+  "min_temp_C": 0,
+  "dni_min_temp": 3,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kapelusz i trzon",
+  "zastosowanie_kulinarne": "Smażony, duszony, do zup, zamiennik mięsa",
+  "zastosowanie_lecznicze": "Obniżanie cholesterolu (lowastatyna!), białko, witamina D, beta-glukany",
+  "przepis_sugestia": "Boczniaki duszone: grzyby + oliwa + czosnek + tymianek – szybkie i pyszne",
+  "wystepowanie_ogolne": "Na martwym drewnie liściastym (buk, topola, wierzba) – cała Polska",
+  "regiony_polski": "Pospolity w lasach liściastych całej Polski – jesień i zima",
+  "sugestie_lokalizacji": "Stare martwe drzewa liściaste w lasach całej Polski | Blisko Poznania: lasy łęgowe nad Wartą, Puszcza Zielonka",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak – rośnie na drzewach, niemal niemożliwy do pomylenia",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Pleurotus ostreatus boczniak ostrygowaty na drzewie szary",
+  "ciekawostka": "Rośnie zimą gdy inne grzyby śpią! Jedyny dziki grzyb zbierany w grudniu i przy ujemnych temperaturach.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – martwe lipy i dęby"
+    },
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – łęgi nadrzeczne"
+    }
+  ]
+}

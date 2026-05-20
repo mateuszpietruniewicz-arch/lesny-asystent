@@ -1,0 +1,38 @@
+{
+  "id": 31,
+  "nazwa_polska": "Melisa lekarska",
+  "nazwa_lacinska": "Melissa officinalis",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Liście",
+  "zastosowanie_kulinarne": "Herbata, sałatki, desery, lody, napoje",
+  "zastosowanie_lecznicze": "Stres, bezsenność, trawienie, wirusostatyczna (przeziębienie, opryszczka)",
+  "przepis_sugestia": "Herbata: liście + rumianek + miód – idealna na wieczór i na sen",
+  "wystepowanie_ogolne": "Ogrody, przydroża, zarośla – dziczeje z uprawy",
+  "regiony_polski": "Dziczeje z uprawy w ogrodach całej Polski",
+  "sugestie_lokalizacji": "Ogrody wiejskie i skraje ogrodów poleśnych w całej Polsce | Blisko Poznania: ogrody koło Mosiny i Śremu",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Melissa officinalis melisa lekarska liście cytrynowa",
+  "ciekawostka": "Nawet Awicenna polecał melisę w XI wieku! Kwas rozmarynowy wspomaga pamięć.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki – ogrody przyległe"
+    },
+    {
+      "lat": 52.245,
+      "lng": 16.854,
+      "opis": "Mosina – ogrody wiejskie"
+    }
+  ]
+}

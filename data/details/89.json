@@ -1,0 +1,38 @@
+{
+  "id": 89,
+  "nazwa_polska": "Sosna zwyczajna – pąki i igły",
+  "nazwa_lacinska": "Pinus sylvestris",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa iglaste",
+  "sezon_start": 1,
+  "sezon_koniec": 12,
+  "szczyt_zbioru": "kwiecień–maj (pąki), cały rok (igły)",
+  "min_temp_C": -10,
+  "dni_min_temp": 0,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Młode pąki (kwiecień), igły (cały rok), nasiona, pyłek",
+  "zastosowanie_kulinarne": "Syrop z pąków sosnowych, herbata z igieł, nasiona do sałatek",
+  "zastosowanie_lecznicze": "Drogi oddechowe, witamina C z igieł!, działanie antybakteryjne",
+  "przepis_sugestia": "Syrop z pąków sosnowych: pąki + cukier 1:1, maceruj tydzień – tradycja polskich babć!",
+  "wystepowanie_ogolne": "Cała Polska – bory sosnowe, lasy mieszane, piaski",
+  "regiony_polski": "Jeden z dominujących gatunków drzew Polski – wszędzie",
+  "sugestie_lokalizacji": "Bory sosnowe w całej Polsce: Bory Tucholskie, Puszcza Notecka, Puszcza Piska, Bory Dolnośląskie",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Pinus sylvestris sosna pąki wiosna zielone",
+  "ciekawostka": "Igły sosny mają 5× więcej wit. C niż cytryna! Żołnierze w średniowieczu leczyli nimi szkorbut.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 53.645,
+      "lng": 18.023,
+      "opis": "Bory Tucholskie – bory sosnowe"
+    },
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – bory sosnowe"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 110,
+  "nazwa_polska": "Pałka szerokolistna",
+  "nazwa_lacinska": "Typha latifolia",
+  "kategoria": "Rośliny wodne",
+  "podkategoria": "Rośliny bagienne",
+  "sezon_start": 4,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "kwiecień–czerwiec",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Młode pędy (kwiecień-maj), pyłek (czerwiec), korzenie",
+  "zastosowanie_kulinarne": "Pędy jak szparagi, pyłek jako mąka do pieczywa, korzenie gotowane",
+  "zastosowanie_lecznicze": "Pyłek: działanie ściągające, tamowanie krwawień",
+  "przepis_sugestia": "Pędy pałki gotowane: jak szparagi + masło + sól – delikatny smak",
+  "wystepowanie_ogolne": "Cała Polska – brzegi jezior, rzek, bagna, stawy",
+  "regiony_polski": "Wszędzie nad wodą – jeziora mazurskie, rzeki nizinne",
+  "sugestie_lokalizacji": "Jeziora Pojezierza Mazurskiego, Gnieźnieńskiego | Brzegi Warty, Wisły, Odry, Biebrzy | Blisko Poznania: jeziora gnieźnieńskie, brzegi Warty",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zbieraj tylko z czystych terenów – pałka akumuluje zanieczyszczenia z wody!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Typha latifolia pałka szerokolistna brązowa woda",
+  "ciekawostka": "Jedna roślina daje jedzenie przez cały sezon – pędy, pyłek, kwiatostany, korzenie. 'McDonald's natury'!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.3189,
+      "lng": 16.8891,
+      "opis": "Rogalin – staw przy Warcie"
+    },
+    {
+      "lat": 52.2454,
+      "lng": 16.8542,
+      "opis": "Mosina – brzegi rowów"
+    }
+  ]
+}

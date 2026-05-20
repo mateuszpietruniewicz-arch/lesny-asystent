@@ -1,0 +1,38 @@
+{
+  "id": 44,
+  "nazwa_polska": "Nagietek lekarski",
+  "nazwa_lacinska": "Calendula officinalis",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 10,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Płatki kwiatowe",
+  "zastosowanie_kulinarne": "Sałatki (barwnik), ryż, zupy (zamiast szafranu)",
+  "zastosowanie_lecznicze": "Gojenie ran, egzema, stany zapalne skóry – must-have domowej apteczki",
+  "przepis_sugestia": "Maść nagietkowa: płatki + lanolina lub smalec, podgrzej 30 min, przecedź",
+  "wystepowanie_ogolne": "Ogrody, pola, przydroża – głównie uprawiany, dziczeje",
+  "regiony_polski": "W ogrodach i na miedzach całej Polski",
+  "sugestie_lokalizacji": "Ogrody działkowe i zielniki w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Calendula officinalis nagietek lekarski pomarańczowy kwiat",
+  "ciekawostka": "Herb of the Sun – kwitnie wzdłuż ruchu słońca. Maść nagietkowa to must-have każdej domowej apteczki!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki – ogrody"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela – ogrody"
+    }
+  ]
+}

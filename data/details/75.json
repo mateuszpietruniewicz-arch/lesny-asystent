@@ -1,0 +1,38 @@
+{
+  "id": 75,
+  "nazwa_polska": "Czarny bez – owoce",
+  "nazwa_lacinska": "Sambucus nigra",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Krzewy owocowe",
+  "sezon_start": 8,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "sierpień–wrzesień",
+  "min_temp_C": 10,
+  "dni_min_temp": 20,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "DOJRZAŁE czarne owoce (gotowane!), kwiaty (surowe)",
+  "zastosowanie_kulinarne": "Syrop z kwiatów (socata), dżemy z owoców, nalewki, wino",
+  "zastosowanie_lecznicze": "Przeziębienie, grypa, odporność, działanie napotne",
+  "przepis_sugestia": "Socata: 20 baldachów kwiatów + 1 kg cukru + 1 cytryna + 1 l wody",
+  "wystepowanie_ogolne": "Cała Polska – zarośla, skraje lasów, parki, wsie",
+  "regiony_polski": "Wszędzie pospolity w Polsce",
+  "sugestie_lokalizacji": "Zarośla i skraje parków w całej Polsce | Blisko Poznania: Park Sołacki, zarośla nadwarciańskie",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA: Surowe owoce i niedojrzałe są TRUJĄCE (sambunigrin)! ZAWSZE gotuj owoce!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Sambucus nigra czarny bez owoce czarne kiście",
+  "ciekawostka": "Masz dwa sezony z jednej rośliny – kwiaty w czerwcu, owoce w sierpniu. Sezon kwiatów trwa 2 tygodnie!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.4189,
+      "lng": 16.9356,
+      "opis": "Park Cytadela, Poznań"
+    },
+    {
+      "lat": 52.4089,
+      "lng": 17.0678,
+      "opis": "Dolina Cybiny – zarośla"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 51,
+  "nazwa_polska": "Czarnuszka siewna",
+  "nazwa_lacinska": "Nigella sativa",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zapomniane zioła",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Nasiona",
+  "zastosowanie_kulinarne": "Przyprawa do chleba, pieczywa, sera, potraw bliskowschodnich",
+  "zastosowanie_lecznicze": "Wspomaganie odporności, działanie antybakteryjne, astma, alergie",
+  "przepis_sugestia": "Chleb z czarnuszką: nasiona posyp na spód bochenka przed pieczeniem",
+  "wystepowanie_ogolne": "Uprawiana, dziczeje na polach – Polska centralna",
+  "regiony_polski": "Głównie uprawiana w ogrodach i na polach całej Polski",
+  "sugestie_lokalizacji": "Ogrody i zielniki w całej Polsce | Blisko Poznania: ogrody działkowe",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Nigella sativa czarnuszka siewna niebieska",
+  "ciekawostka": "Zwana 'lekiem na wszystko z wyjątkiem śmierci' w medycynie arabskiej. Olej z czarnuszki to superfood!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki – ogrody"
+    },
+    {
+      "lat": 52.246,
+      "lng": 17.091,
+      "opis": "Kórnik – ogrody zielne"
+    }
+  ]
+}

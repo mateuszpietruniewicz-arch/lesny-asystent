@@ -1,0 +1,38 @@
+{
+  "id": 32,
+  "nazwa_polska": "Macierzanka piaskowa",
+  "nazwa_lacinska": "Thymus serpyllum",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Ziele kwiatowe i liście",
+  "zastosowanie_kulinarne": "Przyprawa do mięs, ryb, zup, herbata ziołowa, do grilla",
+  "zastosowanie_lecznicze": "Kaszel, zapalenie oskrzeli, działanie antyseptyczne, trawienie",
+  "przepis_sugestia": "Mieszanka do grilla: suszona macierzanka + czosnek + sól + pieprz",
+  "wystepowanie_ogolne": "Suche piaski, murawy, wrzosowiska – cała Polska",
+  "regiony_polski": "Pospolita na suchych piaszczystych glebach całej Polski",
+  "sugestie_lokalizacji": "Suche piaski w całej Polsce | Blisko Poznania: Puszcza Notecka, wrzosowiska koło Wolsztyna | Góry: murawy ciepłolubne",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Thymus serpyllum macierzanka piaskowa różowy kwiat",
+  "ciekawostka": "Dziki tymianek – pachnie intensywniej niż ogrodowy. Chodzenie po nim w upalne południe = aromaterapia!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.723,
+      "lng": 16.534,
+      "opis": "Puszcza Notecka – suche piaski"
+    },
+    {
+      "lat": 53.645,
+      "lng": 18.023,
+      "opis": "Bory Tucholskie – wrzosowiska"
+    }
+  ]
+}

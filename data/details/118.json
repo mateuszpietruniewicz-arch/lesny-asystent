@@ -1,0 +1,38 @@
+{
+  "id": 118,
+  "nazwa_polska": "Barszcz Sosnowskiego – NIEBEZPIECZNY!",
+  "nazwa_lacinska": "Heracleum sosnowskyi",
+  "kategoria": "Rośliny TRUJĄCE",
+  "podkategoria": "Wpisane edukacyjnie",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 20,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "ŻADNA – roślina NIEBEZPIECZNA",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "Brak zastosowań – powoduje poparzenia skóry",
+  "przepis_sugestia": "NIE ZBIERAJ, NIE DOTYKAJ – wpisany EDUKACYJNIE",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, nadbrzeża rzek, nieużytki (gatunek inwazyjny!)",
+  "regiony_polski": "Masowy w całej Polsce – szczególnie wschodnia i centralna Polska",
+  "sugestie_lokalizacji": "Brzegi rzek i przydroża w całej Polsce – OGROMNA roślina do 3 m wysokości | Blisko Poznania: rowy przy drogach, brzegi rzek",
+  "trujace_surowe": true,
+  "ostrzezenie": "NIEBEZPIECZNY! Sok roślinny w kontakcie ze skórą i słońcem powoduje POWAŻNE POPARZENIA II i III stopnia! NIE DOTYKAJ! Zadzwoń po pomoc jeśli miałeś kontakt ze sokiem!",
+  "trudnosc_zbioru": "NIE DOTYKAJ",
+  "img_search": "Heracleum sosnowskyi barszcz Sosnowskiego ogromny",
+  "ciekawostka": "Wpisany EDUKACYJNIE – inwazyjny gigant powodujący poparzenia II stopnia po kontakcie ze słońcem! Zadzwoń po straż pożarną!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.55,
+      "lng": 21.9,
+      "opis": "Bug – brzegi rzeki (UWAGA: nie zbierać!)"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – nadbrzeżne nieużytki (UWAGA!)"
+    }
+  ]
+}

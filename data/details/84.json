@@ -1,0 +1,38 @@
+{
+  "id": 84,
+  "nazwa_polska": "Morwa biała",
+  "nazwa_lacinska": "Morus alba",
+  "kategoria": "Owoce dzikie",
+  "podkategoria": "Drzewa owocowe",
+  "sezon_start": 6,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "lipiec",
+  "min_temp_C": 15,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Owoce, liście (herbata)",
+  "zastosowanie_kulinarne": "Na surowo, dżemy, soki, nalewki, syropy",
+  "zastosowanie_lecznicze": "Cukrzyca (obniżanie glukozy – liście!), antyoksydanty, odporność",
+  "przepis_sugestia": "Na surowo prosto z drzewa – słodkie i delikatne w smaku",
+  "wystepowanie_ogolne": "Parki, aleje, żywopłoty – nasadzana, czasem dziczeje",
+  "regiony_polski": "Głównie parki miejskie środkowej i południowej Polski",
+  "sugestie_lokalizacji": "Parki miejskie: Poznań, Warszawa, Kraków, Wrocław | Blisko Poznania: Park Sołacki, Park Cytadela",
+  "trujace_surowe": false,
+  "ostrzezenie": "Niedojrzałe owoce mogą powodować lekkie nudności",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Morus alba morwa biała owoce białe",
+  "ciekawostka": "Liście morwy to JEDYNE pożywienie jedwabników. Herbata z liści reguluje poziom cukru we krwi!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela, Poznań"
+    }
+  ]
+}

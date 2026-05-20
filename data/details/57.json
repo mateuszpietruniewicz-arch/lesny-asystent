@@ -1,0 +1,38 @@
+{
+  "id": 57,
+  "nazwa_polska": "Dzięgiel leśny",
+  "nazwa_lacinska": "Angelica sylvestris",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 10,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście, nasiona (ostrożnie)",
+  "zastosowanie_kulinarne": "Herbata, przyprawa",
+  "zastosowanie_lecznicze": "Podobne do dzięgla litworu, łagodniejsze działanie",
+  "przepis_sugestia": "Herbata: szczyptę nasion + szklanka wrzątku",
+  "wystepowanie_ogolne": "Cała Polska – wilgotne lasy, zarośla, skraje łąk",
+  "regiony_polski": "Pospolity w wilgotnych lasach całej Polski",
+  "sugestie_lokalizacji": "Wilgotne zarośla nad rzekami w całej Polsce | Blisko Poznania: doliny rzek Wielkopolski",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga na fotouczulenie – po kontakcie z rośliną unikaj silnego słońca!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Angelica sylvestris dzięgiel leśny biały baldach",
+  "ciekawostka": "Powszechniejszy niż litwor – rośnie w wilgotnych zaroślach leśnych całej Polski.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – wilgotne zarośla"
+    },
+    {
+      "lat": 52.679,
+      "lng": 17.035,
+      "opis": "Noteć – zarośla nadrzeczne"
+    }
+  ]
+}

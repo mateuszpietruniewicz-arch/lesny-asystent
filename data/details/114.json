@@ -1,0 +1,38 @@
+{
+  "id": 114,
+  "nazwa_polska": "Mąkla tarniowa",
+  "nazwa_lacinska": "Evernia prunastri",
+  "kategoria": "Porosty",
+  "podkategoria": "Porosty jadalne",
+  "sezon_start": 1,
+  "sezon_koniec": 12,
+  "szczyt_zbioru": "cały rok",
+  "min_temp_C": -20,
+  "dni_min_temp": 0,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Cała plecha",
+  "zastosowanie_kulinarne": "Dawniej do pieczenia chleba i jako zagęstnik, herbata",
+  "zastosowanie_lecznicze": "Działanie antybiotyczne, wykrztuśne",
+  "przepis_sugestia": "Dawny chleb leśny: mąka zbożowa + mielona mąkla 20%",
+  "wystepowanie_ogolne": "Lasy liściaste i iglaste – na korze drzew",
+  "regiony_polski": "Pospolita w lasach całej Polski – szczególnie na starych drzewach",
+  "sugestie_lokalizacji": "Stare drzewa w lasach całej Polski – korony starych dębów i sosen | Blisko Poznania: stare dęby Rogalina",
+  "trujace_surowe": false,
+  "ostrzezenie": "Zbieraj z dala od dróg – jak wszystkie porosty akumuluje zanieczyszczenia",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Evernia prunastri mąkla tarniowa porost szary zielony",
+  "ciekawostka": "Stosowana w perfumiarstwie jako utrwalacz zapachów! Do dziś używana w przemyśle kosmetycznym.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – stare dęby"
+    },
+    {
+      "lat": 52.703,
+      "lng": 23.853,
+      "opis": "Białowieża – stare drzewa"
+    }
+  ]
+}

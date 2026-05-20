@@ -1,0 +1,38 @@
+{
+  "id": 117,
+  "nazwa_polska": "Szczwół plamisty – TRUJĄCY!",
+  "nazwa_lacinska": "Conium maculatum",
+  "kategoria": "Rośliny TRUJĄCE",
+  "podkategoria": "Wpisane edukacyjnie",
+  "sezon_start": 5,
+  "sezon_koniec": 8,
+  "szczyt_zbioru": "czerwiec–lipiec",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "ŻADNA – roślina ŚMIERTELNIE trująca",
+  "zastosowanie_kulinarne": "NIE STOSOWAĆ",
+  "zastosowanie_lecznicze": "Brak zastosowań – wyłącznie trucizna",
+  "przepis_sugestia": "NIE ZBIERAJ, NIE STOSUJ – wpisana EDUKACYJNIE",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, rowy, zarośla, nieużytki",
+  "regiony_polski": "Pospolity na wilgotnych nieużytkach całej Polski",
+  "sugestie_lokalizacji": "Wilgotne przydroża i rowy w całej Polsce – UWAGA: mylony z marchewką dziką, dzięglem i pietruszką!",
+  "trujace_surowe": true,
+  "ostrzezenie": "ŚMIERTELNIE TRUJĄCY! Tym sokiem otruto Sokratesa. Cała roślina jest trucizną – szczególnie nasiona i korzeń. Czerwone plamy na łodydze = szczwół!",
+  "trudnosc_zbioru": "NIE ZBIERAJ",
+  "img_search": "Conium maculatum szczwół plamisty biały baldach",
+  "ciekawostka": "Wpisany EDUKACYJNIE – tym sokiem otruto Sokratesa! Mylony z marchewką dziką. Łodyga z czerwonymi plamami = szczwół!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – wilgotne przydroża"
+    },
+    {
+      "lat": 53.067,
+      "lng": 22.123,
+      "opis": "Narew – rowy i przydroża"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 26,
+  "nazwa_polska": "Bylica pospolita",
+  "nazwa_lacinska": "Artemisia vulgaris",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 7,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 14,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Liście i pędy kwiatostanowe",
+  "zastosowanie_kulinarne": "Przyprawa do mięs tłustych (gęś, kaczka), tynktury, nalewki",
+  "zastosowanie_lecznicze": "Brak apetytu, problemy trawienne, pomocna przy menstruacji, robaki jelitowe",
+  "przepis_sugestia": "Przyprawa do gęsi: suszone liście do nadzienia i sosu",
+  "wystepowanie_ogolne": "Cała Polska – przydroża, ruderale, zarośla, brzegi rzek",
+  "regiony_polski": "Wszędzie pospolita",
+  "sugestie_lokalizacji": "Pobocza dróg i nieurządzone tereny w całej Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Nie stosować w ciąży – pobudza skurcze macicy!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Artemisia vulgaris bylica pospolita",
+  "ciekawostka": "Artemizja – bogini łowów. Przez wieki używana do odstraszania owadów i złych duchów.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.401,
+      "lng": 16.931,
+      "opis": "Dolina Warty – przydroża"
+    },
+    {
+      "lat": 52.652,
+      "lng": 16.819,
+      "opis": "Oborniki – przydroża"
+    }
+  ]
+}

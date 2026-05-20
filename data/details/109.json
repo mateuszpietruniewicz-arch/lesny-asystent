@@ -1,0 +1,38 @@
+{
+  "id": 109,
+  "nazwa_polska": "Grzybówka czysta – EDUKACYJNIE TRUJĄCA",
+  "nazwa_lacinska": "Mycena pura",
+  "kategoria": "Grzyby",
+  "podkategoria": "Grzybówkowate (TRUJĄCA)",
+  "sezon_start": 9,
+  "sezon_koniec": 11,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 8,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "NIE JADALNA – umieszczona edukacyjnie",
+  "zastosowanie_kulinarne": "NIEJADALNA",
+  "zastosowanie_lecznicze": "Brak",
+  "przepis_sugestia": "NIE ZBIERAJ – wpisana edukacyjnie (mylona z jadalnymi)",
+  "wystepowanie_ogolne": "Lasy liściaste, cała Polska",
+  "regiony_polski": "Pospolita w lasach całej Polski",
+  "sugestie_lokalizacji": "Lasy liściaste w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "UWAGA EDUKACYJNA: Trujący! Zawiera muskarynę. Często mylona z jadalnymi grzybówkami. Lilac/fioletowy kolor, zapach rzodkwi.",
+  "trudnosc_zbioru": "nie zbieraj",
+  "img_search": "Mycena pura grzybówka czysta fioletowa",
+  "ciekawostka": "Wpisana EDUKACYJNIE – nie zbieraj! Piękna fioletowa grzybówka jest trująca. Muskaryna = poważne zatrucie.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – ściółka liściasta"
+    },
+    {
+      "lat": 52.519,
+      "lng": 17.123,
+      "opis": "Puszcza Zielonka – lasy liściaste"
+    }
+  ]
+}

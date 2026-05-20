@@ -1,0 +1,38 @@
+{
+  "id": 111,
+  "nazwa_polska": "Tatarak zwyczajny",
+  "nazwa_lacinska": "Acorus calamus",
+  "kategoria": "Rośliny wodne",
+  "podkategoria": "Rośliny bagienne",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–czerwiec",
+  "min_temp_C": 12,
+  "dni_min_temp": 10,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Kłącze (przyprawa), młode łodygi",
+  "zastosowanie_kulinarne": "Kłącze jako przyprawa do nalewek i cukierków tatarkowych",
+  "zastosowanie_lecznicze": "Trawienie, wzdęcia, apetyt, bóle żołądka, poprawa koncentracji",
+  "przepis_sugestia": "Cukierki tatarkowe: kłącze + syrop cukrowy, kandyzuj – tradycyjna słodycz",
+  "wystepowanie_ogolne": "Cała Polska – brzegi rzek, jezior, stawy, bagna",
+  "regiony_polski": "Wszędzie nad wodą",
+  "sugestie_lokalizacji": "Brzegi rzek i jezior w całej Polsce | Blisko Poznania: Gopło ~80km, brzegi Warty, jeziora gnieźnieńskie",
+  "trujace_surowe": true,
+  "ostrzezenie": "Świeże kłącze zawiera beta-azaron (potencjalnie rakotwórczy) – stosuj tylko SUSZONE i w małych ilościach!",
+  "trudnosc_zbioru": "sredni",
+  "img_search": "Acorus calamus tatarak zwyczajny kłącze woda",
+  "ciekawostka": "Sprowadzony przez Tatarów jako lek i przyprawa – stąd nazwa 'tatarak'. Oczyszczali nim wodę!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.579,
+      "lng": 18.234,
+      "opis": "Gopło – brzegi jeziora"
+    },
+    {
+      "lat": 53.495,
+      "lng": 22.654,
+      "opis": "Biebrza – szuwary"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 91,
+  "nazwa_polska": "Buk zwyczajny – orzeszki",
+  "nazwa_lacinska": "Fagus sylvatica",
+  "kategoria": "Drzewa jadalne",
+  "podkategoria": "Drzewa liściaste",
+  "sezon_start": 9,
+  "sezon_koniec": 10,
+  "szczyt_zbioru": "wrzesień–październik",
+  "min_temp_C": 10,
+  "dni_min_temp": 20,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Orzeszki bukowe po prażeniu!, młode liście wiosna",
+  "zastosowanie_kulinarne": "Prażone orzeszki bukowe jako przekąska, olej bukowy",
+  "zastosowanie_lecznicze": "Zdrowe tłuszcze, kwas para-kumarowy (przeciwzapalny)",
+  "przepis_sugestia": "Prażone orzeszki: na suchej patelni aż lekko zbrązowieją – jak migdały!",
+  "wystepowanie_ogolne": "Buczyny – zachodnia i południowa Polska",
+  "regiony_polski": "Masowy w Karpatach i Sudetach | Buczyny zachodniej Polski",
+  "sugestie_lokalizacji": "Tatry i Beskidy: masowe buczyny | Bieszczady: rozległe buczyny | Sudety: Góry Stołowe | Blisko Poznania: buczyny Puszczy Zielonki",
+  "trujace_surowe": true,
+  "ostrzezenie": "Surowe orzeszki bukowe zawierają fagina – toksyczna w dużych ilościach. Prażenie neutralizuje toksynę!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Fagus sylvatica buk orzeszki bukowe jesień",
+  "ciekawostka": "Z orzeszków bukowych wytwarza się doskonały olej podobny do migdałowego. Jedzone od prehistorii!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 49.234,
+      "lng": 20.012,
+      "opis": "Tatry (Hala Gąsienicowa) – regiel dolny"
+    },
+    {
+      "lat": 49.067,
+      "lng": 22.734,
+      "opis": "Bieszczady – rozległe buczyny"
+    }
+  ]
+}

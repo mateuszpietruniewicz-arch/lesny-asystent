@@ -1,0 +1,38 @@
+{
+  "id": 95,
+  "nazwa_polska": "Kurka (pieprznik jadalny)",
+  "nazwa_lacinska": "Cantharellus cibarius",
+  "kategoria": "Grzyby",
+  "podkategoria": "Lejkowcowate",
+  "sezon_start": 6,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "lipiec–sierpień",
+  "min_temp_C": 12,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Cały owocnik",
+  "zastosowanie_kulinarne": "Smażona na maśle, do jajecznicy, sosów, zup, risotto, omletów",
+  "zastosowanie_lecznicze": "Witamina D, beta-karoten, antyoksydanty",
+  "przepis_sugestia": "Kurki z jajecznicą: masło + cebula + kurki + jajka – absolutny klasyk!",
+  "wystepowanie_ogolne": "Cała Polska – lasy liściaste i mieszane, buczyny, grądy",
+  "regiony_polski": "Pospolita w lasach liściastych i mieszanych całej Polski po deszczach",
+  "sugestie_lokalizacji": "Blisko Poznania: Lasy Rogalińskie, Puszcza Zielonka, buczyny koło Pniew | Mazury, Bieszczady, Beskidy",
+  "trujace_surowe": false,
+  "ostrzezenie": "Uwaga: lisówka pomarańczowa (trująca) ma prawdziwe blaszki – kurka ma pseudoblaszki jak fałdy!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Cantharellus cibarius kurka pieprznik żółta las",
+  "ciekawostka": "Kurki są dosłownie nie do wyhodowania – rosną tylko w naturze, w symbiozie z drzewami!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.5025,
+      "lng": 17.0876,
+      "opis": "Puszcza Zielonka – grądy"
+    },
+    {
+      "lat": 52.2318,
+      "lng": 17.0126,
+      "opis": "Lasy Rogalińskie"
+    }
+  ]
+}

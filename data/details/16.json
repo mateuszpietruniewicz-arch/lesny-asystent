@@ -1,0 +1,38 @@
+{
+  "id": 16,
+  "nazwa_polska": "Krwawnik pospolity",
+  "nazwa_lacinska": "Achillea millefolium",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 5,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "czerwiec–sierpień",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "niska",
+  "jadalne_czesci": "Młode liście, kwiaty",
+  "zastosowanie_kulinarne": "Herbaty, przyprawa do mięs i serów, do piwa kraftowego (historycznie)",
+  "zastosowanie_lecznicze": "Tamowanie krwawień, działanie przeciwzapalne, wspomaganie trawienia",
+  "przepis_sugestia": "Herbatka: 1 łyżka kwiatów + szklanka wrzątku, parzyć 10 min",
+  "wystepowanie_ogolne": "Cała Polska – łąki, przydroża, skraje lasów, suche miejsca",
+  "regiony_polski": "Absolutnie wszędzie w Polsce",
+  "sugestie_lokalizacji": "Każda łąka i pobocze drogi w Polsce",
+  "trujace_surowe": false,
+  "ostrzezenie": "Może uczulać alergicznych na astrowate (słonecznik, rumianek)",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Achillea millefolium krwawnik biały kwiat łąka",
+  "ciekawostka": "Nazwa od Achillesa leczącego nim rany żołnierzy pod Troją. Używany w medycynie od 60 000 lat!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.607,
+      "lng": 16.576,
+      "opis": "Szamotuły – łąki kośne"
+    },
+    {
+      "lat": 50.567,
+      "lng": 23.22,
+      "opis": "Roztocze – suche łąki"
+    }
+  ]
+}

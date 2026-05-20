@@ -1,0 +1,38 @@
+{
+  "id": 17,
+  "nazwa_polska": "Bluszczyk kurdybanek",
+  "nazwa_lacinska": "Glechoma hederacea",
+  "kategoria": "Rośliny zielne",
+  "podkategoria": "Dzikie przyprawy",
+  "sezon_start": 3,
+  "sezon_koniec": 6,
+  "szczyt_zbioru": "kwiecień–maj",
+  "min_temp_C": 5,
+  "dni_min_temp": 7,
+  "wilgotnosc": "wysoka",
+  "jadalne_czesci": "Liście, kwiatki",
+  "zastosowanie_kulinarne": "Herbata, przyprawa do serów, sałatki, twarożek, omlety",
+  "zastosowanie_lecznicze": "Przeziębienie, kaszel, wykrztuśne, wspomaganie nerek",
+  "przepis_sugestia": "Twarożek ziołowy: ser + bluszczyk + sól + pieprz + czosnek",
+  "wystepowanie_ogolne": "Cała Polska – lasy, łąki, ogrody, trawniki – cieniste miejsca",
+  "regiony_polski": "Wszędzie pospolity",
+  "sugestie_lokalizacji": "Każdy park, ogród i las liściasty w Polsce – rośnie w cieniu",
+  "trujace_surowe": false,
+  "ostrzezenie": "Brak",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Glechoma hederacea bluszczyk fioletowy kwiat",
+  "ciekawostka": "Historycznie używany do klarowania piwa przed chmielem. Intensywny aromat ziołowy!",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.425,
+      "lng": 16.91,
+      "opis": "Park Sołacki, Poznań"
+    },
+    {
+      "lat": 52.232,
+      "lng": 17.013,
+      "opis": "Lasy Rogalińskie – cieniste ścieżki"
+    }
+  ]
+}

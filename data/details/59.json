@@ -1,0 +1,38 @@
+{
+  "id": 59,
+  "nazwa_polska": "Glistnik jaskółcze ziele (lecznicze)",
+  "nazwa_lacinska": "Chelidonium majus",
+  "kategoria": "Rośliny lecznicze",
+  "podkategoria": "Zioła lecznicze",
+  "sezon_start": 4,
+  "sezon_koniec": 9,
+  "szczyt_zbioru": "maj–czerwiec",
+  "min_temp_C": 8,
+  "dni_min_temp": 10,
+  "wilgotnosc": "srednia",
+  "jadalne_czesci": "Ziele do naparów (ostrożnie)",
+  "zastosowanie_kulinarne": "Nie stosowane w kuchni",
+  "zastosowanie_lecznicze": "Wspomaganie wątroby i żółci, działanie żółciopędne, skurcze dróg żółciowych",
+  "przepis_sugestia": "Napar: 1 łyżka suszu + szklanka wrzątku, parzyć 10 min (MAŁE DAWKI!)",
+  "wystepowanie_ogolne": "Cała Polska – mury, przydroża, zarośla przy zabudowaniach",
+  "regiony_polski": "Wszędzie pospolity przy osadach ludzkich",
+  "sugestie_lokalizacji": "Stare mury i przydroża przy zabudowaniach w całej Polsce",
+  "trujace_surowe": true,
+  "ostrzezenie": "TOKSYCZNY w dużych ilościach! Stosować ostrożnie – tylko małe dawki i krótkie kuracje!",
+  "trudnosc_zbioru": "łatwy",
+  "img_search": "Chelidonium majus glistnik sok mleczny",
+  "ciekawostka": "Żółty sok mleczny – trujący, ale jedno z najskuteczniejszych ziołowych środków na wątrobę i brodawki.",
+  "ochrona": "brak",
+  "koordinaty": [
+    {
+      "lat": 52.419,
+      "lng": 16.936,
+      "opis": "Park Cytadela – stare mury"
+    },
+    {
+      "lat": 52.472,
+      "lng": 16.984,
+      "opis": "Góra Moraska – zarośla"
+    }
+  ]
+}
