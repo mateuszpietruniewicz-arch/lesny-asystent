@@ -1363,6 +1363,7 @@ function openModal(s) {
   const hasCoords  = Array.isArray(s.koordinaty) && s.koordinaty.length > 0;
   const pinCount   = getPrivatePins(s.id).length;
 
+  const isFav = getFavorites().has(String(s.id));
   const d = new Date();
   const todayStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
   const speciesEntries = getJournal().filter(e => e.speciesId === s.id);
@@ -1374,6 +1375,11 @@ function openModal(s) {
   content.innerHTML = `
     <div class="modal-header" style="background:${color}">
       <button class="modal-close" id="modal-close-btn" aria-label="Zamknij">✕</button>
+      <button class="fav-btn fav-btn--modal${isFav ? ' fav-btn--active' : ''}" data-id="${s.id}"
+              aria-label="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}"
+              title="${isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}">
+        ${isFav ? '★' : '☆'}
+      </button>
       <div class="modal-name">${s.nazwa_polska}</div>
       <div class="modal-latin">${s.nazwa_lacinska}</div>
       <div class="modal-flags">

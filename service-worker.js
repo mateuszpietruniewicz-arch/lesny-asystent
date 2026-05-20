@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v31-zindex-tabs';
+const CACHE_NAME = 'forest-assistant-v32-favorites-fix';
 
 const APP_SHELL = [
   './index.html',
