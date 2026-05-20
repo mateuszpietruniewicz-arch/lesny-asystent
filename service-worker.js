@@ -1,6 +1,8 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v32-favorites-fix';
+const CACHE_NAME = 'forest-assistant-v33-offline-maps';
+// Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
+const TILE_CACHE = 'forest-map-tiles-v1';
 
 const APP_SHELL = [
   './index.html',
@@ -33,13 +35,15 @@ self.addEventListener('install', event => {
   );
 });
 
-// ── ACTIVATE: delete old caches ────────────────────────────────────────────
+// ── ACTIVATE: delete old caches, preserve TILE_CACHE ──────────────────────
 
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+        keys
+          .filter(k => k !== CACHE_NAME && k !== TILE_CACHE)
+          .map(k => caches.delete(k))
       )
     ).then(() => self.clients.claim())
   );
@@ -50,9 +54,9 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Map tiles: network-first, fall back to cache (stale tiles ok offline)
+  // Map tiles: network-first → TILE_CACHE (znormalizowany subdomain) → CACHE_NAME
   if (url.hostname.endsWith('tile.openstreetmap.org')) {
-    event.respondWith(networkFirstWithCache(event.request));
+    event.respondWith(networkFirstTile(event.request));
     return;
   }
 
@@ -78,7 +82,12 @@ async function cacheFirst(request) {
   }
 }
 
-async function networkFirstWithCache(request) {
+// Strategia dla kafelków OSM:
+// 1. Sieć (online) — zwróć i zapisz w CACHE_NAME
+// 2. Offline → TILE_CACHE z URL znormalizowanym do subdomeny "a"
+//    (pre-pobrane kafelki zawsze są zapisywane pod a.tile.openstreetmap.org)
+// 3. Fallback → CACHE_NAME (kafelki przeglądane na żywo, dowolna subdomena)
+async function networkFirstTile(request) {
   try {
     const response = await fetch(request);
     if (response.ok) {
@@ -87,6 +96,16 @@ async function networkFirstWithCache(request) {
     }
     return response;
   } catch {
+    // Normalizuj subdomenę do "a" — tak są zapisywane pre-pobrane kafelki
+    const normalizedUrl = request.url.replace(
+      /^https:\/\/[abc]\.tile\.openstreetmap\.org/,
+      'https://a.tile.openstreetmap.org'
+    );
+    const tileCache = await caches.open(TILE_CACHE);
+    const preloaded = await tileCache.match(normalizedUrl);
+    if (preloaded) return preloaded;
+
+    // Fallback: kafelek przeglądany wcześniej (może być pod oryginalną subdomeną)
     const cached = await caches.match(request);
     return cached || new Response('', { status: 503 });
   }

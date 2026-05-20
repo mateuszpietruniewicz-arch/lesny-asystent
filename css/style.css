@@ -2852,6 +2852,70 @@ body.high-contrast .jrn-photo-btn {
   100% { transform: scale(2.4); opacity: 0; }
 }
 
+/* ── PRZYCISK POBIERANIA OFFLINE ─────────────────────── */
+
+.mv-offline-btn {
+  position: absolute;
+  bottom: 88px;
+  left: 14px;
+  z-index: 410;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-m);
+  color: var(--green-800);
+  font-size: 12.5px;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 0.05px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,.14), 0 1px 4px rgba(0,0,0,.08);
+  transition: background var(--ease), transform var(--ease), box-shadow var(--ease), color var(--ease), border-color var(--ease);
+}
+
+.mv-offline-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 6px 22px rgba(0,0,0,.18), 0 2px 6px rgba(0,0,0,.1);
+  transform: translateY(-1px);
+}
+
+.mv-offline-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0,0,0,.12);
+}
+
+.mv-offline-btn:disabled {
+  cursor: not-allowed;
+}
+
+.mv-offline-btn--loading {
+  color: var(--text-muted);
+  animation: mv-offline-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes mv-offline-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.mv-offline-btn--done {
+  color: var(--green-700);
+  border-color: var(--green-400);
+  background: rgba(234, 247, 239, 0.94);
+}
+
+.mv-offline-btn--error {
+  color: var(--warn-red);
+  border-color: var(--warn-border);
+  background: rgba(255, 243, 243, 0.92);
+}
+
 .mv-toast {
   position: absolute;
   bottom: 72px;

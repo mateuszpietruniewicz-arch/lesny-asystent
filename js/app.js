@@ -1872,6 +1872,7 @@ function bindMapView() {
   $('mv-refresh-btn')?.addEventListener('click', () => {
     if (treasureMap) { treasureMap.invalidateSize(); renderTreasureMarkers(); }
   });
+  $('mv-offline-btn')?.addEventListener('click', handleOfflineDownload);
   document.querySelectorAll('.mv-filter').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.mv-filter').forEach(b => b.classList.remove('active'));
@@ -1880,6 +1881,85 @@ function bindMapView() {
       renderTreasureMarkers();
     });
   });
+}
+
+// ── POBIERANIE KAFELKÓW OFFLINE ───────────────────────────────────────────────
+
+function calcTileUrls(map, maxExtra = 2) {
+  const bounds = map.getBounds();
+  const zoom   = Math.floor(map.getZoom());
+  const urls   = [];
+
+  for (let dz = 0; dz <= maxExtra; dz++) {
+    const z = Math.min(zoom + dz, 17);
+    const n = Math.pow(2, z);
+
+    const lngToX = lng => Math.floor((lng + 180) / 360 * n);
+    const latToY = lat => {
+      const r = lat * Math.PI / 180;
+      return Math.floor((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * n);
+    };
+
+    const x0 = lngToX(bounds.getWest()),  x1 = lngToX(bounds.getEast());
+    const y0 = latToY(bounds.getNorth()), y1 = latToY(bounds.getSouth());
+
+    for (let x = x0; x <= x1; x++)
+      for (let y = y0; y <= y1; y++)
+        urls.push(`https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`);
+  }
+
+  return urls;
+}
+
+async function handleOfflineDownload() {
+  if (!treasureMap) return;
+  const btn = $('mv-offline-btn');
+  if (!btn || btn.disabled) return;
+
+  const urls = calcTileUrls(treasureMap);
+  if (!urls.length) { showMvToast('Brak kafelków w tym obszarze'); return; }
+  if (urls.length > 400) {
+    showMvToast('Obszar zbyt duży — przybliż mapę i spróbuj ponownie');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.classList.add('mv-offline-btn--loading');
+  btn.textContent = `⏳ 0/${urls.length} kafelków…`;
+
+  try {
+    const cache = await caches.open('forest-map-tiles-v1');
+    const BATCH = 8;
+    let done = 0;
+
+    for (let i = 0; i < urls.length; i += BATCH) {
+      const batch = urls.slice(i, i + BATCH);
+      await Promise.allSettled(batch.map(async url => {
+        if (await cache.match(url)) { done++; return; }
+        const res = await fetch(url, { mode: 'cors' });
+        if (res.ok) await cache.put(url, res);
+        done++;
+      }));
+      btn.textContent = `⏳ ${done}/${urls.length} kafelków…`;
+      if (i + BATCH < urls.length) await new Promise(r => setTimeout(r, 40));
+    }
+
+    btn.classList.remove('mv-offline-btn--loading');
+    btn.classList.add('mv-offline-btn--done');
+    btn.textContent = 'Obszar zapisany ✔';
+    showMvToast(`Mapa offline: ${done} kafelków zapisanych`);
+
+    setTimeout(() => {
+      btn.textContent = '⬇ Pobierz obszar offline';
+      btn.classList.remove('mv-offline-btn--done');
+      btn.disabled = false;
+    }, 4500);
+  } catch {
+    btn.textContent = '⬇ Pobierz obszar offline';
+    btn.classList.remove('mv-offline-btn--loading');
+    btn.disabled = false;
+    showMvToast('Błąd pobierania — sprawdź połączenie');
+  }
 }
 
 // ── SZYBKI SKAN (STRONA GŁÓWNA) ──────────────────────────────────────────────
