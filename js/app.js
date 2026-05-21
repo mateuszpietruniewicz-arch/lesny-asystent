@@ -34,6 +34,7 @@ let ATLAS_DATA = [
   ...(typeof ZBIOR_DATA !== 'undefined' ? ZBIOR_DATA : []),
   ...(typeof ZIOLA_DATA !== 'undefined' ? ZIOLA_DATA : []),
   ...(typeof ZIOMA2_DATA !== 'undefined' ? ZIOMA2_DATA : []),
+  ...(typeof KSIAZKA1_DATA !== 'undefined' ? KSIAZKA1_DATA : []),
 ];
 
 let allSpecies = [];
