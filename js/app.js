@@ -61,6 +61,7 @@ let ATLAS_DATA = [
   ...(typeof ZIOLA_DATA !== 'undefined' ? ZIOLA_DATA : []),
   ...(typeof ZIOMA2_DATA !== 'undefined' ? ZIOMA2_DATA : []),
   ...(typeof KSIAZKA1_DATA !== 'undefined' ? KSIAZKA1_DATA : []),
+  ...(typeof POROSTY_KWIATY_DATA !== 'undefined' ? POROSTY_KWIATY_DATA : []),
 ];
 
 let allSpecies = [];

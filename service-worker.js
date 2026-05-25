@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v39-tabs';
+const CACHE_NAME = 'forest-assistant-v40-porosty-kwiaty';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 
@@ -12,6 +12,7 @@ const APP_SHELL = [
   './manifest.json',
   './icons/icon-192.svg',
   './icons/icon-512.svg',
+  './js/data/porosty_kwiaty.js',
 ];
 
 const CDN_ASSETS = [
