@@ -1282,7 +1282,19 @@ function calcReadiness(s, weather) {
 
   const minTemps  = (daily.temperature_2m_min || []).slice(0, 7);
   const daysOk    = minTemps.filter(t => t >= minTemp).length;
-  const tempScore = Math.min(daysOk / Math.max(dniMin, 1), 1) * 100;
+  const baseScore = Math.min(daysOk / Math.max(dniMin, 1), 1) * 100;
+
+  // Bonus za trend temperaturowy — biologia: amplituda ≥ 3°C ponad próg
+  // drastycznie przyspiesza wegetację i nadrabia brakujące dni minimalne.
+  // Sprawdzamy bieżącą temperaturę + minima prognozowane na 3 dni.
+  const ampThreshold  = minTemp + 3;
+  const forecastMins  = (daily.temperature_2m_min || []).slice(0, 3);
+  const currentTemp   = cur.temperature_2m ?? 0;
+  let warmCount = (currentTemp >= ampThreshold ? 1 : 0);
+  forecastMins.forEach(t => { if (t >= ampThreshold) warmCount++; });
+  // Progresywny bonus: +10% za każdy "ciepły punkt" (bieżąca + do 3 dni), max +40%
+  const tempBonus = Math.min(warmCount * 10, 40);
+  const tempScore = Math.min(baseScore + tempBonus, 100);
 
   const rh  = cur.relative_humidity_2m ?? 60;
   const req = HUMIDITY_REQ[wilKey] || HUMIDITY_REQ['srednia'];
