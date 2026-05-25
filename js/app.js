@@ -1730,14 +1730,17 @@ async function openModal(s) {
     if (wrap)  wrap.hidden = true;
   });
 
-  $('jrn-lens-btn')?.addEventListener('click', async () => {
+  $('jrn-lens-btn')?.addEventListener('click', () => {
     if (!jrnPhoto) return;
-    try {
-      await openVisualSearch(jrnPhoto);
-    } catch (err) {
-      if (err.name === 'AbortError') return;
-      showShareFallbackToast();
-    }
+    // Konwersja synchroniczna — share musi odpalić bez żadnego await przed nim
+    const blob = base64ToBlob(jrnPhoto);
+    const file = new File([blob], 'znalezisko.jpg', { type: blob.type || 'image/jpeg' });
+    tryShareFile(file)
+      .catch(err => {
+        if (err.name === 'AbortError') return;
+        const url = URL.createObjectURL(blob);
+        showShareFallbackToast(url);
+      });
   });
 
   initVoiceNote();
@@ -1754,42 +1757,47 @@ function base64ToBlob(dataUrl) {
   return new Blob([arr], { type: mime });
 }
 
-async function openVisualSearch(photo) {
-  const img = photo ?? jrnPhoto;
-  if (!img) return;
-
-  const blob = base64ToBlob(img);
-  const file = new File([blob], 'znalezisko.jpg', { type: 'image/jpeg' });
-
-  if (navigator.canShare?.({ files: [file] })) {
-    // Natywny system share — użytkownik wybiera Google Lens lub inną aplikację
-    await navigator.share({
-      files: [file],
-      title: 'Zidentyfikuj gatunek',
-      text: 'Sprawdź co to za roślina lub grzyb',
-    });
-    return;
+// Zwraca Promise — musi być wywołane BEZ poprzedzającego await (zachowanie user gesture)
+function tryShareFile(file) {
+  if (!navigator.share) {
+    return Promise.reject(Object.assign(new Error('brak Web Share API'), { code: 'NO_SHARE' }));
   }
-
-  // Fallback — przeglądarka / system nie obsługuje share z plikami
-  const e = new Error('Web Share API niedostępne');
-  e.code = 'NO_SHARE';
-  throw e;
+  // canShare jest opcjonalne — starsze przeglądarki mają share bez canShare
+  if (navigator.canShare && !navigator.canShare({ files: [file] })) {
+    return Promise.reject(Object.assign(new Error('system nie obsługuje share pliku'), { code: 'NO_SHARE' }));
+  }
+  return navigator.share({
+    files: [file],
+    title: 'Zidentyfikuj gatunek',
+    text: 'Sprawdź co to za roślina lub grzyb',
+  });
 }
 
-function showShareFallbackToast() {
+function showShareFallbackToast(downloadUrl) {
   document.getElementById('share-fallback-toast')?.remove();
   const toast = document.createElement('div');
   toast.id = 'share-fallback-toast';
   toast.className = 'sft-wrap';
+
+  const actionHtml = downloadUrl
+    ? `<a href="${downloadUrl}" download="znalezisko.jpg" class="sft-download-btn">📥 Pobierz zdjęcie</a>
+       <div class="sft-msg">Następnie otwórz Google Lens i wybierz je z galerii.</div>`
+    : `<div class="sft-msg">Przytrzymaj podgląd zdjęcia, by je zapisać, a następnie otwórz Google Lens na swoim telefonie.</div>`;
+
   toast.innerHTML = `
     <span class="sft-icon" aria-hidden="true">📸</span>
     <div class="sft-body">
       <div class="sft-title">Udostępnianie niedostępne</div>
-      <div class="sft-msg">Zapisz zdjęcie przytrzymując je, a następnie otwórz Google Lens na swoim telefonie, by zidentyfikować gatunek.</div>
+      ${actionHtml}
     </div>
     <button class="sft-close" aria-label="Zamknij">✕</button>`;
   document.body.appendChild(toast);
+
+  if (downloadUrl) {
+    toast.querySelector('.sft-download-btn')?.addEventListener('click', () => {
+      setTimeout(() => URL.revokeObjectURL(downloadUrl), 5000);
+    });
+  }
   toast.querySelector('.sft-close').addEventListener('click', () => toast.remove());
   requestAnimationFrame(() => toast.classList.add('sft-visible'));
   setTimeout(() => { toast.classList.remove('sft-visible'); setTimeout(() => toast.remove(), 400); }, 8000);
@@ -2081,23 +2089,23 @@ async function handleOfflineDownload() {
 // ── SZYBKI SKAN (STRONA GŁÓWNA) ──────────────────────────────────────────────
 
 function bindMainLens() {
-  $('main-lens-input')?.addEventListener('change', async e => {
+  $('main-lens-input')?.addEventListener('change', e => {
     const file = e.target.files[0];
     if (!file) return;
     e.target.value = '';
 
-    const banner  = document.querySelector('.qs-banner');
+    const banner = document.querySelector('.qs-banner');
     banner?.classList.add('qs-banner--loading');
 
-    try {
-      const compressed = await compressPhoto(file);
-      await openVisualSearch(compressed);
-    } catch (err) {
-      if (err.name === 'AbortError') return; // użytkownik anulował share — OK
-      showShareFallbackToast();
-    } finally {
-      banner?.classList.remove('qs-banner--loading');
-    }
+    // KRYTYCZNE: tryShareFile musi być wywołane synchronicznie w tym event handleerze
+    // — żaden await przed nim, inaczej iOS Safari traci user gesture context
+    tryShareFile(file)
+      .catch(err => {
+        if (err.name === 'AbortError') return; // użytkownik anulował — OK
+        const url = URL.createObjectURL(file);
+        showShareFallbackToast(url);
+      })
+      .finally(() => banner?.classList.remove('qs-banner--loading'));
   });
 }
 

@@ -584,6 +584,20 @@ body.high-contrast .jrn-photo-btn {
 
 .sft-close:hover { background: rgba(255,255,255,.26); }
 
+.sft-download-btn {
+  display: inline-block;
+  margin: 6px 0 4px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background .18s ease;
+}
+.sft-download-btn:hover { background: rgba(255,255,255,.30); }
+
 /* ── SEZONOWY PASEK SKRÓTÓW ──────────────────────── */
 
 .ssb-wrap {
