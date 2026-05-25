@@ -103,6 +103,18 @@ let treasureMap = null, mvMarkers = [], mvFilter = 'all', gpsMarker = null;
 
 const $ = id => document.getElementById(id);
 
+function pruneWikiCache() {
+  const now = Date.now();
+  Object.keys(localStorage)
+    .filter(k => k.startsWith('fa_wiki2_') || k.startsWith('fa_wiki3_'))
+    .forEach(k => {
+      try {
+        const entry = JSON.parse(localStorage.getItem(k));
+        if (!entry || now - entry.ts >= WIKI_CACHE_TTL) localStorage.removeItem(k);
+      } catch { localStorage.removeItem(k); }
+    });
+}
+
 async function init() {
   // Jednorazowe czyszczenie kluczy wiki cache (nie dotyka pinezek ani dziennika)
   if (!localStorage.getItem('fa_wiki_cache_reset_v2')) {
@@ -111,6 +123,7 @@ async function init() {
       .forEach(k => localStorage.removeItem(k));
     localStorage.setItem('fa_wiki_cache_reset_v2', '1');
   }
+  pruneWikiCache();
   renderSpinner();
   try {
     const res = await fetch('data/index.json');
