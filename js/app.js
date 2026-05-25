@@ -274,12 +274,17 @@ function buildCard(s) {
   const isToxic  = s.trujace_surowe || s.kategoria === 'Rośliny TRUJĄCE';
   const isProtected = s.ochrona && s.ochrona !== 'brak';
   const isFav = getFavorites().has(String(s.id));
+  const wgScore = readinessScores.get(s.id);
 
   const flags = [
     isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : '',
     isToxic     ? '<span class="flag flag-toxic">⚠ Trujące</span>'   : '',
     isProtected ? `<span class="flag flag-protected" title="Ochrona: ${s.ochrona}">🛡 ${s.ochrona === 'ścisła' ? 'Chroniona ściśle' : 'Chroniona'}</span>` : '',
   ].join('');
+
+  const wgBadgeHtml = wgScore > 0
+    ? `<div class="card-wg-badge" style="--wg-c:${readinessColor(wgScore)}" aria-label="Gotowość ${wgScore}%">Wg ${wgScore}%</div>`
+    : `<div class="card-wg-badge" data-wg-id="${s.id}"></div>`;
 
   return `
     <article class="species-card" data-id="${s.id}"
@@ -293,6 +298,7 @@ function buildCard(s) {
       <div class="card-img-wrap">
         <div class="card-img-ph" aria-hidden="true"></div>
         <img class="card-img" data-latin="${s.nazwa_lacinska}" data-polish="${s.nazwa_polska}" alt="${s.nazwa_polska}">
+        ${wgBadgeHtml}
         ${isProtected ? `<div class="card-prot-badge" aria-hidden="true" title="Gatunek chroniony">🛡</div>` : ''}
       </div>
       <div class="card-flags">${flags}</div>
@@ -317,6 +323,16 @@ function buildCard(s) {
         </div>
       </div>
     </article>`;
+}
+
+function refreshWgBadges() {
+  document.querySelectorAll('.card-wg-badge[data-wg-id]').forEach(el => {
+    const score = readinessScores.get(Number(el.dataset.wgId));
+    if (!score) return;
+    el.style.setProperty('--wg-c', readinessColor(score));
+    el.textContent = `Wg ${score}%`;
+    el.removeAttribute('data-wg-id');
+  });
 }
 
 // ── DASHBOARD REKOMENDACJI ────────────────────────────────────────────────────
@@ -390,6 +406,7 @@ async function loadDashboardWeather() {
     renderForestWidget(weather);
     updateSsbCounts();
     refreshSsbList();
+    refreshWgBadges();
     if (isDashboardMode) {
       updateHotPicksSection(weather);
     } else if (sortMode === 'readiness') {
