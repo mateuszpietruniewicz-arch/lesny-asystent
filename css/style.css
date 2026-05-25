@@ -3568,3 +3568,41 @@ body.high-contrast .fav-btn--modal.fav-btn--active {
   color: #7a5c00;
   border-color: #7a5c00;
 }
+
+/* ── Modal gallery ─────────────────────────────────────────────────────────── */
+.modal-gallery {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 0 8px;
+  margin: 12px 0 4px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.modal-gallery[hidden] { display: none; }
+.modal-gallery.mgal-single { justify-content: center; }
+
+.mgal-item {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: #e8f5e9;
+  margin: 0;
+}
+.modal-gallery.mgal-single .mgal-item {
+  width: 220px;
+  height: 148px;
+}
+
+.mgal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.mgal-img.loaded { opacity: 1; }

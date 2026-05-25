@@ -1110,6 +1110,99 @@ async function fetchWikiImage(latinName, polishName = null) {
   } catch { return null; }
 }
 
+// Pobiera do `count` zdjęć: thumbnail z Wikipedia + wyszukiwanie na Wikimedia Commons
+async function fetchWikiImages(latinName, polishName = null, count = 3) {
+  const cacheKey = `fa_wiki3_${latinName}`;
+  try {
+    const cached = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+    if (cached && Date.now() - cached.ts < WIKI_CACHE_TTL) return cached.urls;
+  } catch {}
+
+  const mkSignal = () => (AbortSignal.timeout ? AbortSignal.timeout(6000) : undefined);
+
+  // Główna miniatura z en.wikipedia (editorial pick)
+  async function mainThumb(lang, title) {
+    const url = `https://${lang}.wikipedia.org/w/api.php?action=query` +
+      `&titles=${encodeURIComponent(title)}&prop=pageimages&pithumbsize=400` +
+      `&format=json&origin=*&redirects=1`;
+    const sig = mkSignal();
+    const res = await fetch(url, sig ? { signal: sig } : {});
+    if (!res.ok) return null;
+    const data = await res.json();
+    const page = Object.values(data.query?.pages || {})[0];
+    if (!page || 'missing' in page) return null;
+    return page.thumbnail?.source?.replace(/^http:\/\//, 'https://') || null;
+  }
+
+  // Dodatkowe zdjęcia z Wikimedia Commons (wyszukiwanie po nazwie łacińskiej)
+  async function commonsPhotos(query, limit) {
+    const SKIP = /\.(svg|gif)(\?|#|$)/i;
+    const url = `https://commons.wikimedia.org/w/api.php?action=query` +
+      `&generator=search&gsrsearch=${encodeURIComponent(query)}` +
+      `&gsrnamespace=6&gsrlimit=${limit + 3}` +
+      `&prop=imageinfo&iiprop=url&iiurlwidth=400&format=json&origin=*`;
+    const sig = mkSignal();
+    const res = await fetch(url, sig ? { signal: sig } : {});
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Object.values(data.query?.pages || {})
+      .filter(p => p.imageinfo?.[0]?.thumburl && !SKIP.test(p.title || ''))
+      .map(p => p.imageinfo[0].thumburl.replace(/^http:\/\//, 'https://'))
+      .slice(0, limit);
+  }
+
+  try {
+    let main = await mainThumb('en', latinName);
+    if (!main && polishName) {
+      const norm = polishName.charAt(0).toUpperCase() + polishName.slice(1).toLowerCase();
+      main = await mainThumb('pl', norm);
+    }
+
+    const extras = await commonsPhotos(latinName, count);
+
+    const seen = new Set();
+    const urls = [];
+    if (main) { urls.push(main); seen.add(main); }
+    for (const u of extras) {
+      if (urls.length >= count) break;
+      if (!seen.has(u)) { urls.push(u); seen.add(u); }
+    }
+
+    try { localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), urls })); } catch {}
+    return urls;
+  } catch { return []; }
+}
+
+function renderModalGallery(urls) {
+  const container = document.getElementById('modal-gallery');
+  if (!container) return;
+  if (!urls?.length) { container.hidden = true; return; }
+
+  container.innerHTML = '';
+  container.hidden = false;
+
+  urls.forEach((url, i) => {
+    const fig = document.createElement('figure');
+    fig.className = 'mgal-item';
+    const img = document.createElement('img');
+    img.className = 'mgal-img';
+    img.alt = `Zdjęcie ${i + 1}`;
+    img.loading = 'lazy';
+    img.addEventListener('load', () => img.classList.add('loaded'));
+    img.addEventListener('error', () => {
+      fig.remove();
+      const items = container.querySelectorAll('.mgal-item');
+      if (!items.length) { container.hidden = true; return; }
+      container.classList.toggle('mgal-single', items.length === 1);
+    });
+    img.src = url;
+    fig.appendChild(img);
+    container.appendChild(fig);
+  });
+
+  container.classList.toggle('mgal-single', urls.length === 1);
+}
+
 function setImgPlaceholder(img) {
   img.onerror = null;
   img.src = WIKI_PLACEHOLDER;
@@ -1598,6 +1691,8 @@ async function openModal(s) {
       </div>
     </div>
 
+    <div class="modal-gallery" id="modal-gallery" hidden></div>
+
     <div class="modal-section">
       <div class="modal-sec-title">Sezon zbioru</div>
       <div class="modal-season-track">${buildSeasonBar(det.sezon_start, det.sezon_koniec)}</div>
@@ -1723,14 +1818,16 @@ async function openModal(s) {
 
   modal.style.setProperty('--modal-accent', color);
 
-  fetchWikiImage(det.nazwa_lacinska, det.nazwa_polska).then(url => {
-    if (!url) return;
-    const hdr = content.querySelector('.modal-header');
-    if (hdr) {
-      hdr.style.backgroundImage = `linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url(${url})`;
-      hdr.style.backgroundSize = 'cover';
-      hdr.style.backgroundPosition = 'center top';
+  fetchWikiImages(det.nazwa_lacinska, det.nazwa_polska, 3).then(urls => {
+    if (urls.length > 0) {
+      const hdr = content.querySelector('.modal-header');
+      if (hdr) {
+        hdr.style.backgroundImage = `linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url(${urls[0]})`;
+        hdr.style.backgroundSize = 'cover';
+        hdr.style.backgroundPosition = 'center top';
+      }
     }
+    renderModalGallery(urls);
   });
 
   requestAnimationFrame(() => {
