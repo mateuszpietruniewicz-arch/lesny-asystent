@@ -1454,16 +1454,15 @@ async function openModal(s) {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       detailsCache[s.id] = await res.json();
     } catch (e) {
-      if (!modal.open) return;
-      content.querySelector('.spinner-wrap').innerHTML =
-        `<div class="empty-state"><span class="empty-icon">⚠️</span><p>Błąd ładowania szczegółów.<br><small>${e.message}</small></p></div>`;
-      return;
+      // Nowe gatunki (id >= 2000) nie mają plików details/ — używamy obiektu z ATLAS_DATA
+      detailsCache[s.id] = s;
     }
   }
 
   if (!modal.open) return; // modal zamknięty podczas ładowania
 
   const det = detailsCache[s.id]; // pełne dane gatunku
+  const f = v => (v !== undefined && v !== null && v !== '') ? v : '—';
   const isToxic    = det.trujace_surowe || det.kategoria === 'Rośliny TRUJĄCE';
   const isSeason   = NOW >= det.sezon_start && NOW <= det.sezon_koniec;
   const isProtected= det.ochrona && det.ochrona !== 'brak';
@@ -1503,9 +1502,9 @@ async function openModal(s) {
       <div class="modal-season-track">${buildSeasonBar(det.sezon_start, det.sezon_koniec)}</div>
       <div class="modal-month-labels">${MONTH_ABBR.map(m=>`<span>${m}</span>`).join('')}</div>
       <dl class="detail-grid">
-        <dt>Szczyt</dt><dd>${det.szczyt_zbioru}</dd>
-        <dt>Min. temp.</dt><dd>${det.min_temp_C}°C przez min. ${det.dni_min_temp} dni</dd>
-        <dt>Wilgotność</dt><dd>${det.wilgotnosc}</dd>
+        <dt>Szczyt</dt><dd>${f(det.szczyt_zbioru)}</dd>
+        <dt>Min. temp.</dt><dd>${det.min_temp_C != null ? `${det.min_temp_C}°C przez min. ${det.dni_min_temp} dni` : '—'}</dd>
+        <dt>Wilgotność</dt><dd>${f(det.wilgotnosc)}</dd>
       </dl>
     </div>
 
@@ -1518,25 +1517,25 @@ async function openModal(s) {
     <div class="modal-section">
       <div class="modal-sec-title">Kulinaria</div>
       <dl class="detail-grid">
-        <dt>Zbierasz</dt><dd>${det.jadalne_czesci}</dd>
-        <dt>Zastosowanie</dt><dd>${det.zastosowanie_kulinarne}</dd>
-        <dt>Przepis / tip</dt><dd>${det.przepis_sugestia}</dd>
+        <dt>Zbierasz</dt><dd>${f(det.jadalne_czesci)}</dd>
+        <dt>Zastosowanie</dt><dd>${f(det.zastosowanie_kulinarne)}</dd>
+        <dt>Przepis / tip</dt><dd>${f(det.przepis_sugestia)}</dd>
       </dl>
     </div>
 
     <div class="modal-section">
       <div class="modal-sec-title">Lecznicze</div>
       <dl class="detail-grid">
-        <dt>Działanie</dt><dd>${det.zastosowanie_lecznicze}</dd>
+        <dt>Działanie</dt><dd>${f(det.zastosowanie_lecznicze)}</dd>
       </dl>
     </div>
 
     <div class="modal-section">
       <div class="modal-sec-title">Lokalizacja</div>
       <dl class="detail-grid">
-        <dt>Ogólnie</dt><dd>${det.wystepowanie_ogolne}</dd>
-        <dt>Regiony PL</dt><dd>${det.regiony_polski}</dd>
-        <dt>Sugestie</dt><dd>${det.sugestie_lokalizacji}</dd>
+        <dt>Ogólnie</dt><dd>${f(det.wystepowanie_ogolne)}</dd>
+        <dt>Regiony PL</dt><dd>${f(det.regiony_polski)}</dd>
+        <dt>Sugestie</dt><dd>${f(det.sugestie_lokalizacji)}</dd>
       </dl>
     </div>
 
@@ -1555,7 +1554,7 @@ async function openModal(s) {
     <div class="modal-section">
       <div class="modal-sec-title">Bezpieczeństwo i zbiór</div>
       <dl class="detail-grid">
-        <dt>Trudność</dt><dd>${det.trudnosc_zbioru}</dd>
+        <dt>Trudność</dt><dd>${f(det.trudnosc_zbioru)}</dd>
         ${isProtected ? `<dt>Ochrona</dt><dd>${det.ochrona}</dd>` : ''}
       </dl>
       ${det.ostrzezenie && det.ostrzezenie !== 'Brak'
@@ -1564,7 +1563,7 @@ async function openModal(s) {
 
     <div class="modal-section">
       <div class="modal-sec-title">Ciekawostka</div>
-      <div class="curious-block">${det.ciekawostka}</div>
+      <div class="curious-block">${f(det.ciekawostka)}</div>
     </div>
 
     <div class="modal-section modal-journal-section">

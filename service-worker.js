@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v35-index-details';
+const CACHE_NAME = 'forest-assistant-v37-atlas-fallback';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 
