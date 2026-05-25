@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v47-wiki-prune';
+const CACHE_NAME = 'forest-assistant-v48-csv-export';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 

@@ -1080,6 +1080,7 @@ function renderJournalModal() {
       <div class="jrnl-backup-btns">
         <button class="jrnl-backup-btn" id="jrnl-export-btn">⬇ Eksportuj</button>
         <button class="jrnl-backup-btn" id="jrnl-import-btn">⬆ Importuj</button>
+        <button class="jrnl-backup-btn" id="jrnl-csv-btn">⬇ CSV</button>
       </div>
       <div class="jrnl-backup-msg" id="jrnl-backup-msg"></div>
     </div>`;
@@ -1087,6 +1088,7 @@ function renderJournalModal() {
   $('journal-close-btn')?.addEventListener('click', () => $('journal-modal').close());
   $('jrnl-export-btn')?.addEventListener('click', exportBackup);
   $('jrnl-import-btn')?.addEventListener('click', importBackup);
+  $('jrnl-csv-btn')?.addEventListener('click', exportCsv);
 
   content.querySelectorAll('.jrnl-delete-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -2074,6 +2076,30 @@ function exportBackup() {
   const a    = document.createElement('a');
   a.href     = url;
   a.download = `forest_assistant_backup_${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function exportCsv() {
+  const entries = getJournal();
+  const esc = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+  const header = ['Data', 'Gatunek', 'Ilość (g)', 'Notatki', 'Szerokość geogr.', 'Długość geogr.'];
+  const rows = entries.map(e => [
+    esc(e.data),
+    esc(e.nazwaPolska),
+    esc(e.ilosc_g ?? ''),
+    esc(e.notatki ?? ''),
+    esc(e.lat != null ? e.lat.toFixed(6) : ''),
+    esc(e.lng != null ? e.lng.toFixed(6) : ''),
+  ]);
+  const csv = '﻿' + [header.map(esc), ...rows].map(r => r.join(',')).join('\r\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `dziennik_zbiorow_${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(a);
   a.click();
   a.remove();
