@@ -278,7 +278,7 @@ function buildCard(s) {
   const flags = [
     isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : '',
     isToxic     ? '<span class="flag flag-toxic">⚠ Trujące</span>'   : '',
-    isProtected ? '<span class="flag flag-protected">Chroniona</span>' : '',
+    isProtected ? `<span class="flag flag-protected" title="Ochrona: ${s.ochrona}">🛡 ${s.ochrona === 'ścisła' ? 'Chroniona ściśle' : 'Chroniona'}</span>` : '',
   ].join('');
 
   return `
@@ -293,6 +293,7 @@ function buildCard(s) {
       <div class="card-img-wrap">
         <div class="card-img-ph" aria-hidden="true"></div>
         <img class="card-img" data-latin="${s.nazwa_lacinska}" data-polish="${s.nazwa_polska}" alt="${s.nazwa_polska}">
+        ${isProtected ? `<div class="card-prot-badge" aria-hidden="true" title="Gatunek chroniony">🛡</div>` : ''}
       </div>
       <div class="card-flags">${flags}</div>
       <div class="card-body">

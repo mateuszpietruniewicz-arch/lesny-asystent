@@ -1315,7 +1315,18 @@ body.high-contrast .jrn-photo-btn {
 
 .flag-season   { background: var(--green-100); color: var(--green-700); }
 .flag-toxic    { background: var(--warn-bg);   color: var(--warn-red); border: 1px solid var(--warn-border); }
-.flag-protected{ background: var(--blue-bg);   color: var(--blue); }
+.flag-protected{ background: #e8f0fe; color: #1a56c4; border: 1px solid #b3c8f5; }
+
+.card-prot-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 17px;
+  line-height: 1;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.45));
+  pointer-events: none;
+  z-index: 2;
+}
 
 /* TREŚĆ KARTY */
 
