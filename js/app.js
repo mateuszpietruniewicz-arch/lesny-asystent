@@ -67,6 +67,21 @@ const readinessScores = new Map();
 const detailsCache = {};
 
 const WIKI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000;
+
+// Lokalny placeholder SVG — używany gdy Wikipedia nie ma zdjęcia lub fetch się nie powiedzie
+const WIKI_PLACEHOLDER = (() => {
+  const s =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140">' +
+    '<rect width="200" height="140" fill="#e8f5e9"/>' +
+    '<rect x="88" y="36" width="4" height="42" rx="2" fill="#2d6a4f" opacity=".3"/>' +
+    '<ellipse cx="93" cy="50" rx="14" ry="9" transform="rotate(-25 93 50)" fill="#2d6a4f" opacity=".3"/>' +
+    '<ellipse cx="107" cy="50" rx="14" ry="9" transform="rotate(25 107 50)" fill="#2d6a4f" opacity=".3"/>' +
+    '<text x="100" y="95" text-anchor="middle" font-size="11" font-family="sans-serif"' +
+    ' fill="#2d6a4f" opacity=".55">Brak zdj&#281;cia</text>' +
+    '</svg>';
+  return 'data:image/svg+xml;base64,' + btoa(s);
+})();
+
 let imgObserver = null;
 let loadMoreObserver = null;
 let visibleSpecies = [];
@@ -1050,12 +1065,17 @@ async function fetchWikiImage(latinName, polishName = null) {
   } catch {}
 
   async function queryWiki(lang, title) {
-    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=pageimages&pithumbsize=400&format=json&origin=*`;
-    const res = await fetch(url);
+    const url = `https://${lang}.wikipedia.org/w/api.php?action=query` +
+      `&titles=${encodeURIComponent(title)}` +
+      `&prop=pageimages&pithumbsize=400&format=json&origin=*&redirects=1`;
+    const signal = AbortSignal.timeout ? AbortSignal.timeout(6000) : undefined;
+    const res = await fetch(url, signal ? { signal } : {});
     if (!res.ok) return null;
     const data = await res.json();
     const page = Object.values(data.query?.pages || {})[0];
-    return page?.thumbnail?.source?.replace(/^http:\/\//, 'https://') || null;
+    // 'missing' in page — strona nie istnieje (id: -1); brak thumbnail = strona ujednoznaczniająca
+    if (!page || 'missing' in page) return null;
+    return page.thumbnail?.source?.replace(/^http:\/\//, 'https://') || null;
   }
 
   try {
@@ -1078,6 +1098,12 @@ async function fetchWikiImage(latinName, polishName = null) {
   } catch { return null; }
 }
 
+function setImgPlaceholder(img) {
+  img.onerror = null;
+  img.src = WIKI_PLACEHOLDER;
+  img.classList.add('loaded');
+}
+
 function initImgObserver() {
   if (imgObserver) return;
   imgObserver = new IntersectionObserver(entries => {
@@ -1086,12 +1112,13 @@ function initImgObserver() {
       const img = entry.target;
       imgObserver.unobserve(img);
       const latin = img.dataset.latin;
-      if (!latin) return;
+      if (!latin) { setImgPlaceholder(img); return; }
       const polish = img.dataset.polish || null;
       fetchWikiImage(latin, polish).then(url => {
-        if (!url) return;
+        if (!url) { setImgPlaceholder(img); return; }
+        img.onerror = () => setImgPlaceholder(img);
+        img.onload  = () => img.classList.add('loaded');
         img.src = url;
-        img.onload = () => img.classList.add('loaded');
       });
     });
   }, { rootMargin: '200px' });
