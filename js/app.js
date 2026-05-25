@@ -8,11 +8,23 @@ const TABS = {
   all:      { label: 'Wszystkie',       filter: () => true },
   warzywa:  { label: 'Dzikie warzywa',  filter: s =>
     ['Owoce dzikie','Kwiaty jadalne','Drzewa jadalne','Rośliny wodne','Porosty'].includes(s.kategoria) ||
-    (s.kategoria === 'Rośliny zielne' && s.podkategoria === 'Dzikie warzywa')
+    (s.kategoria === 'Rośliny zielne' && s.podkategoria === 'Dzikie warzywa') ||
+    s.kategoria === 'Rośliny jadalne'
   },
-  ziola:    { label: 'Zioła',           filter: s => s.podkategoria === 'Dzikie przyprawy' },
-  grzyby:   { label: 'Grzyby',          filter: s => s.kategoria === 'Grzyby' || s.kategoria === 'Rośliny TRUJĄCE' },
-  lecznicze:{ label: 'Część lecznicza', filter: s => s.kategoria === 'Rośliny lecznicze' },
+  ziola:    { label: 'Zioła',           filter: s => {
+    const pod = (s.podkategoria || '').toLowerCase();
+    return s.podkategoria === 'Dzikie przyprawy' ||
+           pod.includes('zioła aromatyczne') ||
+           pod.includes('przyprawy');
+  }},
+  grzyby:   { label: 'Grzyby',          filter: s =>
+    s.kategoria === 'Grzyby' || s.kategoria === 'Rośliny TRUJĄCE' ||
+    s.kategoria === 'Grzyby jadalne' || s.kategoria === 'Grzyby trujące' ||
+    (s.kategoria === 'Inne' && s.podkategoria === 'Rośliny toksyczne')
+  },
+  lecznicze:{ label: 'Część lecznicza', filter: s =>
+    s.kategoria === 'Rośliny lecznicze' || s.kategoria === 'Ziołolecznictwo'
+  },
 };
 
 const CAT_COLOR = {
@@ -25,6 +37,12 @@ const CAT_COLOR = {
   'Porosty':          '#546e7a',
   'Rośliny lecznicze':'#1565c0',
   'Rośliny TRUJĄCE':  '#c62828',
+  // nowe kategorie (ksiazka1 + pozostałe pliki JS)
+  'Rośliny jadalne':  '#388e3c',
+  'Ziołolecznictwo':  '#0277bd',
+  'Grzyby jadalne':   '#6d4c41',
+  'Grzyby trujące':   '#b71c1c',
+  'Inne':             '#616161',
 };
 
 let ATLAS_DATA = [
@@ -107,8 +125,8 @@ function getFiltered() {
     if (!tabFn(s)) return false;
     if (onlyInSeason && !(NOW >= s.sezon_start && NOW <= s.sezon_koniec)) return false;
     if (!q) return true;
-    return (s.nazwa_polska + s.nazwa_lacinska + s.jadalne_czesci +
-            s.zastosowanie_kulinarne + s.zastosowanie_lecznicze)
+    return ((s.nazwa_polska || '') + (s.nazwa_lacinska || '') + (s.jadalne_czesci || '') +
+            (s.zastosowanie_kulinarne || '') + (s.zastosowanie_lecznicze || ''))
            .toLowerCase().includes(q);
   });
 }
@@ -233,11 +251,11 @@ function buildCard(s) {
           ${buildSeasonBar(s.sezon_start, s.sezon_koniec)}
         </div>
         <div class="card-section-label">Zbierasz</div>
-        <div class="card-jadalne">${s.jadalne_czesci}</div>
+        <div class="card-jadalne">${s.jadalne_czesci || '—'}</div>
         <div class="card-meta">
-          <span class="meta-item"><span class="meta-icon">🌡</span>${s.min_temp_C}°C</span>
-          <span class="meta-item"><span class="meta-icon">⏱</span>${s.szczyt_zbioru}</span>
-          <span class="meta-item"><span class="meta-icon">📊</span>${s.trudnosc_zbioru}</span>
+          <span class="meta-item"><span class="meta-icon">🌡</span>${s.min_temp_C != null ? s.min_temp_C + '°C' : '—'}</span>
+          <span class="meta-item"><span class="meta-icon">⏱</span>${s.szczyt_zbioru || '—'}</span>
+          <span class="meta-item"><span class="meta-icon">📊</span>${s.trudnosc_zbioru || '—'}</span>
         </div>
       </div>
     </article>`;
