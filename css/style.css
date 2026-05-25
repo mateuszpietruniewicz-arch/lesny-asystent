@@ -1481,7 +1481,25 @@ body.high-contrast .jrn-photo-btn {
   margin-bottom: 3px;
 }
 
-.modal-latin { font-style: italic; opacity: 0.75; font-size: 13px; margin-bottom: 12px; }
+.modal-latin { font-style: italic; opacity: 0.75; font-size: 13px; margin-bottom: 8px; }
+
+.modal-cats {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.cat-pill--clickable {
+  cursor: pointer;
+  transition: filter .15s ease, transform .12s ease;
+}
+.cat-pill--clickable:hover  { filter: brightness(1.18); transform: scale(1.05); }
+.cat-pill--clickable:active { transform: scale(.95); }
+.cat-pill--clickable:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
 
 .modal-flags { display: flex; gap: 6px; flex-wrap: wrap; }
 

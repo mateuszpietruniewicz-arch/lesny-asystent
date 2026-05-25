@@ -228,6 +228,16 @@ function disconnectLoadMore() {
   $('species-grid')?.querySelector('.load-more-sentinel')?.remove();
 }
 
+// Normalizacja tagu: małe litery, słowa posortowane — "Kwiaty jadalne" === "Jadalne kwiaty"
+function normPill(s) {
+  return (s || '').toLowerCase().trim().split(/\s+/).sort().join('');
+}
+
+// Zwraca klucz pierwszego pasującego taba (non-all) dla danego gatunku
+function speciesTab(s) {
+  return Object.keys(TABS).find(k => k !== 'all' && TABS[k].filter(s)) || 'all';
+}
+
 function buildCard(s) {
   const color  = CAT_COLOR[s.kategoria] || '#2d6a4f';
   const isSeason = NOW >= s.sezon_start && NOW <= s.sezon_koniec;
@@ -260,7 +270,9 @@ function buildCard(s) {
         <div class="card-latin">${s.nazwa_lacinska}</div>
         <div class="card-cats">
           <span class="cat-pill" style="background:${color}">${s.kategoria}</span>
-          ${s.podkategoria ? `<span class="cat-pill" style="background:${color};opacity:.7">${s.podkategoria}</span>` : ''}
+          ${s.podkategoria && normPill(s.podkategoria) !== normPill(s.kategoria)
+            ? `<span class="cat-pill" style="background:${color};opacity:.7">${s.podkategoria}</span>`
+            : ''}
         </div>
         <div class="season-track" title="Sezon: ${MONTH_ABBR[s.sezon_start-1]}–${MONTH_ABBR[s.sezon_koniec-1]}">
           ${buildSeasonBar(s.sezon_start, s.sezon_koniec)}
@@ -1459,6 +1471,23 @@ async function renderReadiness(container, s, overrideCoords = null) {
 
 // ── MODAL ─────────────────────────────────────────────────────────────────────
 
+// Obsługa kliknięcia w tag kategorii w modalu — zamknij modal + przełącz tab + odśwież siatkę
+function filterByPillTab(tab) {
+  $('species-modal')?.close();
+  searchQuery = '';
+  const si = $('search-input');
+  if (si) si.value = '';
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    const active = b.dataset.tab === tab;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  currentTab = tab || 'all';
+  closeSuggestions();
+  if (currentTab === 'all') enterDashboard();
+  else exitDashboard();
+}
+
 async function openModal(s) {
   const modal   = $('species-modal');
   const content = $('modal-content');
@@ -1523,6 +1552,20 @@ async function openModal(s) {
     ? `<div class="journal-species-summary">Zebrano łącznie: <strong>${totalG} g</strong> (${speciesEntries.length} ${speciesEntries.length === 1 ? 'wpis' : speciesEntries.length < 5 ? 'wpisy' : 'wpisów'})</div>`
     : '';
 
+  // Zdeduplikowane, klikalne tagi kategorii w nagłówku modalu
+  const tabKey   = speciesTab(det);
+  const podLabel = det.podkategoria || '';
+  const showPod  = podLabel && normPill(podLabel) !== normPill(det.kategoria || '');
+  const catPillsHtml =
+    `<span class="cat-pill cat-pill--clickable" data-tab="${tabKey}"
+           style="background:${color}" role="button" tabindex="0"
+           title="Filtruj: ${det.kategoria}">${det.kategoria}</span>` +
+    (showPod
+      ? `<span class="cat-pill cat-pill--clickable" data-tab="${tabKey}"
+               style="background:${color};opacity:.75" role="button" tabindex="0"
+               title="Filtruj: ${podLabel}">${podLabel}</span>`
+      : '');
+
   // Faza 3: pełny render — wymienia szkielet pełną treścią
   content.innerHTML = `
     <div class="modal-header" style="background:${color}">
@@ -1534,6 +1577,7 @@ async function openModal(s) {
       </button>
       <div class="modal-name">${det.nazwa_polska}</div>
       <div class="modal-latin">${det.nazwa_lacinska}</div>
+      <div class="modal-cats">${catPillsHtml}</div>
       <div class="modal-flags">
         ${isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : ''}
         ${isToxic     ? '<span class="flag flag-toxic">⚠ Trujące</span>'   : ''}
@@ -1684,6 +1728,14 @@ async function openModal(s) {
   setTimeout(() => initSpeciesMap(det), 300);
 
   $('modal-close-btn').addEventListener('click', () => modal.close());
+
+  // Klikalne tagi kategorii — zamknij modal i przełącz na odpowiedni filtr
+  content.querySelectorAll('.cat-pill--clickable').forEach(pill => {
+    pill.addEventListener('click', () => filterByPillTab(pill.dataset.tab));
+    pill.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); filterByPillTab(pill.dataset.tab); }
+    });
+  });
 
   $('journal-save-btn')?.addEventListener('click', () => {
     const date  = $('jrn-date').value;
