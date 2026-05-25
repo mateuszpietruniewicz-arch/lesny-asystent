@@ -144,14 +144,12 @@ async function init() {
 
 function getFiltered() {
   const tabFn = TABS[currentTab].filter;
-  const q = searchQuery.trim().toLowerCase();
+  const q = normSearch(searchQuery.trim());
   return allSpecies.filter(s => {
     if (!tabFn(s)) return false;
     if (onlyInSeason && !(NOW >= s.sezon_start && NOW <= s.sezon_koniec)) return false;
     if (!q) return true;
-    return ((s.nazwa_polska || '') + (s.nazwa_lacinska || '') + (s.jadalne_czesci || '') +
-            (s.zastosowanie_kulinarne || '') + (s.zastosowanie_lecznicze || ''))
-           .toLowerCase().includes(q);
+    return searchCorpus(s).includes(q);
   });
 }
 
@@ -240,6 +238,27 @@ function disconnectLoadMore() {
 // Normalizacja tagu: małe litery, słowa posortowane — "Kwiaty jadalne" === "Jadalne kwiaty"
 function normPill(s) {
   return (s || '').toLowerCase().trim().split(/\s+/).sort().join('');
+}
+
+// Normalizuje tekst do małych liter + usuwa polskie diakrytyki (tolerancja pisowni)
+function normSearch(s) {
+  return (s || '').toLowerCase()
+    .replace(/ą/g,'a').replace(/ć/g,'c').replace(/ę/g,'e')
+    .replace(/ł/g,'l').replace(/ń/g,'n').replace(/ó/g,'o')
+    .replace(/ś/g,'s').replace(/ź/g,'z').replace(/ż/g,'z');
+}
+
+// Buduje ciąg tekstowy do przeszukania dla danego gatunku
+function searchCorpus(s) {
+  return normSearch(
+    (s.nazwa_polska || '') + ' ' +
+    (s.nazwa_lacinska || '') + ' ' +
+    (s.kategoria || '') + ' ' +
+    (s.podkategoria || '') + ' ' +
+    (s.jadalne_czesci || '') + ' ' +
+    (s.zastosowanie_kulinarne || '') + ' ' +
+    (s.zastosowanie_lecznicze || '')
+  );
 }
 
 // Zwraca klucz pierwszego pasującego taba (non-all) dla danego gatunku
@@ -507,11 +526,19 @@ function bindToolbar() {
 
 function getSuggestions(q) {
   if (!q.trim()) return [];
-  const lc = q.toLowerCase();
-  return allSpecies
-    .filter(s => s.nazwa_polska.toLowerCase().includes(lc) ||
-                 s.nazwa_lacinska.toLowerCase().includes(lc))
-    .slice(0, 9);
+  const nq = normSearch(q);
+  // Nazwy trafione wyżej niż trafione tylko przez kategorię / cechy
+  const nameHit  = [];
+  const otherHit = [];
+  for (const s of allSpecies) {
+    const nameStr = normSearch((s.nazwa_polska || '') + ' ' + (s.nazwa_lacinska || ''));
+    if (nameStr.includes(nq)) { nameHit.push(s); continue; }
+    const extraStr = normSearch(
+      (s.kategoria || '') + ' ' + (s.podkategoria || '') + ' ' + (s.jadalne_czesci || '')
+    );
+    if (extraStr.includes(nq)) otherHit.push(s);
+  }
+  return [...nameHit, ...otherHit].slice(0, 9);
 }
 
 function renderSuggestions(list) {
