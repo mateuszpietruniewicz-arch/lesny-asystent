@@ -1725,7 +1725,7 @@ async function openModal(s) {
       <div class="modal-flags">
         ${isSeason    ? '<span class="flag flag-season">W sezonie ✓</span>' : ''}
         ${isToxic     ? '<span class="flag flag-toxic">⚠ Trujące</span>'   : ''}
-        ${isProtected ? '<span class="flag flag-protected">🔵 Chroniona</span>' : ''}
+        ${isProtected ? `<span class="flag flag-protected">🛡 ${det.ochrona === 'ścisła' ? 'Chroniona ściśle' : 'Chroniona'}</span>` : ''}
         ${(hasCoords || pinCount > 0) ? `<span class="flag flag-map">🗺 Mapa</span>` : ''}
       </div>
     </div>
