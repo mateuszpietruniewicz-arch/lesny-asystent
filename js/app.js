@@ -7,7 +7,7 @@ const NOW = new Date().getMonth() + 1;
 const TABS = {
   all:      { label: 'Wszystkie',       filter: () => true },
   warzywa:  { label: 'Dzikie warzywa',  filter: s =>
-    ['Owoce dzikie','Kwiaty jadalne','Drzewa jadalne','Rośliny wodne','Porosty'].includes(s.kategoria) ||
+    ['Owoce dzikie','Drzewa jadalne','Rośliny wodne'].includes(s.kategoria) ||
     (s.kategoria === 'Rośliny zielne' && s.podkategoria === 'Dzikie warzywa') ||
     s.kategoria === 'Rośliny jadalne'
   },
@@ -17,6 +17,14 @@ const TABS = {
            pod.includes('zioła aromatyczne') ||
            pod.includes('przyprawy');
   }},
+  kwiaty:   { label: 'Kwiaty jadalne',  filter: s =>
+    s.kategoria === 'Kwiaty jadalne' ||
+    (s.podkategoria || '').toLowerCase().includes('kwiaty')
+  },
+  porosty:  { label: 'Porosty',         filter: s =>
+    s.kategoria === 'Porosty' ||
+    (s.podkategoria || '').toLowerCase().includes('porost')
+  },
   grzyby:   { label: 'Grzyby',          filter: s =>
     s.kategoria === 'Grzyby' || s.kategoria === 'Rośliny TRUJĄCE' ||
     s.kategoria === 'Grzyby jadalne' || s.kategoria === 'Grzyby trujące' ||
@@ -2044,12 +2052,18 @@ function importBackup() {
 // ── MAPA SKARBÓW (V10) ────────────────────────────────────────────────────────
 
 const MV_FILTER_FN = {
-  all:     () => true,
-  warzywa: s => ['Owoce dzikie','Kwiaty jadalne','Drzewa jadalne','Rośliny wodne','Porosty'].includes(s.kategoria) ||
-                (s.kategoria === 'Rośliny zielne' && s.podkategoria === 'Dzikie warzywa'),
-  ziola:   s => s.podkategoria === 'Dzikie przyprawy',
-  kwiaty:  s => s.kategoria === 'Kwiaty jadalne',
-  grzyby:  s => s.kategoria === 'Grzyby' || s.kategoria === 'Rośliny TRUJĄCE',
+  all:      () => true,
+  warzywa:  s => ['Owoce dzikie','Drzewa jadalne','Rośliny wodne'].includes(s.kategoria) ||
+                 (s.kategoria === 'Rośliny zielne' && s.podkategoria === 'Dzikie warzywa') ||
+                 s.kategoria === 'Rośliny jadalne',
+  ziola:    s => s.podkategoria === 'Dzikie przyprawy',
+  kwiaty:   s => s.kategoria === 'Kwiaty jadalne' ||
+                 (s.podkategoria || '').toLowerCase().includes('kwiaty'),
+  porosty:  s => s.kategoria === 'Porosty' ||
+                 (s.podkategoria || '').toLowerCase().includes('porost'),
+  grzyby:   s => s.kategoria === 'Grzyby' || s.kategoria === 'Rośliny TRUJĄCE' ||
+                 s.kategoria === 'Grzyby jadalne' || s.kategoria === 'Grzyby trujące',
+  lecznicze:s => s.kategoria === 'Rośliny lecznicze' || s.kategoria === 'Ziołolecznictwo',
 };
 
 function makePinIcon(color, delay = 0) {

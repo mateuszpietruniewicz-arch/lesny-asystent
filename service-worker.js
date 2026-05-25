@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'forest-assistant-v38-gallery';
+const CACHE_NAME = 'forest-assistant-v39-tabs';
 // Osobny, trwały cache na pre-pobrane kafelki mapy — nie jest kasowany przy upgrade'ach SW
 const TILE_CACHE = 'forest-map-tiles-v1';
 
