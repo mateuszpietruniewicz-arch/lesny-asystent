@@ -257,7 +257,9 @@ function searchCorpus(s) {
     (s.podkategoria || '') + ' ' +
     (s.jadalne_czesci || '') + ' ' +
     (s.zastosowanie_kulinarne || '') + ' ' +
-    (s.zastosowanie_lecznicze || '')
+    (s.zastosowanie_lecznicze || '') + ' ' +
+    (s.przepis_sugestia || '') + ' ' +
+    (s.ciekawostka || '')
   );
 }
 
